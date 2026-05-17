@@ -1,0 +1,56 @@
+# GPT Corpus Usage
+
+This repository contains two GPT-readable corpus builds for the 2016 Honda Civic LX 4D Sedan CVT static service manual.
+
+## Corpus Directories
+
+- `build_clean/` is the primary GPT corpus. It is deduplicated, filters most very short chunks, and stores duplicate source paths on the kept chunk in `duplicate_sources`.
+- `build/` is the raw first-pass corpus. It preserves the original generated chunks before cleanup and deduplication.
+
+## Build The Clean Corpus
+
+```powershell
+python tools/build_gpt_chunks.py --dedupe-exact --min-chars 100 --output-dir build_clean
+```
+
+This writes:
+
+- `build_clean/chunks.jsonl`
+- `build_clean/chunks_jsonl_parts/*.jsonl`
+- `build_clean/chunks_manifest.json`
+
+## Validate A Corpus
+
+Validate the clean corpus:
+
+```powershell
+python tools/validate_gpt_chunks.py --build-dir build_clean
+```
+
+Validate the raw first-pass corpus:
+
+```powershell
+python tools/validate_gpt_chunks.py --build-dir build
+```
+
+By default, validation writes `<build-dir>/validation_report.md`. To choose a report path:
+
+```powershell
+python tools/validate_gpt_chunks.py --build-dir build_clean --report build_clean/custom_report.md
+```
+
+## Search The Clean Corpus
+
+Search uses `build_clean/chunks_jsonl_parts/*.jsonl`.
+
+```powershell
+python tools/search_gpt_corpus.py "CVT fluid replacement"
+```
+
+Limit result count:
+
+```powershell
+python tools/search_gpt_corpus.py "brake fluid" --limit 5
+```
+
+Each result includes rank, score, title, source path, chunk ID, image paths when present, and a text preview near the matched terms.
