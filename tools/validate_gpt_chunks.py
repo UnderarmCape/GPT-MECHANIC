@@ -1,3 +1,4 @@
+import argparse
 import hashlib
 import json
 from collections import defaultdict
@@ -22,9 +23,13 @@ MIN_TEXT_CHARS = 100
 MAX_TEXT_CHARS = 8000
 
 ROOT = Path(__file__).resolve().parents[1]
-PARTS_DIR = ROOT / "build" / "chunks_jsonl_parts"
-MANIFEST_PATH = ROOT / "build" / "chunks_manifest.json"
-REPORT_PATH = ROOT / "build" / "validation_report.md"
+
+
+def resolve_repo_path(value: str) -> Path:
+    path = Path(value)
+    if path.is_absolute():
+        return path
+    return ROOT / path
 
 
 def rel(path: Path) -> str:
@@ -140,19 +145,19 @@ def text_preview(text: str, max_chars: int = 160) -> str:
     return preview
 
 
-def load_manifest(issues: dict) -> dict | None:
-    if not MANIFEST_PATH.exists():
-        issues["manifest"].append(f"Manifest file is missing: `{rel(MANIFEST_PATH)}`")
+def load_manifest(manifest_path: Path, issues: dict) -> dict | None:
+    if not manifest_path.exists():
+        issues["manifest"].append(f"Manifest file is missing: `{rel(manifest_path)}`")
         return None
 
     try:
-        return json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+        return json.loads(manifest_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
         issues["manifest"].append(
-            f"Manifest is not valid JSON: `{rel(MANIFEST_PATH)}:{exc.lineno}:{exc.colno}` {exc.msg}"
+            f"Manifest is not valid JSON: `{rel(manifest_path)}:{exc.lineno}:{exc.colno}` {exc.msg}"
         )
     except OSError as exc:
-        issues["manifest"].append(f"Could not read manifest `{rel(MANIFEST_PATH)}`: {exc}")
+        issues["manifest"].append(f"Could not read manifest `{rel(manifest_path)}`: {exc}")
     return None
 
 
@@ -169,7 +174,7 @@ def add_section(lines: list[str], title: str, items: list, formatter) -> None:
     lines.append("")
 
 
-def validate() -> tuple[dict, dict]:
+def validate(parts_dir: Path, manifest_path: Path) -> tuple[dict, dict]:
     issues = defaultdict(list)
     stats = {
         "part_files": 0,
@@ -187,15 +192,15 @@ def validate() -> tuple[dict, dict]:
     source_path_cache = {}
     image_path_cache = {}
 
-    manifest = load_manifest(issues)
+    manifest = load_manifest(manifest_path, issues)
     if manifest is not None:
         stats["manifest_chunks_created"] = manifest.get("chunks_created")
 
-    part_paths = sorted(PARTS_DIR.glob("*.jsonl"))
-    if not PARTS_DIR.exists():
-        issues["parts"].append(f"JSONL parts directory is missing: `{rel(PARTS_DIR)}`")
+    part_paths = sorted(parts_dir.glob("*.jsonl"))
+    if not parts_dir.exists():
+        issues["parts"].append(f"JSONL parts directory is missing: `{rel(parts_dir)}`")
     elif not part_paths:
-        issues["parts"].append(f"No JSONL part files found in `{rel(PARTS_DIR)}`")
+        issues["parts"].append(f"No JSONL part files found in `{rel(parts_dir)}`")
 
     for part_path in part_paths:
         stats["part_files"] += 1
@@ -415,7 +420,7 @@ def issue_count(stats: dict, issues: dict) -> int:
     return total
 
 
-def render_report(stats: dict, issues: dict) -> str:
+def render_report(stats: dict, issues: dict, parts_dir: Path, manifest_path: Path) -> str:
     total_issues = issue_count(stats, issues)
     status = "PASS" if total_issues == 0 else "ISSUES FOUND"
     manifest_count = stats["manifest_chunks_created"]
@@ -426,8 +431,8 @@ def render_report(stats: dict, issues: dict) -> str:
         "",
         f"Generated: {datetime.now().isoformat(timespec='seconds')}",
         f"Repository: `{ROOT}`",
-        f"Corpus: `{rel(PARTS_DIR)}/*.jsonl`",
-        f"Manifest: `{rel(MANIFEST_PATH)}`",
+        f"Corpus: `{rel(parts_dir)}/*.jsonl`",
+        f"Manifest: `{rel(manifest_path)}`",
         f"Status: **{status}**",
         "",
         "## Summary",
@@ -578,17 +583,34 @@ def render_report(stats: dict, issues: dict) -> str:
 
 
 def main() -> int:
-    stats, issues = validate()
-    report = render_report(stats, issues)
-    REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_PATH.write_text(report, encoding="utf-8")
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--build-dir",
+        default="build",
+        help="Build output directory to validate, relative to the repo root unless absolute",
+    )
+    parser.add_argument(
+        "--report",
+        help="Markdown report path. Defaults to <build-dir>/validation_report.md",
+    )
+    args = parser.parse_args()
+
+    build_dir = resolve_repo_path(args.build_dir)
+    parts_dir = build_dir / "chunks_jsonl_parts"
+    manifest_path = build_dir / "chunks_manifest.json"
+    report_path = resolve_repo_path(args.report) if args.report else build_dir / "validation_report.md"
+
+    stats, issues = validate(parts_dir, manifest_path)
+    report = render_report(stats, issues, parts_dir, manifest_path)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(report, encoding="utf-8")
 
     total_issues = issue_count(stats, issues)
     status = "PASS" if total_issues == 0 else "ISSUES FOUND"
 
     print("GPT chunk validation complete")
     print(f"Status: {status}")
-    print(f"Report: {rel(REPORT_PATH)}")
+    print(f"Report: {rel(report_path)}")
     print(f"JSONL part files scanned: {stats['part_files']}")
     print(f"Total valid chunk records: {stats['total_chunks']}")
     print(f"Invalid JSON lines: {len(issues['json'])}")
