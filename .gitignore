@@ -1,5 +1,3 @@
-﻿.DS_Store
-Thumbs.db
-*.tmp
-*.log
-*.bak
+build/chunks.jsonl
+build/gpt_chunks/
+
