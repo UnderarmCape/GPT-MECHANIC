@@ -116,3 +116,31 @@ Save the Markdown context to a file:
 ```powershell
 python tools/retrieve_context.py "HCF-2 level check" --output build_clean/retrieved_context.md
 ```
+
+## Export Deep Research Packets
+
+Create Markdown packet files from the clean corpus for Deep Research workflows:
+
+```powershell
+python tools/make_manual_packets.py
+```
+
+This writes:
+
+- `build_clean/packets/master_manual_index.md`
+- `build_clean/packets/full_manual/packet_0001.md`
+- additional `packet_*.md` files as needed
+
+Each packet includes a suggested Deep Research prompt, chunk metadata, full chunk text, images, duplicate sources, and a `Sources Used` section. Packets are generated outputs and are ignored by Git.
+
+Set a different packet size limit:
+
+```powershell
+python tools/make_manual_packets.py --max-chars 500000
+```
+
+Write packets somewhere else:
+
+```powershell
+python tools/make_manual_packets.py --output-dir build_clean/custom_packets
+```
