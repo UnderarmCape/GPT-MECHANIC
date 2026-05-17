@@ -59,4 +59,10 @@ Index/navigation pages and video pages are downranked by default. To include ind
 python tools/search_gpt_corpus.py "CVT fluid" --include-index --include-video
 ```
 
+Results are deduplicated by source path and exact title by default. To show repeated chunks:
+
+```powershell
+python tools/search_gpt_corpus.py "CVT fluid" --no-dedupe-results
+```
+
 Each result includes rank, score, title, source path, chunk ID, image paths when present, and a text preview near the matched terms.

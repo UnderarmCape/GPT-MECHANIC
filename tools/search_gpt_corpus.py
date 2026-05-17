@@ -50,6 +50,14 @@ def is_video_page(record: dict) -> bool:
     return "- video" in str(record.get("title", "")).casefold()
 
 
+def normalize_source_path(value: str) -> str:
+    return value.replace("/", "\\").casefold().strip()
+
+
+def normalize_title(value: str) -> str:
+    return re.sub(r"\s+", " ", value).casefold().strip()
+
+
 def load_records(corpus_dir: Path):
     part_paths = sorted(corpus_dir.glob("*.jsonl"))
     if not corpus_dir.exists():
@@ -203,7 +211,37 @@ def print_result(rank: int, result: dict, terms: list[str]) -> None:
     print()
 
 
-def search(query: str, limit: int, include_index: bool = False, include_video: bool = False) -> list[dict]:
+def dedupe_results(results: list[dict]) -> list[dict]:
+    deduped = []
+    seen_source_paths = set()
+    seen_titles = set()
+
+    for result in results:
+        record = result["record"]
+        source_path = normalize_source_path(str(record.get("source_path", "")))
+        title = normalize_title(str(record.get("title", "")))
+
+        if source_path and source_path in seen_source_paths:
+            continue
+        if title and title in seen_titles:
+            continue
+
+        deduped.append(result)
+        if source_path:
+            seen_source_paths.add(source_path)
+        if title:
+            seen_titles.add(title)
+
+    return deduped
+
+
+def search(
+    query: str,
+    limit: int,
+    include_index: bool = False,
+    include_video: bool = False,
+    dedupe_displayed_results: bool = True,
+) -> list[dict]:
     terms = tokenize(query)
     if not terms:
         raise ValueError("Search query must include at least one alphanumeric term.")
@@ -222,6 +260,10 @@ def search(query: str, limit: int, include_index: bool = False, include_video: b
             str(item["record"].get("chunk_id", "")),
         )
     )
+
+    if dedupe_displayed_results:
+        results = dedupe_results(results)
+
     return results[:limit]
 
 
@@ -241,11 +283,22 @@ def main() -> int:
         action="store_true",
         help="Avoid penalizing video pages when the query does not include video",
     )
+    parser.add_argument(
+        "--no-dedupe-results",
+        action="store_true",
+        help="Allow repeated chunks from the same source path or exact same title",
+    )
     args = parser.parse_args()
 
     limit = max(1, args.limit)
     terms = tokenize(args.query)
-    results = search(args.query, limit, args.include_index, args.include_video)
+    results = search(
+        args.query,
+        limit,
+        args.include_index,
+        args.include_video,
+        not args.no_dedupe_results,
+    )
 
     print(f"Query: {args.query}")
     print(f"Corpus: {CORPUS_DIR}")
