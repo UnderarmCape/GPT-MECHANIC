@@ -90,3 +90,29 @@ Rebuild before searching:
 ```powershell
 python tools/build_search_index.py --rebuild --search "HCF-2"
 ```
+
+## Retrieve Paste-Ready Context
+
+Use the SQLite index to retrieve full chunk text as clean Markdown for ChatGPT:
+
+```powershell
+python tools/retrieve_context.py "How do I replace the CVT fluid?"
+```
+
+Return a different number of chunks:
+
+```powershell
+python tools/retrieve_context.py "brake fluid replacement" --limit 3
+```
+
+Retrieve chunks directly from a known manual source page:
+
+```powershell
+python tools/retrieve_context.py --source pages\12611.html
+```
+
+Save the Markdown context to a file:
+
+```powershell
+python tools/retrieve_context.py "HCF-2 level check" --output build_clean/retrieved_context.md
+```
