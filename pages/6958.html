@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P16F3 (L15B7/L15BA) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6958.html">DTC P16F3 (L15B7/L15BA)</a></div><div class="main"><h1>DTC P16F3 (L15B7/L15BA)</h1><div id="S16592754602021060700000">
+  <p><span class="clsEmphBOLD">DTC P16F3: </span>
+Starter Cut Relay 1 Control Circuit Low Voltage</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S165927546020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403371">
+            <div class="imageHeader"><a name="S18663577602021060700000"></a></div><img alt="GHH403371" src="../images/GHH403371.jpeg" name="GHH403371"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The starter control system prevents the starter from accidentally activating when the shift position is not in P or N position/mode (CVT) or the clutch pedal is released (M/T), or when the engine is running. If the vehicle is turned mistakenly while shift position is not in P or N position/mode (CVT) or the clutch pedal is released (M/T) or while the engine is running, the powertrain control module (PCM) will stop power to the starter cut relay circuits. However, cranking to return from auto idle stop does not correspond to this (if equipped). In this system, two starter cut relay circuits are connected in series (starter cut relay 1 circuit, starter cut relay 2 circuit) to prevent the starter from running continuously due to a starter cut relay circuit malfunction. Also a diagnosis line (ST RLY 1 TO 2) is connected to monitor the voltage between the starter cut relay 1 circuit and starter cut relay 2 circuit. Based on the diagnosis line signals, the PCM detects an OPEN malfunction of diagnosis line, an ON malfunction of starter cut relay 1 circuit, and an ON malfunction of starter cut relay 2 circuit. The PCM also equips with return signal circuits of starter cut relay 1 circuit and starter cut relay 2 circuit to detect an OFF malfunction. If the ST CUT RLY1 CL- return signal is LOW for a specified time when the starter is OFF (STS OFF), the PCM detects an open or a short to ground of the ST CUT RLY1 CL- and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S165927546020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">5 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL off</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S165927546020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td align="" class="clsCellNormal">ON mode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The ST CUT RLY1 CL- return signal is LOW for at least 5 seconds when the starter is OFF (STS OFF).</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Starter cut relay 1 circuit ST CUT RLY1 CL- line short to ground</li>
+    <li>Starter cut relay 1 circuit ST CUT RLY1 CL- line open</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory. The MIL does not come on.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,2536 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Generator: DwgConverter Version: 3.1.2 --><?AdobeSVGViewer save="disable"?>
+<svg viewBox="-0.003 -1802.465 1452.444 1802.455" width="100%" height="100%" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><metadata><enrichment xmlns="http://mitchell1.com/ns/enrichment"><tuple><terms component="automatic transmission control module" contentType="graphics_wiringdiagram"/><terms component="automatic transmission selector position indicator"/><terms component="body control module"/><terms component="fuse/relay boxes &amp; junction boxes"/><terms component="instrument cluster control module"/><terms component="transmission range sensor"/><terms component="wiper/washer motors"/><terms component="wiper/washer pumps"/><terms component="wiper/washer switch/sensor"/><terms component="wiper/washer switches and knobs"/></tuple></enrichment></metadata>
+<rect id="diagrambackground" x="-0.003" y="-1802.465" fill="none" width="1452.444" height="1802.455"/>
+<title id="title">va507995</title>
+<defs>
+<g id="BLK_H9F8E">
+	<path id="H5E" d="M-6.72 3.36 L-3.36 0 L3.36 0 L6.72 3.36" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+</g>
+<g id="BLK_H9F8D">
+	<path id="H5E" d="M-6.72 3.36 L-3.36 0 L3.36 0 L6.72 3.36" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+</g>
+</defs>
+<g id="hatch_screens">
+<path id="HCB9E45" d="M1367.245 -253.312 L1430.245 -253.312 L1430.245 -170.807 L1367.245 -170.807 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="ne643e76e93a3fa24"/>
+<path id="HCB9DB4" d="M28.903 -1083.732 L93.362 -1083.732 L93.362 -1038.613 L28.903 -1038.613 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="nb52c4afed2089aec"/>
+<path id="HCB9D71" d="M1369.082 -1043.842 L1433.541 -1043.842 L1433.541 -998.723 L1369.082 -998.723 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n7814ae0e12dd3b54"/>
+<path id="HCB9CCC" d="M561.124 -1153.547 L600.928 -1153.547 L600.928 -1109.087 L561.124 -1109.087 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB9A94" d="M1284.341 -383.874 L1367.005 -383.874 L1367.005 -333.888 L1284.341 -333.888 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB9A86" d="M1258.923 -410.558 L1307.005 -410.558 L1307.005 -392.815 L1258.923 -392.815 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB990F" d="M1008.903 -1178.218 L1173.362 -1178.218 L1173.362 -1126.657 L1008.903 -1126.657 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB97AA" d="M1328.866 -921.727 L1433.981 -921.727 L1433.981 -786.69 L1328.866 -786.69 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="nb7771ccf15a3bc74"/>
+<path id="HCB9758" d="M1209.137 -1701.415 L1291.642 -1701.415 L1291.642 -1660.126 L1209.137 -1660.126 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB973C" d="M1151.848 -1652.623 L1360.123 -1652.623 L1360.123 -1625.439 L1151.848 -1625.439 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB9728" d="M1140.509 -1714.748 L1380.123 -1714.748 L1380.123 -1587.564 L1140.509 -1587.564 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n379d7528f4884c88"/>
+<path id="HCB96F1" d="M1328.866 -1221.727 L1433.981 -1221.727 L1433.981 -1061.727 L1328.866 -1061.727 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="nc545d8b8375eed70"/>
+<path id="HCB958A" d="M14.641 -983.357 L132.1 -983.357 L132.1 -437.048 L14.641 -437.048 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n882e3cc877238d38"/>
+<path id="HCB946B" d="M426.742 -1632.813 L684.284 -1632.813 L684.284 -1509.419 L426.742 -1509.419 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n5f168059b7882de0"/>
+<path id="HCB92B0" d="M1272.049 -641.552 L1365.299 -641.552 L1365.299 -596.973 L1272.049 -596.973 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB927B" d="M1230.073 -518.039 L1373.55 -518.039 L1373.55 -432.671 L1230.073 -432.671 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB9273" d="M1381.887 -693.317 L1426.202 -693.317 L1426.202 -325.865 L1381.887 -325.865 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;"/>
+<path id="HCB9264" d="M1127.641 -704.429 L1435.723 -704.429 L1435.723 -294.039 L1127.641 -294.039 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n705b73f5669eb6ca"/>
+<path id="HCB9184" d="M12.199 -1251.648 L75.199 -1251.648 L75.199 -1169.143 L12.199 -1169.143 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n703d706a96356b2"/>
+<path id="HCB8EDC" d="M413.709 -171.227 L711.222 -171.227 L711.222 -81.227 L413.709 -81.227 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="ncaec3a96e9c9f77a"/>
+<path id="HCB8EA8" d="M261.124 -233.547 L920.928 -233.547 L920.928 -29.087 L261.124 -29.087 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n99d49e26299e9722"/>
+<path id="HCB8E8A" d="M836.887 -1739.64 L1020.441 -1739.64 L1020.441 -1551.775 L836.887 -1551.775 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="nacbde1b6686337ea"/>
+<path id="HCB8CDC" d="M170.885 -1740.382 L810.561 -1740.382 L810.561 -1467.887 L170.885 -1467.887 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n726645c7a8c9d852"/>
+<path id="HCB8CC1" d="M438.607 -1612.06 L593.151 -1612.06 L593.151 -1547.601 L438.607 -1547.601 z" stroke-width="1" style="fill:#0000FF;fill-opacity:0.2;" data-dataID="n14ea957e89e781a"/>
+</g>
+<g id="layer_0" style="color:#000000;">
+<path id="HA229" d="M575.765 -1115.084 L581.167 -1109.682 L586.569 -1115.084" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="HA228" d="M586.569 -1147.211 L581.167 -1152.613 L575.765 -1147.211" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="HA227" d="M1372.647 -186.629 L1367.245 -181.227 L1372.647 -175.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="HA226" d="M1372.647 -246.629 L1367.245 -241.227 L1372.647 -235.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="HA225" d="M1380.189 -195.08 A 1.564 1.564 180 0 0 1383.317 -195.08 M1380.189 -195.08 A 1.564 1.564 180 0 1 1383.317 -195.08" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="HA224" d="M1419.157 -195.103 A 1.564 1.564 180 0 0 1422.285 -195.103 M1419.157 -195.103 A 1.564 1.564 180 0 1 1422.285 -195.103" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<circle id="H9D64" cx="521.222" cy="-501.227" r="7.239" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9D61" cx="521.222" cy="-474.568" r="7.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9D5C" cx="775.874" cy="-821.227" r="7.239" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9D59" cx="775.874" cy="-741.227" r="7.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9D54" cx="1201.222" cy="-1041.227" r="7.239" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9D51" cx="1201.222" cy="-1001.227" r="7.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9D48" cx="955.128" cy="-1532.15" r="7.239" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9D45" cx="955.128" cy="-1515.168" r="7.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9CEF" cx="521.222" cy="-454.226" r="7.239" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9CEC" cx="519.968" cy="-417.463" r="7.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9CC7" cx="401.222" cy="-1201.227" r="7.239" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9CC4" cx="401.222" cy="-1121.227" r="7.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9CBF" cx="581.222" cy="-1021.227" r="7.239" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<circle id="H9CBC" cx="501.222" cy="-1021.227" r="7.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<g id="TEXT_9D65">
+<text x="517.376" y="-496.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_9D5E">
+<text x="517.694" y="-469.591" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_9D5D">
+<text x="772.028" y="-816.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_9D56">
+<text x="772.347" y="-736.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_9D55">
+<text x="1197.376" y="-1036.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_9D4E">
+<text x="1197.694" y="-996.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_9D49">
+<text x="951.281" y="-1527.172" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_9D42">
+<text x="951.6" y="-1510.191" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_9CF0">
+<text x="517.569" y="-449.249" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+3
+</tspan>
+</text>
+</g>
+<g id="TEXT_9CE9">
+<text x="516.517" y="-412.485" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+4
+</tspan>
+</text>
+</g>
+<g id="TEXT_9CC8">
+<text x="397.569" y="-1196.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+3
+</tspan>
+</text>
+</g>
+<g id="TEXT_9CC1">
+<text x="397.771" y="-1116.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+4
+</tspan>
+</text>
+</g>
+<g id="TEXT_9CC0">
+<text x="577.569" y="-1016.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+3
+</tspan>
+</text>
+</g>
+<g id="TEXT_9CB9">
+<text x="497.771" y="-1016.25" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+4
+</tspan>
+</text>
+</g>
+</g>
+<g id="layer_GRAPHICS" style="color:#000000;">
+<path id="H9FB9" d="M574.502 -1104.587 L577.862 -1101.227 L584.582 -1101.227 L587.942 -1104.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FB8" d="M574.502 -1157.867 L577.862 -1161.227 L584.582 -1161.227 L587.942 -1157.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FB6" d="M137.862 -967.947 L141.222 -964.587 L141.222 -957.867 L137.862 -954.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FB5" d="M137.862 -927.947 L141.222 -924.587 L141.222 -917.867 L137.862 -914.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FB4" d="M1334.992 -1087.129 L1329.59 -1081.727 L1334.992 -1076.326" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FB3" d="M1334.992 -1207.129 L1329.59 -1201.727 L1334.992 -1196.326" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FB2" d="M1334.992 -807.129 L1329.59 -801.727 L1334.992 -796.326" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FB1" d="M1334.992 -907.129 L1329.59 -901.727 L1334.992 -896.326" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FB0" d="M1095.82 -1132.157 L1101.222 -1126.755 L1106.624 -1132.157" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FAF" d="M1107.942 -1124.587 L1104.582 -1121.227 L1097.862 -1121.227 L1094.502 -1124.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FAE" d="M1015.82 -1132.157 L1021.222 -1126.755 L1026.624 -1132.157" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FAD" d="M1155.82 -1132.157 L1161.222 -1126.755 L1166.624 -1132.157" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FAC" d="M1027.942 -1124.587 L1024.582 -1121.227 L1017.862 -1121.227 L1014.502 -1124.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FAB" d="M1167.942 -1124.587 L1164.582 -1121.227 L1157.862 -1121.227 L1154.502 -1124.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FAA" d="M1364.582 -1027.947 L1361.222 -1024.587 L1361.222 -1017.867 L1364.582 -1014.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FA9" d="M97.862 -1054.507 L101.222 -1057.867 L101.222 -1064.587 L97.862 -1067.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FA8" d="M137.862 -787.947 L141.222 -784.587 L141.222 -777.867 L137.862 -774.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FA7" d="M1324.582 -794.507 L1321.222 -797.867 L1321.222 -804.587 L1324.582 -807.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FA6" d="M1324.582 -894.507 L1321.222 -897.867 L1321.222 -904.587 L1324.582 -907.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FA5" d="M1275.82 -1593.134 L1281.222 -1587.732 L1286.624 -1593.134" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FA4" d="M1287.942 -1584.587 L1284.582 -1581.227 L1277.862 -1581.227 L1274.502 -1584.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FA3" d="M1215.82 -1593.134 L1221.222 -1587.732 L1226.624 -1593.134" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FA2" d="M1227.942 -1584.587 L1224.582 -1581.227 L1217.862 -1581.227 L1214.502 -1584.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9FA1" d="M1155.82 -1593.134 L1161.222 -1587.732 L1166.624 -1593.134" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9FA0" d="M1335.82 -1593.134 L1341.222 -1587.732 L1346.624 -1593.134" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F9F" d="M1167.942 -1584.587 L1164.582 -1581.227 L1157.862 -1581.227 L1154.502 -1584.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F9E" d="M1347.942 -1584.587 L1344.582 -1581.227 L1337.862 -1581.227 L1334.502 -1584.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F9D" d="M1324.582 -1074.507 L1321.222 -1077.867 L1321.222 -1084.587 L1324.582 -1087.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F9C" d="M1324.582 -1194.507 L1321.222 -1197.867 L1321.222 -1204.587 L1324.582 -1207.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F9B" d="M137.862 -847.947 L141.222 -844.587 L141.222 -837.867 L137.862 -834.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F9A" d="M137.862 -507.947 L141.222 -504.587 L141.222 -497.867 L137.862 -494.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F99" d="M261.219 -554.713 L272.506 -561.221 L261.226 -567.742" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F98" d="M261.219 -574.713 L272.506 -581.221 L261.226 -587.742" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F97" d="M137.862 -567.947 L141.222 -564.587 L141.222 -557.867 L137.862 -554.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F96" d="M137.862 -587.947 L141.222 -584.587 L141.222 -577.867 L137.862 -574.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F93" d="M1387.509 -204.959 L1401.217 -228.839" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F92" d="M1385.461 -206.142 L1389.557 -203.776 L1383.346 -197.749" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F91" d="M1399.653 -228.839 A 1.564 1.564 180 0 0 1402.781 -228.839 M1399.653 -228.839 A 1.564 1.564 180 0 1 1402.781 -228.839" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<g transform="translate(1361.222,-181.227) rotate(-90,0,0) ">
+<use xlink:href="#BLK_H9F8E"/>
+</g>
+<g transform="translate(1361.222,-241.227) rotate(-90,0,0) ">
+<use xlink:href="#BLK_H9F8D"/>
+</g>
+<path id="H9F8C" d="M137.862 -467.947 L141.222 -464.587 L141.222 -457.867 L137.862 -454.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F8B" d="M137.862 -547.947 L141.222 -544.587 L141.222 -537.867 L137.862 -534.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F8A" d="M137.862 -607.947 L141.222 -604.587 L141.222 -597.867 L137.862 -594.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F89" d="M137.862 -647.947 L141.222 -644.587 L141.222 -637.867 L137.862 -634.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F88" d="M137.862 -687.947 L141.222 -684.587 L141.222 -677.867 L137.862 -674.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F87" d="M137.862 -727.947 L141.222 -724.587 L141.222 -717.867 L137.862 -714.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F86" d="M137.862 -887.947 L141.222 -884.587 L141.222 -877.867 L137.862 -874.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F85" d="M1133.945 -686.629 L1128.543 -681.227 L1133.945 -675.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F84" d="M322.803 -1559.902 A 1.564 1.564 180 0 0 319.674 -1559.902 M322.803 -1559.902 A 1.564 1.564 180 0 1 319.674 -1559.902" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F83" d="M322.789 -1536.467 A 1.564 1.564 180 0 0 319.661 -1536.467 M322.789 -1536.467 A 1.564 1.564 180 0 1 319.661 -1536.467" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F82" d="M247.942 -1464.587 L244.582 -1461.227 L237.862 -1461.227 L234.502 -1464.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F81" d="M315.82 -1473.289 L321.222 -1467.887 L326.624 -1473.289" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F80" d="M1041.226 -447.742 L1029.938 -441.234 L1041.219 -434.713" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F7F" d="M1041.226 -507.742 L1029.938 -501.234 L1041.219 -494.713" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F7E" d="M1124.582 -674.507 L1121.222 -677.867 L1121.222 -684.587 L1124.582 -687.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F7D" d="M1133.945 -626.629 L1128.543 -621.227 L1133.945 -615.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F7C" d="M1124.582 -614.507 L1121.222 -617.867 L1121.222 -624.587 L1124.582 -627.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F7B" d="M1133.945 -566.629 L1128.543 -561.227 L1133.945 -555.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F7A" d="M1124.582 -554.507 L1121.222 -557.867 L1121.222 -564.587 L1124.582 -567.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F79" d="M1133.945 -406.629 L1128.543 -401.227 L1133.945 -395.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F78" d="M1133.945 -446.629 L1128.543 -441.227 L1133.945 -435.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F77" d="M1133.989 -506.629 L1128.587 -501.227 L1133.989 -495.826" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F76" d="M1124.582 -434.507 L1121.222 -437.867 L1121.222 -444.587 L1124.582 -447.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F75" d="M1124.582 -494.507 L1121.222 -497.867 L1121.222 -504.587 L1124.582 -507.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F74" d="M1124.582 -394.507 L1121.222 -397.867 L1121.222 -404.587 L1124.582 -407.947" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F73" d="M935.82 -1557.177 L941.222 -1551.775 L946.624 -1557.177" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F72" d="M947.942 -1544.587 L944.582 -1541.227 L937.862 -1541.227 L934.502 -1544.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F71" d="M875.82 -1557.177 L881.222 -1551.775 L886.624 -1557.177" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F70" d="M887.942 -1544.587 L884.582 -1541.227 L877.862 -1541.227 L874.502 -1544.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F6F" d="M939.637 -1621.349 A 1.564 1.564 180 0 0 942.765 -1621.349 M939.637 -1621.349 A 1.564 1.564 180 0 1 942.765 -1621.349" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F6E" d="M939.65 -1644.784 A 1.564 1.564 180 0 0 942.778 -1644.784 M939.65 -1644.784 A 1.564 1.564 180 0 1 942.778 -1644.784" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F6D" d="M879.637 -1621.349 A 1.564 1.564 180 0 0 882.765 -1621.349 M879.637 -1621.349 A 1.564 1.564 180 0 1 882.765 -1621.349" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F6C" d="M879.65 -1644.784 A 1.564 1.564 180 0 0 882.778 -1644.784 M879.65 -1644.784 A 1.564 1.564 180 0 1 882.778 -1644.784" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F6B" d="M382.803 -1559.902 A 1.564 1.564 180 0 0 379.674 -1559.902 M382.803 -1559.902 A 1.564 1.564 180 0 1 379.674 -1559.902" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F6A" d="M382.789 -1536.467 A 1.564 1.564 180 0 0 379.661 -1536.467 M382.789 -1536.467 A 1.564 1.564 180 0 1 379.661 -1536.467" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F69" d="M387.942 -1464.587 L384.582 -1461.227 L377.862 -1461.227 L374.502 -1464.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F68" d="M375.82 -1473.289 L381.222 -1467.887 L386.624 -1473.289" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F67" d="M77.862 -1187.947 L81.222 -1184.587 L81.222 -1177.867 L77.862 -1174.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F66" d="M77.862 -1247.947 L81.222 -1244.587 L81.222 -1237.867 L77.862 -1234.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F65" d="M69.797 -1175.826 L75.199 -1181.227 L69.797 -1186.629" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F64" d="M69.797 -1235.826 L75.199 -1241.227 L69.797 -1246.629" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F63" d="M587.942 -1504.587 L584.582 -1501.227 L577.862 -1501.227 L574.502 -1504.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F62" d="M576.344 -1514.821 L581.746 -1509.419 L587.148 -1514.821" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F61" d="M786.183 -228.145 L780.781 -233.547 L775.38 -228.145" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F60" d="M326.624 -228.145 L321.222 -233.547 L315.82 -228.145" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F5F" d="M486.624 -228.145 L481.222 -233.547 L475.82 -228.145" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F5E" d="M906.624 -228.145 L901.222 -233.547 L895.82 -228.145" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F5D" d="M286.624 -228.145 L281.222 -233.547 L275.82 -228.145" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F5C" d="M866.624 -228.145 L861.222 -233.547 L855.82 -228.145" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F5B" d="M799.162 -117.492 A 1.564 1.564 180 0 0 802.29 -117.492 M799.162 -117.492 A 1.564 1.564 180 0 1 802.29 -117.492" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F5A" d="M760.194 -117.469 A 1.564 1.564 180 0 0 763.322 -117.469 M760.194 -117.469 A 1.564 1.564 180 0 1 763.322 -117.469" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F59" d="M327.942 -1464.587 L324.582 -1461.227 L317.862 -1461.227 L314.502 -1464.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F58" d="M235.82 -1473.289 L241.222 -1467.887 L246.624 -1473.289" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F57" d="M242.803 -1559.902 A 1.564 1.564 180 0 0 239.674 -1559.902 M242.803 -1559.902 A 1.564 1.564 180 0 1 239.674 -1559.902" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F56" d="M242.789 -1536.467 A 1.564 1.564 180 0 0 239.661 -1536.467 M242.789 -1536.467 A 1.564 1.564 180 0 1 239.661 -1536.467" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F55" d="M547.942 -1504.587 L544.582 -1501.227 L537.862 -1501.227 L534.502 -1504.587" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F54" d="M536.344 -1514.821 L541.746 -1509.419 L547.148 -1514.821" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F53" d="M566.619 -1627.411 L561.217 -1632.813 L555.815 -1627.411" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F52" d="M554.502 -1637.867 L557.862 -1641.227 L564.582 -1641.227 L567.942 -1637.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F50" d="M454.502 -1637.867 L457.862 -1641.227 L464.582 -1641.227 L467.942 -1637.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F4F" d="M466.619 -1627.411 L461.217 -1632.813 L455.815 -1627.411" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F4B" d="M579.567 -1350.607 L582.877 -1350.607" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F47" d="M573.251 -1357.227 L589.117 -1357.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F43" d="M576.257 -1353.917 L586.188 -1353.917" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F3F" d="M579.122 -1361.227 A 2.1 2.1 180 0 0 583.322 -1361.227 M579.122 -1361.227 A 2.1 2.1 180 0 1 583.322 -1361.227" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9F3D" d="M241.225 -1536.467 A 6.625 6.625 -124.339 0 1 241.232 -1548.185 M241.232 -1548.185 A 6.625 6.625 124.339 0 0 241.239 -1559.902" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F3C" d="M241.239 -1559.902 L241.242 -1565.142" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F3B" d="M241.222 -1531.227 L241.225 -1536.467" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F36" d="M239.658 -1632.982 A 1.564 1.564 180 0 0 242.786 -1632.982 M239.658 -1632.982 A 1.564 1.564 180 0 1 242.786 -1632.982" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F35" d="M767.514 -127.347 L781.222 -151.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F34" d="M765.466 -128.53 L769.562 -126.165 L763.351 -120.137" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F33" d="M779.658 -151.227 A 1.564 1.564 180 0 0 782.786 -151.227 M779.658 -151.227 A 1.564 1.564 180 0 1 782.786 -151.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F2F" d="M854.502 -237.867 L857.862 -241.227 L864.582 -241.227 L867.942 -237.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F2D" d="M274.502 -237.867 L277.862 -241.227 L284.582 -241.227 L287.942 -237.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F2B" d="M894.502 -237.867 L897.862 -241.227 L904.582 -241.227 L907.942 -237.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F29" d="M474.502 -237.867 L477.862 -241.227 L484.582 -241.227 L487.942 -237.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F28" d="M371.234 -187.392 L371.737 -184.976 L376.115 -182.105" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F27" d="M369.321 -184.473 L371.737 -184.976 L376.115 -182.105" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9F23" d="M371.737 -184.976 L351.815 -198.038" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F16" d="M379.813 -191.217 L377.655 -187.148 L373.416 -195.215 L369.214 -187.19 L365.005 -195.215 L362.855 -191.215 L360.697 -187.145 L356.457 -195.212 L352.256 -187.187 L348.047 -195.212 L345.896 -191.212" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9F14" d="M314.502 -237.867 L317.862 -241.227 L324.582 -241.227 L327.942 -237.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F13" d="M479.658 -191.227 A 1.564 1.564 180 0 0 482.786 -191.227 M479.658 -191.227 A 1.564 1.564 180 0 1 482.786 -191.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F12" d="M629.658 -191.227 A 1.564 1.564 180 0 0 632.786 -191.227 M629.658 -191.227 A 1.564 1.564 180 0 1 632.786 -191.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F11" d="M479.658 -161.227 A 1.564 1.564 180 0 0 482.786 -161.227 M479.658 -161.227 A 1.564 1.564 180 0 1 482.786 -161.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F10" d="M446.12 -140.961 A 1.564 1.564 180 0 0 448.829 -142.525 M446.12 -140.961 A 1.564 1.564 180 0 1 448.829 -142.525" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F0F" d="M460.956 -126.126 A 1.564 1.564 180 0 0 462.52 -128.835 M460.956 -126.126 A 1.564 1.564 180 0 1 462.52 -128.835" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F0E" d="M481.222 -120.695 A 1.564 1.564 180 0 0 481.222 -123.823 M481.222 -120.695 A 1.564 1.564 180 0 1 481.222 -123.823" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F0D" d="M501.488 -126.126 A 1.564 1.564 180 0 0 499.924 -128.835 M501.488 -126.126 A 1.564 1.564 180 0 1 499.924 -128.835" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F0C" d="M516.324 -140.961 A 1.564 1.564 180 0 0 513.615 -142.525 M516.324 -140.961 A 1.564 1.564 180 0 1 513.615 -142.525" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F0B" d="M629.658 -161.227 A 1.564 1.564 180 0 0 632.786 -161.227 M629.658 -161.227 A 1.564 1.564 180 0 1 632.786 -161.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F0A" d="M596.12 -140.961 A 1.564 1.564 180 0 0 598.829 -142.525 M596.12 -140.961 A 1.564 1.564 180 0 1 598.829 -142.525" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F09" d="M610.956 -126.126 A 1.564 1.564 180 0 0 612.52 -128.835 M610.956 -126.126 A 1.564 1.564 180 0 1 612.52 -128.835" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F08" d="M631.222 -120.695 A 1.564 1.564 180 0 0 631.222 -123.823 M631.222 -120.695 A 1.564 1.564 180 0 1 631.222 -123.823" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F07" d="M651.488 -126.126 A 1.564 1.564 180 0 0 649.924 -128.835 M651.488 -126.126 A 1.564 1.564 180 0 1 649.924 -128.835" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F06" d="M666.324 -140.961 A 1.564 1.564 180 0 0 663.615 -142.525 M666.324 -140.961 A 1.564 1.564 180 0 1 663.615 -142.525" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F04" d="M774.502 -237.867 L777.862 -241.227 L784.582 -241.227 L787.942 -237.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9F01" d="M540.235 -1524.82 A 1.564 1.564 180 0 0 543.363 -1524.82 M540.235 -1524.82 A 1.564 1.564 180 0 1 543.363 -1524.82" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9F00" d="M579.157 -1557.512 A 1.564 1.564 180 0 0 582.285 -1557.512 M579.157 -1557.512 A 1.564 1.564 180 0 1 582.285 -1557.512" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9EFF" d="M540.189 -1557.489 A 1.564 1.564 180 0 0 543.317 -1557.489 M540.189 -1557.489 A 1.564 1.564 180 0 1 543.317 -1557.489" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<circle id="H9EFA" cx="41.222" cy="-1211.085" r="12.242" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EF4" d="M34.752 -1220.883 L34.752 -1227.364 L47.692 -1227.364 L47.692 -1220.883" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EEE" d="M47.692 -1201.176 L47.692 -1194.695 L34.752 -1194.695 L34.752 -1201.176" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EDF" d="M191.843 -1179.572 L191.843 -1182.883" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EDB" d="M185.222 -1173.256 L185.222 -1189.122" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9ED7" d="M188.533 -1176.262 L188.533 -1186.193" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9ED3" d="M181.222 -1179.127 A 2.1 2.1 180 0 0 181.222 -1183.327 M181.222 -1179.127 A 2.1 2.1 180 0 1 181.222 -1183.327" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9ED0" d="M381.225 -1536.467 A 6.625 6.625 -124.339 0 1 381.232 -1548.185 M381.232 -1548.185 A 6.625 6.625 124.339 0 0 381.239 -1559.902" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9ECF" d="M381.239 -1559.902 L381.242 -1565.142" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9ECE" d="M381.222 -1531.227 L381.225 -1536.467" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9ECB" d="M881.214 -1644.784 A 6.625 6.625 -124.339 0 1 881.207 -1633.066 M881.207 -1633.066 A 6.625 6.625 124.339 0 0 881.201 -1621.349" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9ECA" d="M881.201 -1621.349 L881.198 -1616.109" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EC9" d="M881.217 -1650.024 L881.214 -1644.784" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EC6" d="M941.214 -1644.784 A 6.625 6.625 -124.339 0 1 941.207 -1633.066 M941.207 -1633.066 A 6.625 6.625 124.339 0 0 941.201 -1621.349" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EC5" d="M941.201 -1621.349 L941.198 -1616.109" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EC4" d="M941.217 -1650.024 L941.214 -1644.784" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EAB" d="M1207.124 -455.02 L1203.054 -457.178 L1211.121 -461.417 L1203.096 -465.619 L1211.121 -469.828 L1207.121 -471.978 L1203.051 -474.136 L1211.118 -478.376 L1203.093 -482.577 L1211.118 -486.786 L1207.118 -488.937" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9EAA" d="M1207.118 -503.16 A 1.564 1.564 180 0 0 1207.118 -500.032 M1207.118 -503.16 A 1.564 1.564 180 0 1 1207.118 -500.032" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9EA9" d="M1207.124 -443.157 A 1.564 1.564 180 0 0 1207.124 -440.029 M1207.124 -443.157 A 1.564 1.564 180 0 1 1207.124 -440.029" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9EA6" d="M1185.466 -626.066 L1193.846 -621.227 L1185.466 -616.389" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9EA2" d="M1206.614 -621.227 L1172.698 -621.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E9E" d="M1193.846 -626.066 L1193.846 -616.389" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E9A" d="M1209.885 -681.227 A 1.564 1.564 180 0 0 1213.014 -681.227 M1209.885 -681.227 A 1.564 1.564 180 0 1 1213.014 -681.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E99" d="M1209.885 -621.227 A 1.564 1.564 180 0 0 1213.014 -621.227 M1209.885 -621.227 A 1.564 1.564 180 0 1 1213.014 -621.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E93" d="M1010.601 -402.883 L1010.601 -399.572" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E8F" d="M1017.222 -409.199 L1017.222 -393.332" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E8B" d="M1013.912 -406.193 L1013.912 -396.262" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E87" d="M1021.222 -403.327 A 2.1 2.1 180 0 0 1021.222 -399.127 M1021.222 -403.327 A 2.1 2.1 180 0 1 1021.222 -399.127" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9E83" d="M939.122 -1401.227 A 2.1 2.1 180 0 0 943.322 -1401.227 M939.122 -1401.227 A 2.1 2.1 180 0 1 943.322 -1401.227" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9E7D" d="M319.122 -1381.227 A 2.1 2.1 180 0 0 323.322 -1381.227 M319.122 -1381.227 A 2.1 2.1 180 0 1 323.322 -1381.227" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9E7C" d="M321.225 -1536.467 A 6.625 6.625 -124.339 0 1 321.232 -1548.185 M321.232 -1548.185 A 6.625 6.625 124.339 0 0 321.239 -1559.902" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E7B" d="M321.239 -1559.902 L321.242 -1565.142" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E7A" d="M321.222 -1531.227 L321.225 -1536.467" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E77" d="M319.658 -1632.982 A 1.564 1.564 180 0 0 322.786 -1632.982 M319.658 -1632.982 A 1.564 1.564 180 0 1 322.786 -1632.982" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E76" d="M1216.288 -662.376 L1211.449 -653.996 L1206.611 -662.376" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9E72" d="M1211.449 -641.227 L1211.449 -675.144" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E6E" d="M1216.288 -653.996 L1206.611 -653.996" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E6D" d="M1256.999 -662.376 L1252.161 -653.996 L1247.322 -662.376" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9E69" d="M1252.161 -641.227 L1252.161 -675.144" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E65" d="M1256.999 -653.996 L1247.322 -653.996" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E64" d="M1250.597 -681.227 A 1.564 1.564 180 0 0 1253.725 -681.227 M1250.597 -681.227 A 1.564 1.564 180 0 1 1253.725 -681.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E63" d="M1250.597 -561.227 A 1.564 1.564 180 0 0 1253.725 -561.227 M1250.597 -561.227 A 1.564 1.564 180 0 1 1253.725 -561.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E56" d="M1252.161 -608.568 L1256.23 -606.41 L1248.163 -602.171 L1256.188 -597.969 L1248.163 -593.76 L1252.163 -591.61 L1256.233 -589.452 L1248.166 -585.212 L1256.191 -581.011 L1248.166 -576.802 L1252.166 -574.651" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E45" d="M1430.245 -253.312 L1367.245 -253.312 L1367.245 -170.807 L1430.245 -170.807 L1430.245 -253.312" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E3F" d="M1401.217 -228.839 L1401.217 -241.227 L1367.245 -241.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E3A" d="M1367.245 -181.227 L1420.721 -181.227 L1420.721 -195.103" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E35" d="M1210.601 -182.883 L1210.601 -179.572" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E31" d="M1217.222 -189.199 L1217.222 -173.332" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E2D" d="M1213.912 -186.193 L1213.912 -176.262" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E29" d="M1221.222 -183.327 A 2.1 2.1 180 0 0 1221.222 -179.127 M1221.222 -183.327 A 2.1 2.1 180 0 1 1221.222 -179.127" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9E21" d="M130.601 -362.883 L130.601 -359.572" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E1D" d="M137.222 -369.199 L137.222 -353.332" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E19" d="M133.912 -366.193 L133.912 -356.262" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9E15" d="M141.222 -363.327 A 2.1 2.1 180 0 0 141.222 -359.127 M141.222 -363.327 A 2.1 2.1 180 0 1 141.222 -359.127" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9E0E" d="M237.862 -887.947 L241.222 -884.587 L241.222 -877.867 L237.862 -874.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9E08" d="M231.142 -887.947 L234.502 -884.587 L234.502 -877.867 L231.142 -874.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9E06" d="M1401.321 -1136.087 A 1.564 1.564 180 0 0 1402.131 -1133.066 M1401.321 -1136.087 A 1.564 1.564 180 0 1 1402.131 -1133.066" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E05" d="M1391.236 -1173.728 A 1.564 1.564 180 0 0 1392.045 -1170.706 M1391.236 -1173.728 A 1.564 1.564 180 0 1 1392.045 -1170.706" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E04" d="M1373.066 -1163.237 A 1.564 1.564 180 0 0 1375.278 -1161.025 M1373.066 -1163.237 A 1.564 1.564 180 0 1 1375.278 -1161.025" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E03" d="M1362.575 -1145.067 A 1.564 1.564 180 0 0 1365.597 -1144.257 M1362.575 -1145.067 A 1.564 1.564 180 0 1 1365.597 -1144.257" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E02" d="M1362.575 -1124.086 A 1.564 1.564 180 0 0 1365.597 -1124.896 M1362.575 -1124.086 A 1.564 1.564 180 0 1 1365.597 -1124.896" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E01" d="M1373.066 -1105.916 A 1.564 1.564 180 0 0 1375.278 -1108.128 M1373.066 -1105.916 A 1.564 1.564 180 0 1 1375.278 -1108.128" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9E00" d="M1391.236 -1095.425 A 1.564 1.564 180 0 0 1392.045 -1098.447 M1391.236 -1095.425 A 1.564 1.564 180 0 1 1392.045 -1098.447" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<circle id="H9DF4" cx="1249.889" cy="-1681.222" r="11.242" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DE5" d="M1259.798 -1687.693 L1266.279 -1687.693 L1266.279 -1674.752 L1259.798 -1674.752" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DDF" d="M1240.091 -1674.752 L1233.61 -1674.752 L1233.61 -1687.693 L1240.091 -1687.693" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DDA" d="M1339.567 -1390.607 L1342.877 -1390.607" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DD6" d="M1333.251 -1397.227 L1349.117 -1397.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DD2" d="M1336.257 -1393.917 L1346.188 -1393.917" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DCE" d="M1339.122 -1401.227 A 2.1 2.1 180 0 0 1343.322 -1401.227 M1339.122 -1401.227 A 2.1 2.1 180 0 1 1343.322 -1401.227" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9DCD" d="M1401.321 -856.087 A 1.564 1.564 180 0 0 1402.131 -853.066 M1401.321 -856.087 A 1.564 1.564 180 0 1 1402.131 -853.066" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9DCC" d="M1391.236 -893.728 A 1.564 1.564 180 0 0 1392.045 -890.706 M1391.236 -893.728 A 1.564 1.564 180 0 1 1392.045 -890.706" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9DCB" d="M1373.066 -883.237 A 1.564 1.564 180 0 0 1375.278 -881.025 M1373.066 -883.237 A 1.564 1.564 180 0 1 1375.278 -881.025" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9DCA" d="M1362.575 -865.067 A 1.564 1.564 180 0 0 1365.597 -864.257 M1362.575 -865.067 A 1.564 1.564 180 0 1 1365.597 -864.257" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9DC9" d="M1362.575 -844.086 A 1.564 1.564 180 0 0 1365.597 -844.896 M1362.575 -844.086 A 1.564 1.564 180 0 1 1365.597 -844.896" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9DC8" d="M1373.066 -825.916 A 1.564 1.564 180 0 0 1375.278 -828.128 M1373.066 -825.916 A 1.564 1.564 180 0 1 1375.278 -828.128" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9DC7" d="M1391.236 -815.425 A 1.564 1.564 180 0 0 1392.045 -818.447 M1391.236 -815.425 A 1.564 1.564 180 0 1 1392.045 -818.447" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9DBB" d="M796.242 -831.269 L791.465 -826.169 L791.465 -786.01 L786.368 -781.227 L791.465 -776.445 L791.465 -736.286 L796.242 -731.186" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DB4" d="M28.903 -1083.732 L28.903 -1038.613 L93.362 -1038.613 L93.362 -1083.732 L28.903 -1083.732" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9DAE" d="M397.862 -787.947 L401.222 -784.587 L401.222 -777.867 L397.862 -774.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9DA8" d="M391.142 -787.947 L394.502 -784.587 L394.502 -777.867 L391.142 -774.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9DA2" d="M617.862 -787.947 L621.222 -784.587 L621.222 -777.867 L617.862 -774.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D9C" d="M611.142 -787.947 L614.502 -784.587 L614.502 -777.867 L611.142 -774.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D98" d="M319.122 -781.227 A 2.1 2.1 180 0 0 323.322 -781.227 M319.122 -781.227 A 2.1 2.1 180 0 1 323.322 -781.227" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9D94" d="M1170.601 -902.883 L1170.601 -899.572" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D90" d="M1177.222 -909.199 L1177.222 -893.332" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D8C" d="M1173.912 -906.193 L1173.912 -896.262" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D88" d="M1181.222 -903.327 A 2.1 2.1 180 0 0 1181.222 -899.127 M1181.222 -903.327 A 2.1 2.1 180 0 1 1181.222 -899.127" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9D84" d="M1250.601 -1202.883 L1250.601 -1199.572" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D80" d="M1257.222 -1209.199 L1257.222 -1193.332" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D7C" d="M1253.912 -1206.193 L1253.912 -1196.262" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D78" d="M1261.222 -1203.327 A 2.1 2.1 180 0 0 1261.222 -1199.127 M1261.222 -1203.327 A 2.1 2.1 180 0 1 1261.222 -1199.127" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9D71" d="M1433.541 -998.723 L1433.541 -1043.842 L1369.082 -1043.842 L1369.082 -998.723 L1433.541 -998.723" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D6A" d="M1099.658 -1156.514 A 1.564 1.564 180 0 0 1102.786 -1156.514 M1099.658 -1156.514 A 1.564 1.564 180 0 1 1102.786 -1156.514" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9D66" d="M1059.122 -801.227 A 2.1 2.1 180 0 0 1063.322 -801.227 M1059.122 -801.227 A 2.1 2.1 180 0 1 1063.322 -801.227" stroke-width="4.2" style="fill:none;stroke:#000000;"/>
+<path id="H9D3A" d="M1154.502 -1457.867 L1157.862 -1461.227 L1164.582 -1461.227 L1167.942 -1457.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D34" d="M1154.502 -1451.147 L1157.862 -1454.507 L1164.582 -1454.507 L1167.942 -1451.147" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D2E" d="M1214.502 -1457.867 L1217.862 -1461.227 L1224.582 -1461.227 L1227.942 -1457.867" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D28" d="M1214.502 -1451.147 L1217.862 -1454.507 L1224.582 -1454.507 L1227.942 -1451.147" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D22" d="M1237.862 -247.947 L1241.222 -244.587 L1241.222 -237.867 L1237.862 -234.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D1C" d="M1231.142 -247.947 L1234.502 -244.587 L1234.502 -237.867 L1231.142 -234.507" stroke-width="1.008" style="fill:none;stroke:#000000;"/>
+<path id="H9D1B" d="M1227.144 -366.042 L1235.482 -361.227 L1227.144 -356.413" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<circle id="H9D1A" cx="1231.313" cy="-361.227" r="16.874" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D19" d="M1229.975 -371.23 L1225.815 -371.197 L1227.866 -374.816" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9D18" d="M1236.051 -371.23 L1231.892 -371.197 L1233.942 -374.816" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9D14" d="M1233.972 -371.214 L1233.972 -367.094" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D10" d="M1227.895 -371.214 L1227.895 -367.094" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D0C" d="M1248.187 -361.227 L1214.439 -361.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9D08" d="M1235.482 -366.042 L1235.482 -356.413" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9CF2" d="M1161.222 -361.227 L1163.38 -365.297 L1167.62 -357.23 L1171.821 -365.255 L1176.03 -357.23 L1178.181 -361.23 L1180.339 -365.3 L1184.578 -357.233 L1188.78 -365.258 L1192.988 -357.233 L1195.139 -361.233" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9CF1" d="M1250.597 -641.227 A 1.564 1.564 180 0 0 1253.725 -641.227 M1250.597 -641.227 A 1.564 1.564 180 0 1 1253.725 -641.227" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9CE0" d="M417.935 -1211.269 L413.158 -1206.169 L413.158 -1166.01 L408.061 -1161.227 L413.158 -1156.445 L413.158 -1116.286 L417.935 -1111.186" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9CD7" d="M491.181 -1038.212 L496.281 -1033.435 L536.44 -1033.435 L541.222 -1028.338 L546.005 -1033.435 L586.164 -1033.435 L591.263 -1038.212" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9CD3" d="M581.167 -1153.547 L581.167 -1109.682" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9CCC" d="M600.928 -1153.547 L561.124 -1153.547 L561.124 -1109.087 L600.928 -1109.087 L600.928 -1153.547" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9C6F" data-wid="SYS10:P:4709" d="M801.222 -741.227 L1061.222 -741.227 L1061.222 -792.027" stroke-width="2.5" style="fill:none;stroke:#FF00FF;"/>
+<path id="H9C13" data-wid="SYS10:P:4710" d="M141.222 -681.227 L861.222 -681.227 L861.222 -241.227" stroke-width="2.5" style="fill:none;stroke:#DDDDDD;" data-dataID="n239e76b6488213e8"/>
+<path id="H9BAC" data-wid="SYS10:P:4711" d="M1241.222 -241.227 L1361.222 -241.227" stroke-width="2.5" style="fill:none;stroke:#806000;" data-dataID="nf146dac78b68b450"/>
+<path id="H9B91" data-wid="SYS10:P:4712" d="M401.222 -1161.227 L321.222 -1161.227 L321.222 -1372.027" stroke-width="2.5" style="fill:none;stroke:#FF0000;"/>
+<path id="H9B6E" data-wid="SYS10:P:4713" d="M581.222 -1101.227 L581.222 -1041.227" stroke-width="2.5" style="fill:none;stroke:#FF0000;" data-dataID="n11b2ad691388a0d9"/>
+<path id="H9B69" data-wid="SYS10:P:4714" d="M421.222 -1201.227 L581.222 -1201.227 L581.222 -1161.227" stroke-width="2.5" style="fill:none;stroke:#FF0000;" data-dataID="n249bf0f9525d4081"/>
+<path id="H9B63" data-wid="SYS10:P:4715" d="M421.222 -1121.227 L501.222 -1121.227 L501.222 -1041.227" stroke-width="2.5" style="fill:none;stroke:#FF0000;"/>
+<path id="H9B1D" data-wid="SYS10:P:4716" d="M541.222 -1021.227 L541.222 -621.227 L1121.222 -621.227" stroke-width="2.5" style="fill:none;stroke:#FF0000;" data-dataID="n47c7c32cdafd2d06"/>
+<path id="H9AF2" d="M1252.161 -641.227 L1141.222 -641.227 L1141.222 -361.227 L1161.222 -361.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9AE6" d="M1248.187 -361.227 L1284.341 -361.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9AE2" d="M1195.139 -361.233 L1214.439 -361.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9A9A" d="M1381.887 -355.614 L1367.005 -355.614" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9A94" d="M1284.341 -383.874 L1284.341 -333.888 L1367.005 -333.888 L1367.005 -383.874 L1284.341 -383.874" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9A90" d="M1258.923 -401.227 L1128.543 -401.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9A8C" d="M1381.887 -401.227 L1307.005 -401.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9A86" d="M1258.923 -410.558 L1258.923 -392.815 L1307.005 -392.815 L1307.005 -410.558 L1258.923 -410.558" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9A74" data-wid="SYS10:P:4711" d="M1121.222 -561.227 L921.222 -561.227 L921.222 -241.227 L1234.502 -241.227" stroke-width="2.5" style="fill:none;stroke:#806000;" data-dataID="n576e257a8f683730"/>
+<path id="H9A43" d="M1167.942 -1457.867 L1214.502 -1457.867" stroke-dasharray="12.5,6.25" stroke-width="0.5" style="fill:none;stroke:#000000;"/>
+<path id="H9A35" data-wid="SYS10:P:4717" d="M1221.222 -1454.507 L1221.222 -1301.227 L861.222 -1301.227 L861.222 -921.227 L141.222 -921.227" stroke-width="2.5" style="fill:none;stroke:#DDDDDD;" data-dataID="nf7daf7ac178823b9"/>
+<path id="H9A31" data-wid="SYS10:P:4717" d="M1221.222 -1581.227 L1221.222 -1461.227" stroke-width="2.5" style="fill:none;stroke:#DDDDDD;" data-dataID="nba835b3c565ec461"/>
+<path id="H9A2C" data-wid="SYS10:P:4718" d="M1161.222 -1461.227 L1161.222 -1581.227" stroke-width="2.5" style="fill:none;stroke:#FFFF00;" data-dataID="n486bbf4d96236429"/>
+<path id="H9A25" data-wid="SYS10:P:4718" d="M141.222 -961.227 L841.222 -961.227 L841.222 -1321.227 L1161.222 -1321.227 L1161.222 -1454.507" stroke-width="2.5" style="fill:none;stroke:#FFFF00;" data-dataID="n1f5402ddd6880491"/>
+<path id="H9940" data-wid="SYS10:P:4709" d="M1070.422 -801.227 L1321.222 -801.227" stroke-width="2.5" style="fill:none;stroke:#FF00FF;" data-dataID="n223d666d195ea559"/>
+<path id="H9935" data-wid="SYS10:P:4709" d="M1181.222 -1001.227 L1061.222 -1001.227 L1061.222 -810.427" stroke-width="2.5" style="fill:none;stroke:#FF00FF;"/>
+<path id="H9929" data-wid="SYS10:P:4719" d="M1101.222 -1121.227 L1101.222 -1041.227 L1181.222 -1041.227" stroke-width="2.5" style="fill:none;stroke:#00FFFF;" data-dataID="n4d693890a1fe91de"/>
+<path id="H9922" d="M1101.222 -1126.657 L1101.222 -1156.514" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H990F" d="M1008.903 -1178.218 L1008.903 -1126.657 L1173.362 -1126.657 L1173.362 -1178.218 L1008.903 -1178.218" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9909" d="M1021.222 -1126.657 L1021.222 -1156.514 L1161.222 -1156.514 L1161.222 -1126.657" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H98EB" data-wid="SYS10:P:4720" d="M1161.222 -1121.227 L1161.222 -1081.227 L1321.222 -1081.227" stroke-width="2.5" style="fill:none;stroke:#00FFFF;" data-dataID="n5912009a489e6ed3"/>
+<path id="H98E6" data-wid="SYS10:P:4721" d="M1201.222 -1021.227 L1361.222 -1021.227" stroke-width="2.5" style="fill:none;stroke:#FF00FF;" data-dataID="n6cfb642b8b630e9b"/>
+<path id="H98DC" d="M1184.132 -991.186 L1188.909 -996.286 L1188.909 -1016.445 L1194.006 -1021.227 L1188.909 -1026.01 L1188.909 -1046.169 L1184.132 -1051.269" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H98CF" data-wid="SYS10:P:4722" d="M1321.222 -1201.227 L1270.422 -1201.227" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="n55c242ef1b89a719"/>
+<path id="H98A4" data-wid="SYS10:P:4723" d="M801.222 -821.227 L1021.222 -821.227 L1021.222 -1121.227" stroke-width="2.5" style="fill:none;stroke:#00FFFF;" data-dataID="n18aaa67f5a5e47c1"/>
+<path id="H987A" data-wid="SYS10:P:4724" d="M1321.222 -901.227 L1190.422 -901.227" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="n2f9309809a24e789"/>
+<path id="H9825" data-wid="SYS10:P:4725" d="M101.222 -1061.227 L321.222 -1061.227 L321.222 -790.427" stroke-width="2.5" style="fill:none;stroke:#29A600;" data-dataID="nfd7c6d10da898871"/>
+<path id="H9821" data-wid="SYS10:P:4725" d="M330.422 -781.227 L394.502 -781.227" stroke-width="2.5" style="fill:none;stroke:#29A600;"/>
+<path id="H981D" data-wid="SYS10:P:4725" d="M141.222 -781.227 L312.022 -781.227" stroke-width="2.5" style="fill:none;stroke:#29A600;" data-dataID="n1da82042652974f6"/>
+<path id="H9817" data-wid="SYS10:P:4725" d="M621.222 -781.227 L781.222 -781.227" stroke-width="2.5" style="fill:none;stroke:#00FFFF;" data-dataID="n209083d3a5fe14be"/>
+<path id="H9813" data-wid="SYS10:P:4725" d="M401.222 -781.227 L614.502 -781.227" stroke-width="2.5" style="fill:none;stroke:#29A600;" data-dataID="nf679e763e444b566"/>
+<path id="H97C9" d="M1391.64 -816.936 L1391.64 -801.727 L1328.866 -801.727" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H97BB" d="M1392.412 -828.563 L1396.982 -827.344 L1392.552 -819.91" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H97B6" d="M1401.726 -854.576 L1393.684 -824.561" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H97B0" d="M1401.726 -854.576 L1423.229 -854.576 L1423.229 -901.727 L1329.59 -901.727" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H97AA" d="M1328.866 -786.69 L1328.866 -921.727 L1433.981 -921.727 L1433.981 -786.69 L1328.866 -786.69" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9798" data-wid="SYS10:P:4726" d="M1281.222 -1581.227 L1281.222 -1261.227 L241.222 -1261.227 L241.222 -1461.227" stroke-width="2.5" style="fill:none;stroke:#0000FF;" data-dataID="nbe5fc4c62fe482c7"/>
+<path id="H9780" data-wid="SYS10:P:4727" d="M1341.222 -1581.227 L1341.222 -1410.427" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="n4d0828566e49228f"/>
+<path id="H9758" d="M1209.137 -1701.415 L1209.137 -1660.126 L1291.642 -1660.126 L1291.642 -1701.415 L1209.137 -1701.415" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9753" d="M1233.61 -1681.222 L1221.222 -1681.222 L1221.222 -1652.623" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H974E" d="M1281.218 -1652.623 L1281.235 -1681.227 L1266.198 -1681.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H974A" d="M1341.222 -1588.592 L1341.222 -1625.439" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9746" d="M1161.222 -1588.592 L1161.222 -1625.439" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9742" d="M1221.222 -1588.592 L1221.222 -1625.439" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H973C" d="M1151.848 -1625.439 L1151.848 -1652.623 L1360.123 -1652.623 L1360.123 -1625.439 L1151.848 -1625.439" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9734" d="M1281.222 -1588.592 L1281.222 -1625.439" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9728" d="M1140.509 -1587.564 L1140.509 -1714.748 L1380.123 -1714.748 L1380.123 -1587.564 L1140.509 -1587.564" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9710" d="M1391.64 -1096.936 L1391.64 -1081.727 L1328.866 -1081.727" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9702" d="M1392.412 -1108.563 L1396.982 -1107.344 L1392.552 -1099.91" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H96FD" d="M1401.726 -1134.576 L1393.684 -1104.561" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H96F7" d="M1401.726 -1134.576 L1423.229 -1134.576 L1423.229 -1201.727 L1329.59 -1201.727" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H96F1" d="M1328.866 -1061.727 L1328.866 -1221.727 L1433.981 -1221.727 L1433.981 -1061.727 L1328.866 -1061.727" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9687" data-wid="SYS10:P:4728" d="M881.222 -1541.227 L881.222 -841.227 L141.222 -841.227" stroke-width="2.5" style="fill:none;stroke:#FF00FF;" data-dataID="n7c00b53f0baaaa72"/>
+<path id="H9672" data-wid="SYS10:P:4729" d="M241.222 -881.227 L781.222 -881.227 L781.222 -1721.227 L461.222 -1721.227 L461.222 -1641.227" stroke-width="2.5" style="fill:none;stroke:#806000;" data-dataID="n3e9194f4a7f4a3a"/>
+<path id="H966E" data-wid="SYS10:P:4729" d="M141.222 -881.227 L234.502 -881.227" stroke-width="2.5" style="fill:none;stroke:#806000;" data-dataID="nd6d27cd08ac5eae2"/>
+<path id="H962B" data-wid="SYS10:P:4730" d="M141.222 -461.227 L241.222 -461.227 L241.222 -361.227 L150.422 -361.227" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="ne5bac060caaa8aaa"/>
+<path id="H9616" data-wid="SYS10:P:4731" d="M141.222 -561.227 L261.222 -561.227" stroke-width="2.5" style="fill:none;stroke:#FF809F;" data-dataID="nab6323f00d7f2b12"/>
+<path id="H9610" data-wid="SYS10:P:4732" d="M141.222 -581.227 L261.222 -581.227" stroke-width="2.5" style="fill:none;stroke:#0000FF;" data-dataID="n7e4b87004dc5cbda"/>
+<path id="H95FB" data-wid="SYS10:P:4733" d="M141.222 -721.227 L901.222 -721.227 L901.222 -241.227" stroke-width="2.5" style="fill:none;stroke:#29A600;" data-dataID="nd34ea918daa6b82"/>
+<path id="H95ED" data-wid="SYS10:P:4734" d="M141.222 -641.227 L781.222 -641.227 L781.222 -241.227" stroke-width="2.5" style="fill:none;stroke:#FFFF00;" data-dataID="nd01d4e21cc7f0c4a"/>
+<path id="H95E8" data-wid="SYS10:P:4735" d="M141.222 -601.227 L481.222 -601.227 L481.222 -241.227" stroke-width="2.5" style="fill:none;stroke:#806000;" data-dataID="ne7c591b10cc5ac32"/>
+<path id="H95E3" data-wid="SYS10:P:4736" d="M141.222 -541.227 L321.222 -541.227 L321.222 -241.227" stroke-width="2.5" style="fill:none;stroke:#BBBBBB;" data-dataID="naaaef5c14caa4cfa"/>
+<path id="H95DE" data-wid="SYS10:P:4737" d="M141.222 -501.227 L281.222 -501.227 L281.222 -241.227" stroke-width="2.5" style="fill:none;stroke:#0000FF;" data-dataID="n799759528f70eca2"/>
+<path id="H95CD" data-wid="SYS10:P:4738" d="M1361.222 -181.227 L1230.422 -181.227" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="nf7fbce2cfc58d6a"/>
+<path id="H958A" d="M132.1 -437.048 L132.1 -983.357 L14.641 -983.357 L14.641 -437.048 L132.1 -437.048" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H952D" d="M1252.161 -608.568 L1252.161 -681.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H94B2" d="M381.242 -1565.142 L381.242 -1632.982 L241.222 -1632.982" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H946B" d="M684.284 -1632.813 L426.742 -1632.813 L426.742 -1509.419 L684.284 -1509.419 L684.284 -1632.813" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H945F" d="M321.222 -1558.338 L321.222 -1632.982" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H945B" d="M321.222 -1467.887 L321.222 -1531.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9448" data-wid="SYS10:P:4712" d="M321.222 -1461.227 L321.222 -1390.427" stroke-dasharray="12.5,6.25" stroke-width="2.5" style="fill:none;stroke:#FF0000;" data-dataID="na0a909676130a688"/>
+<path id="H9415" d="M941.217 -1650.024 L941.142 -1739.64" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9363" data-wid="SYS10:P:4739" d="M941.222 -1392.027 L941.222 -681.227 L1121.222 -681.227" stroke-width="2.5" style="fill:none;stroke:#806000;" data-dataID="nc315db8ae8509331"/>
+<path id="H935F" data-wid="SYS10:P:4739" d="M941.222 -1541.227 L941.222 -1410.427" stroke-dasharray="12.5,6.25" stroke-width="2.5" style="fill:none;stroke:#806000;" data-dataID="n96fe3f1a282533f9"/>
+<path id="H9338" data-wid="SYS10:P:4740" d="M1121.222 -401.227 L1030.422 -401.227" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="n9f0c7718608527a8"/>
+<path id="H9323" d="M1031.096 -511.269 L1026.319 -506.169 L1026.319 -475.605 L1021.222 -470.823 L1026.319 -466.04 L1026.319 -436.286 L1031.096 -431.186" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H930D" data-wid="SYS10:P:4741" d="M1121.222 -441.227 L1041.222 -441.227" stroke-width="2.5" style="fill:none;stroke:#0000FF;" data-dataID="nc41355ddf32bc026"/>
+<path id="H9307" data-wid="SYS10:P:4742" d="M1121.222 -501.227 L1041.222 -501.227" stroke-width="2.5" style="fill:none;stroke:#FF809F;" data-dataID="n8bfbb96d33f060ee"/>
+<path id="H92FF" d="M1211.449 -621.227 L1211.449 -681.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H92F3" d="M1381.887 -681.227 L1127.641 -681.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H92E8" d="M1172.698 -621.227 L1127.641 -621.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H92E4" d="M1272.049 -621.227 L1206.614 -621.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H92CE" d="M1380.88 -619.189 L1364.959 -619.189" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H92B0" d="M1272.049 -641.552 L1272.049 -596.973 L1365.299 -596.973 L1365.299 -641.552 L1272.049 -641.552" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H92AC" d="M1252.166 -561.227 L1252.166 -574.651" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H92A8" d="M1381.22 -561.227 L1127.641 -561.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9296" d="M1382.387 -444.893 L1373.55 -444.893" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9292" d="M1382.387 -504.893 L1373.55 -504.893" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H928B" d="M1207.124 -455.02 L1207.124 -441.593" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9286" d="M1207.118 -488.937 L1207.118 -501.596" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H927B" d="M1373.55 -518.039 L1373.55 -432.671 L1230.073 -432.671 L1230.073 -518.039 L1373.55 -518.039" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9273" d="M1426.202 -693.317 L1381.887 -693.317 L1381.887 -325.865 L1426.202 -325.865 L1426.202 -693.317" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9264" d="M1435.723 -294.039 L1435.723 -704.429 L1127.641 -704.429 L1127.641 -294.039 L1435.723 -294.039" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9260" d="M1230.116 -501.227 L1128.587 -501.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H925C" d="M1230.073 -441.227 L1128.543 -441.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9246" d="M941.222 -1551.775 L941.222 -1619.785" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9242" d="M881.222 -1551.775 L881.222 -1619.785" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9230" d="M881.222 -1646.348 L881.222 -1739.375" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H91E8" d="M381.222 -1467.887 L381.222 -1531.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H91CC" data-wid="SYS10:P:4743" d="M381.222 -1461.227 L381.222 -1381.227 L541.222 -1381.227 L541.222 -1501.227" stroke-width="2.5" style="fill:none;stroke:#FF00FF;" data-dataID="n6b2ed5f1792b05d6"/>
+<path id="H91BE" data-wid="SYS10:P:4744" d="M561.222 -1641.227 L561.222 -1701.227 L741.222 -1701.227 L741.222 -1241.227 L81.222 -1241.227" stroke-width="2.5" style="fill:none;stroke:#BBBBBB;" data-dataID="n3e173902b9f1a59e"/>
+<path id="H91AB" data-wid="SYS10:P:4745" d="M81.222 -1181.227 L172.022 -1181.227" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="ncdff9c92f8464646"/>
+<path id="H9184" d="M12.199 -1169.143 L75.199 -1169.143 L75.199 -1251.648 L12.199 -1251.648 L12.199 -1169.143" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H917E" d="M41.227 -1194.619 L41.227 -1181.227 L75.199 -1181.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9179" d="M75.199 -1241.227 L41.222 -1241.24 L41.222 -1227.364" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9137" d="M575.044 -1567.436 L561.217 -1591.248" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9136" d="M572.996 -1566.253 L577.092 -1568.618 L579.206 -1560.226" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H9135" d="M559.653 -1591.248 A 1.564 1.564 180 0 0 562.781 -1591.248 M559.653 -1591.248 A 1.564 1.564 180 0 1 562.781 -1591.248" stroke-width="3.128" style="fill:none;stroke:#000000;"/>
+<path id="H9125" d="M461.222 -1557.331 L461.222 -1524.82 L541.799 -1524.82" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9111" d="M581.746 -1557.523 L581.746 -1509.419" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H90EF" d="M664.97 -141.743 L681.222 -141.743 L681.222 -51.227 L861.222 -51.227 L861.222 -233.103 L861.222 -233.103 L861.222 -233.103" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9082" d="M800.726 -117.492 L800.726 -95.648 L730.395 -95.648 L730.395 -191.227 L631.222 -191.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H9079" d="M481.222 -191.227 L379.868 -191.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8F51" d="M781.222 -151.013 L781.222 -233.106" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8F29" d="M614.906 -138.928 L618.943 -136.462 L612.584 -130.591" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H8F25" d="M631.222 -161.227 L614.99 -134.73" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8F1E" d="M465.597 -138.439 L469.707 -136.098 L463.531 -130.035" stroke-width="1" style="fill:#000000;stroke:#000000;"/>
+<path id="H8F1A" d="M481.222 -161.227 L465.809 -134.245" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8F11" d="M901.222 -233.547 L901.222 -233.547 L901.222 -233.547 L901.222 -41.227 L581.222 -41.227 L581.222 -141.743 L597.475 -141.743" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8F07" d="M481.222 -121.227 L481.222 -51.227 L281.222 -51.227 L281.222 -231.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8F02" d="M631.222 -191.227 L481.222 -191.227 L481.222 -191.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8EFE" d="M481.222 -161.227 L481.222 -233.547" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8EFA" d="M631.222 -161.227 L631.222 -191.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8EF6" d="M500.706 -127.48 L481.222 -122.259" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8EF2" d="M664.97 -141.743 L650.706 -127.48" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8EDC" d="M413.709 -171.227 L711.222 -171.227 L711.222 -81.227 L413.709 -81.227 L413.709 -171.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8ED2" d="M345.896 -191.222 L321.222 -191.222 L321.222 -233.547" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8EA8" d="M920.928 -233.547 L261.124 -233.547 L261.124 -29.087 L920.928 -29.087 L920.928 -233.547" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8E8A" d="M836.887 -1739.64 L1020.441 -1739.64 L1020.441 -1551.775 L836.887 -1551.775 L836.887 -1739.64" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8E3C" d="M241.222 -1467.887 L241.222 -1531.227" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8E35" d="M241.222 -1558.338 L241.222 -1740.382" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8E1D" data-wid="SYS10:P:4746" d="M581.222 -1501.227 L581.222 -1370.427" stroke-width="2.5" style="fill:none;stroke:#545454;" data-dataID="n38c1fa0949e758d7"/>
+<path id="H8CDC" d="M810.561 -1740.382 L170.885 -1740.382 L170.885 -1467.887 L810.561 -1467.887 L810.561 -1740.382" stroke-dasharray="12.5,6.25" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CD2" d="M461.217 -1574.415 L570.719 -1574.415" stroke-dasharray="12.5,6.25" stroke-width="0.5" style="fill:none;stroke:#000000;"/>
+<path id="H8CCA" d="M461.227 -1632.813 L461.217 -1591.248" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CC1" d="M593.151 -1612.06 L438.607 -1612.06 L438.607 -1547.601 L593.151 -1547.601 L593.151 -1612.06" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CBD" d="M541.746 -1557.523 L541.746 -1509.419" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CB8" d="M461.217 -1557.583 A 4.208 4.208 180 0 0 461.217 -1565.999" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CB4" d="M461.217 -1565.999 A 4.208 4.208 180 0 0 461.217 -1574.415" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CB0" d="M461.217 -1574.415 A 4.208 4.208 180 0 0 461.217 -1582.832" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CAC" d="M461.217 -1582.832 A 4.208 4.208 180 0 0 461.217 -1591.248" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8CA6" d="M561.217 -1589.684 L561.217 -1632.813" stroke-width="1" style="fill:none;stroke:#000000;"/>
+<path id="H8B65" d="M1.222 -1.227 L1451.222 -1.227 L1451.222 -1801.227 L1.222 -1801.227 L1.222 -1.227" stroke-width="2.4" style="fill:none;stroke:#000000;"/>
+<g id="TEXT_A22B">
+<text x="10.222" y="-9.563" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+507995
+</tspan>
+</text>
+</g>
+<g id="TEXT_9EE3">
+<text x="34.252" y="-1204.824" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:12pt;fill:#000000;">
+<tspan>
+M
+</tspan>
+</text>
+</g>
+<g id="TEXT_9DF5">
+<text x="1242.919" y="-1674.961" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:12pt;fill:#000000;">
+<tspan>
+M
+</tspan>
+</text>
+</g>
+<g id="TEXT_9AA0">
+<text x="1297.583" y="-338.162" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+CIRCUIT
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A9F">
+<text x="1296.975" y="-353.162" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+DRIVING
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A9E">
+<text x="1293.196" y="-368.162" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WARNING
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A0E">
+<text x="1252.107" y="-1634.23" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+CPU
+</tspan>
+</text>
+</g>
+<g id="TEXT_97C8">
+<text x="1378.425" y="-888.028" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+L
+</tspan>
+</text>
+</g>
+<g id="TEXT_97C7">
+<text x="1359.113" y="-882.467" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+S
+</tspan>
+</text>
+</g>
+<g id="TEXT_97C6">
+<text x="1351.85" y="-866.496" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D
+</tspan>
+</text>
+</g>
+<g id="TEXT_97C5">
+<text x="1350.274" y="-845.752" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+N
+</tspan>
+</text>
+</g>
+<g id="TEXT_97C4">
+<text x="1360.069" y="-817.417" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+R
+</tspan>
+</text>
+</g>
+<g id="TEXT_97C3">
+<text x="1379.936" y="-805.584" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+P
+</tspan>
+</text>
+</g>
+<g id="TEXT_970F">
+<text x="1378.425" y="-1168.028" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+L
+</tspan>
+</text>
+</g>
+<g id="TEXT_970E">
+<text x="1359.113" y="-1162.467" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+S
+</tspan>
+</text>
+</g>
+<g id="TEXT_970D">
+<text x="1351.85" y="-1146.496" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D
+</tspan>
+</text>
+</g>
+<g id="TEXT_970C">
+<text x="1350.274" y="-1125.752" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+N
+</tspan>
+</text>
+</g>
+<g id="TEXT_970B">
+<text x="1360.069" y="-1097.417" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+R
+</tspan>
+</text>
+</g>
+<g id="TEXT_970A">
+<text x="1379.936" y="-1085.584" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+P
+</tspan>
+</text>
+</g>
+<g id="TEXT_9694">
+<text x="608.557" y="-90.345" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+OR INT
+</tspan>
+</text>
+</g>
+<g id="TEXT_9693">
+<text x="483.266" y="-89.071" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+OR INT
+</tspan>
+</text>
+</g>
+<g id="TEXT_9550" transform="rotate(-90, 1402.503,-464.792)">
+<text x="1402.503" y="-464.792" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+32 BIT MICROPROCESSOR
+</tspan>
+</text>
+</g>
+<g id="TEXT_9455">
+<text x="328.549" y="-1524.255" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+10A
+</tspan>
+</text>
+</g>
+<g id="TEXT_92BF">
+<text x="1242.22" y="-438.151" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+B- CAN L
+</tspan>
+</text>
+</g>
+<g id="TEXT_92BE">
+<text x="1242.22" y="-495.348" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+B- CAN H
+</tspan>
+</text>
+</g>
+<g id="TEXT_92BD">
+<text x="1365.937" y="-461.848" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+TRANSCEIVER
+</tspan>
+</text>
+</g>
+<g id="TEXT_92BC">
+<text x="1366.809" y="-476.848" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+B-CAN
+</tspan>
+</text>
+</g>
+<g id="TEXT_92B7">
+<text x="1279.468" y="-603.521" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+CONVERTER
+</tspan>
+</text>
+</g>
+<g id="TEXT_92B6">
+<text x="1298.68" y="-618.521" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+DC-DC
+</tspan>
+</text>
+</g>
+<g id="TEXT_9281" transform="rotate(-90, 1417.503,-469.718)">
+<text x="1417.503" y="-469.718" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(CAN CONTROLLER 2CH)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9256">
+<text x="947.147" y="-1611.719" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+10A
+</tspan>
+</text>
+</g>
+<g id="TEXT_9237">
+<text x="889.236" y="-1611.719" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+5A
+</tspan>
+</text>
+</g>
+<g id="TEXT_922B">
+<text x="856.009" y="-1742.771" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+HOT IN ON OR START
+</tspan>
+</text>
+</g>
+<g id="TEXT_91E6">
+<text x="248.549" y="-1524.255" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+30A
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EF1">
+<text x="669.54" y="-148.988" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+HIGH
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EF0">
+<text x="649.506" y="-111.694" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LOW
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EEF">
+<text x="612.848" y="-105.345" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+AUTO
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EEE">
+<text x="583.285" y="-114.697" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+OFF
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EED">
+<text x="561.621" y="-145.587" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+MIST
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EEC">
+<text x="520.291" y="-142.473" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+HIGH
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EEB">
+<text x="504.766" y="-122.955" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LOW
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EEA">
+<text x="483.248" y="-104.071" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+AUTO
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EE9">
+<text x="443.027" y="-107.19" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+OFF
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EE8">
+<text x="420.636" y="-124.568" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+MIST
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EB6">
+<text x="737.113" y="-121.09" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+OFF
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EB5">
+<text x="795.811" y="-124.202" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WASH
+</tspan>
+</text>
+</g>
+<g id="TEXT_8E3B">
+<text x="217.985" y="-1758.287" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+HOT AT
+</tspan>
+</text>
+</g>
+<g id="TEXT_8E3A">
+<text x="209.59" y="-1743.287" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+ALL TIMES
+</tspan>
+</text>
+</g>
+<g id="TEXT_8E33">
+<text x="388.549" y="-1524.255" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+15A
+</tspan>
+</text>
+</g>
+</g>
+<g id="layer_COMPNAME" style="color:#FF0000;">
+<g id="TEXT_8E2B" data-dataID="n6a7cae3fdb81dd19">
+<text x="164.627" y="-1731.088" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+UNDER-HOOD
+</tspan>
+<tspan x="164.627" y="-1716.088" text-anchor="end">
+FUSE/RELAY
+</tspan>
+<tspan x="164.627" y="-1701.088" text-anchor="end">
+BOX
+</tspan>
+</text>
+</g>
+<g id="TEXT_936C" data-dataID="nf3b05f26f2b6621c">
+<text x="1023.499" y="-1728.016" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+UNDER-DASH
+</tspan>
+<tspan x="1023.499" y="-1713.016" text-anchor="start">
+FUSE/RELAY
+</tspan>
+<tspan x="1023.499" y="-1698.016" text-anchor="start">
+BOX
+</tspan>
+</text>
+</g>
+<g id="TEXT_9235">
+<text x="889.236" y="-1641.526" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+FUSE
+</tspan>
+<tspan x="889.236" y="-1626.955" text-anchor="start">
+11
+</tspan>
+</text>
+</g>
+<g id="TEXT_9254">
+<text x="947.147" y="-1641.526" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+FUSE
+</tspan>
+<tspan x="947.147" y="-1626.955" text-anchor="start">
+7
+</tspan>
+</text>
+</g>
+<g id="TEXT_947A" data-dataID="nf6f8aaba3fbcb09d">
+<text x="686.433" y="-1621.975" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RELAY
+</tspan>
+<tspan x="686.433" y="-1606.975" text-anchor="start">
+CIRCUIT
+</tspan>
+<tspan x="686.433" y="-1591.975" text-anchor="start">
+BOARD
+</tspan>
+</text>
+</g>
+<g id="TEXT_8E31">
+<text x="388.549" y="-1554.92" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+FUSE
+</tspan>
+<tspan x="388.549" y="-1539.92" text-anchor="start">
+6
+</tspan>
+</text>
+</g>
+<g id="TEXT_9453">
+<text x="328.549" y="-1554.92" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+FUSE
+</tspan>
+<tspan x="328.549" y="-1539.92" text-anchor="start">
+18
+</tspan>
+</text>
+</g>
+<g id="TEXT_91E4">
+<text x="248.549" y="-1554.92" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+FUSE
+</tspan>
+<tspan x="248.549" y="-1539.92" text-anchor="start">
+2-5
+</tspan>
+</text>
+</g>
+<g id="TEXT_9950" data-dataID="naf8c43b5e382e459">
+<text x="1432.742" y="-1241.57" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+TRANSMISSION
+</tspan>
+<tspan x="1432.742" y="-1226.57" text-anchor="end">
+RANGE SWITCH
+</tspan>
+</text>
+</g>
+<g id="TEXT_9959">
+<text x="1175.729" y="-1165.72" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+J/C
+</tspan>
+<tspan x="1175.729" y="-1150.72" text-anchor="start">
+C001
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B7E">
+<text x="603.991" y="-1143.663" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+DRIVER'S
+</tspan>
+<tspan x="603.991" y="-1128.663" text-anchor="start">
+JUNCTION
+</tspan>
+<tspan x="603.991" y="-1113.663" text-anchor="start">
+CONNECTOR
+</tspan>
+</text>
+</g>
+<g id="TEXT_9830" data-dataID="na2d4afc92cf732d6">
+<text x="28.002" y="-1024.403" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+SHIFT
+</tspan>
+<tspan x="28.002" y="-1009.403" text-anchor="start">
+POSITION INDICATOR
+</tspan>
+</text>
+</g>
+<g id="TEXT_9945" data-dataID="n90e9c58cf7fdbf07">
+<text x="1433.421" y="-985.547" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+TRANSMISSION
+</tspan>
+<tspan x="1433.421" y="-970.547" text-anchor="end">
+CONTROL MODULE
+</tspan>
+</text>
+</g>
+<g id="TEXT_9949" data-dataID="nc63efc4fbee24c74">
+<text x="1433.365" y="-773.799" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+TRANSMISSION
+</tspan>
+<tspan x="1433.365" y="-758.799" text-anchor="end">
+RANGE SWITCH
+</tspan>
+</text>
+</g>
+<g id="TEXT_964F" data-dataID="n3453120109e8d8a5">
+<text x="14.853" y="-423.666" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BODY
+</tspan>
+<tspan x="14.853" y="-408.666" text-anchor="start">
+CONTROL
+</tspan>
+<tspan x="14.853" y="-393.666" text-anchor="start">
+MODULE
+</tspan>
+</text>
+</g>
+<g id="TEXT_929E" data-dataID="nbd86c368209d5da8">
+<text x="1437.649" y="-279.005" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GAUGE CONTROL MODULE
+</tspan>
+</text>
+</g></g>
+<g id="layer_CONN" style="color:#00FF00;">
+<g id="TEXT_9B84">
+<text x="573.195" y="-1160.949" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D2
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B83">
+<text x="576.329" y="-1087.346" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+E1
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A80" data-dataID="n31a9b5a48abd1b95">
+<text x="1243.782" y="-228.425" text-anchor="start" text-decoration="underline" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C112
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A7F">
+<text x="1244.41" y="-246.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+5
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A40" data-dataID="n6c0c24658c039cb5">
+<text x="1228.144" y="-1467.479" text-anchor="start" text-decoration="underline" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C110
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A3D">
+<text x="1155.71" y="-1467.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+21
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A3C">
+<text x="1217.087" y="-1467.102" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+22
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A0A">
+<text x="144.41" y="-966.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C13
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A07">
+<text x="144.41" y="-926.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C10
+</tspan>
+</text>
+</g>
+<g id="TEXT_997C">
+<text x="1357.489" y="-1026.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+48
+</tspan>
+</text>
+</g>
+<g id="TEXT_9916">
+<text x="1094.628" y="-1107.346" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+4
+</tspan>
+</text>
+</g>
+<g id="TEXT_98C7">
+<text x="1154.524" y="-1107.346" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+5
+</tspan>
+</text>
+</g>
+<g id="TEXT_98C5">
+<text x="1014.598" y="-1107.346" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+6
+</tspan>
+</text>
+</g>
+<g id="TEXT_983C" data-dataID="n7a43567ca4995e4">
+<text x="623.782" y="-768.425" text-anchor="start" text-decoration="underline" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C207
+</tspan>
+</text>
+</g>
+<g id="TEXT_983B">
+<text x="624.41" y="-786.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+14
+</tspan>
+</text>
+</g>
+<g id="TEXT_9836" data-dataID="n7206a318cd1e1684">
+<text x="403.782" y="-768.425" text-anchor="start" text-decoration="underline" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C112
+</tspan>
+</text>
+</g>
+<g id="TEXT_9835">
+<text x="404.41" y="-786.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+4
+</tspan>
+</text>
+</g>
+<g id="TEXT_982C">
+<text x="104.41" y="-1066.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_97D7">
+<text x="144.41" y="-786.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C1
+</tspan>
+</text>
+</g>
+<g id="TEXT_97D2">
+<text x="1316.242" y="-806.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+4
+</tspan>
+</text>
+</g>
+<g id="TEXT_97CF">
+<text x="1316.138" y="-906.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+5
+</tspan>
+</text>
+</g>
+<g id="TEXT_97A6">
+<text x="1154.009" y="-1567.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+4
+</tspan>
+</text>
+</g>
+<g id="TEXT_97A5">
+<text x="1213.972" y="-1567.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+3
+</tspan>
+</text>
+</g>
+<g id="TEXT_97A4">
+<text x="1274.065" y="-1567.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_97A3">
+<text x="1335.71" y="-1567.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_971F">
+<text x="1320.512" y="-1206.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_971C">
+<text x="1318.707" y="-1086.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+5
+</tspan>
+</text>
+</g>
+<g id="TEXT_9681">
+<text x="144.41" y="-846.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+E1
+</tspan>
+</text>
+</g>
+<g id="TEXT_967A" data-dataID="n960fff542dc5c193">
+<text x="243.782" y="-868.425" text-anchor="start" text-decoration="underline" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C110
+</tspan>
+</text>
+</g>
+<g id="TEXT_9679">
+<text x="244.41" y="-886.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+23
+</tspan>
+</text>
+</g>
+<g id="TEXT_9645">
+<text x="144.391" y="-466.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+A2
+</tspan>
+</text>
+</g>
+<g id="TEXT_960C">
+<text x="144.41" y="-566.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+B20
+</tspan>
+</text>
+</g>
+<g id="TEXT_9609">
+<text x="144.41" y="-586.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+B21
+</tspan>
+</text>
+</g>
+<g id="TEXT_95A9">
+<text x="144.41" y="-506.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D2
+</tspan>
+</text>
+</g>
+<g id="TEXT_95A6">
+<text x="144.41" y="-546.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+E21
+</tspan>
+</text>
+</g>
+<g id="TEXT_95A0">
+<text x="144.41" y="-606.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D9
+</tspan>
+</text>
+</g>
+<g id="TEXT_959D">
+<text x="144.41" y="-646.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D5
+</tspan>
+</text>
+</g>
+<g id="TEXT_959A">
+<text x="144.41" y="-686.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D3
+</tspan>
+</text>
+</g>
+<g id="TEXT_9597">
+<text x="144.41" y="-726.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+D4
+</tspan>
+</text>
+</g>
+<g id="TEXT_9594">
+<text x="144.41" y="-886.388" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+B12
+</tspan>
+</text>
+</g>
+<g id="TEXT_9445">
+<text x="314.573" y="-1447.346" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+68
+</tspan>
+</text>
+</g>
+<g id="TEXT_9413">
+<text x="878.274" y="-1527.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+F12
+</tspan>
+</text>
+</g>
+<g id="TEXT_9372">
+<text x="938.212" y="-1505.856" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G20
+</tspan>
+</text>
+</g>
+<g id="TEXT_92F1">
+<text x="1118.031" y="-686.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+A17
+</tspan>
+</text>
+</g>
+<g id="TEXT_92EE">
+<text x="1119.768" y="-626.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+A1
+</tspan>
+</text>
+</g>
+<g id="TEXT_92A6">
+<text x="1118.123" y="-406.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+A32
+</tspan>
+</text>
+</g>
+<g id="TEXT_9272">
+<text x="1118.068" y="-566.388" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+A24
+</tspan>
+</text>
+</g>
+<g id="TEXT_926F">
+<text x="1120.37" y="-446.475" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+A31
+</tspan>
+</text>
+</g>
+<g id="TEXT_926E">
+<text x="1119.06" y="-506.475" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+A30
+</tspan>
+</text>
+</g>
+<g id="TEXT_9251">
+<text x="938.163" y="-1527.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G18
+</tspan>
+</text>
+</g>
+<g id="TEXT_91E3">
+<text x="234.524" y="-1447.346" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+5
+</tspan>
+</text>
+</g>
+<g id="TEXT_91B6">
+<text x="85.178" y="-1185.994" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_91A3">
+<text x="85.178" y="-1245.994" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_9115">
+<text x="578.212" y="-1487.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C10
+</tspan>
+</text>
+</g>
+<g id="TEXT_8F0D">
+<text x="772.87" y="-240.949" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EDA">
+<text x="313.134" y="-240.949" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+10
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EC0">
+<text x="273.103" y="-240.949" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+7
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EBF">
+<text x="473.085" y="-240.949" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+9
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EBE">
+<text x="893.085" y="-240.949" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+8
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EBC">
+<text x="853.109" y="-240.949" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+6
+</tspan>
+</text>
+</g>
+<g id="TEXT_8E42">
+<text x="376.329" y="-1447.346" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+51
+</tspan>
+</text>
+</g>
+<g id="TEXT_8DEF">
+<text x="1356.996" y="-246.157" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+1
+</tspan>
+</text>
+</g>
+<g id="TEXT_8DEE">
+<text x="1357.685" y="-185.807" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+2
+</tspan>
+</text>
+</g>
+<g id="TEXT_8CDA">
+<text x="555.236" y="-1643.704" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+B5
+</tspan>
+</text>
+</g>
+<g id="TEXT_8CD8">
+<text x="458.274" y="-1647.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C2
+</tspan>
+</text>
+</g>
+<g id="TEXT_8C93">
+<text x="538.114" y="-1487.479" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+C15
+</tspan>
+</text>
+</g>
+</g>
+<g id="layer_WCOLOR" style="color:#00FFFF;">
+<g id="TEXT_9BD3">
+<text x="756.709" y="-800.86" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(OR PPL)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B78">
+<text x="535.808" y="-995.878" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B77">
+<text x="575.808" y="-1055.878" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B76">
+<text x="495.808" y="-1055.878" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B75">
+<text x="373.288" y="-1165.345" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B74">
+<text x="433.288" y="-1125.345" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B73">
+<text x="433.288" y="-1205.345" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B52">
+<text x="572.576" y="-786.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A83">
+<text x="1195.328" y="-245.478" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A50">
+<text x="1217.438" y="-1411.228" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WHT
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A4F">
+<text x="1157.551" y="-1411.228" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+YEL
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A0B">
+<text x="192.576" y="-966.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+YEL
+</tspan>
+</text>
+</g>
+<g id="TEXT_9A08">
+<text x="192.576" y="-926.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WHT
+</tspan>
+</text>
+</g>
+<g id="TEXT_99F0">
+<text x="315.808" y="-1335.878" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_998C">
+<text x="757.267" y="-786.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LT BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_997B">
+<text x="1307.518" y="-1026.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(OR LT BLU)
+</tspan>
+</text>
+</g>
+<g id="TEXT_997A">
+<text x="1335.692" y="-1026.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+<g id="TEXT_9955">
+<text x="1177.881" y="-1006.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+<g id="TEXT_9953">
+<text x="1176.152" y="-1045.808" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LT BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_9915">
+<text x="1096.152" y="-1083.223" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LT BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_98C6">
+<text x="1156.152" y="-1083.223" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LT BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_98C4">
+<text x="1016.152" y="-1083.223" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LT BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_9871">
+<text x="812.576" y="-826.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LT BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_986D">
+<text x="812.576" y="-746.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+<g id="TEXT_983A">
+<text x="432.576" y="-786.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_982D">
+<text x="128.878" y="-1066.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_982B">
+<text x="352.576" y="-786.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_97D8">
+<text x="192.576" y="-786.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_97D3">
+<text x="1297.457" y="-906.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_97D0">
+<text x="1297.881" y="-806.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+<g id="TEXT_97A1">
+<text x="1278.199" y="-1531.228" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_9784">
+<text x="1335.163" y="-1531.228" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_9720">
+<text x="1297.457" y="-1206.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_971D">
+<text x="1298.446" y="-1086.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+LT BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_9682">
+<text x="192.576" y="-846.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+<g id="TEXT_967C">
+<text x="272.576" y="-886.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_964A">
+<text x="172.576" y="-366.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_9646">
+<text x="192.576" y="-466.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_960D">
+<text x="192.576" y="-566.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PNK
+</tspan>
+</text>
+</g>
+<g id="TEXT_960A">
+<text x="192.576" y="-586.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_9608">
+<text x="893.633" y="-275.712" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_9607">
+<text x="852.853" y="-275.712" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WHT
+</tspan>
+</text>
+</g>
+<g id="TEXT_95AA">
+<text x="192.576" y="-506.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_95A7">
+<text x="192.576" y="-546.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRY
+</tspan>
+</text>
+</g>
+<g id="TEXT_95A1">
+<text x="192.576" y="-606.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_959E">
+<text x="192.576" y="-646.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+YEL
+</tspan>
+</text>
+</g>
+<g id="TEXT_959B">
+<text x="192.576" y="-686.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WHT
+</tspan>
+</text>
+</g>
+<g id="TEXT_9598">
+<text x="192.576" y="-726.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_9595">
+<text x="192.576" y="-886.29" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_9476">
+<text x="710.282" y="-1418.695" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRY
+</tspan>
+</text>
+</g>
+<g id="TEXT_9442">
+<text x="290.71" y="-1418.695" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_9412">
+<text x="875.587" y="-1468.026" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+<g id="TEXT_9369">
+<text x="936.17" y="-1348.026" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_9332">
+<text x="1078.464" y="-566.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_9331">
+<text x="1078.446" y="-446.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_9330">
+<text x="1078.464" y="-686.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_932F">
+<text x="1078.102" y="-626.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+RED
+</tspan>
+</text>
+</g>
+<g id="TEXT_932E">
+<text x="1077.457" y="-406.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_9252">
+<text x="936.17" y="-1468.026" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_91E0">
+<text x="211.567" y="-1418.695" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_919E">
+<text x="113.288" y="-1245.345" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRY
+</tspan>
+</text>
+</g>
+<g id="TEXT_919D">
+<text x="113.288" y="-1185.877" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_8F65">
+<text x="472.443" y="-275.712" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_8F48">
+<text x="1217.438" y="-1531.228" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WHT
+</tspan>
+</text>
+</g>
+<g id="TEXT_8F44">
+<text x="1157.551" y="-1531.228" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+YEL
+</tspan>
+</text>
+</g>
+<g id="TEXT_8F0E">
+<text x="773.05" y="-275.712" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+YEL
+</tspan>
+</text>
+</g>
+<g id="TEXT_8ED9">
+<text x="313.325" y="-275.712" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRY
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EC2">
+<text x="274.167" y="-275.712" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLU
+</tspan>
+</text>
+</g>
+<g id="TEXT_8E39">
+<text x="351.139" y="-1418.695" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+<g id="TEXT_8DEB">
+<text x="1295.328" y="-245.478" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_8DEA">
+<text x="1294.902" y="-186.288" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_8DE7">
+<text x="1077.457" y="-506.29" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PNK
+</tspan>
+</text>
+</g>
+<g id="TEXT_8D59">
+<text x="750.282" y="-1418.695" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_8CDB">
+<text x="551.567" y="-1418.695" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BLK
+</tspan>
+</text>
+</g>
+<g id="TEXT_8CD9">
+<text x="555.237" y="-1673.086" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+GRY
+</tspan>
+</text>
+</g>
+<g id="TEXT_8CD7">
+<text x="456.17" y="-1673.086" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+BRN
+</tspan>
+</text>
+</g>
+<g id="TEXT_8C94">
+<text x="511.139" y="-1418.695" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+PPL
+</tspan>
+</text>
+</g>
+</g>
+<g id="layer_GROUND" style="color:#FFFF00;">
+<g id="TEXT_977D" data-dataID="nf1e738182dbef282">
+<text x="1333.938" y="-1375.367" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G301
+</tspan>
+</text>
+</g>
+<g id="TEXT_8D2C" data-dataID="n8d1dd3b7a4e3873d">
+<text x="580.907" y="-1335.367" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G301
+</tspan>
+</text>
+</g>
+<g id="TEXT_98D4" data-dataID="n59138fc51f281c54">
+<text x="1246.674" y="-1195.747" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G201
+</tspan>
+</text>
+</g>
+<g id="TEXT_91B1" data-dataID="n750a2b54965eb0cf">
+<text x="196.619" y="-1176.101" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G305
+</tspan>
+</text>
+</g>
+<g id="TEXT_9881" data-dataID="n100c6e20e834566">
+<text x="1133.001" y="-894.733" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G201
+</tspan>
+</text>
+</g>
+<g id="TEXT_933E" data-dataID="ndd37627189c9d981">
+<text x="1006.285" y="-397.698" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G501
+</tspan>
+</text>
+</g>
+<g id="TEXT_8FA7" data-dataID="ne92d1d8f007e6e38">
+<text x="127.305" y="-356.226" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G501
+</tspan>
+</text>
+</g>
+<g id="TEXT_95D5" data-dataID="n8523b91ef8a30353">
+<text x="1203.907" y="-174.651" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+G305
+</tspan>
+</text>
+</g></g>
+<g id="layer_BESTVIEW" style="color:#FFFF00;">
+<g id="TEXT_8F3B" data-dataID="n7fae06f45384e7ee">
+<text x="1260.316" y="-1734.535" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WINDSHIELD
+</tspan>
+<tspan x="1260.316" y="-1719.535" text-anchor="middle">
+WIPER MOTOR
+</tspan>
+</text>
+</g>
+<g id="TEXT_8C95" data-dataID="nadc33cb71a8974df">
+<text x="596.386" y="-1602.071" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WINDSHIELD
+</tspan>
+<tspan x="596.386" y="-1587.071" text-anchor="start">
+WASHER
+</tspan>
+<tspan x="596.386" y="-1572.071" text-anchor="start">
+MOTOR
+</tspan>
+<tspan x="596.386" y="-1557.071" text-anchor="start">
+RELAY
+</tspan>
+</text>
+</g>
+<g id="TEXT_9191" data-dataID="n4f5568c2047ff198">
+<text x="13.121" y="-1153.953" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WINDSHIELD
+</tspan>
+<tspan x="13.121" y="-1138.953" text-anchor="start">
+WASHER
+</tspan>
+<tspan x="13.121" y="-1123.953" text-anchor="start">
+MOTOR
+</tspan>
+</text>
+</g>
+<g id="TEXT_9AFA">
+<text x="1225.204" y="-330.936" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WASHER FLUID
+</tspan>
+<tspan x="1225.204" y="-315.936" text-anchor="middle">
+LEVEL IND
+</tspan>
+</text>
+</g>
+<g id="TEXT_8ECE">
+<text x="366.001" y="-167.179" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+INTERMITTENT
+</tspan>
+<tspan x="366.001" y="-152.608" text-anchor="middle">
+DWELL TIME
+</tspan>
+<tspan x="366.001" y="-138.037" text-anchor="middle">
+CONTROLLER
+</tspan>
+</text>
+</g>
+<g id="TEXT_8D8B" data-dataID="ne5bc4e8ba124382f">
+<text x="1432.645" y="-154.747" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WASHER FLUID
+</tspan>
+<tspan x="1432.645" y="-139.747" text-anchor="end">
+LEVEL SWITCH
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EE7" data-dataID="ncbd1654d682ac51c">
+<text x="793.715" y="-75.456" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WASHER SWITCH
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EE4" data-dataID="ne7c700dce35f59b7">
+<text x="529.105" y="-65.256" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WINDSHIELD
+</tspan>
+<tspan x="529.105" y="-50.256" text-anchor="middle">
+WIPER
+</tspan>
+<tspan x="529.105" y="-35.256" text-anchor="middle">
+SWITCH
+</tspan>
+</text>
+</g>
+<g id="TEXT_8EB9" data-dataID="n6f3ab1c3fa05deba">
+<text x="591.026" y="-13.932" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+WIPER/WASHER SWITCH
+</tspan>
+</text>
+</g></g>
+<g id="layer_COMPLOC" style="color:#00FF00;">
+<g id="TEXT_8F3D">
+<text x="1260.316" y="-1764.535" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(UNDER LEFT SIDE
+</tspan>
+<tspan x="1260.316" y="-1749.535" text-anchor="middle">
+OF COWL COVER)
+</tspan>
+</text>
+</g>
+<g id="TEXT_8E2E">
+<text x="164.627" y="-1686.088" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(LEFT SIDE
+</tspan>
+<tspan x="164.627" y="-1671.088" text-anchor="end">
+OF ENGINE
+</tspan>
+<tspan x="164.627" y="-1656.088" text-anchor="end">
+COMPT)
+</tspan>
+</text>
+</g>
+<g id="TEXT_936E">
+<text x="1023.499" y="-1683.016" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(UNDER LEFT
+</tspan>
+<tspan x="1023.499" y="-1668.016" text-anchor="start">
+END OF
+</tspan>
+<tspan x="1023.499" y="-1653.016" text-anchor="start">
+DASH)
+</tspan>
+</text>
+</g>
+<g id="TEXT_977E">
+<text x="1333.938" y="-1360.367" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(UNDER LEFT
+</tspan>
+<tspan x="1333.938" y="-1345.367" text-anchor="start">
+HEADLIGHT
+</tspan>
+<tspan x="1333.938" y="-1330.367" text-anchor="start">
+ASSEMBLY)
+</tspan>
+</text>
+</g>
+<g id="TEXT_8D2D">
+<text x="580.907" y="-1320.367" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(UNDER LEFT
+</tspan>
+<tspan x="580.907" y="-1305.367" text-anchor="middle">
+HEADLIGHT
+</tspan>
+<tspan x="580.907" y="-1290.367" text-anchor="middle">
+ASSEMBLY)
+</tspan>
+</text>
+</g>
+<g id="TEXT_996E">
+<text x="1432.742" y="-1286.57" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(TOP LEFT SIDE
+</tspan>
+<tspan x="1432.742" y="-1271.57" text-anchor="end">
+OF TRANSMISSION)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9962">
+<text x="1246.674" y="-1225.747" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(2.0L: TOP LEFT SIDE OF TRANSMISSION)
+</tspan>
+<tspan x="1246.674" y="-1210.747" text-anchor="end">
+(1.5L: TOP RIGHT SIDE OF TRANSMISSION)
+</tspan>
+</text>
+</g>
+<g id="TEXT_91B2">
+<text x="196.619" y="-1161.101" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(LEFT
+</tspan>
+<tspan x="196.619" y="-1146.101" text-anchor="start">
+END
+</tspan>
+<tspan x="196.619" y="-1131.101" text-anchor="start">
+OF DASH)
+</tspan>
+</text>
+</g>
+<g id="TEXT_995B">
+<text x="1175.729" y="-1135.72" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(TOP OF
+</tspan>
+<tspan x="1175.729" y="-1120.72" text-anchor="start">
+TRANSMISSION)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9194">
+<text x="13.121" y="-1108.953" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(IN WASHER
+</tspan>
+<tspan x="13.121" y="-1093.953" text-anchor="start">
+FLUID RESERVOIR)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9B97">
+<text x="603.991" y="-1098.663" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(UPPER LEFT
+</tspan>
+<tspan x="603.991" y="-1083.663" text-anchor="start">
+CENTER OF DASH)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9974">
+<text x="1433.421" y="-955.547" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(TOP RIGHT SIDE
+</tspan>
+<tspan x="1433.421" y="-940.547" text-anchor="end">
+OF TRANSMISSION)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9960">
+<text x="1133.001" y="-879.733" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(2.0L: TOP LEFT SIDE
+</tspan>
+<tspan x="1133.001" y="-864.733" text-anchor="start">
+OF TRANSMISSION)
+</tspan>
+<tspan x="1133.001" y="-849.733" text-anchor="start">
+(1.5L: TOP RIGHT SIDE
+</tspan>
+<tspan x="1133.001" y="-834.733" text-anchor="start">
+OF TRANSMISSION)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9969">
+<text x="1433.365" y="-728.799" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(TOP LEFT SIDE
+</tspan>
+<tspan x="1433.365" y="-713.799" text-anchor="end">
+OF TRANSMISSION)
+</tspan>
+</text>
+</g>
+<g id="TEXT_95DA">
+<text x="1006.285" y="-382.698" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(UPPER
+</tspan>
+<tspan x="1006.285" y="-367.698" text-anchor="end">
+LEFT
+</tspan>
+<tspan x="1006.285" y="-352.698" text-anchor="end">
+SIDE OF
+</tspan>
+<tspan x="1006.285" y="-337.698" text-anchor="end">
+DASH)
+</tspan>
+</text>
+</g>
+<g id="TEXT_9547">
+<text x="127.305" y="-341.226" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(UPPER LEFT
+</tspan>
+<tspan x="127.305" y="-326.226" text-anchor="end">
+SIDE OF DASH)
+</tspan>
+</text>
+</g>
+<g id="TEXT_95D4">
+<text x="1203.907" y="-159.651" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(LEFT END
+</tspan>
+<tspan x="1203.907" y="-144.651" text-anchor="end">
+OF DASH)
+</tspan>
+</text>
+</g>
+</g>
+<g id="layer_MISC" style="color:#FF00FF;">
+<g id="TEXT_99C0">
+<text x="1432.742" y="-1256.57" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(CVT)
+</tspan>
+</text>
+</g>
+<g id="TEXT_99C2">
+<text x="1433.365" y="-743.799" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(CVT)
+</tspan>
+</text>
+</g>
+<g id="TEXT_999D">
+<text x="537.381" y="-498.116" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+W/ KEYLESS ACCESS SYSTEM
+</tspan>
+</text>
+</g>
+<g id="TEXT_99A9">
+<text x="537.381" y="-471.457" text-anchor="start" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+W/O KEYLESS ACCESS SYSTEM
+</tspan>
+<tspan x="537.381" y="-449.958" text-anchor="start">
+W/O CAN GATEWAY &amp;
+</tspan>
+<tspan x="537.381" y="-434.958" text-anchor="start">
+HANDSFREE LINK
+</tspan>
+<tspan x="537.381" y="-414.331" text-anchor="start">
+W/ CAN GATEWAY &amp;
+</tspan>
+<tspan x="537.381" y="-399.331" text-anchor="start">
+HANDSFREE LINK
+</tspan>
+</text>
+</g>
+<g id="TEXT_9AFD">
+<text x="1225.204" y="-300.936" text-anchor="middle" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(CANADA)
+</tspan>
+</text>
+</g>
+<g id="TEXT_8D87">
+<text x="1432.645" y="-124.747" text-anchor="end" text-decoration="none" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+(CANADA)
+</tspan>
+</text>
+</g>
+</g>
+<g id="layer_SPLICE" style="color:#FFFF00;">
+</g>
+<g id="layer_CKTNUM" style="color:#FF8080;">
+</g>
+<g id="layer_REF" style="color:#00FF00;">
+<g id="TEXT_961C" data-dataID="n9835853863adaa80">
+	<text x="275.029" y="-583.978" text-anchor="start" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+COMPUTER
+</tspan>
+<tspan x="275.029" y="-568.978" text-anchor="start">
+DATA LINES
+</tspan>
+<tspan x="275.029" y="-553.978" text-anchor="start">
+SYSTEM
+</tspan>
+</text></g>
+<g id="TEXT_8D8D" data-dataID="n5bce2a9d756d838e">
+	<text x="1016.612" y="-482.617" text-anchor="end" style="font-family:Arial,sans-serif;font-weight:normal;font-size:9pt;fill:#000000;">
+<tspan>
+COMPUTER
+</tspan>
+<tspan x="1016.612" y="-467.617" text-anchor="end">
+DATA LINES
+</tspan>
+<tspan x="1016.612" y="-452.617" text-anchor="end">
+SYSTEM
+</tspan>
+</text></g>
+</g>
+<g id="named_views">
+<view id="namedview_INITIAL" viewBox="-0.003 -1802.465 1452.444 1802.455"/>
+</g>
+</svg>

@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P16E2 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6942.html">DTC P16E2 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P16E2 (K20C1) (2019 2020 2021)</h1><div id="S14724701462021060700000">
+  <p><span class="clsEmphBOLD">DTC P16E2: </span>
+PGM-FI-ACG LIN Communication Error</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S147247014620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403355">
+            <div class="imageHeader"><a name="S10281156232021060700000"></a></div><img alt="GHH403355" src="../images/GHH403355.jpeg" name="GHH403355"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The local interconnect network (LIN) transmits/receives signals to/from the alternator. If the powertrain control module (PCM) receives incorrect information from the alternator, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S147247014620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">1.5 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL off</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S147247014620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after the vehicle is turned to the ON mode</td>
+        <td align="" class="clsCellNormal">3 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [Battery]*</td>
+        <td align="" class="clsCellNormal">10.04 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 5 seconds[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Any of the conditions is met for at least 1.5 seconds:</p>
+  <ul class="BULLET">
+    <li>Checksum error<p>There is a mismatch in the checksum.</p>
+    </li>
+    <li>Frame error<p>There is a deviation in the LIN frame.</p>
+    </li>
+    <li>Header timeout error<p>There is a fault in the LIN line caused by problems with the physical layer connection.</p>
+    </li>
+    <li>Message timeout error<p>The slave node is unable to respond as an acknowledgment to the header frame from the master node.</p>
+    </li>
+    <li>Overrun error<p>LIN frame has been overwritten in the receive buffer by another frame before the previous frame was read.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Alternator LIN line open</li>
+    <li>Alternator LIN line short to ground</li>
+    <li>Alternator failure</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory. The MIL does not come on.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

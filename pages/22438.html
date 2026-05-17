@@ -1,0 +1,871 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0171 (K20C1) (17-18) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19280.html">Engine Control System - DTC Diagnostics (P0122 - P0202)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19280.html#DTC%20Troubleshooting/">DTC Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/22438.html">DTC P0171 (K20C1) (17-18)</a></div><div class="main"><h1>DTC P0171 (K20C1) (17-18)</h1><div id="S35330963242021060700000">
+  <p><span class="clsEmphBOLD">DTC P0171 </span>
+: Fuel System Too Lean</p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>Before you troubleshoot, <a href="../pages/12916.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Fuel%20and%20Emissions%20Systems%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">review the general troubleshooting information</a>
+.</li>
+    <li>Do not clear the DTC or reset the PCM before beginning this troubleshooting procedure until instructed to clear it. Clearing the DTC or resetting the PCM can delete valuable diagnostic information, even if the on-board snapshot is saved.</li>
+    <li>Inspect for aftermarket fuel system and engine components before beginning troubleshooting.</li>
+    <li>Check the fuel learn procedure is completed before the problem verification. (If the fuel learn procedure is not completed, the failure detection is not performed.)</li>
+    <li>If any of the DTCs listed below are stored at the same time as DTC P0171, troubleshoot those DTCs first, then recheck for P0171.<p>P0010, P0011, P0013, P0014: VTC system</p>
+      <p>P0087, P0088, P0089: Fuel rail pressure sensor</p>
+      <p>P0106, P0107, P0108: MAP sensor</p>
+      <p>P0131, P0132, P0133, P2237, P2238, P2243, P2251, P2626: A/F sensor (Sensor 1)</p>
+      <p>P0134, P0135: A/F sensor (Sensor 1) heater</p>
+      <p>P0137, P0138, P0139, P2270, P2271: Secondary HO2S (Sensor 2)</p>
+      <p>P0140, P0141: Secondary HO2S (Sensor 2) heater</p>
+      <p>P0201, P0202, P0203, P0204: No. 1-No. 4 cylinder injector (s)</p>
+      <p>P0443: EVAP canister purge valve</p>
+      <p>P2279: Intake air leakage</p>
+      <p>P2650, P2651, P2652, P2653, P2654: VTEC system</p>
+    </li>
+  </ul><a name="S353309632420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="200px">
+      <col span="1" id="COL3" width="200px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">DTC Description</th>
+        <th align="" class="clsCellNormal">Confirmed DTC</th>
+        <th align="" class="clsCellNormal">Pending DTC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">P0171 Fuel System Too Lean</td>
+        <td align="" class="clsCellNormal"> </td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>DTC (PGM-FI)</p>
+  <ol class="ARABICNUM">
+    <li>Problem verification - Idle<p>-1. Start the engine and let it idle without load (in neutral).</p>
+      <p>-2. Check the parameter (s) below with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal">More than 1.3</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The AF FB (ST FUEL TRIM) is too high at idle. Go to step 4.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The AF FB (ST FUEL TRIM) is OK at idle. Go to step 2.</p>
+    </li>
+    <li>Problem verification - On-board Snapshot<p>-1. Review the on-board snapshot and record the value of the parameters below when AF FB (ST FUEL TRIM) was at its highest point.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="360px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>On-board Snapshot</p>
+      <p>-2. Drive the vehicle according to the conditions determined above.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Check the parameter (s) below with the HDS while driving.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal">More than 1.3</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold under the on-board snapshot conditions?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>AF FB (ST FUEL TRIM) is too high under the conditions above. Go to step 3.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>AF FB (ST FUEL TRIM) is OK under the same conditions as the on-board snapshot. The system is normal at this time. <a href="../pages/12916.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Fuel%20and%20Emissions%20Systems%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">If the on-board snapshot of this DTC is recorded, try to reproduce the failure under the same conditions with the on-board snapshot</a>
+.</p>
+    </li>
+    <li>Check for debris in MAF sensor<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. <a href="../pages/12833.html#Removal%20and%20Installation/MAF%20Sensor%2FIAT%20Sensor%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Remove MAF sensor/IAT sensor 1</a>
+.</p>
+      <p>-3. Check for lint, bugs, and other foreign objects in the sensor.</p>
+      <p>Is there debris in the MAF sensor?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Remove the debris from the MAF sensor and then use a vacuum cleaner to remove any debris from the air cleaner housing.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p><a href="../pages/12833.html#Removal%20and%20Installation/MAF%20Sensor%2FIAT%20Sensor%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Reinstall MAF sensor/IAT sensor 1</a>
+. Go to step 4.</p>
+    </li>
+    <li>Check for disconnected or damaged components<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>Visually inspect each of the components below for disconnected hoses, cracks, or damage:</p>
+      <ul class="BULLET">
+        <li>Crankcase breather hose (A)</li>
+        <li>Air cleaner housing (B)</li>
+        <li>Intake air duct (C)</li>
+        <li>Oil cap (D) and dipstick (E)</li>
+      </ul><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH404270">
+                <div class="imageHeader"><a name="S06034559952021060700000"></a></div><img alt="GHH404270" src="../images/GHH404270.jpeg" name="GHH404270"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are any components disconnected or damaged?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair as necessary.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 5.</p>
+    </li>
+    <li>Check EVAP canister purge line:<p>Visually inspect each of the components below for disconnected hoses, cracks, or damage:</p>
+      <ul class="BULLET">
+        <li>Non-return valve A</li>
+        <li>Non-return valve B</li>
+        <li>EVAP canister purge valve (C)</li>
+        <li>Hose (D)</li>
+      </ul><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH404271">
+                <div class="imageHeader"><a name="S23567692102021060700000"></a></div><img alt="GHH404271" src="../images/GHH404271.jpeg" name="GHH404271"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH404272">
+                <div class="imageHeader"><a name="S20935267672021060700000"></a></div><img alt="GHH404272" src="../images/GHH404272.jpeg" name="GHH404272"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH404273">
+                <div class="imageHeader"><a name="S27506727912021060700000"></a></div><img alt="GHH404273" src="../images/GHH404273.jpeg" name="GHH404273"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH404274">
+                <div class="imageHeader"><a name="S40425019632021060700000"></a></div><img alt="GHH404274" src="../images/GHH404274.jpeg" name="GHH404274"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are any components disconnected or damaged?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair as necessary.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 6.</p>
+    </li>
+    <li>Check brake booster<p>-1. Start the engine and let it idle.</p>
+      <p>-2. Gently pinch the brake booster vacuum hose (A).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH404275">
+                <div class="imageHeader"><a name="S02634822252021060700000"></a></div><img alt="GHH404275" src="../images/GHH404275.jpeg" name="GHH404275"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Check the parameter (s) below with the HDS with the vacuum hose pinched.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal">More than 1.3</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The brake booster is not leaking. Go to step 7.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>There is a leak in the brake booster or hoses. Check the brake booster vacuum hoses for leaks. If no leaks are found, <a href="../pages/13697.html#Removal%20and%20Installation/Brake%20Booster%20Removal%20and%20Installation/">replace the brake booster</a>
+.</p>
+    </li>
+    <li>Check PCV system<p>-1. Continue to let the engine idle.</p>
+      <p>-2. Gently pinch the PCV vacuum hose (A).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH404276">
+                <div class="imageHeader"><a name="S15136832722021060700000"></a></div><img alt="GHH404276" src="../images/GHH404276.jpeg" name="GHH404276"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Check the parameter (s) below with the HDS with the vacuum hose pinched.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal">More than 1.3</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The PCV system is not leaking. Go to step 8.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>There is a leak in the PCV system. Check the vacuum hoses for leaks and repair as needed.</p>
+    </li>
+    <li>Check for Intake manifold vacuum leaks<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the intake air duct from the air cleaner housing.</p>
+      <p>-3. Connect a large intake manifold adapter cone into the intake air duct from the OTC LeakMaster evaporative emissions system tester kit.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ If a large intake manifold adapter cone is not available, leave the intake air duct installed, and remove the brake booster vacuum hose from the brake booster, and inject smoke into the hose.</p>
+      <p>-4. Use the OTC LeakMaster evaporative emissions system tester to direct smoke into the intake manifold.</p>
+      <p>Inspect each of the areas below for signs of leaks:</p>
+      <ul class="BULLET">
+        <li>Intake manifold and gaskets</li>
+        <li>Throttle body and gasket</li>
+        <li>Air intake ducting</li>
+        <li>All vacuum and air hoses</li>
+      </ul>
+      <p>Are there any leaks?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair the vacuum leak.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Reconnect any disconnected components, then go to step 9.</p>
+    </li>
+    <li>Check MAF sensor reading<p>-1. Start the engine and let it idle.</p>
+      <p>Make sure the following conditions are met:</p>
+      <ul class="BULLET">
+        <li>Engine coolant temperature (ECT SENSOR 1) above 158 deg.F (70 deg.C)</li>
+        <li>Transmission in neutral</li>
+        <li>All engine and electrical loads turned off</li>
+      </ul><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ECT SENSOR 1</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Monitor the ENGINE SPEED in the DATA LIST with the HDS, then hold the engine speed at 2, 500 rpm with the accelerator pedal held steady.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-4. While holding the engine speed at 2, 500 rpm for 30 seconds, check the parameter (s) below with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">MAF SENSOR</td>
+            <td align="" class="clsCellNormal">5.3-7.4</td>
+            <td align="" class="clsCellNormal">g/s</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The MAF sensor read value is OK. Go to step 10.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The MAF sensor read value is incorrect. Inspect for a cracked, damaged, or incorrectly installed air cleaner assembly. If OK, <a href="../pages/12833.html#Removal%20and%20Installation/MAF%20Sensor%2FIAT%20Sensor%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">replace MAF sensor/IAT sensor 1</a>
+.</p>
+    </li>
+    <li>Check fuel pressure (low pressure side)<p>-1. <a href="../pages/12915.html#Test/Fuel%20Pressure%20Test%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Check the fuel pressure</a>
+ under the conditions when AF FB (ST FUEL TRIM) is 1.3 or more.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is the fuel pressure within a specified range of <a href="../pages/12915.html#Test/Fuel%20Pressure%20Test%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">fuel pressure test</a>
+?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The fuel pressure (low pressure side) is OK. Go to step 11.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Check the correct power supply and ground for the fuel pump and if both are OK, <a href="../pages/13542.html#Removal%20and%20Installation/Fuel%20Tank%20Unit%20Removal%20and%20Installation%20%28Except%20L15BY%29/">replace the fuel tank unit</a>
+.</p>
+    </li>
+    <li>Check fuel pressure (high pressure side)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode.</p>
+      <p>-3. Clear the DTC with the HDS.</p>
+      <p>-4. Start the engine.</p>
+      <p>-5. Hold the engine speed at 3, 000 rpm without load (in neutral) until the radiator fan comes on, then let it idle.</p>
+      <p>-6. Select the DI Fuel Pressure Test in the INSPECTION MENU with the HDS.</p>
+      <p>DI Fuel Pressure Test</p>
+      <p>Does the HDS indicate NORMAL?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The fuel pressure (high pressure side) is OK. Go to step 12.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to the troubleshooting for <a href="../pages/14651.html">DTC P0087</a>
+ and <a href="../pages/14653.html">DTC P0088</a>
+.</p>
+    </li>
+    <li>Replace fuel:<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ There is an increased likelihood of a fuel related issue if the lean condition appeared shortly after refueling. The MIL DIST (MIL Distance) value in the DATA LIST in combination with the fuel level may help you make this determination.</p>
+      <p>-2. <a href="../pages/12915.html#Service%20Procedure/Fuel%20Tank%20Draining/">Drain the fuel from the fuel tank</a>
+, then refill the fuel tank with known-good fuel.</p>
+      <p>-3. Start the engine.</p>
+      <p>-4. Operate the vehicle under the same conditions where AF FB (ST FUEL TRIM) was 1.3 or more.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="360px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>On-board Snapshot</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-5. Check the parameter (s) below with the HDS while driving.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal">More than 1.3</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold under the on-board snapshot conditions?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The fuel is not the cause of the high AF FB (ST FUEL TRIM) value. Go to step 13.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The fuel was causing the high AF FB (ST FUEL TRIM) value.</p>
+    </li>
+    <li>Replace A/F sensor (Sensor 1)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. <a href="../pages/12833.html#Removal%20and%20Installation/A%2FF%20Sensor%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Replace the A/F sensor (Sensor 1) with a known-good sensor</a>
+.</p>
+      <p>-3. Start the engine.</p>
+      <p>-4. Operate the vehicle under the same conditions where AF FB (ST FUEL TRIM) was 1.3 or more.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="360px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="360px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>On-board Snapshot</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-5. Check the parameter (s) below with the HDS while driving.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal">More than 1.3</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold under the on-board snapshot conditions?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The A/F sensor (Sensor 1) is not the cause of the high AF FB (ST FUEL TRIM) value. Reinstall the original A/F sensor, then go to step 14.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The A/F sensor (Sensor 1) was causing the high AF FB (ST FUEL TRIM) value. <a href="../pages/12833.html#Removal%20and%20Installation/A%2FF%20Sensor%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Replace the original A/F sensor (Sensor 1)</a>
+.</p>
+    </li>
+    <li>Replace injectors<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. <a href="../pages/12833.html#Removal%20and%20Installation/Injector%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Replace the injectors with known-good injectors</a>
+.</p>
+      <p>-3. Start the engine.</p>
+      <p>-4. Operate the vehicle under the same conditions where AF FB (ST FUEL TRIM) was 1.3 or more.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="360px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>On-board Snapshot</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ENGINE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">VEHICLE SPEED</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">REL TP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">APP SENSOR</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-5. Check the parameter (s) below with the HDS while driving.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">AF FB (ST FUEL TRIM)</td>
+            <td align="" class="clsCellNormal">More than 1.3</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition (s) match the threshold under the on-board snapshot conditions?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The injectors are not the cause of the high AF FB (ST FUEL TRIM) value. <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Substitute a known-good PCM</a>
+, then recheck.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The injectors were causing the high AF FB (ST FUEL TRIM) value. <a href="../pages/12833.html#Removal%20and%20Installation/Injector%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">Replace all injectors as a set</a>
+.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

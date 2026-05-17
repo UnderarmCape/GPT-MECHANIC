@@ -1,0 +1,222 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0607 (K20C1) (2019) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18420.html">Engine Control System - Advanced Diagnostics (P0507 - P1684)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18420.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8401.html">DTC P0607 (K20C1) (2019)</a></div><div class="main"><h1>DTC P0607 (K20C1) (2019)</h1><div id="S34526338342021060700000">
+  <p><span class="clsEmphBOLD">DTC P0607: </span>
+Powertrain Control Module (PCM) Internal Circuit Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p>
+  <p>DTC P0607 is stored if the internal failures of the powertrain control module (PCM) are detected:</p>
+  <ul class="BULLET">
+    <li>Starter control module disturbance<p>The starter control module for starter relays in the PCM provides two low side switches for the control of a starter relays in automotive applications. This error is a result of a hardware failure/disturbance, therefore the detection strategy is similar to the hardware monitoring of the PCM monitoring software used mainly to filter disturbances. If a disturbance is detected, the PCM stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>System basic IC for powertrain control error<p>The system basic driver IC for powertrain control controls the hardware functions of the application specific integrated circuit (ASIC). The driver IC features the communication with the monitoring unit (external watchdog), the acquisition of ON reset, control of the PGM-FI main relay, the wakeup control, and the diagnosis of the sensor supplies. If the values or communications are abnormal, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>PCM internal communication error<p>The PCM reciprocally monitors the function controller and monitoring module using the query-response communication. The status of the error counter in the monitoring module is transferred together with the query and stored in the function controller. If the error counter reaches a specified value, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Peripheral device error<p>The PCM monitors peripheral devices to determine proper working of the peripheral devices. The peripheral monitoring device (PMD) in the PCM monitors errors in communication between peripheral device and controller, and also partial resets. If any peripheral monitoring function reports an error, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Throttle actuator driver IC error<p>The PCM monitors the throttle actuator control circuit for communication malfunctions. If any errors in the throttle actuator control circuit are detected, the PCM stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Turbocharger wastegate control actuator driver IC error<p>The PCM monitors the turbocharger wastegate control actuator control circuit for communication malfunctions. If any errors in the turbocharger wastegate control actuator control circuit are detected, the PCM stores a DTC.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S345263383420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">Depending on error</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Starter control module disturbance, System basic IC for powertrain control error, PCM internal communication error, peripheral device error </span></p><a name="S345263383420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td align="" class="clsCellNormal">ON mode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Throttle actuator driver IC error </span></p><a name="S345263383420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [Battery]</td>
+        <td align="" class="clsCellNormal">8 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td colspan="2" align="" class="clsCellNormal">Running</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Other than fuel cut operation</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Throttle actuator power stage on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Turbocharger wastegate control actuator driver IC error </span></p><a name="S345263383420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [Battery]</td>
+        <td align="" class="clsCellNormal">8 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td colspan="2" align="" class="clsCellNormal">Running</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Turbocharger wastegate control actuator power stage on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Starter control module disturbance<p>Electromagnetic interference (EMI) disturbance is detected for at least 0.5 second.</p>
+    </li>
+    <li>System basic IC for powertrain control error<p>Either of the symptoms occurs:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>System basic IC receives a different check byte value.</p>
+        </li>
+        <li>-<p>Serial peripheral interface (SPI) driver does not accept a command-prompt sequence.</p>
+        </li>
+      </ul>
+    </li>
+    <li>PCM internal communication error<p>All of the symptoms occur:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The error counter is within 5 counts during confirmation of communication between the monitoring module and the function controller.</p>
+        </li>
+        <li>-<p>During communication between the monitoring function and the function controller.</p>
+        </li>
+        <li>-<p>The malfunction detection counter in the function controller exceeds 5 counts.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Peripheral device error<p>Peripheral monitoring function reports an error.</p>
+    </li>
+    <li>Throttle actuator driver IC error<p>Throttle actuator driver IC reports an error.</p>
+    </li>
+    <li>Turbocharger wastegate control actuator driver IC error<p>Turbocharger wastegate control actuator driver IC reports an error.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Starter relay driver IC disturbance<p>Electromagnetic interference (EMI) disturbance is detected for at least 0.5 second.</p>
+    </li>
+    <li>System basic IC for powertrain control error<p>Either of the symptoms occurs:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>System basic IC receives a different check byte value.</p>
+        </li>
+        <li>-<p>Serial peripheral interface (SPI) driver does not accept a command-prompt sequence.</p>
+        </li>
+      </ul>
+    </li>
+    <li>PCM internal communication error<p>The error counter exceeds 5 counts.</p>
+    </li>
+    <li>Peripheral device error<p>Peripheral monitoring function reports an error for at least 0.1 second.</p>
+    </li>
+    <li>Throttle actuator driver IC error<p>Any of the errors are reported:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Throttle actuator driver IC communication error</p>
+        </li>
+        <li>-<p>Throttle actuator driver IC time out error</p>
+        </li>
+        <li>-<p>Throttle actuator driver IC identification error</p>
+        </li>
+      </ul>
+    </li>
+    <li>Turbocharger wastegate control actuator driver IC error<p>Any of the errors are reported:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Turbocharger wastegate control actuator driver IC communication error</p>
+        </li>
+        <li>-<p>Turbocharger wastegate control actuator driver IC time out error</p>
+        </li>
+        <li>-<p>Turbocharger wastegate control actuator driver IC identification error</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

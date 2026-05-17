@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P1855 (K20C2) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/">Transmission</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/Automatic%20Trans/">Automatic Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19404.html">Automatic Transaxle - Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19404.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19498.html">DTC P1855 (K20C2)</a></div><div class="main"><h1>DTC P1855 (K20C2)</h1><div id="S11130450242021060700000">
+  <p><span class="clsEmphBOLD">DTC P1855: </span>
+Inclination Sensor Circuit Range/Performance</p>
+  <p><span class="clsEmphBOLD">General Description </span></p>
+  <p><span class="clsEmphBOLD">Without CAN gateway </span></p><a name="S111304502420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH399912">
+            <div class="imageHeader"><a name="S04765430082021060700000"></a></div><img alt="GHH399912" src="../images/GHH399912.jpeg" name="GHH399912"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">With CAN gateway </span></p><a name="S111304502420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH399913">
+            <div class="imageHeader"><a name="S32601659512021060700000"></a></div><img alt="GHH399913" src="../images/GHH399913.jpeg" name="GHH399913"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The G sensor is built into the SRS unit. The G sensor detects the road gradient at the time of vehicle stop and outputs information to the transmission control module (TCM). The TCM uses the G sensor output received by F-CAN lines for vehicle creeping torque switching. If the G sensor output voltage is less changed during the condition there is a forward and backward acceleration, the TCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S111304502420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">Depending on the driving conditions</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL off, Shift position indicator off</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S111304502420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="248px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">500 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Difference of front wheel right-and-left average speed and rear wheel right-and-left average speed</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">3 mph (5 km/h)</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Shift position/mode</td>
+        <td align="" class="clsCellNormal">Without paddle shifter</td>
+        <td colspan="2" align="" class="clsCellNormal">D, S, L</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">With paddle shifter</td>
+        <td colspan="2" align="" class="clsCellNormal">D, S</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The G sensor output voltage change width is less than 0.03 V after the vehicle is driven at following conditions:</p>
+  <ul class="BULLET">
+    <li>Drive the vehicle at accelerator pedal position 1/16 or more and vehicle speed more than 4 mph (5 km/h) for at least 1 second.</li>
+    <li>Reach the vehicle speed [Vehicle Speed] to 14 mph (21 km/h) or more.</li>
+    <li>Decelerate to more than 4 mph (5 km/h) with throttle fully closed for at least 1 second.</li>
+    <li>Stop the vehicle.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>SRS unit internal failure (G sensor)</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p><a name="S111304502420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH399914">
+            <div class="imageHeader"><a name="S28597076462021060700000"></a></div><img alt="GHH399914" src="../images/GHH399914.jpeg" name="GHH399914"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="BULLET">
+    <li>Start the engine.</li>
+    <li>With the brake pedal pressed, place the shift lever in D position/mode.</li>
+    <li>Drive the vehicle at a speed of 14 mph (21 km/h) or more. (Accelerate for at least 1 second.)</li>
+    <li>Release the accelerator pedal, and slow down the vehicle. (Take at least 1 second to decelerate to more than 4 mph (5 km/h).)</li>
+    <li>Turn the vehicle to the OFF (LOCK) mode.</li>
+    <li>Repeat Driving Pattern steps 1 through 4.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the TCM memory. If the malfunction returns in the next (second) drive cycle, a Confirmed DTC and the freeze data are stored. The MIL does not come on and the shift position indicator does not blink.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

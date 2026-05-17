@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0088 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18446.html">Engine Control System - Advanced Diagnostics (P0010 - P0128)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18446.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6397.html">DTC P0088 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P0088 (K20C1) (2019 2020 2021)</h1><div id="S15628511762021060700000">
+  <p><span class="clsEmphBOLD">DTC P0088: </span>
+Fuel Rail Pressure Too High</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S156285117620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402607">
+            <div class="imageHeader"><a name="S05442459912021060700000"></a></div><img alt="GHH402607" src="../images/GHH402607.jpeg" name="GHH402607"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The high pressure fuel system consists of a fuel rail, a fuel rail pressure sensor, a high pressure fuel pump with a built-in fuel control solenoid. In dependence of torque demand and engine speed, high pressure has to be adjusted. Therefore the fuel pressure in the rail is measured and controlled with help of the fuel control solenoid. If the difference between the desired and measured fuel rail pressure is too large, combustion and emissions can be influenced. The powertrain control module (PCM) monitors the high pressure fuel control system. The diagnosis checks if the controller is able to adjust the required rail pressure based on the set point. If the measured fuel pressure is greater than the set point, the difference of these two values is negative. If the negative difference is less than a specified value, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S156285117620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">5 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S156285117620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after starting the engine</td>
+        <td align="" class="clsCellNormal">5 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The fuel rail pressure negative deviation from the set point is less than -2, 000 kPa (-20.4 kgf/cm 2, -290 psi).</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes</p>
+  <ul class="BULLET">
+    <li>High pressure fuel pump failure</li>
+    <li>Fuel rail pressure sensor drifting</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

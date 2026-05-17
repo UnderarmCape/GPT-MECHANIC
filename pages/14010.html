@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>CVT System Description - Electronic Control System (K20C2 (CVT)) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/">Transmission</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/Automatic%20Trans/">Automatic Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13990.html">Continuously Variable Transaxle (CVT) - Testing &amp; Troubleshooting (Inspection - Rewrite)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13990.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/14010.html">CVT System Description - Electronic Control System (K20C2 (CVT))</a></div><div class="main"><h1>CVT System Description - Electronic Control System (K20C2 (CVT))</h1><div id="S25862912542021060700000">
+  <p>For locations of each component on the vehicle, refer to Component Location Index.</p>
+  <ul class="BULLET">
+    <li><a href="../pages/14110.html">TCM, CVT Drive Pulley Speed Sensor, CVT Speed Sensor, Torque Converter Turbine Speed Sensor, CVT Driven Pulley Pressure Sensor, Transmission Fluid Temperature Sensor, CVT Drive Pulley Pressure Control Solenoid Valve, CVT Driven Pulley Pressure Control Solenoid Valve, CVT Clutch Pressure Control Solenoid Valve, CVT Lock-Up Clutch Control Solenoid Valve, Shift Solenoid Valve B</a></li>
+    <li><a href="../pages/12970.html">Transmission Range Switch, Paddle Shifter, Shift Position Indicator</a></li>
+    <li><a href="../pages/14106.html">Shift Lock Solenoid</a></li>
+    <li><a href="../pages/13533.html">PCM, Throttle Position Sensor, Accelerator Pedal Position Sensor, Manifold Absolute Pressure Sensor, Engine Coolant Temperature Sensor</a></li>
+    <li><a href="../pages/13578.html">VSA Modulator-Control Unit</a></li>
+    <li><a href="../pages/12965.html">ECON Switch</a></li>
+  </ul>
+  <p><span class="clsEmphBOLD">Functional Diagram </span></p>
+  <p>The electronic control system consists of the TCM, the PCM, sensors, switches, and solenoid valves. Shifting and lock-up are electronically controlled for comfortable driving under all conditions.</p>
+  <p>The TCM receives input signals from the sensors and the other control units, processes data, and outputs signals for the engine control system and the CVT control system. The CVT control system includes the shift control, the pulley pressure control, the clutch pressure control, the lock-up control, and the indicator control. The TCM switches the shift solenoid valve and the CVT pulley pressure control solenoid valves to control shifting position and lock-up torque converter clutch.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401433">
+            <div class="imageHeader"><a name="S12281436172021060700000"></a></div><img alt="GHH401433" src="../images/GHH401433.jpeg" name="GHH401433"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Shift Control/Pulley Pressure Control </span></p>
+  <p>To reduce the steel belt slippage and increase the steel belt life, the TCM calculates signals from sensors and switches, and actuates the pulley pressure control solenoid valves to maintain optimum pulley pressure. When the pulley ratio is high (low vehicle speed), high hydraulic pressure works on the movable face of the driven pulley and reduces the effective diameter of the drive pulley, and lower hydraulic pressure works on the movable face of the drive pulley to eliminate the steel belt slippage. When the pulley ratio is low (high vehicle speed), high hydraulic pressure works on the movable face of the drive pulley and reduces the effective diameter of the driven pulley, and lower hydraulic pressure works on the movable face of the driven pulley to eliminate the steel belt slippage.</p>
+  <p>The TCM compares actual driving conditions with programmed driving conditions to control shifting, and it instantly determines a drive pulley ratio from various signals sent from sensors and switches. The TCM activates the CVT drive pulley pressure control solenoid valve and the CVT driven pulley pressure control solenoid valve to control pulley pressure to the pulleys.</p>
+  <p>The shift control includes the grade logic control and the shift-hold control.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401434">
+            <div class="imageHeader"><a name="S23819211232021060700000"></a></div><img alt="GHH401434" src="../images/GHH401434.jpeg" name="GHH401434"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Shift Control - Grade Logic Control </span></p>
+  <p>The grade logic control system has been adopted to control shifting in D position/mode and S position/mode. The TCM compares actual driving conditions with memorized driving conditions, based on the input signal from the various sensors and switches, to control shifting while the vehicle is ascending or descending a slope.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401435">
+            <div class="imageHeader"><a name="S02409909112021060700000"></a></div><img alt="GHH401435" src="../images/GHH401435.jpeg" name="GHH401435"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Grade Logic Control: Ascending Control </span></p>
+  <p>When the TCM determines that the vehicle is climbing a hill in D position/mode or S position/mode, the system selects the most suitable shift schedule according to the magnitude of a gradient, so the vehicle can run smooth and have more power when needed.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401436">
+            <div class="imageHeader"><a name="S22837934112021060700000"></a></div><img alt="GHH401436" src="../images/GHH401436.jpeg" name="GHH401436"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Grade Logic Control: Descending Control </span></p>
+  <p>When the TCM determines that the vehicle is going down a hill in D position/mode or S position/mode, the system selects the most suitable shift schedule according to the magnitude of a gradient, so the vehicle can run smooth in combination with engine braking.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401437">
+            <div class="imageHeader"><a name="S08180238422021060700000"></a></div><img alt="GHH401437" src="../images/GHH401437.jpeg" name="GHH401437"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Shift-Hold Control </span></p>
+  <p>When negotiating winding roads, the throttle is suddenly released and the brakes are applied, as is the case when decelerating at the entrance of a corner, Shift-Hold Control keeps the transmission in its current (lower) ratio as it negotiates the corner and accelerates out. When the vehicle is driven aggressively on a winding road, the TCM will keep the engine speed on a higher-than-normal setting, so the vehicle can run smooth and have more power. The transmission will resume the normal setting after the TCM determines that normal driving has resumed.</p>
+  <p><span class="clsEmphBOLD">Shift Control - D-Paddle Shift Mode (With paddle shifter) </span></p>
+  <p>When the transmission is switched into the D-paddle shift mode by pressing steering wheel-mounted paddle shifters while driving in D position/mode, the transmission can shift into a lower speed stage by pressing the paddle shifter - (downshift switch), and it can shift into a higher speed stage by pressing the paddle shifter + (upshift switch). When the transmission shifts into a lower or a higher speed stage by pressing the paddle shifters, the shift indicator in the gauge control module displays the number of currently-selected stage. This number of the speed stage goes off when the transmission downshifts automatically, or when the transmission upshifts automatically while coasting. The D-paddle shift mode is canceled when the paddle shifter + (upshift switch) is held for several seconds or when the TCM detects a steady cruise.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401438">
+            <div class="imageHeader"><a name="S29793434952021060700000"></a></div><img alt="GHH401438" src="../images/GHH401438.jpeg" name="GHH401438"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Shift Control - S-Paddle Shift Mode (With paddle shifter) </span></p>
+  <p>There are two shifting modes in S position/mode: sport driving mode and S-paddle shift mode. In S position/mode with the sport driving mode, the transmission automatically adjusts to keep the engine at a higher RPM than D position/mode setting, and steering wheel-mounted paddle shifters are ready to be activated to switch to the S-paddle shift mode. In the sport driving mode, the shift indicator and the M indicator in the gauge control module do not come on. When the paddle shifter + (upshift switch) or the paddle shifter - (downshift switch) is pressed, the sport driving mode is canceled and the S-paddle shift mode comes into operation. The shift indicator displays the number of the selected speed stage, and the M indicator comes on. In the S-paddle shift mode, the driver can shift up and down manually from 1st through 7th speed stage by using the paddle shifters, much like a manual transmission. The paddle shifters are installed on the back of the steering wheel, and the driver can shift speed stages by pressing the paddle shifters without taking either hand off the steering wheel. In the S-paddle shift mode, the transmission must be shifted up and down by pressing the paddle shifters. However, the transmission cannot downshift and stays in the current stage if the paddle shifter - (downshift switch) is pressed while the vehicle is coasting at a speed that would cause the engine to over-rev by downshifting the transmission, and the shift indicator blinks the number of the selected stage several times, then returns to the number of the current stage. If the vehicle speed reaches an appropriate speed while the shift indicator is blinking the number of the selected stage, the transmission downshifts and the shift indicator displays the selected stage. The transmission also cannot upshift and stays in the current stage if the paddle shifter + (upshift switch) is pressed while driving below an appropriate upshifting speed, the shift indicator blinks the number of the selected stage several times, then returns to the number of the current stage. If the vehicle speed reaches an appropriate upshift speed while the shift indicator is blinking the number of the selected stage, the transmission upshifts and the shift indicator displays the selected stage. This mode has automatic upshifting areas to prevent engine over-revving, and downshifting areas so the vehicle can run smoothly with more power to cope with upcoming acceleration. When coasting, the transmission downshifts to the next lower stage if the vehicle slows down to the programmed speed, or by pressing the brake pedal. When the transmission decelerates to a stop, the transmission shifts to 1st stage automatically. The transmission can be shifted to 2nd stage by pressing the paddle shifter + (upshift switch) while the vehicle is stopped, and the vehicle can start off in 2nd stage. The S-paddle shift mode is canceled when the paddle shifter + (upshift switch) is held for several seconds or when moving the shift lever to any position/mode other than S position/mode.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401439">
+            <div class="imageHeader"><a name="S00949916362021060700000"></a></div><img alt="GHH401439" src="../images/GHH401439.jpeg" name="GHH401439"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Clutch Pressure Control </span></p>
+  <p>The TCM actuates the CVT clutch pressure control solenoid valve to control forward clutch pressure and reverse brake pressure. When the transmission is in-gear, forward clutch pressure and reverse brake pressure regulated by the CVT clutch pressure control solenoid valve engage and disengage the forward clutch and the reverse brake smoothly.</p>
+  <p>The TCM receives input signals from the various sensors and switches, processes data, and outputs current to the CVT clutch pressure control solenoid valve.</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401440">
+            <div class="imageHeader"><a name="S05467350582021060700000"></a></div><img alt="GHH401440" src="../images/GHH401440.jpeg" name="GHH401440"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Lock-Up Control </span></p>
+  <p>Shift solenoid valve B controls hydraulic pressure to lock-up ON and OFF. The TCM actuates shift solenoid valve B and the CVT lock-up clutch control solenoid valve to start lock-up. The CVT lock-up clutch control solenoid valve applies and regulates hydraulic pressure to control the volume of the lock-up. The lock-up mechanism operates in D position/mode, S position/mode, and L position/mode (without paddle shifter), at transmission fluid temperature exceeding 68°F (20°C).</p><a name="S258629125420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="396px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td valign="TOP" align="left" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401441">
+            <div class="imageHeader"><a name="S34754061002021060700000"></a></div><img alt="GHH401441" src="../images/GHH401441.jpeg" name="GHH401441"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

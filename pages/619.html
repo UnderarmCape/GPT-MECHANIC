@@ -1,0 +1,695 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC U0100, U0122 (Keyless Access Power Control Unit with CAN gateway) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/Anti-Theft%20Systems/">Anti-Theft Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18803.html">Keyless Access System (Power Control Unit) - Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18803.html#DTC%20Troubleshooting/">DTC Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/619.html">DTC U0100, U0122 (Keyless Access Power Control Unit with CAN gateway)</a></div><div class="main"><h1>DTC U0100, U0122 (Keyless Access Power Control Unit with CAN gateway)</h1><div id="S36616660652021060700000">
+  <p><span class="clsEmphBOLD">DTC U0100 </span>
+: Power Control Unit (Body Control Module) Lost Communication with PCM</p>
+  <p><span class="clsEmphBOLD">DTC U0122: </span>
+Power Control Unit (Body Control Module) Lost Communication with VSA Modulator-Control Unit (VSA Message)</p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>Before you troubleshoot, <a href="../pages/12949.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Body%20Electrical/">review the general troubleshooting information</a>
+.</li>
+    <li>According to the detected DTC(s), check for the power circuit and the ground circuit of the control unit which cannot communicate with the body control module.</li>
+    <li>Refer to the DTC shown on the display, then inspect the connectors and terminals based on the instructions.</li>
+  </ul><a name="S366166606520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="200px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">DTC Description</th>
+        <th align="" class="clsCellNormal">DTC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">U0100 Power Control Unit (Body Control Module) Lost Communication with PCM</td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">U0122 Power Control Unit (Body Control Module) Lost Communication with VSA Modulator-Control Unit (VSA Message)</td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>DTC (Power Control Unit)</p>
+  <ol class="ARABICNUM">
+    <li>CAN gateway system DTC check<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Check for CAN gateway system DTCs with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">DTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0029-00 CAN Gateway F-CAN ch A Bus Off</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0047-00 CAN Gateway F-CAN ch B Bus Off</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U3000-49 CAN Gateway Internal Failure</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>DTC (CAN GATEWAY)</p>
+      <p>Is DTC U0029-00, U0047-00, and/or U3000-49 indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/13892.html">Go to the troubleshooting for CAN gateway system DTC(s)</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 2.</p>
+    </li>
+    <li>F-CAN circuit communication check<p>-1. Select the FUNCTION TEST in the CAN gateway with the HDS, then select the F-CAN Bus Connected Unit Check.</p>
+      <p>F-CAN Bus Connected Unit Check</p>
+      <p>Does the body control module detect the CAN gateway Bus channels A?</p>
+      <p>Bus A is Not Available</p>
+      <p>Go to step 3.</p>
+      <p>Bus A is Available</p>
+      <p>Go to step 4.</p>
+    </li>
+    <li>Open wire check (F-CAN A lines)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the following connectors.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">CAN gateway 12P connector *1<br>CAN gateway 16P connector *2<br>Body control module connector B (36P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*1: CAN gateway 12P connector type</p>
+      <p>*2: CAN gateway 16P connector type</p>
+      <p>-3. Check for continuity between test points 1 and 2 respectively.</p>
+      <p><span class="clsEmphBOLD">CAN gateway 12P connector type </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="130px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode<br>CAN gateway 12P connector: disconnected<br>Body control module connector B (36P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 12P connector No. 3</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P) No. 22</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="130px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 12P connector No. 9</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P) No. 23</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH409753">
+                <div class="imageHeader"><a name="S10411467042021060700000"></a></div><img alt="GHH409753" src="../images/GHH409753.jpeg" name="GHH409753"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">CAN gateway 16P connector type </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="130px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode<br>CAN gateway 16P connector: disconnected<br>Body control module connector B (36P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector No. 3</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P) No. 22</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="130px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector No. 11</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P) No. 23</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH409754">
+                <div class="imageHeader"><a name="S00353349692021060700000"></a></div><img alt="GHH409754" src="../images/GHH409754.jpeg" name="GHH409754"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN A_H and F-CAN A_L wires are OK. Check for poor connections or loose terminals at the CAN gateway and the body control module. <a href="../pages/12951.html#Removal%20and%20Installation/Body%20Control%20Module%20Removal%20and%20Installation/">Substitute a known-good body control module</a>
+, then recheck. If the DTC U0100 goes away and the body control module was substituted, <a href="../pages/12951.html#Removal%20and%20Installation/Body%20Control%20Module%20Removal%20and%20Installation/">replace the original body control module</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in F-CAN A_H or F-CAN A_L wire between the CAN gateway and the body control module.</p>
+    </li>
+    <li>F-CAN circuit communication check (Transmitting control unit)<p>-1. Select the FUNCTION TEST in the CAN gateway with the HDS, then select the F-CAN Bus Connected Unit Check.</p>
+      <p>F-CAN Bus Connected Unit Check</p>
+      <p>-2. According to the detected DTC on the following table, make sure that the transmitting control unit detects the CAN gateway Bus channel(s) normally.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="135px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="300px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Transmitting control unit</th>
+            <th align="" class="clsCellNormal">Detected CAN gateway Bus channel(s) at normal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal">PCM</td>
+            <td align="" class="clsCellNormal">A, B</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit</td>
+            <td align="" class="clsCellNormal">A, B</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is it detected normally?</p>
+      <p>Detected normal</p>
+      <p>Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the transmitting control unit and the CAN gateway.</p>
+      <p>U0100: PCM is Not Available for Bus A</p>
+      <p>Go to step 5.</p>
+      <p>U0100: PCM is Not Available for Bus B</p>
+      <p>Go to step 6.</p>
+      <p>U0122: VSA modulator-control unit is Not Available for Bus A</p>
+      <p>Go to step 5.</p>
+      <p>U0122: VSA modulator-control unit is Not Available for Bus B</p>
+      <p>Go to step 6.</p>
+    </li>
+    <li>Open wire check (F-CAN A lines)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. U0100: Jump the SCS line with the HDS, and wait more than 1 minute.</p>
+      <p>-3. According to the detected DTC on the following table, disconnect the transmitting control unit connector(s).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="133px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Connector</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">-</td>
+            <td align="" class="clsCellNormal">CAN gateway 12P connector *1CAN gateway 16P connector *2</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal">PCM connector A (50P) *3<br>PCM connector No. 2 (58P) *4</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit 46P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*1: CAN gateway 12P connector type</p>
+      <p>*2: CAN gateway 16P connector type</p>
+      <p>*3: Except K20C1 engine</p>
+      <p>*4: K20C1 engine</p>
+      <p>-4. Check for continuity between test points 1 and 2.</p>
+      <p><span class="clsEmphBOLD">CAN gateway 12P connector type </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode<br>CAN gateway 12P connector: disconnected<br>Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="257px">
+          <col span="1" id="COL2" width="343px">
+          <col span="1" id="COL3" width="600px">
+          <col span="1" id="COL4" width="257px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="257px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 1 (Receiving control unit)</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 2 (Transmitting control unit)</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal">F-CAN A_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 12P connector</td>
+            <td align="" class="clsCellNormal">No. 3</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../external-car.html">PCM connector A (50P)</a></td>
+            <td align="" class="clsCellNormal">No. 37</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN A_L</td>
+            <td align="" class="clsCellNormal">No. 9</td>
+            <td align="" class="clsCellNormal">No. 36</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">F-CAN A_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 12P connector</td>
+            <td align="" class="clsCellNormal">No. 3</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector</a></td>
+            <td align="" class="clsCellNormal">No. 20</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN A_L</td>
+            <td align="" class="clsCellNormal">No. 9</td>
+            <td align="" class="clsCellNormal">No. 21</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH409755">
+                <div class="imageHeader"><a name="S04947664612021060700000"></a></div><img alt="GHH409755" src="../images/GHH409755.jpeg" name="GHH409755"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">CAN gateway 16P connector type </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode<br>CAN gateway 16P connector: disconnected<br>Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="257px">
+          <col span="1" id="COL2" width="343px">
+          <col span="1" id="COL3" width="600px">
+          <col span="1" id="COL4" width="257px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="257px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 1 (Receiving control unit)</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 2 (Transmitting control unit)</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100 *1</td>
+            <td align="" class="clsCellNormal">F-CAN A_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector</td>
+            <td align="" class="clsCellNormal">No. 3</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../external-car.html">PCM connector A (50P)</a></td>
+            <td align="" class="clsCellNormal">No. 37</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN A_L</td>
+            <td align="" class="clsCellNormal">No. 11</td>
+            <td align="" class="clsCellNormal">No. 36</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100 *2</td>
+            <td align="" class="clsCellNormal">F-CAN A_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector</td>
+            <td align="" class="clsCellNormal">No. 3</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P)</a></td>
+            <td align="" class="clsCellNormal">No. 15</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN A_L</td>
+            <td align="" class="clsCellNormal">No. 11</td>
+            <td align="" class="clsCellNormal">No. 27</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">F-CAN A_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector</td>
+            <td align="" class="clsCellNormal">No. 3</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector</a></td>
+            <td align="" class="clsCellNormal">No. 20</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN A_L</td>
+            <td align="" class="clsCellNormal">No. 11</td>
+            <td align="" class="clsCellNormal">No. 21</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*1: Except K20C1 engine</p>
+      <p>*2: K20C1 engine</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH409756">
+                <div class="imageHeader"><a name="S32130564152021060700000"></a></div><img alt="GHH409756" src="../images/GHH409756.jpeg" name="GHH409756"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN A_H wire and the F-CAN A_L wire are OK.</p>
+      <p>Refer to the DTC shown on the display, substitute or replace the control unit based on the instructions (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="77px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Operation for transmitting control unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation/">Substitute a known-good PCM</a>
+, then recheck. If DTC U0100 goes away and the PCM was substituted, <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation/">replace the original PCM</a>
+.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13637.html#Removal%20and%20Installation/VSA%20Modulator-Control%20Unit%20Removal%20and%20Installation%20%282%2F4-door%29/">Replace the VSA modulator-control unit</a>
+.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in F-CAN A_H or F-CAN A_L wire between the CAN gateway and the transmitting control unit.</p>
+    </li>
+    <li>Open wire check (F-CAN B lines)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. U0100: Jump the SCS line with the HDS, and wait more than 1 minute.</p>
+      <p>SCS short</p>
+      <p>-3. According to the detected DTC on the following table, disconnect the transmitting control unit connector(s).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="133px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Connector</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">-</td>
+            <td align="" class="clsCellNormal">CAN gateway 12P connector *1CAN gateway 16P connector *2</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal">PCM connector A (50P) *3<br>PCM connector No. 2 (58P) *4</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit 46P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*1: CAN gateway 12P connector type</p>
+      <p>*2: CAN gateway 16P connector type</p>
+      <p>*3: Except K20C1 engine</p>
+      <p>*4: K20C1 engine</p>
+      <p>-4. Check for continuity between test points 1 and 2.</p>
+      <p><span class="clsEmphBOLD">CAN gateway 12P connector type </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode<br>CAN gateway 12P connector: disconnected<br>Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="257px">
+          <col span="1" id="COL2" width="343px">
+          <col span="1" id="COL3" width="600px">
+          <col span="1" id="COL4" width="257px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="257px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 1 (Receiving control unit)</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 2 (Transmitting control unit)</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal">F-CAN B_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 12P connector</td>
+            <td align="" class="clsCellNormal">No. 12</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../external-car.html">PCM connector A (50P)</a></td>
+            <td align="" class="clsCellNormal">No. 39</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN B_L</td>
+            <td align="" class="clsCellNormal">No. 5</td>
+            <td align="" class="clsCellNormal">No. 38</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">F-CAN B_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 12P connector</td>
+            <td align="" class="clsCellNormal">No. 12</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector</a></td>
+            <td align="" class="clsCellNormal">No. 24</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN B_L</td>
+            <td align="" class="clsCellNormal">No. 5</td>
+            <td align="" class="clsCellNormal">No. 25</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH409757">
+                <div class="imageHeader"><a name="S42671336612021060700000"></a></div><img alt="GHH409757" src="../images/GHH409757.jpeg" name="GHH409757"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">CAN gateway 16P connector type </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode<br>CAN gateway 16P connector: disconnected<br>Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="257px">
+          <col span="1" id="COL2" width="343px">
+          <col span="1" id="COL3" width="600px">
+          <col span="1" id="COL4" width="257px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="257px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 1 (Receiving control unit)</th>
+            <th colspan="2" align="" class="clsCellNormal">Test point 2 (Transmitting control unit)</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100 *1</td>
+            <td align="" class="clsCellNormal">F-CAN B_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector</td>
+            <td align="" class="clsCellNormal">No. 6</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../external-car.html">PCM connector A (50P)</a></td>
+            <td align="" class="clsCellNormal">No. 39</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN B_L</td>
+            <td align="" class="clsCellNormal">No. 14</td>
+            <td align="" class="clsCellNormal">No. 38</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100 *2</td>
+            <td align="" class="clsCellNormal">F-CAN B_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector</td>
+            <td align="" class="clsCellNormal">No. 6</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P)</a></td>
+            <td align="" class="clsCellNormal">No. 29</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN B_L</td>
+            <td align="" class="clsCellNormal">No. 14</td>
+            <td align="" class="clsCellNormal">No. 17</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">F-CAN B_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector</td>
+            <td align="" class="clsCellNormal">No. 6</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector</a></td>
+            <td align="" class="clsCellNormal">No. 24</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN B_L</td>
+            <td align="" class="clsCellNormal">No. 14</td>
+            <td align="" class="clsCellNormal">No. 25</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*1: Except K20C1 engine</p>
+      <p>*2: K20C1 engine</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH409758">
+                <div class="imageHeader"><a name="S00062722072021060700000"></a></div><img alt="GHH409758" src="../images/GHH409758.jpeg" name="GHH409758"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN B_H wire and the F-CAN B_L wire are OK.</p>
+      <p>Refer to the DTC shown on the display, substitute or replace the control unit based on the instructions (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="77px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Operation for transmitting control unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation/">Substitute a known-good PCM</a>
+, then recheck. If DTC U0100 goes away and the PCM was substituted, <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation/">replace the original PCM</a>
+.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13637.html#Removal%20and%20Installation/VSA%20Modulator-Control%20Unit%20Removal%20and%20Installation%20%282%2F4-door%29/">Replace the VSA modulator-control unit</a>
+.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in F-CAN B_H or F-CAN B_L wire between the CAN gateway and the transmitting control unit.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Volume does not increase with speed — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/Infotainment/">Infotainment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18750.html">Audio System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18750.html#Audio%20System%20Symptom%20Troubleshooting/">Audio System Symptom Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2045.html">Volume does not increase with speed</a></div><div class="main"><h1>Volume does not increase with speed</h1><div id="S29705173892021060700000">
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li><a href="../pages/12952.html#Test/12%20Volt%20Battery%20Test/">Check the vehicle 12 volt battery condition first</a>
+.</li>
+    <li>If possible, have the customer demonstrate their concern and compare it against a known-good vehicle.</li>
+    <li>Check for B-CAN DTCs and resolve them before troubleshooting.</li>
+    <li>Check the connectors for poor connections or loose terminals.</li>
+  </ul>
+  <ol class="ARABICNUM">
+    <li>Problem verification<p>-1. Test-drive the vehicle at freeway speeds, and monitor if the volume increases.</p>
+      <p>Does the volume increase?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Intermittent failure, the system is OK at this time.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The failure is duplicated, go to step 2.</p>
+    </li>
+    <li>Determine possible failure area (audio setting, others)<p>-1. Verify the SVC mode setting in the audio system sound set-up.</p>
+      <p>Is the SVC set to off?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Change the setting to SVC MID, and recheck.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 3.</p>
+    </li>
+    <li>Determine possible failure area (audio unit, others):<p>Go into the System Diagnostic Mode:</p>
+      <ul class="BULLET">
+        <li>Display Audio Type: <a href="../pages/13430.html#Diagnosis/Audio%20System%20Diagnostic%20Mode%20%28Display%20Audio%20Type%20%287-inch%20Screen%29%29/">Do the Vehicle Status diagnosis to check the Speed indication</a> .</li>
+        <li>Color Audio Type: <a href="../pages/13430.html#Diagnosis/Audio%20System%20Diagnostic%20Mode%20%28Color%20Audio%20Type%20%285-inch%20Screen%29%29/">Do the VSPNE in the Vehicle Information to check the C_VSP indication</a> .</li>
+      </ul>
+      <p>-2. Test-drive the vehicle with the help of an assistant, and then watch the vehicle speed in the center display.</p>
+      <p>Is the vehicle speed indicated?</p>
+      <p>YES: With stereo amplifier</p>
+      <p>Go to step 4.</p>
+      <p>YES: Without stereo amplifier, with navigation</p>
+      <p><a href="../pages/13166.html#Removal%20and%20Installation/Audio-Navigation%20Unit%20Removal%20and%20Installation/">Replace the audio-navigation unit</a>
+.</p>
+      <p>YES: Without navigation</p>
+      <p><a href="../pages/13166.html#Removal%20and%20Installation/Audio%20Unit%20Removal%20and%20Installation%20%28Display%20Audio%20Type%20%287-inch%20Screen%29%29/">Replace the audio unit</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 5.</p>
+    </li>
+    <li>Stereo amplifier check (substitution)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. <a href="../pages/13166.html#Removal%20and%20Installation/Stereo%20Amplifier%20Removal%20and%20Installation/">Substitute a known-good stereo amplifier, and recheck</a>
+.</p>
+      <p>Does the symptom go away?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Replace the original stereo amplifier.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p><a href="../pages/13166.html#Removal%20and%20Installation/Audio-Navigation%20Unit%20Removal%20and%20Installation/">Replace the audio-navigation unit</a>
+.</p>
+    </li>
+    <li>Open wire check (B-CAN_H line, B-CAN_L line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the following connectors.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Gauge control module connector A (32P)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Audio-navigation unit connector A (24P) (with navigation)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Audio unit connector A (24P) (without navigation)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="125px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Gauge control module connector A (32P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Audio-navigation unit connector A (24P): disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="125px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Audio unit connector A (24P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12971.html">Gauge control module connector A (32P) No. 30</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13350.html">Audio-navigation unit connector A (24P) No. 14</a></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13349.html">Audio unit connector A (24P) No. 14</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="125px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12971.html">Gauge control module connector A (32P) No. 31</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13350.html">Audio-navigation unit connector A (24P) No. 24</a></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13349.html">Audio unit connector A (24P) No. 24</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p>YES: With navigation</p>
+      <p><a href="../pages/13166.html#Removal%20and%20Installation/Audio-Navigation%20Unit%20Removal%20and%20Installation/">Replace the audio-navigation unit</a>
+.</p>
+      <p>YES: Without navigation</p>
+      <p><a href="../pages/13166.html#Removal%20and%20Installation/Audio%20Unit%20Removal%20and%20Installation%20%28Display%20Audio%20Type%20%287-inch%20Screen%29%29/">Replace the audio unit</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the wire(s) between the audio-navigation unit or the audio unit and the gauge control module.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

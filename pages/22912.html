@@ -1,0 +1,273 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P060C (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19276.html">Engine Control System - Advanced Diagnostics (P0507 - P1684)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19276.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/22912.html">DTC P060C (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P060C (K20C1) (2019 2020 2021)</h1><div id="S12099601702021060700000">
+  <p><span class="clsEmphBOLD">DTC P060C: </span>
+Powertrain Control Module (PCM) Internal Control Module Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p>
+  <p>DTC P060C is stored if the internal failures of the powertrain control module (PCM) are detected:</p>
+  <ul class="BULLET">
+    <li>Engine torque limitation failure<p>The engine torque is limited to a maximum value that is defined according to the current constraints. If the engine speed exceeds the maximum engine speed, the engine torque is reduced. In normal circumstances, this intervention in torque limiting is done only for short times. If the limitation is active for a longer time, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>PCM internal calculation error<p>The PCM monitors itself whether the PCM internal calculations are correct. Therefore control values are compared with monitoring values. If the injection cut-off pattern does not fit to the injection mode or the desired injection pattern is not equal to the actual injection pattern, the PCM detects a malfunction and stores a DTC. The fault leads to an injection quantity limitation.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Charging efficiency deviation<p>The PCM monitors the deviation of the predicted charging efficiency from the calculated charging efficiency. If the absolute deviation is greater than a specified value for a specified time, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Accelerator pedal position (APP) sensor signal plausibility check<p>The accelerator pedal position monitoring consists of the signal plausibility check and the sensor supply voltage check. The PCM determines the accelerator pedal position based on two redundant APP sensors. For safety reasons, the two APP sensor signals are compared for synchronism. If the difference between the two APP sensor signals exceeds a specified value, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Engine speed check<p>The monitoring function of the PCM calculates the engine speed based on information from the related sensor. For safety reasons, the calculated engine speed of the monitoring function is compared with the measured engine speed. If the difference between the two engine speeds is a specified value, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Monitoring of mixture correction factor and relative fuel mass<p>The PCM monitors the relative fuel mass and the mixture correction factor of the function monitoring. The function checks the plausibility of the mixture control and secures the calculated fuel mass. If the relative fuel mass or the mixture correction factor is abnormal, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Monitoring of injection cut-off and ignition cut-off<p>The PCM monitors the injection cut-off above a first engine speed threshold and ignition cut off above a second engine speed threshold. If the monitored reactions are abnormal, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Lambda value check<p>The PCM monitors the desired lambda value by means of plausibility check against operating modes. If the desired lambda is out of range, the PCM detects a malfunction and stores a DTC. The faults recognized by the monitoring functions lead to limp home modes.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Starter driver IC check<p>The PCM monitors the plausibility check of the status of starter driver and redundancy control side start permission. If the starter driver is activated but redundancy control side does not permit engine start, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Engine torque check<p>The PCM monitors the engine torque. The current engine torque is compared with the maximum allowed engine torque. If the current engine torque is greater than the maximum allowed engine torque, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Ignition angle check<p>The PCM monitors the ignition angle. The ignition angle check detects implausible values by comparing the ignition angle output value with a verification value. If the ignition angle value and the complement of the ignition angle value are not identical for a specified time, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Overvoltage detection<p>This function defines the reaction of the PCM in case of shut-off of the power stage via the watchdog output and supply voltage monitoring of power stages lines. If the overvoltage is detected, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S120996017020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">Depending on error</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Engine torque limitation failure/Engine torque check/Overvoltage detection </span></p><a name="S120996017020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td align="" class="clsCellNormal">Running</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Charging efficiency deviation/Fuel correction error/PCM internal calculation error/Lambda value check/Monitoring of mixture correction factor and relative fuel mass </span></p><a name="S120996017020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">1, 200 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Injection cut-off is not commanded</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">APP sensor signal plausibility check </span></p><a name="S120996017020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">APP sensor 1 output voltage</td>
+        <td align="" class="clsCellNormal">1.18 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">APP sensor 2 output voltage</td>
+        <td align="" class="clsCellNormal">1.18 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Engine speed check </span></p><a name="S120996017020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">520 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Starter driver IC check/Ignition angle check </span></p><a name="S120996017020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td align="" class="clsCellNormal">ON mode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Monitoring of injection cut-off and ignition cut-off </span></p><a name="S120996017020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td align="" class="clsCellNormal">ON mode</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Injection cut-off is commanded</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Engine torque limitation failure<p>The desired engine torque is limited for at least 10 seconds.</p>
+    </li>
+    <li>PCM internal calculation error<p>Either of the symptoms occurs:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Injection cut-off pattern is not equal to the injection mode.</p>
+        </li>
+        <li>-<p>Desired injection pattern is not equal to the actual injection pattern.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Charging efficiency deviation<p>The absolute deviation of the predicted charging efficiency from the calculated charging efficiency is greater than 11.3 %.</p>
+    </li>
+    <li>APP sensor signal plausibility check<p>Either of the symptoms occurs:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The difference between the two APP sensor signals is more than 0.28 V at full load.</p>
+        </li>
+        <li>-<p>The difference between the two APP sensor signals is more than 0.27 V at part load.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Engine speed check<p>The difference between the two engine speeds is 320 rpm or more and the counter counts at least 8 times.</p>
+    </li>
+    <li>Monitoring of mixture correction factor and relative fuel mass<p>Either of the symptoms occurs:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Mixture correction factor is more than 1.27.</p>
+        </li>
+        <li>-<p>The reference value of the relative fuel mass of the function monitoring is less than a minimum calibrated threshold or greater than maximum calibrated threshold.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Monitoring of injection cut-off and ignition cut-off<p>The engine speed is too high during injection cut off or ignition cut off.</p>
+    </li>
+    <li>Lambda value check<p>The desired lambda value is less than 0.7, or greater than 1. 2.</p>
+    </li>
+    <li>Starter driver IC check<p>The starter driver are activated but redundancy control side does not permit engine start.</p>
+    </li>
+    <li>Engine torque check<p>The current engine torque is greater than the maximum allowed engine torque at least 13 times.</p>
+    </li>
+    <li>Ignition angle check<p>The ignition angle value and the complement of the ignition angle value are not identical at least 16 times.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <p>Start the engine. Hold the engine speed [Engine Speed] at 3, 000 rpm without load (in neutral) until the radiator fan comes on, then let it idle.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

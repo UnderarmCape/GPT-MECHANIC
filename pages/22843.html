@@ -1,0 +1,189 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P219C, P219D, P219E, P219F (K20C2: USA/Canada models) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/22843.html">DTC P219C, P219D, P219E, P219F (K20C2: USA/Canada models)</a></div><div class="main"><h1>DTC P219C, P219D, P219E, P219F (K20C2: USA/Canada models)</h1><div id="S06543755942021060700000">
+  <p><span class="clsEmphBOLD">DTC P219C: </span>
+No. 1 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">DTC P219D: </span>
+No. 2 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">DTC P219E: </span>
+No. 3 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">DTC P219F: </span>
+No. 4 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S065437559420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403541">
+            <div class="imageHeader"><a name="S23988536552021060700000"></a></div><img alt="GHH403541" src="../images/GHH403541.jpeg" name="GHH403541"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S065437559420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403542">
+            <div class="imageHeader"><a name="S08931965682021060700000"></a></div><img alt="GHH403542" src="../images/GHH403542.jpeg" name="GHH403542"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) detects the imbalance amount from the sizes of the 0.5-order and 1.0-order components compared to 0.8-order excitation input by the fuel injection to determine the air/fuel ratio variation between the cylinder. The obtained components are used to learn the fuel coefficient of each cylinder and performs the imbalance reduction control. If it is not possible to suppress the variation even if the imbalance reduction control is performed; resulting the imbalance amount is large and the fuel coefficient is a specified value or more, the PCM detects as imbalance failure.</p>
+  <ul class="BULLET">
+    <li>When the imbalance amount is a specified value (about 10 %) or less:</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Fuel coefficient of each cylinder is higher than the threshold value: Failure on corresponding cylinder</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Fuel coefficient of each cylinder is lower than the threshold value: Pass</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>When the imbalance amount is a specified value (about 10 %) or more:</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Performs imbalance reduction control and fuel coefficient is higher than the threshold value: Failure on corresponding cylinder</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Performs imbalance reduction control and fuel coefficient of each cylinder is lower than the threshold value: Re-performs imbalance reduction control for a specified time and re-determines the failure by the fuel coefficient of each cylinder. If the imbalance amount is a specified value or less after imbalance reduction control is performed for a specified time, the determination is suspended. If the imbalance amount is a specified value or more after imbalance reduction control is performed for a specified time, the imbalance reduction control is performed again and if the fuel coefficient of each cylinder is higher than a specified value, the PCM detects the failure on corresponding cylinder.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S065437559420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S065437559420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine coolant temperature [ECT SENSOR 1]</td>
+        <td align="" class="clsCellNormal">156 deg.F (69 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Intake air temperature [IAT Sensor (1)]</td>
+        <td align="" class="clsCellNormal">-13 deg.F (-25 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [ENGINE SPEED]</td>
+        <td align="" class="clsCellNormal">1, 350 rpm</td>
+        <td align="" class="clsCellNormal">3, 400 rpm</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed variation during 1 cycle</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">50 rpm</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel trim</td>
+        <td align="" class="clsCellNormal">0.69</td>
+        <td align="" class="clsCellNormal">1.47</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Intake air amount variation</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">0.06 g (0.002 oz)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Closed loop at stoichiometric</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Monitoring priority</td>
+        <td colspan="2" align="" class="clsCellNormal">P0133, P0420</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Fuel correction coefficient of each cylinder is 0.83 or less, or 1.16 or more.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Fuel injector failure</li>
+    <li>Fuel rail clogged</li>
+    <li>Intake manifold air leak/clogged</li>
+    <li>Cam lift failure</li>
+    <li>Ignition system failure</li>
+    <li>Engine compression abnormal</li>
+    <li>Valve clearance incorrect</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p><a name="S065437559420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403543">
+            <div class="imageHeader"><a name="S09692129282021060700000"></a></div><img alt="GHH403543" src="../images/GHH403543.jpeg" name="GHH403543"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="BULLET">
+    <li>Start the engine. Hold the engine speed [ENGINE SPEED] at 3, 000 rpm without load (CVT in P or N, M/T in neutral) until the radiator fan comes on.</li>
+    <li>Drive the vehicle in 4th gear at a steady engine speed [ENGINE SPEED] 1, 000 - 1, 200 rpm.</li>
+    <li>Take 10 - 15 seconds to accelerate up to engine speed [ENGINE SPEED] 3, 400 rpm.</li>
+    <li>When the diagnosis does not finish, repeat Driving Pattern steps 2 through 3, five times.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive drive cycles in which the engine conditions are similar to the first time the malfunction was detected. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

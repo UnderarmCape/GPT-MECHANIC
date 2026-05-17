@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Cruise Control (ECM/PCM) Input Test — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Cruise%20Control%20Systems/">Cruise Control Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12941.html">Cruise Control System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12941.html#Input%20Test/">Input Test</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/16574.html">Cruise Control (ECM/PCM) Input Test</a></div><div class="main"><h1>Cruise Control (ECM/PCM) Input Test</h1><div id="S12176364542021060700000">
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ Always make sure that you have the latest HDS software.</p>
+  <p>1. Turn the vehicle to the OFF (LOCK) mode.</p>
+  <p>2. <a href="../external-car.html">Connect the HDS</a></p>
+  <p>3. Select PGM-FI system and check the diagnostic trouble code (DTC) in the DTC MENU on the screen and note it. Also check the freeze data and/or onboard snapshot data, and download any data found. Then refer to the indicated DTC's troubleshooting, and begin the appropriate troubleshooting procedure.</p>
+  <p>4. If no DTCs are found, do the following tests while monitoring parameters in the DATA LIST with the HDS.</p>
+  <p>5. If the input tests prove OK, <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation/">replace the PCM</a>
+.</p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ Intermittent failures are often caused by loose circuit connections. While monitoring cruise control inputs, flex the circuit wires, and note if any of the test results change.</p><a name="S121763645420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="200px">
+      <col span="1" id="COL2" width="257px">
+      <col span="1" id="COL3" width="314px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Signal to be tested</th>
+        <th align="" class="clsCellNormal">Test condition</th>
+        <th align="" class="clsCellNormal">Parameter: Desired result</th>
+        <th align="" class="clsCellNormal">Possible cause if result is not obtained</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="5" align="" class="clsCellNormal">Cruise control system switch status</td>
+        <td align="" class="clsCellNormal">Cruise control combination switch buttons are not pressed</td>
+        <td align="" class="clsCellNormal">CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list should indicate DEFAULT when the cruise control combination switch buttons are not pressed.</td>
+        <td rowspan="5" align="" class="clsCellNormal">If the CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list indicates SIGNAL LOST, check as shown:<ul class="BULLET">
+            <li>Check for DTCs in the PGM-FI system and do the appropriate troubleshooting.</li>
+            <li>Faulty gauge control module</li>
+            <li>Faulty cruise control combination switch</li>
+            <li>An open in the wire between the gauge control module and the cruise control combination switch</li>
+            <li>A short to power in the wire between the gauge control module and the cruise control combination switch when the combination light switch is turned on</li>
+          </ul>
+          <p>If the CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list indicates SIGNAL SHORT, check as shown:</p>
+          <ul class="BULLET">
+            <li>Check for DTCs in the PGM-FI system and do the appropriate troubleshooting</li>
+            <li>Faulty gauge control module</li>
+            <li>Faulty cruise control combination switch</li>
+            <li>A short to ground in the wire between the gauge control module and the cruise control combination switch</li>
+          </ul>
+          <p>If the CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list indicates a different status, check for a faulty cruise control combination switch.</p>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">CRUISE button is pressed</td>
+        <td align="" class="clsCellNormal">CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list should indicate MAIN switch when the CRUISE button is pressed.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">CANCEL button is pressed</td>
+        <td align="" class="clsCellNormal">CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list should indicate CANCEL switch when the CANCEL button is pressed.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">SET- button is pressed</td>
+        <td align="" class="clsCellNormal">CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list should indicate SET switch when the SET- button is pressed.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">RES+ button is pressed</td>
+        <td align="" class="clsCellNormal">CRUISE CONTROL SYSTEM SWITCH STATUS in the HDS data list should indicate RES switch when the RES+ button is pressed.</td>
+      </tr>
+    </tbody>
+  </table><a name="S121763645420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="200px">
+      <col span="1" id="COL2" width="257px">
+      <col span="1" id="COL3" width="314px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Signal to be tested</th>
+        <th align="" class="clsCellNormal">Test condition</th>
+        <th align="" class="clsCellNormal">Parameter: Desired result</th>
+        <th align="" class="clsCellNormal">Possible cause if result is not obtained</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Cruise control indicator signal</td>
+        <td align="" class="clsCellNormal">Start the engine, press the cruise control main button on and drive the vehicle above 25 mph (40 km/h) with the cruise control set and cancel the cruise control</td>
+        <td align="" class="clsCellNormal">CRUISE INDICATOR should indicate ON when the cruise control is set and OFF when the cruise control is canceled.</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Faulty gauge control module</li>
+            <li>Faulty cruise control combination switch</li>
+            <li>An open in the wire between the gauge control module and the cruise control combination switch</li>
+            <li>A wire shorted to ground between the gauge control module and the cruise control combination switch</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Brake pedal position switch signal</td>
+        <td align="" class="clsCellNormal">Brake pedal is pressed, then released</td>
+        <td align="" class="clsCellNormal">CRUISE BRAKE SW should indicate OPEN when the brake pedal is pressed and CLOSE when the brake pedal is released.</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Faulty brake pedal position switch</li>
+            <li>Blown No. B21 (10 A) fuse in the under-dash fuse/relay box</li>
+            <li>An open in the wire between the PCM and the brake pedal position switch</li>
+            <li>A wire shorted to ground or power between the PCM and the brake pedal position switch</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Clutch pedal position switch A signal (M/T)</td>
+        <td align="" class="clsCellNormal">Clutch pedal is pressed, then released</td>
+        <td align="" class="clsCellNormal">CLUTCH PEDAL POSITION SWITCH should indicate OPEN when the clutch pedal is pressed and CLOSE when the clutch pedal is released.</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Faulty clutch pedal position switch A</li>
+            <li>An open in the wire between the PCM and clutch pedal position switch A</li>
+            <li>A wire shorted to ground between the PCM and clutch pedal position switch A</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

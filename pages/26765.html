@@ -1,0 +1,490 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Indirect TPMS Calibration (Interactive) (AJA05074) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Quick%20Lookups/">Quick Lookups</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Quick%20Lookups/Technical%20Bulletins/">Technical Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19094.html">Technical Service Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/26511.html">Other Variant</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/26511.html#Wheels%20%26%20Tire%20System/">Wheels &amp; Tire System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/26765.html">Indirect TPMS Calibration (Interactive) (AJA05074)</a></div><div class="main"><h1>Indirect TPMS Calibration (Interactive) (AJA05074)</h1><div class="other-warning other-variant"><b>WARNING:</b> This page is about the Civic EX-L, 2D Coupe, which is a different variant/trim than selected.</div>Publication date: 2017-09-01<br>Reference number: AJA05074<br><br><div id="bulletin" class="infoObjPrint articlePrintSelection">
+    <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>INDIRECT TPMS CALIBRATION (INTERACTIVE)</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  </head>
+  <body style="bgcolor:white; text:black; ">
+    <h2>INDIRECT TPMS CALIBRATION (INTERACTIVE)</h2>
+    <h2>TECHNICAL SERVICE BULLETIN</h2>
+    <div id="idTecHead">Reference Number(s): AJA05074 Version 2, Date of Issue: 
+				September, 2017<br><table class="" cellspacing="0">
+        <tr>
+          <td class="clsTDescTitle">HONDA:</td>
+          <td>All Models</td>
+        </tr>
+      </table>
+    </div><h3>AFFECTED VEHICLES</h3>
+    
+    <p>All models with indirect TPMS; <span class="clsEmphBOLD">see the complete affected vehicle application list on the final page. </span></p>
+    <p><span class="clsEmphBOLD">Please Select Model: </span></p>
+    <p>YEAR</p>
+    <p>MODEL</p>
+    <p>TRIM</p><h3>INTRODUCTION</h3>
+    
+    <p>Indirect TPMS, first introduced in the 2013 Accord, provides the same function as direct TPMS but does it differently. And because of that, it remains a source of confusion for both service techs and customers alike. This job aid offers important guidance, along with some valuable tips, to help you better understand indirect TPMS.</p>
+    <p>Here is what it covers:</p>
+    <ul class="BULLET">
+      <li>A Few Basics</li>
+      <li>Calibration</li>
+      <li>Low Tire Pressure/TPMS Indicator Functions</li>
+      <li>Troubleshooting Tips</li>
+      <li>Calibration Comparison Logic and Special Calibration</li>
+      <li>To Learn More</li>
+    </ul><h3>A FEW BASICS</h3>
+    
+    <p>Unlike a direct TPMS, an indirect TPMS <span class="clsEmphBOLD">does not </span>
+
+ use tire pressure sensors mounted in the tires. Instead, the system is integrated into the VSA modulator-control unit and uses the following inputs to monitor and compare tire characteristics while driving and determine when one or more tires are significantly underinflated.</p>
+    <ul class="BULLET">
+      <li>VSA/ABS wheel speed sensors</li>
+      <li>Yaw and G sensor</li>
+      <li>Brake pressure</li>
+      <li>Steering angle</li>
+      <li>Outside temperature (measured from the front bumper)</li>
+    </ul>
+    <p>From these inputs, the system calculates tire pressures. To determine tire pressure loss, the system uses these two methods:</p>
+    <ul class="BULLET">
+      <li><span class="clsEmphBOLD">Wheel Speed Differential </span>
+
+ - This method is used to detect if one, two, or three tires have lost pressure. It compares the <span class="clsEmphBOLD">two </span>
+
+ left tires to the two <span class="clsEmphBOLD">right </span>
+
+ tires, the two <span class="clsEmphBOLD">front </span>
+
+ tires to the two <span class="clsEmphBOLD">rear </span>
+
+ tires, and the <span class="clsEmphBOLD">left front </span>
+
+ and <span class="clsEmphBOLD">right rear </span>
+
+ tires to the <span class="clsEmphBOLD">left rear </span>
+
+ and <span class="clsEmphBOLD">right front </span>
+
+ tires.</li>
+      <li><span class="clsEmphBOLD">Peak Tire Resonance </span>
+
+ - This method is used to detect if all four tires have lost pressure. A good example: if the tire pressures have not been checked for over 9 months.</li>
+    </ul>
+    <p>An easy way to tell which type of TPMS a vehicle has is by looking at the valve stems. Vehicles with <span class="clsEmphBOLD">indirect </span>
+
+ TPMS have <span class="clsEmphBOLD">black rubber </span>
+
+ valve stems. Vehicles with <span class="clsEmphBOLD">direct </span>
+
+ TPMS have <span class="clsEmphBOLD">gray alloy </span>
+
+ valve stems.</p><h3>CALIBRATION</h3>
+    
+    <p>In order to calculate tire pressures, the system must first be calibrated. The system relies on the tire pressures being set to the cold inflation values listed on the driver's doorjamb label and the calibration process started. This process must be done at PDI, and also at scheduled maintenance and anytime you do the following:</p>
+    <ul class="BULLET">
+      <li>Adjust pressure in one or more tires</li>
+      <li>Rotate tires</li>
+      <li>Replace one or more tires</li>
+    </ul>
+    <p>Keep in mind if the Low Tire Pressure/TPMS indicator is <span class="clsEmphBOLD">not </span>
+
+ on, you just need to <span class="clsEmphBOLD">start </span>
+
+ the process; the system will finish it on its own as the customer drives the vehicle.</p>
+    <p>If the tire pressures are not properly set and/or the calibration process is not started at the right time, the tire pressure calculations are tricked, causing the Low Tire Pressure/TPMS indicator to possibly come on, resulting in a possible customer comeback and wasted troubleshooting time.</p>
+    <p>Starting calibration is very easy. Here is how it is done. You will also find these procedures in the PDI bulletins, owner's guides, owner's manuals, and service information.</p>
+    <div id="S16397718402017091800000" class="infoObjPrint"><h4>Before You Start</h4>
+      
+      <ol class="ARABICNUM">
+        <li>Make sure the vehicle is completely stopped with the transmission in Neutral (M/T) or Park (A/T or CVT).</li>
+        <li>Make sure all of the tires are the same type and size. The system will not work right otherwise.</li>
+        <li>Set the tire pressures to the cold inflation values listed on the driver's doorjamb label.</li>
+        <li>Turn the ignition to ON.</li>
+      </ol>
+      <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>The following steps vary, depending on the vehicle and how it is equipped.</span></div>
+    </div><h3>TPMS BUTTON METHOD</h3>
+    
+    <div id="S22682431292017091800000" class="infoObjPrint"><h4>Starting Calibration - TPMS Button Method</h4>
+      
+      <p><span class="clsEmphBOLDITAL">Procedure: </span>
+
+ Press and hold the TPMS button underneath the left side of the dashboard until the Low Tire Pressure/TPMS indicator blinks <span class="clsEmphBOLD">twice. </span></p><a name="S226824312920170918000001"></a><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <tbody>
+          <tr>
+            <td align="center" class="clsCellNormal">
+              <div class="imageHolder" id="container_G11660723">
+                <div class="imageHeader"><a name="S34741361212017091800000"></a></div><img alt="G11660723" src="../images/G11660723.jpeg" name="G11660723"><span class="imageCourtesyNote"></span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="BULLET">
+        <li>If this DID NOT fix the issue click here to view <span class="clsEmphBOLD">Special Method. </span></li>
+      </ul>
+    </div><h3>TPMS BUTTON SPECIAL METHOD</h3>
+    
+    <div id="S10895742932017091800000" class="infoObjPrint"><h4>Starting Special Calibration - TPMS Button Special Method</h4>
+      
+      <p><span class="clsEmphBOLDITAL">Procedure: </span>
+
+ Press and hold the TPMS button until the Low Tire Pressure/TPMS indicator blinks <span class="clsEmphBOLD">twice. </span>
+
+ Wait <span class="clsEmphBOLD">5 seconds, </span>
+
+ then press and hold the button until the indicator blinks twice. Wait <span class="clsEmphBOLD">5 more seconds </span>
+
+, then press and hold the button until the indicator blinks twice. Within <span class="clsEmphBOLD">10 seconds </span>
+
+, the indicator blinks once, letting you know that special calibration has started.</p>
+    </div><h3>DISPLAY AUDIO METHOD</h3>
+    
+    <div id="S05330892592017091800000" class="infoObjPrint"><h4>Starting Calibration - Display Audio Method</h4>
+      
+      <p><span class="clsEmphBOLDITAL">Procedure: </span>
+
+ Select <span class="clsEmphBOLD">HOME, Settings, Vehicle, TPMS Calibration </span>
+
+, then <span class="clsEmphBOLD">Calibrate. </span></p>
+      <ul class="BULLET">
+        <li>If this DID NOT fix the issue click here to view <span class="clsEmphBOLD">Special Method. </span></li>
+      </ul>
+    </div><h3>DISPLAY AUDIO SPECIAL METHOD</h3>
+    
+    <p><span class="clsEmphBOLD">Starting Special Calibration - Display Audio Method </span></p>
+    <p><span class="clsEmphBOLDITAL">Procedure: </span>
+
+ Select <span class="clsEmphBOLD">HOME, Settings, Vehicle, TPMS Calibration </span>
+
+, then Calibrate. Wait <span class="clsEmphBOLD">5 seconds </span>
+
+, then select <span class="clsEmphBOLD">TPMS Calibration </span>
+
+ and <span class="clsEmphBOLD">Calibrate. </span>
+
+ Wait <span class="clsEmphBOLD">5 more seconds </span>
+
+, then select <span class="clsEmphBOLD">TPMS Calibration </span>
+
+ and <span class="clsEmphBOLD">Calibrate. </span>
+
+ Within <span class="clsEmphBOLD">10 seconds </span>
+
+, the indicator blinks <span class="clsEmphBOLD">once </span>
+
+, letting you know that special calibration has started.</p><h3>MID/IMID/DRIVER INFORMATION INTERFACE METHOD</h3>
+    
+    <div id="S11627255782017091800000" class="infoObjPrint"><h4>Starting Calibration - MID/iMID/Driver Information Interface Method</h4>
+      
+      <p><span class="clsEmphBOLDITAL">Procedure: </span>
+
+ Using the steering wheel buttons, select <span class="clsEmphBOLD">Settings </span>
+
+ or <span class="clsEmphBOLD">Menu, TPMS Calibration, </span>
+
+ then <span class="clsEmphBOLD">Calibrate </span>
+
+ or <span class="clsEmphBOLD">Initialize. </span></p>
+    </div>
+    <div id="S04809657912017091800000" class="infoObjPrint"><h4>Calibration Status</h4>
+      
+      <p>During calibration, if you cycle the ignition, and the vehicle is not moved within <span class="clsEmphBOLD">45 seconds </span>
+
+, the Low Tire Pressure/TPMS indicator will come on for <span class="clsEmphBOLD">2 seconds. </span>
+
+ This is normal and simply means that calibration has not yet completed.</p>
+      <ul class="BULLET">
+        <li>If this DID NOT fix the issue click here to view <span class="clsEmphBOLD">Special Method. </span></li>
+      </ul>
+    </div><h3>MID/IMID/DRIVER INFORMATION INTERFACE SPECIAL METHOD</h3>
+    
+    <div id="S04108512662017091800000" class="infoObjPrint"><h4>Starting Calibration - MID/iMID/Driver Information Interface Special Method</h4>
+      
+      <p><span class="clsEmphBOLDITAL">Procedure: </span>
+
+ Using the steering wheel buttons, select <span class="clsEmphBOLD">Settings </span>
+
+ or <span class="clsEmphBOLD">Menu, TPMS Calibration </span>
+
+, then <span class="clsEmphBOLD">Calibrate </span>
+
+ or <span class="clsEmphBOLD">Initialize </span>
+
+. Wait <span class="clsEmphBOLD">5 more seconds </span>
+
+, then select <span class="clsEmphBOLD">TPMS Calibration </span>
+
+ and <span class="clsEmphBOLD">Calibrate </span>
+
+ or <span class="clsEmphBOLD">Initialize. </span>
+
+ Wait <span class="clsEmphBOLD">5 more seconds </span>
+
+, then select <span class="clsEmphBOLD">TPMS Calibration </span>
+
+ and <span class="clsEmphBOLD">Calibrate </span>
+
+ or <span class="clsEmphBOLD">Initialize. </span>
+
+ Within <span class="clsEmphBOLD">10 seconds </span>
+
+, the indicator blinks once, letting you know that special calibration has started.</p>
+    </div><h3>LOW TIRE PRESSURE/TPMS INDICATOR FUNCTIONS</h3>
+    
+    <p>The Low Tire Pressure/TPMS indicator does a variety of things, depending on conditions and circumstances.</p><a name="S029851117820170918000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td align="center" class="clsCellNormal">
+            <div class="imageHolder" id="container_G11660724">
+              <div class="imageHeader"><a name="S01272417902017091800000"></a></div><img alt="G11660724" src="../images/G11660724.png" name="G11660724"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="S02887954082017091800000" class="infoObjPrint"><h4>Normal Conditions</h4>
+      
+      <ul class="BULLET">
+        <li>The indicator comes on for a few seconds when you turn the ignition to ON. This is just part of the system check.</li>
+        <li>The indicator comes on for <span class="clsEmphBOLD">2 seconds </span>
+
+, then goes off, if the vehicle is not moved within <span class="clsEmphBOLD">45 seconds </span>
+
+ after turning the ignition to ON. This just means the system is still calibrating.</li>
+      </ul>
+    </div>
+    <div id="S27271282982017091800000" class="infoObjPrint"><h4>Abnormal Conditions</h4>
+      
+      <ul class="BULLET">
+        <li>The indicator comes on and stays on if one or more tire pressures are very low or the system has not been calibrated. If this happens, the vehicle should be stopped in a safe place, the tire pressures checked and adjusted as needed, and the calibration process started.</li>
+        <li>The indicator blinks for about <span class="clsEmphBOLD">1 minute </span>
+
+, then stays on if the compact spare tire is mounted or there is a problem with the TPMS.<p>If the spare is mounted, the regular tire should be repaired or replaced and mounted as soon as possible, and the calibration process started. If the spare is not mounted, the calibration process should be started and the system checked.</p>
+        </li>
+      </ul>
+    </div><h3>TROUBLESHOOTING TIPS</h3>
+    
+    <p>If the Low Tire Pressure/TPMS indicator is on steady, here are a few tips to help you troubleshoot.</p>
+    <ul class="BULLET">
+      <li>Check cold tire pressures. A cold tire means the vehicle has been parked for at least <span class="clsEmphBOLD">3 hours </span>
+
+ or driven less than <span class="clsEmphBOLD">1 mile </span>
+
+. Be sure to use an accurate tire pressure gauge (P/N 07AAJ-000-A100)</li>
+      <li>If you find a low tire, repair or replace it, then set the tire pressure to the recommended cold inflation value and start the calibration process. You <span class="clsEmphBOLD">do not </span>
+
+ need to finish calibration.</li>
+      <li>If the tire pressures are OK, check that the wheels and tires are the OEM size, make, and model and that they are not damaged in any way. Then, check if the vehicle was recently serviced within or outside a Honda dealer. If a tire was recently replaced, and its tread depth is different from the other tires, the Low Tire Pressure/TPMS indicator could be triggered.</li>
+      <li>If all of the vehicle's tires are worn, it's best to replace them together. If that's not possible, then replace the front pair or the rear pair.</li>
+      <li>If you suspect that calibration was not done at a recent service, you can find out for sure by connecting the i-HDS and checking the <span class="clsEmphBOLD">INITIALIZED ODOMETER </span>
+
+ signal in the <span class="clsEmphBOLD">VSA Data List. </span>
+
+ In the case below, calibration was not started at PDI.</li>
+    </ul><a name="S153501542920170918000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td align="center" class="clsCellNormal">
+            <div class="imageHolder" id="container_G11660725">
+              <div class="imageHeader"><a name="S20017978982017091800000"></a></div><img alt="G11660725" src="../images/G11660725.png" name="G11660725"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table><h3>CALIBRATION COMPARISON LOGIC AND SPECIAL CALIBRATION</h3>
+    
+    <p>Whenever calibration is started, the TPMS control unit learns the tire characteristics during the calibration drive. Should those characteristics change for any reason from what it has learned (for example, there is a sudden drop in tire pressure), the Low Tire Pressure/TPMS indicator comes on as a reminder to check the tire pressures.</p>
+    <p>If the tire pressures are properly set and calibration is started, the indicator goes off, the control unit learns the proper tire characteristics during the calibration drive, and all is well. But what if <span class="clsEmphBOLD">nothing </span>
+
+ is done about the tire pressures, but calibration is started? The indicator will still go off, but now something called <span class="clsEmphBOLD">calibration comparison logic </span>
+
+ steps in.</p>
+    <p>The control unit then compares the tire characteristics that caused the indicator to come on to the tire characteristics during the calibration drive. If the control unit sees that there has been <span class="clsEmphBOLD">no change </span>
+
+ in tire characteristics, the indicator comes on again <span class="clsEmphBOLD">within 20 minutes </span>
+
+ as a reminder to check the tire pressures.</p>
+    <p>It is not uncommon for customers to experience this situation and, when they do, they are often confused and think there is something wrong with the TPMS and end up back at their dealership. Here are two ways this can happen:</p>
+    <p><span class="clsEmphBOLD">Scenario 1 </span></p>
+    <p><span class="clsEmphITAL">At PDI, the tire pressures are not checked and they remain at their high-pressure values for shipping. The vehicle is delivered to the customer, and the control unit learns the tire characteristics at high pressure. Sometime later, the pressures are lowered to the recommended values but for some reason, calibration </span><span class="clsEmphBOLDITAL">is not </span><span class="clsEmphITAL">started. The control unit sees there is a </span><span class="clsEmphBOLDITAL">change </span><span class="clsEmphITAL">in tire characteristics and the Low Tire Pressure/TPMS indicator comes on. The customer, knowing the tire pressures were </span><span class="clsEmphBOLDITAL">already </span><span class="clsEmphITAL">set to the recommended values, just starts calibration. The control unit's calibration comparison logic sees there is </span><span class="clsEmphBOLDITAL">no change </span><span class="clsEmphITAL">in tire characteristics since the last calibration, and the indicator comes on </span><span class="clsEmphBOLDITAL">again </span><span class="clsEmphITAL">within 20 minutes. </span></p>
+    <p><span class="clsEmphBOLD">Scenario 2 </span></p>
+    <p><span class="clsEmphITAL">The Low Tire Pressure/TPMS indicator comes on while driving. The customer, not wanting to stop and check tire pressures, starts calibration knowing it will turn off the indicator. The control unit's calibration comparison logic sees there is </span><span class="clsEmphBOLDITAL">no change </span><span class="clsEmphITAL">in tire characteristics since the last calibration and the indicator comes on </span><span class="clsEmphBOLDITAL">again </span><span class="clsEmphITAL">within 20 minutes. </span></p>
+    <p><span class="clsEmphITAL">The truth is both of these scenarios can easily be avoided: the first one by just remembering to set the tire pressures and start calibration at PDI, the second one by simply heeding the indicator and taking proper action (setting the tire pressures and starting calibration). </span></p>
+    <p><span class="clsEmphITAL">To clear all learned tire pressures and avoid calibration comparison logic activity, there is a </span><span class="clsEmphBOLDITAL">special calibration </span>
+
+, <span class="clsEmphITAL">which has you start the normal calibration three times in a row, waiting </span><span class="clsEmphBOLDITAL">5 seconds </span><span class="clsEmphITAL">between each start. After the third start, the Low Tire Pressure/TPMS indicator blinks </span><span class="clsEmphBOLDITAL">once </span>
+
+, <span class="clsEmphITAL">letting you know the special calibration has started. There is no need for a calibration drive after each start. </span></p><h3>TO LEARN MORE</h3>
+    
+    <p>To learn more about the material covered in this job aid, check out these resources:</p>
+    <ul class="BULLET">
+      <li>Online University Self-Study Module SSC16, <span class="clsEmphITAL">Indirect Tire Pressure Monitoring System </span></li>
+      <li>Tech2Tech® Video <span class="clsEmphBOLD">&quot;TPMS Identification and Calibration&quot; </span></li>
+    </ul>
+    <p>We have also produced and posted these five videos demonstrating the calibration process on the Honda YouTube Channel:</p>
+    <ul class="BULLET">
+      <li><span class="clsEmphBOLD">&quot;Calibrating an Indirect Tire Pressure Monitoring System: Vehicles with TPMS Button&quot; -  </span><ul class="BULLET">
+          <li>https://www.youtube.com/watch?v=gFSY3Ztq9Gk&amp;=youtu.be</li>
+        </ul>
+      </li>
+      <li><span class="clsEmphBOLD">&quot;Calibrating an Indirect Tire Pressure Monitoring System: Vehicles with MID&quot; -  </span><ul class="BULLET">
+          <li>https://www.youtube.com/watch?v=r0mxflHR6ps&amp;=youtu.be</li>
+        </ul>
+      </li>
+      <li><span class="clsEmphBOLD">&quot;Calibrating an Indirect Tire Pressure Monitoring System: Vehicles with i-MID&quot; -  </span><ul class="BULLET">
+          <li>https://www.youtube.com/watch?v=CPkg_eTJL6I&amp;=youtu.be</li>
+        </ul>
+      </li>
+      <li><span class="clsEmphBOLD">&quot;Calibrating an Indirect Tire Pressure Monitoring System: Using Driver Information Interface&quot; -  </span><ul class="BULLET">
+          <li>https://www.youtube.com/watch?v=tLm2xwOVepA&amp;=youtu.be</li>
+        </ul>
+      </li>
+      <li><span class="clsEmphBOLD">&quot;Calibrating an Indirect Tire Pressure Monitoring System: Using Display Audio&quot; -  </span><ul class="BULLET">
+          <li>https://www.youtube.com/watch?v=ORr4mSqPRc4&amp;=youtu.be</li>
+        </ul>
+      </li>
+    </ul><h3>AFFECTED VEHICLE APPLICATION CHART FOR INDIRECT TPMS</h3>
+    <a name="S10075434172017091800000"></a><div class="clsTableTitle">AFFECTED VEHICLE APPLICATION CHART</div><br><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <thead>
+        <tr class="clsTblHead">
+          <th align="left" class="clsCellNormal">Year</th>
+          <th align="left" class="clsCellNormal">Model</th>
+          <th align="left" class="clsCellNormal">Trim</th>
+          <th align="left" class="clsCellNormal">Calibration Me...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="left" class="clsCellNormal">2013-17</td>
+          <td align="left" class="clsCellNormal">Accord</td>
+          <td align="left" class="clsCellNormal">All Except Touring</td>
+          <td align="left" class="clsCellNormal">TPMS Button</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2013-17</td>
+          <td align="left" class="clsCellNormal">Accord</td>
+          <td align="left" class="clsCellNormal">Touring</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2014</td>
+          <td align="left" class="clsCellNormal">Accord</td>
+          <td align="left" class="clsCellNormal">Plug-in</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2014-15</td>
+          <td align="left" class="clsCellNormal">Accord</td>
+          <td align="left" class="clsCellNormal">Hybrid</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2017</td>
+          <td align="left" class="clsCellNormal">Accord</td>
+          <td align="left" class="clsCellNormal">Hybrid</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2014-15</td>
+          <td align="left" class="clsCellNormal">Civic</td>
+          <td align="left" class="clsCellNormal">All</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2016-17</td>
+          <td align="left" class="clsCellNormal">Civic</td>
+          <td align="left" class="clsCellNormal">LX w/o Honda Sensing</td>
+          <td align="left" class="clsCellNormal">TPMS Button</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2016-17</td>
+          <td align="left" class="clsCellNormal">Civic</td>
+          <td align="left" class="clsCellNormal">LX w/Honda Sensing</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2016-17</td>
+          <td align="left" class="clsCellNormal">Civic</td>
+          <td align="left" class="clsCellNormal">EX/Touring</td>
+          <td align="left" class="clsCellNormal">Display Audio</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2017</td>
+          <td align="left" class="clsCellNormal">Civic</td>
+          <td align="left" class="clsCellNormal">Sport</td>
+          <td align="left" class="clsCellNormal">TPMS Button</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2017</td>
+          <td align="left" class="clsCellNormal">Civic</td>
+          <td align="left" class="clsCellNormal">Sport Touring/Type R</td>
+          <td align="left" class="clsCellNormal">Display Audio</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2017</td>
+          <td align="left" class="clsCellNormal">Clarity</td>
+          <td align="left" class="clsCellNormal">All</td>
+          <td align="left" class="clsCellNormal">Display Audio</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2014-16</td>
+          <td align="left" class="clsCellNormal">CR-V</td>
+          <td align="left" class="clsCellNormal">All Except Touring</td>
+          <td align="left" class="clsCellNormal">TPMS Button</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2015-16</td>
+          <td align="left" class="clsCellNormal">CR-V</td>
+          <td align="left" class="clsCellNormal">Touring</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2017</td>
+          <td align="left" class="clsCellNormal">CR-V</td>
+          <td align="left" class="clsCellNormal">LX</td>
+          <td align="left" class="clsCellNormal">TPMS Button</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2017</td>
+          <td align="left" class="clsCellNormal">CR-V</td>
+          <td align="left" class="clsCellNormal">Except LX</td>
+          <td align="left" class="clsCellNormal">Display Audio</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2016</td>
+          <td align="left" class="clsCellNormal">CR-Z</td>
+          <td align="left" class="clsCellNormal">All</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2015-17</td>
+          <td align="left" class="clsCellNormal">Fit</td>
+          <td align="left" class="clsCellNormal"> </td>
+          <td align="left" class="clsCellNormal">ll TPMS Button</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2018</td>
+          <td align="left" class="clsCellNormal">Fit</td>
+          <td align="left" class="clsCellNormal">w/o Honda Sensing</td>
+          <td align="left" class="clsCellNormal">TPMS Button</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2018</td>
+          <td align="left" class="clsCellNormal">Fit</td>
+          <td align="left" class="clsCellNormal">w/Honda Sensing</td>
+          <td align="left" class="clsCellNormal">MID/iMID/Driver Inf...</td>
+        </tr>
+        <tr>
+          <td align="left" class="clsCellNormal">2016-17</td>
+          <td align="left" class="clsCellNormal">HR-V</td>
+          <td align="left" class="clsCellNormal">All</td>
+          <td align="left" class="clsCellNormal">TPMS Button</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

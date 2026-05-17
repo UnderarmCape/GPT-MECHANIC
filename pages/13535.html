@@ -1,0 +1,1027 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Fuel and Emissions Systems Symptom Troubleshooting - Engine will not start, engine starts but stalls immediately, or engine is hard to start (K20C2) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/Fuel%20Delivery/">Fuel Delivery</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12915.html">Fuel And Emissions - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12915.html#Symptom%20Troubleshooting/">Symptom Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13535.html">Fuel and Emissions Systems Symptom Troubleshooting - Engine will not start, engine starts but stalls immediately, or engine is hard to start (K20C2)</a></div><div class="main"><h1>Fuel and Emissions Systems Symptom Troubleshooting - Engine will not start, engine starts but stalls immediately, or engine is hard to start (K20C2)</h1><div id="S13672882002021060700000">
+  <p><span class="clsEmphBOLD">Special Tools Required </span></p>
+  <p><span class="clsEmphBOLD">Vacuum Pump/Gauge, 0-30 inHg Snap-on YA4000A or equivalent, commercially available </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>Before beginning this troubleshooting, <a href="../pages/15586.html">do a customer diagnostic interview</a> .</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>When the symptom cannot be duplicated, <a href="../pages/13824.html">you can do the troubleshooting using the on-board snapshot information in this procedure</a>
+. Refer to the diagnostic interview (date, place) and the present total mileage, and compare the total mileage which is estimated from the interview when a failure occurred and the parameter (total mileage) in the on-board snapshot information. Make sure the date when the failure occurred corresponds with the date on which the on-board snapshot information was recorded. If it doesn't, the on-board snapshot information cannot be used in this troubleshooting.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Before beginning this troubleshooting:</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Make sure the battery is fully charged.</p>
+        </li>
+        <li>-<p>Make sure the fuel tank is at least 1/4 full.</p>
+        </li>
+        <li>-<p>Make sure the engine oil level is correct.</p>
+        </li>
+      </ul>
+    </li>
+    <li>After the troubleshooting, <a href="../external-car.html#Learning%20Reset%20Clear/PCM%20Reset/">reset the PCM with the HDS</a>
+ to erase the on-board snapshot information recorded on the PCM.</li>
+  </ul>
+  <ol class="ARABICNUM">
+    <li>DTC check<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Check for Pending or Confirmed DTCs with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+          <col span="1" id="COL3" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">Confirmed DTC</th>
+            <th align="" class="clsCellNormal">Pending DTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are any Pending or Confirmed DTCs indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to the indicated DTC's troubleshooting.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 2..</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ If the HDS does not communicate with the vehicle, <a href="../pages/13537.html">go to the PCM power and ground circuit troubleshooting</a></p>
+    </li>
+    <li>Immobilizer system check:<p>Check the immobilizer status log.</p>
+      <ul class="BULLET">
+        <li><a href="../pages/15587.html">Without keyless access system</a></li>
+        <li><a href="../pages/15588.html">With keyless access system</a></li>
+      </ul>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ When a status log count is found, it means the immobilizer system has kept the engine from starting in the past. The number of status log count shows how often the system has kept the engine from starting in the past. If the immobilizer system has no status log count, the system is normal.</p>
+      <p>Were any status log counts found?</p>
+      <ol class="ARABICNUM">
+        <li>
+          <p><span class="clsEmphBOLD">YES </span></p>
+          <p>Check for probable cause of the status log.</p>
+          <ul class="BULLET">
+            <li><a href="../pages/15587.html">Without keyless access system</a></li>
+            <li><a href="../pages/15588.html">With keyless access system</a></li>
+          </ul>
+          <p><span class="clsEmphBOLD">NO </span></p>
+          <p>Go to step 3.</p>
+        </li>
+      </ol>
+    </li>
+    <li>Problem verification (snapshot sampling):<p>Set the HDS to record a SNAPSHOT of following full data list for 30 seconds.</p>
+      <ul class="BULLET">
+        <li>IMMOBILIZER</li>
+        <li>ENGINE SPEED</li>
+        <li>BATTERY</li>
+        <li>ECT SENSOR 1</li>
+        <li>MAP SENSOR</li>
+        <li>MAF SENSOR</li>
+        <li>CMP B NO PULSE</li>
+        <li>CMP B NOISE</li>
+        <li>CKP NO PULSE</li>
+        <li>CKP NOISE</li>
+        <li>VTEC PRES SW (USA and Canada models)</li>
+      </ul>
+      <p>Data List</p>
+      <p>-2. Begin the snapshot, then try to start the engine.</p>
+      <p>Is the engine hard to start?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 5 (diagnosis by parameter troubleshooting).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 4.</p>
+    </li>
+    <li>On-board snapshot check (Engine will not start)<p>-1. Check the record of Hard to Start Engine in the on-board snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>Is the Hard to Start Engine in the on-board snapshot recorded?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 5 (diagnosis by parameter troubleshooting).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 17 (fuel system troubleshooting).</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ In case of the following conditions, the on-board snapshot cannot be recorded.</p>
+      <ul class="BULLET">
+        <li>The vehicle is turned to the OFF (LOCK) mode after starting the engine.</li>
+        <li><a href="../pages/13824.html">Vehicle condition not in the on-board snapshot recoding zone of Hard to start engine</a>
+.</li>
+        <li>Low or dead 12 volt battery</li>
+        <li>Replacing the 12 volt battery</li>
+      </ul>
+    </li>
+    <li>On-board snapshot or snapshot check (IMMOBILIZER):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>Select the IMMOBILIZER and ENGINE SPEED in the configuration list.</p>
+      <p>Compare the snapshot parameters observed while the engine was cranking, to those in the chart below, to determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">IMMOBILIZER inhibit<div class="imageHolder" id="container_GHH408244">
+                <div class="imageHeader"><a name="S34812324282021060700000"></a></div><img alt="GHH408244" src="../images/GHH408244.jpeg" name="GHH408244"><img alt="GHH408245" src="../images/GHH408245.jpeg" name="GHH408245"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.HONDA, U.S.A., INC.</span></div>
+              <p>IMMOBILIZER inhibit</p>
+              <div class="imageHolder" id="container_GHH408244">
+                <div class="imageHeader"><a name="S34812324282021060700000"></a></div><img alt="GHH408244" src="../images/GHH408244.jpeg" name="GHH408244"><img alt="GHH408245" src="../images/GHH408245.jpeg" name="GHH408245"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When IMMOBILIZER indicates &quot;BAN&quot; during cranking or after start, the fuel pump is stopped by IMMOBILIZER inhibit.<ul class="BULLET">
+                <li>No failure in the engine</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">IMMOBILIZER permit Normal<div class="imageHolder" id="container_GHH408246">
+                <div class="imageHeader"><a name="S13277129752021060700000"></a></div><img alt="GHH408246" src="../images/GHH408246.jpeg" name="GHH408246"><img alt="GHH408247" src="../images/GHH408247.jpeg" name="GHH408247"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.HONDA, U.S.A., INC.</span></div>
+              <p>IMMOBILIZER permit Normal</p>
+              <div class="imageHolder" id="container_GHH408246">
+                <div class="imageHeader"><a name="S13277129752021060700000"></a></div><img alt="GHH408246" src="../images/GHH408246.jpeg" name="GHH408246"><img alt="GHH408247" src="../images/GHH408247.jpeg" name="GHH408247"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">IMMOBILIZER is normal when IMMOBILIZER indicates &quot;RUN&quot; when cranking or after start.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <ol class="ARABICNUM">
+        <li>
+          <p>Pattern 1</p>
+          <p>The immobilizer system has a failure. Go to the immobilizer System Check.</p>
+          <ul class="BULLET">
+            <li><a href="../pages/12909.html">Without keyless access system</a></li>
+            <li><a href="../pages/12912.html">With keyless access system</a></li>
+          </ul>
+          <p>Pattern 2</p>
+          <p>The immobilizer system is OK. Go to step 6 (diagnosis by parameter (ENGINE SPEED)).</p>
+        </li>
+      </ol>
+    </li>
+    <li>On-board snapshot or snapshot check (ENGINE SPEED):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the ENGINE SPEED pattern chart in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">ENGINE SPEED when cranking is normal<div class="imageHolder" id="container_GHH408248">
+                <div class="imageHeader"><a name="S09946468942021060700000"></a></div><img alt="GHH408248" src="../images/GHH408248.jpeg" name="GHH408248"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">ENGINE SPEED when cranking is low<div class="imageHolder" id="container_GHH408249">
+                <div class="imageHeader"><a name="S24842695972021060700000"></a></div><img alt="GHH408249" src="../images/GHH408249.jpeg" name="GHH408249"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When ENGINE SPEED during cranking is low, weak 12 volt battery or increased engine friction can be considered.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>The engine cranking speed is OK. Go to step 7 (diagnosis by parameter (BATTERY)).</p>
+      <p>Pattern 2</p>
+      <p>Diagnostic procedure:</p>
+      <ul class="BULLET">
+        <li><a href="../pages/12952.html#Test/12%20Volt%20Battery%20Test/">Test the 12 volt battery</a>
+.</li>
+        <li>Check the 12 volt battery cables and the connections.</li>
+        <li><a href="../pages/14408.html#Removal%2C%20Installation%20%26%20Test/Starter%20Removal%2C%20Installation%2C%20and%20Performance%20Test%20%28K20C2%29/">Check the starter</a>
+.</li>
+        <li>Check for engine friction.</li>
+      </ul>
+    </li>
+    <li>On-board snapshot or snapshot check (BATTERY):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>Select the BATTERY and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the BATTERY pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">BATTERY voltage low when cranking<div class="imageHolder" id="container_GHH408250">
+                <div class="imageHeader"><a name="S08405639442021060700000"></a></div><img alt="GHH408250" src="../images/GHH408250.jpeg" name="GHH408250"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">
+              <ul class="BULLET">
+                <li>When BATTERY voltage during cranking is too low, there is a possibility that PCM and/or engine will not start.</li>
+                <li>The PCM and other system control units require 7.0 V or more to start.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">BATTERY voltage normal when cranking<div class="imageHolder" id="container_GHH408251">
+                <div class="imageHeader"><a name="S01281333162021060700000"></a></div><img alt="GHH408251" src="../images/GHH408251.jpeg" name="GHH408251"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">To start the engine, 7.0 V or more is needed</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Diagnostic procedure:</p>
+      <ul class="BULLET">
+        <li><a href="../pages/12952.html#Test/12%20Volt%20Battery%20Test/">Test the 12 volt battery</a>
+.</li>
+        <li>Check the 12 volt battery cables and the connections.</li>
+      </ul>
+      <p>Pattern 2</p>
+      <p>The 12 volt battery is OK. Go to step 8 (diagnosis by parameter (ECT SENSOR 1)).</p>
+    </li>
+    <li>On-board snapshot or snapshot check (ECT SENSOR 1):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the ECT SENSOR 1 and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the ECT SENSOR 1 pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">ECT SENSOR 1 high when cranking<div class="imageHolder" id="container_GHH408252">
+                <div class="imageHeader"><a name="S00279366222021060700000"></a></div><img alt="GHH408252" src="../images/GHH408252.jpeg" name="GHH408252"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When ECT SENSOR 1 indicates about 176 deg.F (80 deg.C) or more when the engine is cold (engine temp low), ECT sensor 1 may be stuck high. ECT compensation is not applied after the engine is warmed up, it is not necessary to check ECT sensor 1 (not a faulty part).</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">ECT SENSOR 1 normal when cranking<div class="imageHolder" id="container_GHH408253">
+                <div class="imageHeader"><a name="S07347439132021060700000"></a></div><img alt="GHH408253" src="../images/GHH408253.jpeg" name="GHH408253"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If actual engine temp is nearly the same as the temp indicated by ECT sensor 1 when cranking, ECT sensor 1 is normal.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Check for a short in the ECT sensor 1 circuit and a failure in ECT sensor 1.</p>
+      <p>Pattern 2</p>
+      <p>Go to step 9.</p>
+    </li>
+    <li>ECT sensor 1 check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Let the engine cool for 24 hours.</p>
+      <p>-3. Measure the ambient temperature of the engine with the thermometer.</p>
+      <p>-4. Turn the vehicle to the ON mode, but do not start the engine.</p>
+      <p>-5. Check the parameter(s) below with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ECT SENSOR 1</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">ECT SENSOR 2</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are the values of ECT SENSOR 1, ECT SENSOR 2, and the ambient temperature almost the same?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>ECT sensor 1 is OK. Go to step 10 (diagnosis by parameter (MAP SENSOR)).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the value of ECT SENSOR 1 is much higher (or lower) than that of ECT SENSOR 2 and the ambient temperature, check for the ECT sensor 1 circuit and a failure in ECT sensor 1.</p>
+    </li>
+    <li>On-board snapshot or snapshot check (MAP SENSOR):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the MAP SENSOR and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the MAP SENSOR pattern to the pattern from the chart below, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">MAP SENSOR detects no change of pressure when cranking<div class="imageHolder" id="container_GHH408254">
+                <div class="imageHeader"><a name="S32289211142021060700000"></a></div><img alt="GHH408254" src="../images/GHH408254.jpeg" name="GHH408254"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When MAP SENSOR detects no change of pressure when cranking, the pressure measurement port may be clogged. The PCM decides basic duration time of fuel injection from engine speed and MAP sensor signal when cranking.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Normal when MAP SENSOR detects vacuum when cranking<div class="imageHolder" id="container_GHH408255">
+                <div class="imageHeader"><a name="S38773781652021060700000"></a></div><img alt="GHH408255" src="../images/GHH408255.jpeg" name="GHH408255"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When MAP SENSOR detects vacuum while cranking, the condition is normal and the MAP sensor pressure port is clear.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Check the pressure measurement port of the MAP sensor for clogging, foreign objects, etc.</p>
+      <p>Pattern 2</p>
+      <p>The MAP sensor is OK. Go to step 11 (diagnosis by parameter (MAF SENSOR)).</p>
+    </li>
+    <li>On- board snapshot or snapshot check (MAF SENSOR):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or the snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the MAF SENSOR and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the MAF SENSOR pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">Poor connection of MAF SENSOR<div class="imageHolder" id="container_GHH408256">
+                <div class="imageHeader"><a name="S11554689512021060700000"></a></div><img alt="GHH408256" src="../images/GHH408256.jpeg" name="GHH408256"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">Complete combustion stall: When MAF SENSOR indicates &quot;0&quot; 1-2 sec before ENGINE SPEED becomes 0 rpm, or when &quot;0&quot; is shown like noise, there may be a poor connection at the MAF sensor connector.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">MAF SENSOR output incorrect<div class="imageHolder" id="container_GHH408257">
+                <div class="imageHeader"><a name="S15738815122021060700000"></a></div><img alt="GHH408257" src="../images/GHH408257.jpeg" name="GHH408257"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When MAF SENSOR shows &quot;0&quot; when cranking or after start, clogging in MAF sensor's measurement port may be contaminated with debris or there may be a poor connection as its connector.</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 3</td>
+            <td align="" class="clsCellNormal">MAF SENSOR Normal<div class="imageHolder" id="container_GHH408258">
+                <div class="imageHeader"><a name="S16328836262021060700000"></a></div><img alt="GHH408258" src="../images/GHH408258.jpeg" name="GHH408258"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When MAF SENSOR output compares with ENGINE SPEED when cranking or after starting, the MAF sensor is normal.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1 and 2</p>
+      <p>Check for poor connections or loose terminals at the MAF sensor/IAT sensor.</p>
+      <p>Pattern 3</p>
+      <p>The MAF sensor/IAT sensor is OK. Go to step 12 (diagnosis by parameter (CMP B NO PULSE)).</p>
+    </li>
+    <li>On-board snapshot or snapshot check (CMP B NO PULSE):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the CMP B NO PULSE and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the CMP B NO PULSE pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">CMP B NO PULSE count increases continuously when cranking<div class="imageHolder" id="container_GHH408259">
+                <div class="imageHeader"><a name="S38700481682021060700000"></a></div><img alt="GHH408259" src="../images/GHH408259.jpeg" name="GHH408259"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When CMP B NO PULSE count increases continuously when cranking, no CMP pulse is received. If the CMP pulse is not received, the PCM cannot detect the cylinder to be ignited and the engine is unable to start.</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">CMP B NO PULSE indicates the pulse is normal<div class="imageHolder" id="container_GHH408260">
+                <div class="imageHeader"><a name="S18626860862021060700000"></a></div><img alt="GHH408260" src="../images/GHH408260.jpeg" name="GHH408260"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">It is normal when CMP B NO PULSE count does not increase, or goes up and down but does not increase continuously.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/15176.html">Go to the troubleshooting for DTC P0340</a>
+. If the CMP B NO PULSE count reaches the malfunction threshold, DTC P0340 will be set. Check for poor connections and loose terminals at CMP sensor A.</p>
+      <p>Pattern 2</p>
+      <p>Go to step 13 (diagnosis by parameter (CMP B NOISE)).</p>
+    </li>
+    <li>On-board snapshot or snapshot check (CMP B NOISE):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the CMP B NOISE and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the CMP B NOISE pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">CMP B NOISE count increases continuously when cranking<div class="imageHolder" id="container_GHH408261">
+                <div class="imageHeader"><a name="S18681396452021060700000"></a></div><img alt="GHH408261" src="../images/GHH408261.jpeg" name="GHH408261"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When CMP B NOISE count increases continuously when cranking, there is noise in the CMP signal. When CMP signal has noise, the PCM cannot detect the cylinder to be ignited and the engine is unable to start.</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">CMP B NOISE indicates the pulse is normal<div class="imageHolder" id="container_GHH408262">
+                <div class="imageHeader"><a name="S26073072032021060700000"></a></div><img alt="GHH408262" src="../images/GHH408262.jpeg" name="GHH408262"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">It is normal when CMP B NOISE count does not increase or increases but intermittently when cranking.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/15180.html">Go to the troubleshooting for DTC P0344</a>
+. If the CMP B NOISE count reaches the malfunction threshold, DTC P0344 will be set. Check for poor connections and loose terminals at CMP sensor A.</p>
+      <p>Pattern 2</p>
+      <p>CMP sensor A is OK. Go to step 14 (diagnosis by parameter (CKP NO PULSE)).</p>
+    </li>
+    <li>On-board snapshot or snapshot check (CKP NO PULSE):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the CKP NO PULSE and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the CKP NO PULSE pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">CKP NO PULSE counts go up continuously when cranking<div class="imageHolder" id="container_GHH408263">
+                <div class="imageHeader"><a name="S34997081842021060700000"></a></div><img alt="GHH408263" src="../images/GHH408263.jpeg" name="GHH408263"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When the CKP NO PULSE count increases continuously when cranking, the PCM is not receiving the correct CKP pulse.</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">CKP NO PULSE indicates the pulse is normal<div class="imageHolder" id="container_GHH408264">
+                <div class="imageHeader"><a name="S33156711732021060700000"></a></div><img alt="GHH408264" src="../images/GHH408264.jpeg" name="GHH408264"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">It is normal when the CKP NO PULSE count does not increase, or goes up and down but does not increase continuously.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/14761.html">Go to the troubleshooting for DTC P0335</a>
+. If the CKP NO PULSE count reaches the malfunction threshold, DTC P0335 will be set. Check for poor connections and loose terminals at the CKP sensor.</p>
+      <p>Pattern 2</p>
+      <p>Go to step 15 (diagnosis by parameter (CKP NOISE)).</p>
+    </li>
+    <li>On-board snapshot or snapshot check (CKP NOISE):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Select the Hard to Start Engine in the on-board snapshot or snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the CKP NOISE and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot parameters while the engine is cranking, then compare the CKP NOISE pattern from the chart, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">CKP NOISE count goes up continuously when cranking<div class="imageHolder" id="container_GHH408265">
+                <div class="imageHeader"><a name="S12438419742021060700000"></a></div><img alt="GHH408265" src="../images/GHH408265.jpeg" name="GHH408265"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When the CKP NOISE count increases continuously when cranking, the PCM is not receiving the correct CKP pulse.</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Normal when CKP NOISE count does not go up or goes up intermittently when cranking<div class="imageHolder" id="container_GHH408266">
+                <div class="imageHeader"><a name="S11305660112021060700000"></a></div><img alt="GHH408266" src="../images/GHH408266.jpeg" name="GHH408266"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">It is normal when CKP NOISE count does not increase or increases but intermittently when cranking.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/14764.html">Go to the troubleshooting for DTC P0339</a>
+. If the CKP NOISE count reaches the malfunction threshold, DTC P0339 will be set. Check for poor connections and loose terminals at the CKP sensor, and also check for aftermarket accessories.</p>
+      <p>Pattern 2 (Reproducible failure, USA and Canada models)</p>
+      <p>The CKP sensor is OK. Go to step 16 (diagnosis by parameter (VTEC PRES SW)).</p>
+      <p>Pattern 2 (Reproducible failure, Mexico models)</p>
+      <p>The CKP sensor is OK. Go to step 17 (fuel system troubleshooting).</p>
+      <p>Pattern 2 (Intermittent failure)</p>
+      <p>The CKP sensor is OK. Go to step 17 (fuel system troubleshooting).</p>
+    </li>
+    <li>Snapshot check (VTEC PRES SW)<p>-1. Check the parameter(s) below with the HDS while engine cranking.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+          <col span="1" id="COL4" width="261px">
+          <col span="1" id="COL5" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Threshold</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">VTEC PRES SW</td>
+            <td align="" class="clsCellNormal">OFF</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Do the current condition(s) match the threshold?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/12833.html#Removal%20and%20Installation/Rocker%20Arm%20Oil%20Control%20Valve%20Removal%20and%20Installation%20%28K20C2%29/">Substitute a known-good rocker arm oil control valve</a>
+. If the valve is OK, <a href="../pages/12833.html#Removal%20and%20Installation/Engine%20Oil%20Pump%20Removal%20and%20Installation%20%28K20C2%29/">replace the oil pump</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The rocker arm oil pressure switch is OK. Go to step 17 (fuel system troubleshooting).</p>
+    </li>
+    <li>Fuel pressure check<p>-1. <a href="../pages/12915.html#Test/Fuel%20Pressure%20Test%20%28Except%20K20C1%29/">Do the fuel pressure test</a> .</p>
+      <p>Is the fuel pressure OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 18.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Check the following parts:</p>
+      <ul class="BULLET">
+        <li><a href="../pages/15801.html">Fuel pump circuit</a> </li>
+        <li><a href="../pages/13542.html#Disassembly%20and%20Reassembly/Fuel%20Tank%20Unit%20Disassembly%20and%20Reassembly%20%28Except%20L15BY%29/">Fuel pressure regulator</a></li>
+        <li><a href="../pages/13542.html#Disassembly%20and%20Reassembly/Fuel%20Tank%20Unit%20Disassembly%20and%20Reassembly%20%28Except%20L15BY%29/">Fuel filter</a></li>
+      </ul>
+    </li>
+    <li>Spark plug visual check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. <a href="../pages/14170.html#Removal%20and%20Installation/Ignition%20Coil%20and%20Spark%20Plug%20Removal%20and%20Installation%20%28K20C2%29/">Remove the spark plugs</a>
+.</p>
+      <p>-3. Check the condition of the spark plug electrodes.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ Make sure the spark plugs are the correct part number for the vehicle. If the plugs are aftermarket or they are not the correct part number, replace all of the plugs and retest.</p>
+      <p>Is the electrode damage or wet?</p>
+      <ol class="ARABICNUM">
+        <li>
+          <p>YES (wet)</p>
+          <p>Check the following conditions. If those conditions do not apply, go to step 19.</p>
+          <ul class="BULLET">
+            <li>In very cold conditions, multiple very short trips can cause the spark plug to foul. If this is the case, drive the vehicle a longer distance and recheck.</li>
+            <li>Incorrect or poor quality fuel can cause a wet spark plug. Replace the fuel and recheck.</li>
+          </ul>
+          <p>YES (damaged)</p>
+          <p><a href="../pages/14170.html#Removal%20and%20Installation/Ignition%20Coil%20and%20Spark%20Plug%20Removal%20and%20Installation%20%28K20C2%29/">Replace the damaged spark plugs</a>
+, determine the cause of the spark plug damage.</p>
+          <p><span class="clsEmphBOLD">NO </span></p>
+          <p>Go to step 19.</p>
+        </li>
+      </ol>
+    </li>
+    <li>Determine possible failure area (ignition system, others)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Fit a spark plug to the ignition coil and ground it to the engine.</p>
+      <p>-3. Turn the vehicle to the ON mode.</p>
+      <p>-4. Select ALL INJECTORS STOP in the INSPECTION MENU with the HDS, and stop fuel injection from the injector.</p>
+      <p>ALL INJECTORS STOP</p>
+      <p>Crank the engine and watch for spark at the spark plug.</p>
+      <p>Does the spark plug sparkΩ</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The ignition system is OK. Select PCM reset in the PGM-FI INSPECTION MENU to cancel ALL INJECTORS STOP with the HDS, then go to step 21 (engine compression troubleshooting).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 20.</p>
+    </li>
+    <li>Ignition coil power circuit check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Ignition coil(s) 3P connector from the problem cylinder</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Turn the vehicle to the ON mode.</p>
+      <p>-4. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="141px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle ON mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Ignition coil 3P connector (problem cylinder): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Ignition coil 3P connector No. 1</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH408267">
+                <div class="imageHeader"><a name="S04143380842021060700000"></a></div><img alt="GHH408267" src="../images/GHH408267.jpeg" name="GHH408267"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The ignition coil power circuit is OK. <a href="../pages/14170.html#Removal%20and%20Installation/Ignition%20Coil%20and%20Spark%20Plug%20Removal%20and%20Installation%20%28K20C2%29/">Replace the ignition coil(s)</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the IG COIL RLY OUT/IG1(IGN COIL) wire between the ignition coil relay and the ignition coil.</p>
+    </li>
+    <li>Engine compression check<p>-1. <a href="../external-car.html#Inspection/Engine%20Compression%20Inspection%20%28K20C2%29/">Do an engine compression inspection</a>
+.</p>
+      <p>Is engine compression OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 22 (EVAP canister purge valve check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Check for wear or damage to these parts:</p>
+      <ul class="BULLET">
+        <li>Incorrect valve clearance</li>
+        <li>Confirmation of cam timing</li>
+        <li>Oil pressure relief valve</li>
+        <li>Damage or worn cam lobes</li>
+        <li>Damage or worn valve and seats</li>
+        <li>Damage cylinder head gasket</li>
+        <li>Damage or worn piston rings</li>
+        <li>Damage or worn piston and cylinder bore</li>
+      </ul>
+    </li>
+    <li>EVAP canister purge valve check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. <a href="../pages/12833.html#Removal%20and%20Installation/Throttle%20Body%20Removal%20and%20Installation%20%28K20C2%29/">Remove the intake air duct</a>
+.</p>
+      <p>-3. <a href="../pages/12833.html#Removal%20and%20Installation/EVAP%20Canister%20Purge%20Valve%20Removal%20and%20Installation%20%28K20C2%29/">Remove the EVAP canister purge valve cover</a>
+.</p>
+      <p>-4. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">EVAP canister purge valve 2P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-5. Disconnect the vacuum hose (A) from the EVAP canister purge valve (B) in the engine compartment, and connect a vacuum pump/gauge, 0-30 inHg, to the purge valve.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH408268">
+                <div class="imageHeader"><a name="S12224832212021060700000"></a></div><img alt="GHH408268" src="../images/GHH408268.jpeg" name="GHH408268"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-6. <a href="../pages/12833.html#Removal%20and%20Installation/Throttle%20Body%20Removal%20and%20Installation%20%28K20C2%29/">Install the intake air duct</a>
+.</p>
+      <p>-7. Start the engine.</p>
+      <p>Does the vacuum gauge indicate vacuum?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/12833.html#Removal%20and%20Installation/EVAP%20Canister%20Purge%20Valve%20Removal%20and%20Installation%20%28K20C2%29/">Replace the EVAP canister purge valve</a>
+.</p>
+      <p>NO (Reproducible failure)</p>
+      <p>Go to step 23 (fuse check).</p>
+      <p>NO (Intermittent failure)</p>
+      <p>Go to step 24 (relay check).</p>
+    </li>
+    <li>Fuse check<p>-1. Check the following fuses.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="141px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td rowspan="3" align="" class="clsCellNormal">Fuse</td>
+            <td align="" class="clsCellNormal">No. A7 (15 A) to the relay circuit board (PGM-FI main relay 1 circuit)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">No. A8 (15 A) to the relay circuit board (PGM-FI subrelay circuit)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">No. A15 (15 A) to the relay circuit board (ignition coil relay circuit)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Location</td>
+            <td align="" class="clsCellNormal">Under-hood fuse/relay box</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="141px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Fuse</td>
+            <td align="" class="clsCellNormal">No. B8 (15 A) to PGM-FI main relay 2</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Location</td>
+            <td align="" class="clsCellNormal">Under-dash fuse/relay box</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are the fuses OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 24 (relay check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Replace the blown fuse(s).</p>
+    </li>
+    <li>Relay check:<p>Test the following relays:</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ In situations where the failure is difficult to reproduce, the following relays may have an intermittent failure.</p>
+      <ul class="BULLET">
+        <li><a href="../pages/12834.html#Removal%2C%20Installation%20%26%20Test/Relay%20Circuit%20Board%20Removal%2C%20Installation%2C%20and%20Test/">Relay circuit board</a>
+ (includes PGM-FI main relay 1 circuit, ignition coil relay circuit, and PGM-FI subrelay circuit)</li>
+        <li><a href="../pages/13894.html">PGM-FI main relay 2</a></li>
+      </ul>
+      <p>Are the relay circuit board and the relay OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 25 (power and ground terminal check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Replace any damaged relays.</p>
+    </li>
+    <li>Power and ground terminal check:<p>Check the corrosion and looseness at the following terminals:</p>
+      <ul class="BULLET">
+        <li>12 volt battery terminals</li>
+        <li>Ground cable terminals between the engine and the body ground, and the transmission and the body ground</li>
+        <li>Engine wire harness ground (G101)</li>
+      </ul>
+      <p>Are the terminals OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 26 (connector terminal check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair any terminal(s) as needed.</p>
+    </li>
+    <li>Connector terminal check:<p>Check the foreign objects clogged and corrosion at the following connector terminals:</p>
+      <ul class="BULLET">
+        <li><a href="../external-car.html">PCM connectors</a></li>
+        <li>
+          <ul class="DASH">
+            <li>-<p>FI MAIN RLY OUT, FI MAIN RLY CL-</p>
+            </li>
+            <li>-<p>FUEL PUMP RLY CL-</p>
+            </li>
+            <li>-<p>FI SUB RLY OUT, FI SUB RLY CL-</p>
+            </li>
+            <li>-<p>PG(COIL), PG, GND2, FI ECU GND</p>
+            </li>
+            <li>-<p>INJ1, INJ2, INJ3, INJ4</p>
+            </li>
+            <li>-<p>IGN01, IGN02, IGN03, IGN04</p>
+            </li>
+            <li>-<p>TDC</p>
+            </li>
+            <li>-<p>CRANK</p>
+            </li>
+            <li>-<p>PB</p>
+            </li>
+            <li>-<p>VGP</p>
+            </li>
+            <li>-<p>TW</p>
+            </li>
+            <li>-<p>PCS</p>
+            </li>
+            <li>-<p>MTR1, MTR2, THL1, THL2</p>
+            </li>
+          </ul>
+        </li>
+        <li>CMP sensor A</li>
+        <li>CKP sensor</li>
+        <li>Ignition coils</li>
+        <li>Injectors</li>
+        <li>ECT sensor</li>
+        <li>MAF sensor/IAT sensor</li>
+        <li>MAP sensor</li>
+        <li>Throttle body</li>
+        <li>EVAP canister purge valve</li>
+        <li>Fuel tank unit</li>
+      </ul>
+      <p>Are the terminals OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/15586.html">Go to the diagnostic interview for hard to start engine</a> .</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair any terminal(s) as needed.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

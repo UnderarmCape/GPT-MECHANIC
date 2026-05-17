@@ -1,0 +1,531 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Checking for ACC System Auto Stop Control Codes — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Cruise%20Control%20Systems/">Cruise Control Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12941.html">Cruise Control System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12941.html#General%20Information/">General Information</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12941.html#General%20Information/ACC%20System%20Auto%20Stop%20Control%20History/">ACC System Auto Stop Control History</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/16576.html">Checking for ACC System Auto Stop Control Codes</a></div><div class="main"><h1>Checking for ACC System Auto Stop Control Codes</h1><div id="S41929298032021060700000">
+  <p>The ACC system auto stop control codes recorded in the multipurpose camera unit can be read out by the procedure below.</p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ Make sure the 12 volt battery is fully charged before you begin.</p>
+  <p>1. <a href="../external-car.html">Connect the HDS</a>
+.</p>
+  <p>2. In the DRIVING SUPPORT MENU of the HDS, select Integrated Driver Support System, then select Data List on the HDS.</p>
+  <p>3. Checking for ACC system auto stop control codes recorded in the Data List.</p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>ACC system auto stop control history is recorded from 1. When automatic cancellation takes place 11 times or more, the past 10 records are held. In this case, history 10 is the latest record and the 10 latest records are held. When 0, no record is held.</li>
+    <li>When DTCs are cleared with the HDS, ACC system auto stop control history is cleared as well.</li>
+    <li>Some of the following ACC system auto stop control codes may not be used for specific model specifications.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">ACC System Auto Stop Control Codes </span></p><a name="S419292980320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="154px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="514px">
+      <col span="1" id="COL5" width="600px">
+      <col span="1" id="COL6" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Code</th>
+        <th align="" class="clsCellNormal">ACC System Auto Stops Operating</th>
+        <th align="" class="clsCellNormal">Concrete Examples</th>
+        <th align="" class="clsCellNormal">Detection Conditions</th>
+        <th align="" class="clsCellNormal">Restoration Conditions (Conditions under which ACC SET is possible)</th>
+        <th align="" class="clsCellNormal">Reasons for Control OFF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">80</td>
+        <td align="" class="clsCellNormal">Engine Speed too high or too low</td>
+        <td align="" class="clsCellNormal">The vehicle decelerated because the leading vehicle decelerated, and the engine speed dropped below the mid-speed ranges.</td>
+        <td align="" class="clsCellNormal">The driver did not operate the clutch pedal within 10 seconds after the shift-down request was displayed.</td>
+        <td align="" class="clsCellNormal">The engine speed returned to the specified speed or higher.</td>
+        <td align="" class="clsCellNormal">Prevention of engine stall while the vehicle is decelerating because the leading vehicle is decelerating.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">82</td>
+        <td align="" class="clsCellNormal">Adaptive cruise control (ACC) brake control temporarily prohibited by Electric Parking Brake</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>12 Volt battery deterioration</li>
+            <li>24 Volt battery installation</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit received ACC brake temporary prohibition information from the EPB.<p><span class="clsEmphBOLD">NOTE: </span>
+ When the EPB power supply voltage is outside the operating range, the EPB sends ACC brake temporary prohibition information to the multipurpose camera unit.</p>
+        </td>
+        <td align="" class="clsCellNormal">The EPB power supply voltage returns to normal and the ACC brake temporary prohibition information is cleared.</td>
+        <td align="" class="clsCellNormal">The EPB cannot maintain the vehicle stopping state.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">83</td>
+        <td align="" class="clsCellNormal">Radar detection unstable</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>The vehicle followed a narrow vehicle, such as a motorcycle, or a specialized vehicle.</li>
+            <li>The reception level of the millimeter wave radar decreased due to rain or snow.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The reception of the millimeter wave radar (average) is outside the range where ACC control is available.</td>
+        <td align="" class="clsCellNormal">The reception level of the millimeter wave radar (average) returned to within the range where ACC control is available and the leading vehicle was detected.</td>
+        <td align="" class="clsCellNormal">For preventing the vehicle from accelerating after the leading vehicle is lost because the detection state of the leading vehicle becomes unstable while the vehicle is following the leading vehicle.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: While the code is detected, the CMBS operation stops temporarily and the CMBS indicator (amber) comes on.</p>
+  <p>*2: This value differs depending on whether or not the vehicle is equipped with Low Speed Follow (LSF) feature.</p>
+  <p>*3:</p>
+  <ul class="BULLET">
+    <li>When the PGM-FI ECU and TCM are integrated, the engine ECU represents the PGM-FI ECU.</li>
+    <li>When the PGM-FI ECU and TCM are separate, the engine ECU represents the TCM.</li>
+  </ul>
+  <p>*4: The yaw rate sensor records only the built-in SRS unit.</p><a name="S419292980320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="154px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="514px">
+      <col span="1" id="COL5" width="600px">
+      <col span="1" id="COL6" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Code</th>
+        <th align="" class="clsCellNormal">ACC System Auto Stops Operating</th>
+        <th align="" class="clsCellNormal">Concrete Examples</th>
+        <th align="" class="clsCellNormal">Detection Conditions</th>
+        <th align="" class="clsCellNormal">Restoration Conditions (Conditions under which ACC SET is possible)</th>
+        <th align="" class="clsCellNormal">Reasons for Control OFF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">84</td>
+        <td align="" class="clsCellNormal">Target vehicle comes closer than the radar detecting limits</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>The leading vehicle slowed down rapidly.</li>
+            <li>Another vehicle suddenly cuts in front of your vehicle.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The distance between the leading vehicle and your vehicle is less than the minimum allowable vehicle-to-vehicle distance.<ul class="BULLET">
+            <li>Models with the low speed follow (LSF) feature: 1.5 m (4.9 ft)</li>
+            <li>Models without the low speed follow (LSF) feature: 5 m (16 ft)</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The system returns to normal when the distance between the leading vehicle and your vehicle reaches or exceeds the minimum allowable vehicle-to-vehicle distance + 0.5 m (1.6 ft).</td>
+        <td align="" class="clsCellNormal">The control is prohibited at a close distance to the leading vehicle where the ACC system is unavailable. If the leading vehicle is too close to your vehicle, the millimeter wave radar may fail to detect the leading vehicle.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">85</td>
+        <td align="" class="clsCellNormal">Extensive driving on a rough or winding road</td>
+        <td align="" class="clsCellNormal">The vehicle continued to run in an unstable state without stopping:<ul class="BULLET">
+            <li>Driving on a road with many curves or a rough road</li>
+            <li>Repeated acceleration and deceleration</li>
+            <li>Rapid acceleration/deceleration</li>
+            <li>Continuous, unstable, or rapid steering wheel operation</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The yaw rate-acceleration neutral position was not corrected when the yaw rate sensor temperature changed by 50°F (10°C).</td>
+        <td align="" class="clsCellNormal">Stop the vehicle or drive the vehicle in a stable state at 3 mph (5 km/h) or more.<p><span class="clsEmphBOLD">NOTE: </span>
+ While the vehicle is running, the correction is made based on the correction value when the vehicle is stopped, so the correct will not be made once the ACC system auto stop control code 85 is stored.</p>
+        </td>
+        <td align="" class="clsCellNormal">Because the accuracy of the yaw rate sensor cannot be maintained, possibly resulting in an incorrect estimated vehicle trajectory or incorrect leading vehicle selection.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: While the code is detected, the CMBS operation stops temporarily and the CMBS indicator (amber) comes on.</p>
+  <p>*2: This value differs depending on whether or not the vehicle is equipped with Low Speed Follow (LSF) feature.</p>
+  <p>*3:</p>
+  <ul class="BULLET">
+    <li>When the PGM-FI ECU and TCM are integrated, the engine ECU represents the PGM-FI ECU.</li>
+    <li>When the PGM-FI ECU and TCM are separate, the engine ECU represents the TCM.</li>
+  </ul>
+  <p>*4: The yaw rate sensor records only the built-in SRS unit.</p><a name="S419292980320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="154px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="514px">
+      <col span="1" id="COL5" width="600px">
+      <col span="1" id="COL6" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Code</th>
+        <th align="" class="clsCellNormal">ACC System Auto Stops Operating</th>
+        <th align="" class="clsCellNormal">Concrete Examples</th>
+        <th align="" class="clsCellNormal">Detection Conditions</th>
+        <th align="" class="clsCellNormal">Restoration Conditions (Conditions under which ACC SET is possible)</th>
+        <th align="" class="clsCellNormal">Reasons for Control OFF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">86</td>
+        <td align="" class="clsCellNormal">Abnormal tire pressure</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Low tire pressure (including a flat tire)</li>
+            <li>Driving on a split road (the right and left wheels run on different types of road surfaces)</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The estimated yaw rate calculated based on the difference between the right and left wheel speeds differs between the front and rear wheels (estimated yaw rate difference: 2 deg/s or more).</td>
+        <td align="" class="clsCellNormal">Estimated yaw rate difference: 0.25 deg/s or less</td>
+        <td align="" class="clsCellNormal">Because the estimated running trajectory of the vehicle is incorrect, so the leading vehicle cannot be selected correctly.<p><span class="clsEmphBOLD">NOTE: </span>
+ If the tire pressure is abnormal, the yaw rate-acceleration neutral position is not corrected normally.</p>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">87</td>
+        <td align="" class="clsCellNormal">Adaptive cruise control (ACC) brake control temporality prohibited by VSA</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>12 Volt battery deterioration</li>
+            <li>24 Volt battery installation</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit received ACC brake temporary prohibition information from the VSA modulator-control unit.<p><span class="clsEmphBOLD">NOTE: </span>
+ When the VSA modulator-control unit power supply voltage or the brake light relay actuation circuit voltage is outside the operating range, the VSA modulator-control unit sends ACC brake temporary prohibition information to the multipurpose camera unit.</p>
+        </td>
+        <td align="" class="clsCellNormal">The VSA modulator-control unit power supply voltage returns to normal and the ACC brake temporary prohibition information is cleared.</td>
+        <td align="" class="clsCellNormal">Because the ACC brake may not be activated or the brake light may not come on even when the ACC brake is activated.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">88 *1</td>
+        <td align="" class="clsCellNormal">Radar temporary problem (temperature, voltage, etc.)</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Traffic congestion at a high temperature</li>
+            <li>Continuous hill climbing</li>
+            <li>12 Volt battery deterioration</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit received the following error information from the millimeter wave radar.<ul class="BULLET">
+            <li>Temperature in the millimeter wave radar: 203°F (95°C) or more</li>
+            <li>Millimeter wave radar power supply voltage: 9 V or less</li>
+            <li>The millimeter wave radar cannot temporarily receive signals from the multipurpose camera unit.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The millimeter wave radar sends restoration information, which is received and cleared by the multipurpose camera unit.</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>The millimeter wave radar cannot normally detect the leading vehicle and measure the vehicle-to-vehicle distance.</li>
+            <li>Prevention of incorrect detection of the leading vehicle or incorrect ACC control.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: While the code is detected, the CMBS operation stops temporarily and the CMBS indicator (amber) comes on.</p>
+  <p>*2: This value differs depending on whether or not the vehicle is equipped with Low Speed Follow (LSF) feature.</p>
+  <p>*3:</p>
+  <ul class="BULLET">
+    <li>When the PGM-FI ECU and TCM are integrated, the engine ECU represents the PGM-FI ECU.</li>
+    <li>When the PGM-FI ECU and TCM are separate, the engine ECU represents the TCM.</li>
+  </ul>
+  <p>*4: The yaw rate sensor records only the built-in SRS unit.</p><a name="S419292980320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="154px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="514px">
+      <col span="1" id="COL5" width="600px">
+      <col span="1" id="COL6" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Code</th>
+        <th align="" class="clsCellNormal">ACC System Auto Stops Operating</th>
+        <th align="" class="clsCellNormal">Concrete Examples</th>
+        <th align="" class="clsCellNormal">Detection Conditions</th>
+        <th align="" class="clsCellNormal">Restoration Conditions (Conditions under which ACC SET is possible)</th>
+        <th align="" class="clsCellNormal">Reasons for Control OFF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">89</td>
+        <td align="" class="clsCellNormal">Front wheel spin</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Driving on a low μ road</li>
+            <li>TCS control is executed.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">A change in the wheel speed equivalent to 0.75 G occurs.</td>
+        <td align="" class="clsCellNormal">Other than those listed to the left</td>
+        <td align="" class="clsCellNormal">Prevention of use of ACC on a road where vehicle behavior is unstable</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">91</td>
+        <td align="" class="clsCellNormal">Vehicle skidded, spun out, or abrupt steering wheel movements</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Spin on a low μ road due to improper steering wheel operation</li>
+            <li>Rapid steering wheel operation</li>
+            <li>VSA control was executed.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">Lateral acceleration of 0.60 G or more occurred within 1 second after the yaw rate changed by 2 deg/s or more in 0.1 second.</td>
+        <td align="" class="clsCellNormal">Other than those listed to the left</td>
+        <td align="" class="clsCellNormal">Prevention of use of ACC on a road where vehicle behavior is unstable</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">93</td>
+        <td align="" class="clsCellNormal">Front tire problem</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Flat tire</li>
+            <li>Large air pressure difference</li>
+            <li>One wheel slips</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The estimated yaw rate calculated based on the wheel speed difference between the right and left wheels is 60 deg/s or more.</td>
+        <td align="" class="clsCellNormal">Stop the vehicle.</td>
+        <td align="" class="clsCellNormal">Because the estimated running trajectory of the own vehicle is incorrect, and the leading vehicle cannot be selected correctly.<p><span class="clsEmphBOLD">NOTE: </span>
+ When there is a problem with a tire, the yaw rate-acceleration neutral position is not corrected normally.</p>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">94</td>
+        <td align="" class="clsCellNormal">Rear tire problem</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Flat tire</li>
+            <li>Large air pressure difference</li>
+            <li>One wheel slips</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The estimated yaw rate calculated based on the wheel speed difference between the right and left wheels is 60 deg/s or more.</td>
+        <td align="" class="clsCellNormal">Stop the vehicle.</td>
+        <td align="" class="clsCellNormal">Because the estimated running trajectory of the own vehicle is incorrect, and the leading vehicle cannot be selected correctly.<p><span class="clsEmphBOLD">NOTE: </span>
+ When there is a problem with a tire, the yaw rate-acceleration neutral position is not corrected normally.</p>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">95 *1</td>
+        <td align="" class="clsCellNormal">Power supply voltage too high</td>
+        <td align="" class="clsCellNormal">24 Volt battery installation</td>
+        <td align="" class="clsCellNormal">Power supply voltage: 16.8 V or more</td>
+        <td align="" class="clsCellNormal">Power supply voltage: 16.5 V or less</td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit may not operate properly.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">96 *1</td>
+        <td align="" class="clsCellNormal">Power supply voltage too low</td>
+        <td align="" class="clsCellNormal">12 Volt battery deterioration</td>
+        <td align="" class="clsCellNormal">Power supply voltage: 9.5 V or less</td>
+        <td align="" class="clsCellNormal">Power supply voltage: 9.8 V or more</td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit may not operate properly.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: While the code is detected, the CMBS operation stops temporarily and the CMBS indicator (amber) comes on.</p>
+  <p>*2: This value differs depending on whether or not the vehicle is equipped with Low Speed Follow (LSF) feature.</p>
+  <p>*3:</p>
+  <ul class="BULLET">
+    <li>When the PGM-FI ECU and TCM are integrated, the engine ECU represents the PGM-FI ECU.</li>
+    <li>When the PGM-FI ECU and TCM are separate, the engine ECU represents the TCM.</li>
+  </ul>
+  <p>*4: The yaw rate sensor records only the built-in SRS unit.</p><a name="S419292980320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="154px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="514px">
+      <col span="1" id="COL5" width="600px">
+      <col span="1" id="COL6" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Code</th>
+        <th align="" class="clsCellNormal">ACC System Auto Stops Operating</th>
+        <th align="" class="clsCellNormal">Concrete Examples</th>
+        <th align="" class="clsCellNormal">Detection Conditions</th>
+        <th align="" class="clsCellNormal">Restoration Conditions (Conditions under which ACC SET is possible)</th>
+        <th align="" class="clsCellNormal">Reasons for Control OFF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">97 *1</td>
+        <td align="" class="clsCellNormal">Extensive driving on a rough or winding road. (CMBS/FCW)</td>
+        <td align="" class="clsCellNormal">The vehicle continued to run in an unstable state without stopping:<ul class="BULLET">
+            <li>Driving on a road with many curves or a rough road</li>
+            <li>Repeated acceleration and deceleration</li>
+            <li>Rapid acceleration/deceleration</li>
+            <li>Continuous, unstable, or rapid steering wheel operation</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">When the yaw rate sensor temperature changed by 86°F (30°C) or more and the correction logic is not executed for approximately 8 seconds or more</td>
+        <td align="" class="clsCellNormal">Stop the vehicle.<p><span class="clsEmphBOLD">NOTE: </span>
+ While the vehicle is running, the correction is made based on the correction value when the vehicle is stopped, so the correct will not be made once the ACC system auto stop control code 97 is stored.</p>
+          <p>Yaw rate-acceleration neutral position memorization execution conditions:</p>
+          <ul class="BULLET">
+            <li>Stop the vehicle or drive the vehicle stably at a 6 mph (10 km/h) or more.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">Because the system may be activated for an obstacle against which the vehicle is unlikely to collide.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">98</td>
+        <td align="" class="clsCellNormal">Multipurpose camera unit temperature too high</td>
+        <td align="" class="clsCellNormal">Parked under the blazing sun for a certain time.</td>
+        <td align="" class="clsCellNormal">Multipurpose camera unit temperature: Approx 185°F (85°C) or more.</td>
+        <td align="" class="clsCellNormal">Multipurpose camera unit temperature: Approx 180°F (82°C) or less.</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>The ECU may not operate properly.</li>
+            <li>Protection for the internal circuit.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: While the code is detected, the CMBS operation stops temporarily and the CMBS indicator (amber) comes on.</p>
+  <p>*2: This value differs depending on whether or not the vehicle is equipped with Low Speed Follow (LSF) feature.</p>
+  <p>*3:</p>
+  <ul class="BULLET">
+    <li>When the PGM-FI ECU and TCM are integrated, the engine ECU represents the PGM-FI ECU.</li>
+    <li>When the PGM-FI ECU and TCM are separate, the engine ECU represents the TCM.</li>
+  </ul>
+  <p>*4: The yaw rate sensor records only the built-in SRS unit.</p><a name="S419292980320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="154px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="514px">
+      <col span="1" id="COL5" width="600px">
+      <col span="1" id="COL6" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Code</th>
+        <th align="" class="clsCellNormal">ACC System Auto Stops Operating</th>
+        <th align="" class="clsCellNormal">Concrete Examples</th>
+        <th align="" class="clsCellNormal">Detection Conditions</th>
+        <th align="" class="clsCellNormal">Restoration Conditions (Conditions under which ACC SET is possible)</th>
+        <th align="" class="clsCellNormal">Reasons for Control OFF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">99</td>
+        <td align="" class="clsCellNormal">Acceleration/deceleration abnormality</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>The inclination of the road changed significantly while the vehicle accelerates/decelerates at around the maximum acceleration/deceleration speed of the ACC system.</li>
+            <li>The powertrain or brake system is abnormal.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>While the ACC was operating, an acceleration of 0.4 G or more* 2 continued for 1.0 second or more.</li>
+            <li>While the ACC was operating, a deceleration of -0.5 G or less* 2 continued for 1.5 seconds or more.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">Other than those listed to the left</td>
+        <td align="" class="clsCellNormal">Because the maximum acceleration/deceleration speed for the ACC system is exceeded.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">101</td>
+        <td align="" class="clsCellNormal">Rear wheel locked</td>
+        <td align="" class="clsCellNormal">The parking brake is not released or the vehicle is driven on a frozen road surface.</td>
+        <td align="" class="clsCellNormal">A signal of 5 mph (8 km/h) or more is inputted to the front wheel sensor and a signal of 0 mph (0 km/h) is inputted to the rear wheel sensor.</td>
+        <td align="" class="clsCellNormal">The front and rear wheel sensors detect a wheel speed.</td>
+        <td align="" class="clsCellNormal">Prevention of unstable vehicle behavior</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">108</td>
+        <td align="" class="clsCellNormal">Adaptive cruise control (ACC) brake control temporarily prohibited by ESB</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>12 Volt battery deterioration</li>
+            <li>24 Volt battery installation</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit received ACC brake temporary prohibition information from the ESB.<p><span class="clsEmphBOLD">NOTE: </span></p>
+          <ul class="BULLET">
+            <li>When the ESB power supply voltage is outside the operating range, the ESB sends ACC brake temporary prohibition information to the multipurpose camera unit.</li>
+            <li>CAN communication fail is being detected between the ESB control unit and multipurpose camera unit.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">The ESB power supply voltage returns to normal and the ACC brake temporary prohibition information is cleared.</td>
+        <td align="" class="clsCellNormal">Because ACC brake cannot be activated.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">109</td>
+        <td align="" class="clsCellNormal">Movement distance too short after initiation</td>
+        <td align="" class="clsCellNormal">When the millimeter wave radar detects an object that turns on low speed follow (LSF) control immediately after vehicle ON mode.</td>
+        <td align="" class="clsCellNormal">When the distance the vehicle travels after vehicle ON mode, which is calculated based on the vehicle speed, is less than 8 m (26 ft).</td>
+        <td align="" class="clsCellNormal">When the distance the vehicle travels is 8 m (26 ft) or more.</td>
+        <td align="" class="clsCellNormal">This is because an object other than a vehicle may be recognized as the leading vehicle after vehicle ON mode in a parking lot etc.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: While the code is detected, the CMBS operation stops temporarily and the CMBS indicator (amber) comes on.</p>
+  <p>*2: This value differs depending on whether or not the vehicle is equipped with Low Speed Follow (LSF) feature.</p>
+  <p>*3:</p>
+  <ul class="BULLET">
+    <li>When the PGM-FI ECU and TCM are integrated, the engine ECU represents the PGM-FI ECU.</li>
+    <li>When the PGM-FI ECU and TCM are separate, the engine ECU represents the TCM.</li>
+  </ul>
+  <p>*4: The yaw rate sensor records only the built-in SRS unit.</p><a name="S419292980320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="154px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="514px">
+      <col span="1" id="COL5" width="600px">
+      <col span="1" id="COL6" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Code</th>
+        <th align="" class="clsCellNormal">ACC System Auto Stops Operating</th>
+        <th align="" class="clsCellNormal">Concrete Examples</th>
+        <th align="" class="clsCellNormal">Detection Conditions</th>
+        <th align="" class="clsCellNormal">Restoration Conditions (Conditions under which ACC SET is possible)</th>
+        <th align="" class="clsCellNormal">Reasons for Control OFF</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">110</td>
+        <td align="" class="clsCellNormal">Shift position 1st</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>While driving in 1st gear.</li>
+            <li>Vehicle is driven at an extremely low speed.</li>
+          </ul>
+        </td>
+        <td align="" class="clsCellNormal">1st gear shift position is detected.</td>
+        <td align="" class="clsCellNormal">Vehicle is driven in 2nd or higher gear (forward gear).</td>
+        <td align="" class="clsCellNormal">Inappropriate gear is selected for ACC system.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">127</td>
+        <td align="" class="clsCellNormal">i-DCD cannot receive traction request</td>
+        <td align="" class="clsCellNormal">After the DCT (the built-in motor type) shifted during the acceleration. (especially low speed).</td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit received DCT (the built-in motor type) traction request rejection information from the engine ECU *3.</td>
+        <td align="" class="clsCellNormal">The engine ECU *3 to normal and the DCT (the built-in motor type) traction request rejection information is cleared.</td>
+        <td align="" class="clsCellNormal">Because the driving force required by the ACC cannot be generated in a state in which the gears of the transmission are not engaged properly.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">140 *4</td>
+        <td align="" class="clsCellNormal">Yaw rate sensor temporarily error (low voltage, etc.)</td>
+        <td align="" class="clsCellNormal">12 Volt battery deterioration.</td>
+        <td align="" class="clsCellNormal">The multipurpose camera unit received yaw rate sensor temporarily error information from the SRS unit.</td>
+        <td align="" class="clsCellNormal">The SRS unit to normal and the yaw rate sensor temporary prohibition information is cleared.</td>
+        <td align="" class="clsCellNormal">Prevention of incorrect detection of the leading vehicle due to deviation of own vehicle locus estimation.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: While the code is detected, the CMBS operation stops temporarily and the CMBS indicator (amber) comes on.</p>
+  <p>*2: This value differs depending on whether or not the vehicle is equipped with Low Speed Follow (LSF) feature.</p>
+  <p>*3:</p>
+  <ul class="BULLET">
+    <li>When the PGM-FI ECU and TCM are integrated, the engine ECU represents the PGM-FI ECU.</li>
+    <li>When the PGM-FI ECU and TCM are separate, the engine ECU represents the TCM.</li>
+  </ul>
+  <p>*4: The yaw rate sensor records only the built-in SRS unit.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

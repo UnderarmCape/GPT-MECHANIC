@@ -1,0 +1,218 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC U0100, U0122 (Keyless Access Power Control Unit without CAN gateway) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/Anti-Theft%20Systems/">Anti-Theft Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18803.html">Keyless Access System (Power Control Unit) - Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18803.html#DTC%20Troubleshooting/">DTC Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/620.html">DTC U0100, U0122 (Keyless Access Power Control Unit without CAN gateway)</a></div><div class="main"><h1>DTC U0100, U0122 (Keyless Access Power Control Unit without CAN gateway)</h1><div id="S30424592592021060700000">
+  <p><span class="clsEmphBOLD">DTC U0100 </span>
+: Power Control Unit (Body Control Module) Lost Communication with PCM</p>
+  <p><span class="clsEmphBOLD">DTC U0122: </span>
+Power Control Unit (Body Control Module) Lost Communication with VSA Modulator-Control Unit (VSA Message)</p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>Before you troubleshoot, <a href="../pages/12949.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Body%20Electrical/">review the general troubleshooting information</a>
+.</li>
+    <li>According to the detected DTC(s), check for the power circuit and the ground circuit of the control unit which cannot communicate with the body control module.</li>
+    <li>Refer to the DTC shown on the display, then inspect the connectors and terminals based on the instructions.</li>
+  </ul><a name="S304245925920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="200px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">DTC Description</th>
+        <th align="" class="clsCellNormal">DTC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">U0100 Power Control Unit (Body Control Module) Lost Communication with PCM</td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">U0122 Power Control Unit (Body Control Module) Lost Communication with VSA Modulator-Control Unit (VSA Message)</td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>DTC (Power Control Unit)</p>
+  <ol class="ARABICNUM">
+    <li>Problem verification<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Clear the DTCs with the HDS.</p>
+      <p>-3. Turn the vehicle to the OFF (LOCK) mode and then the ON mode.</p>
+      <p>-4. Wait for at least 6 seconds.</p>
+      <p>-5. Check for DTCs with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">DTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0100 Power Control Unit (Body Control Module) Lost Communication with PCM</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122 Power Control Unit (Body Control Module) Lost Communication with VSA Modulator-Control Unit (VSA Message)</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are any DTCs indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 2.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the transmitting control units and the gauge control module.</p>
+    </li>
+    <li>Open wire check (F-CAN_H line, F-CAN_L line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Body control module connector B (36P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. U0100: Jump the SCS line with the HDS, and wait more than 1 minute.</p>
+      <p>SCS short</p>
+      <p>-4. Disconnect the transmitting control unit connector(s).</p>
+      <p>Refer to the DTC shown on the display, then disconnect the connector(s) based on the instructions (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="133px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Connector</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal">PCM connector A (50P) *1/*3<br>PCM connector No. 2 (58P) *2</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit 46P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*1: L15B7/L15BA/L15BY engine</p>
+      <p>*2: K20C1 engine</p>
+      <p>*3: K20C2 engine</p>
+      <p>-5. Check for continuity between the receiving control unit and the transmitting control unit on the F-CAN_H circuit and the F-CAN_L circuit.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="130px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Receiving control unit connector(s): disconnected<br>Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="257px">
+          <col span="1" id="COL2" width="343px">
+          <col span="1" id="COL3" width="600px">
+          <col span="1" id="COL4" width="257px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="257px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Receiving control unit</th>
+            <th colspan="2" align="" class="clsCellNormal">Transmitting control unit</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100 *1/*3</td>
+            <td align="" class="clsCellNormal">F-CAN_H</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P)</a></td>
+            <td align="" class="clsCellNormal">No. 22</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../external-car.html">PCM connector A (50P)</a></td>
+            <td align="" class="clsCellNormal">No. 37</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN_L</td>
+            <td align="" class="clsCellNormal">No. 23</td>
+            <td align="" class="clsCellNormal">No. 36</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0100 *2</td>
+            <td align="" class="clsCellNormal">F-CAN_H</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P)</a></td>
+            <td align="" class="clsCellNormal">No. 22</td>
+            <td rowspan="2" align="" class="clsCellNormal">PCM connector No. 2 (58P)</td>
+            <td align="" class="clsCellNormal">No. 15</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN_L</td>
+            <td align="" class="clsCellNormal">No. 23</td>
+            <td align="" class="clsCellNormal">No. 27</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal">F-CAN_H</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P)</a></td>
+            <td align="" class="clsCellNormal">No. 22</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector</a></td>
+            <td align="" class="clsCellNormal">No. 20</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN_L</td>
+            <td align="" class="clsCellNormal">No. 23</td>
+            <td align="" class="clsCellNormal">No. 21</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*1: L15B7/L15BA/L15BY engine</p>
+      <p>*2: K20C1 engine</p>
+      <p>*3: K20C2 engine</p>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN_H wire and the F-CAN_L wire are OK.</p>
+      <p>Refer to the DTC shown on the display, substitute or replace the control unit based on the instructions (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="77px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Operation for transmitting control unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0100</td>
+            <td align="" class="clsCellNormal"><a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation/">Substitute a known-good PCM</a>
+, then recheck. If DTC U0100 goes away and the PCM was substituted, <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation/">replace the original PCM</a>
+.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13637.html#Removal%20and%20Installation/VSA%20Modulator-Control%20Unit%20Removal%20and%20Installation%20%282%2F4-door%29/">Replace the VSA modulator-control unit</a>
+.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the F-CAN_H wire and/or the F-CAN_L wire between the receiving control unit and the transmitting control unit.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

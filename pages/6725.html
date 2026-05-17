@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0480 (K20C2) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18444.html">Engine Control System - Advanced Diagnostics (P0340 - P0507)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18444.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6725.html">DTC P0480 (K20C2)</a></div><div class="main"><h1>DTC P0480 (K20C2)</h1><div id="S04320448472021060700000">
+  <p><span class="clsEmphBOLD">DTC P0480: </span>
+Radiator Fan Control (RFC) System Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S043204484720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403099">
+            <div class="imageHeader"><a name="S30204022042021060700000"></a></div><img alt="GHH403099" src="../images/GHH403099.jpeg" name="GHH403099"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The radiator fan control (RFC) unit cools the radiator and the A/C condenser by controlling the cooling fan motor. The powertrain control module (PCM) communicates with the RFC unit using the pulse-width modulation (PWM) signal. The PCM sends drive command to the RFC unit via the FAN CONTROL line using the PWM signal according to the condition of the vehicle. When a malfunction in the system is detected by self-diagnosis, the RFC unit makes FAN CONTROL line signal output to GND. When the PCM cannot receive the PWM signal via the FAN CONTROL line for a set time, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S043204484720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">12 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL off</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S043204484720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after the PCM is activated</td>
+        <td align="" class="clsCellNormal">2 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [BATTERY]</td>
+        <td align="" class="clsCellNormal">10 V</td>
+        <td align="" class="clsCellNormal">18 V</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td colspan="2" align="" class="clsCellNormal">ON mode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The PCM cannot receive PWM signal from the RFC unit via the FAN CONTROL line for at least 12 seconds.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>RFC unit RFC DRIVER RLY OUT line open</li>
+    <li>RFC unit GND line open</li>
+    <li>RFC unit FAN CONTROL line open</li>
+    <li>RFC unit FAN CONTROL line short</li>
+    <li>RFC relay stuck off</li>
+    <li>RFC unit failure</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <p>Turn the vehicle to the ON mode.</p>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>Select the RADIATOR FAN in the INSPECTION MENU with the HDS.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, a Confirmed DTC and the freeze data are stored. The MIL does not come on.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

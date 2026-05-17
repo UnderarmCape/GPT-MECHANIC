@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P2135 (K20C1) (2017 2018 2019) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19300.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19300.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/21204.html">DTC P2135 (K20C1) (2017 2018 2019)</a></div><div class="main"><h1>DTC P2135 (K20C1) (2017 2018 2019)</h1><div id="S10108721522021060700000">
+  <p><span class="clsEmphBOLD">DTC P2135: </span>
+Throttle Position (TP) Sensor A/B Incorrect Voltage Correlation</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S101087215220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403458">
+            <div class="imageHeader"><a name="S18892523342021060700000"></a></div><img alt="GHH403458" src="../images/GHH403458.jpeg" name="GHH403458"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S101087215220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403459">
+            <div class="imageHeader"><a name="S12189539802021060700000"></a></div><img alt="GHH403459" src="../images/GHH403459.jpeg" name="GHH403459"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) monitors the throttle position (TP) sensor A circuit and the throttle position (TP) sensor B circuit for rationality check. In order to provide electrical diagnostics the output voltage of both sensors are continuously monitored and compared with minimum and maximum thresholds. If the TP sensor B output voltage is a specified value for a specified time, the PCM detects a malfunction and stores a DTC.The rationality diagnostic compares the throttle positions determined from the TP sensors to each other. If the difference between the positions is greater than a calibrated threshold, then the process is started to pinpoint the faulty TP sensor. The pinpointing is done with two tests. The first test compares the throttle position from the TP sensor to a modeled value based on the engine operation point. This test is done sequentially for both TP sensors. If this test does not determine the faulty TP sensor, a second test is performed to determine the faulty TP sensor. The second test compares the two differences between the TP sensor values and the reference position, based on engine operation, to each other. If TP sensor A or B is different from the reference position, the PCM detects a malfunction and stores a DTC</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S101087215220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S101087215220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">480 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">TP sensor A voltage [TP Sensor A]*</td>
+        <td align="" class="clsCellNormal">0.195 V</td>
+        <td align="" class="clsCellNormal">4.805 V</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">TP sensor B voltage [TP Sensor B]**</td>
+        <td align="" class="clsCellNormal">0.195 V</td>
+        <td align="" class="clsCellNormal">4.805 V</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Commanded throttle position</td>
+        <td align="" class="clsCellNormal">0 %</td>
+        <td align="" class="clsCellNormal">99.99847 %</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For TP sensor A circuit range/performance detection</p>
+  <p>**: For TP sensor B circuit range/performance detection</p>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>If the absolute difference of the position between TP sensor A and TP sensor B is greater than 5 - 6.25 % for at least 0.14 second, the pinpointing test is requested:</p>
+  <p>Either of the conditions is met during pinpointing test:</p>
+  <ul class="BULLET">
+    <li>TP sensor A circuit range/performance</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The difference between the actual throttle position based on the voltage from TP sensor A and the relative air charge signal is greater than 9.0234 % for at least 0.28 second.</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The absolute deviation from relative air charge signal of TP sensor A is greater than the deviation of TP sensor B.</p>
+        </li>
+      </ul>
+    </li>
+    <li>TP sensor B circuit range/performance</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The difference between the actual throttle position based on the voltage from TP sensor B and the relative air charge signal is greater than 9.0234 % for at least 0.28 second.</p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The absolute deviation from relative air charge signal of TP sensor B is greater than the deviation of TP sensor A.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Throttle body failure (TP sensor A/B)</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

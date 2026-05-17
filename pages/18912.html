@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Understanding The Service Check Signal (SCS) Function (A18030B) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Quick%20Lookups/">Quick Lookups</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Quick%20Lookups/Technical%20Bulletins/">Technical Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/512.html">Technical Service Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18812.html">Other Variant</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18812.html#Engine%20Control%20Systems/">Engine Control Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18912.html">Understanding The Service Check Signal (SCS) Function (A18030B)</a></div><div class="main"><h1>Understanding The Service Check Signal (SCS) Function (A18030B)</h1><div class="other-warning other-variant"><b>WARNING:</b> This page is about the Civic EX-L, 2D Coupe, which is a different variant/trim than selected.</div>Publication date: 2018-03-01<br>Reference number: A18030B<br><br><div id="bulletin" class="infoObjPrint articlePrintSelection">
+    <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UNDERSTANDING THE SERVICE CHECK SIGNAL (SCS) FUNCTION</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  </head>
+  <body style="bgcolor:white; text:black; ">
+    <h2>UNDERSTANDING THE SERVICE CHECK SIGNAL (SCS) FUNCTION</h2>
+    <h2>TECHNICAL SERVICE BULLETIN</h2>
+    <div id="idTecHead">Reference Number(s): A18030B, Date of Issue: 
+				March 22, 2018<br><table class="" cellspacing="0">
+        <tr>
+          <td class="clsTDescTitle">HONDA:</td>
+          <td>All Models</td>
+        </tr>
+      </table>
+    </div><h3>AFFECTED VEHICLES</h3>
+    
+    <p>General Information</p>
+    <p><span class="clsEmphBOLD">EDITOR'S NOTE: </span>
+
+ This article replaces &quot;Shorting the SCS Circuit with an HDS PC,&quot; posted in <span class="clsEmphBOLD">June 2011 </span>
+
+ and &quot;ECM/PCM Removal and Replacement: '03 Accord,&quot; posted in <span class="clsEmphBOLD">September 2002 </span>
+
+.</p><h3>INTRODUCTION</h3>
+    
+    <p>The software for the legacy HDS and the new i-HDS offers a standalone function called <span class="clsEmphBOLD">service check signal </span>
+
+ or <span class="clsEmphBOLD">SCS </span>
+
+. You'll find it on various screens of the tool. When you turn it on, the tool shorts the SCS terminal in the 16-pin DLC directly to ground.</p>
+    <p>In the legacy HDS software, you'll find this function on the <span class="clsEmphBOLD">Select Mode </span>
+
+ screen, but it's also available as an icon on the <span class="clsEmphBOLD">Data List </span>
+
+ or <span class="clsEmphBOLD">Snapshot </span>
+
+ screens. When it's turned on, you'll see <span class="clsEmphBOLD">SCS </span>
+
+ blinking in the lower right corner of the screen. In addition, this function turns off any time you exit the screen.</p>
+    <p>In the i-HDS software, you'll find an <span class="clsEmphBOLD">SCS </span>
+
+ icon at the top of most screens. Once you turn the function on, it doesn't turn off when you switch to a different screen. Instead, it stays on until you turn it off by either selecting the icon or completely exiting the software.</p><h3>WHAT IT DOES</h3>
+    
+    <p>Shorting the SCS terminal at the DLC tells the ECM/PCM to run diagnostic checks on a number of vehicle systems. While the SCS function is turned on, you'll see various indicators come on in the instrument panel and the MID may show F-CAN DTCs. Because of this, the SCS function offers you another way to read vehicle DTCs.</p>
+    <p>Besides diagnostic checks, the SCS function also helps during troubleshooting. You can use it to bypass the two-trip requirement on certain DTCs and to shut down the ECM/PCM before checking wiring harness circuits or replacing parts. Here's a closer look:</p>
+    <p><span class="clsEmphITAL">Bypassing the Two-Trip Requirement </span></p>
+    <p>After clearing certain fuel system DTCs, the ECM/PCM software may require you to drive two separate trips before the DTC will set again. This is called a two-trip requirement. After the first trip, the ECM/PCM sets a pending DTC but doesn't record a freeze frame or on-board snapshot.</p>
+    <p>To bypass the two-trip requirement and set any DTCs in a single trip, follow these steps:</p>
+    <ol class="ARABICNUM">
+      <li>Turn the ignition to ON, and connect the i-HDS.</li>
+      <li>Turn on the SCS function.</li>
+      <li>Once the MIL comes on, test-drive the vehicle with the i-HDS connected.</li>
+    </ol>
+    <p><span class="clsEmphITAL">Shutting Down the ECM/PCM </span></p>
+    <p>The ECM/PCM can stay active for several hours after vehicle shutdown. During that time, the software records data to memory and runs certain diagnostic checks. To protect the ECM/PCM from damage, you need to shut down this activity before unplugging the unit from its wiring harness. To do this, follow these steps.</p>
+    <ol class="ARABICNUM">
+      <li>With the ignition turned to ON, connect the i-HDS.</li>
+      <li>Turn the ignition to OFF, and turn on the SCS function. To make sure the SCS is working, check the DST-I screen. It should read <span class="clsEmphBOLD">Communicating - Do not Disconnect </span>
+
+.</li>
+      <li>To complete the process, turn off the SCS function and disconnect the i-HDS.</li>
+    </ol>
+    <p>Once you've completed these steps, it's safe to unplug the ECM/PCM connectors.</p><h3>FINAL THOUGHTS</h3>
+    
+    <p>Be sure to review all of the steps needed when using the SCS function. Missing a step could affect your troubleshooting or damage the ECM/PCM, so be sure to follow every step to the letter!</p>
+    <p>And one more thing, we've got a <span class="clsEmphITAL">Tech2Tech </span>
+
+® video in the works that will show the SCS function in action.</p>
+  </body>
+</html>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

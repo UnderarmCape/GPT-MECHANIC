@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P2101 (K20C2) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/22760.html">DTC P2101 (K20C2)</a></div><div class="main"><h1>DTC P2101 (K20C2)</h1><div id="S19966947622021060700000">
+  <p><span class="clsEmphBOLD">DTC P2101: </span>
+Electronic Throttle Control System (ETCS) Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S199669476220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403424">
+            <div class="imageHeader"><a name="S31692294562021060700000"></a></div><img alt="GHH403424" src="../images/GHH403424.jpeg" name="GHH403424"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The electronic throttle control system controls the throttle valve opening. The system includes the throttle actuator, the throttle valve, throttle position (TP) sensors A and B, the PGM-FI subrelay circuit, the accelerator pedal position (APP) sensor, and the powertrain control module (PCM). When the accelerator pedal is pressed, the APP sensor detects the accelerator pedal opening value. The accelerator pedal opening value is converted to a signal in the APP sensor and transmitted to the PCM to compute the target position. The PCM determines the throttle valve target position according to the signal received and operates the throttle actuator to move the throttle valve to the target position. The actual throttle valve position is determined by TP sensor A (installed in the throttle body). The PCM compares the throttle valve target opening angle and the actual throttle valve opening angle from TP sensor A, and when the difference exceeds the specification, the PCM detects the malfunction of the electronic throttle control system and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S199669476220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">250 milliseconds or more*, 500 milliseconds or more**</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Throttle valve closed direction</p>
+  <p>**: Throttle valve open direction</p>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S199669476220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [BATTERY]</td>
+        <td align="" class="clsCellNormal">6.0 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td colspan="2" align="" class="clsCellNormal">ON mode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>One of the conditions in this table is met for at least 250 milliseconds* (500 milliseconds**).</p><a name="S199669476220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Throttle valve target position</th>
+        <th align="" class="clsCellNormal">Difference between throttle valve target position and actual throttle valve position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">2 deg.</td>
+        <td align="" class="clsCellNormal">4 deg. or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">6 deg.</td>
+        <td align="" class="clsCellNormal">5.4 deg. or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">10 deg.</td>
+        <td align="" class="clsCellNormal">5.7 deg. or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">15 deg.</td>
+        <td align="" class="clsCellNormal">6 deg. or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">90 deg.</td>
+        <td align="" class="clsCellNormal">6 deg. or more</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>PCM internal circuit failure</li>
+    <li>Throttle actuator MTR1 line failure</li>
+    <li>Throttle actuator MTR2 line failure</li>
+    <li>Throttle body internal failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

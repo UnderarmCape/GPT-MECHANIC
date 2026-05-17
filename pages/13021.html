@@ -1,0 +1,235 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Gauges System Description - Control/Function — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Electrical/">Electrical</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Electrical/Gauges/">Gauges</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12964.html">Gauges - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12964.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13021.html">Gauges System Description - Control/Function</a></div><div class="main"><h1>Gauges System Description - Control/Function</h1><div id="S40840592602021060700000">
+  <p><span class="clsEmphBOLD">Self-Diagnostic Function </span></p>
+  <p>The gauge control module is equipped with a function to <a href="../pages/12964.html#General%20Information/Gauges%20Self-Diagnostic%20Function%20%282%2F4-door%29/">self-diagnose</a>  the inside circuits in the gauge control module.</p>
+  <p><span class="clsEmphBOLD">Speedometer and Tachometer </span></p>
+  <p>The PCM *1 or TCM *2 provides a vehicle speed signal to the gauge control module using the F-CAN. Based on this input, the gauge control module displays the current vehicle speed in the speedometer. The PCM provides an engine speed signal to the gauge control module using the F-CAN. Based on this input, the gauge control module displays the current engine speed in the tachometer.</p>
+  <p>*1: M/T</p>
+  <p>*2: CVT</p>
+  <p><span class="clsEmphBOLD">Fuel Gauge and Fuel Indicator </span></p>
+  <p>The gauge control module displays the fuel gauge based on input value from the fuel gauge sending unit (fuel tank unit). The low fuel indicator turns on in the event that indication of the fuel gauge becomes lower than the minimum tank fill threshold.</p>
+  <p><span class="clsEmphBOLD">Multi-Information Display (MID) (With Multi-Information Display) </span></p>
+  <p>The multi-information display (MID) provides the ODO/trip meter, outside air temperature, average fuel economy, available cruising range, instant fuel economy, elapsed time, oil life, seat belt reminder, average speed, and the status of keyless access system. In addition, the diagnostic system displays the communication errors and the DTCs.</p>
+  <p><span class="clsEmphBOLD">Information Display (Without Multi-Information Display) </span></p>
+  <p>The information display provides the ODO/trip meter, outside air temperature, average fuel efficiency, available cruising range, instant fuel economy, oil life, seat belt reminder, and the status of the keyless access system*. In addition, the diagnostic system displays the communication errors and the DTCs.</p>
+  <p>*: With keyless access system</p>
+  <p><span class="clsEmphBOLD">ODO Meter and Trip Meter </span></p>
+  <p>The PCM *1 or TCM *2 provides a vehicle speed signal to the gauge control module using the F-CAN. Based on this input, the gauge control module tracks mileage for the odometer and trip meters. The mileage values are displayed in the information display or multi-information display (MID).</p>
+  <p>*1: M/T</p>
+  <p>*2: CVT</p>
+  <p><span class="clsEmphBOLD">Ambient Meter (Except Si and Type-R) </span></p>
+  <p>The ambient meter shows real-time driving information by color on the both sides of the tachometer which promote fuel efficient driving. When the color is close to green, it means low fuel consumption driving. When the color is close to white, it means high fuel consumption driving.</p>
+  <p><span class="clsEmphBOLD">Engine Coolant Temperature Gauge </span></p>
+  <p>The PCM provides an engine coolant temperature signal to the gauge control module using the F-CAN. When the engine coolant temperature is high, the gauge control module displays the warning in the multi-information display (MID).</p>
+  <p><span class="clsEmphBOLD">Outside Temperature Gauge </span></p>
+  <p>The gauge control module uses measurements from the outside air temperature sensor or uses the temperature sensor signal from the climate control unit via the B-CAN. The outside air temperature indicator's displayed temperature can be recalibrated <img alt="" class="ICON" src="../images/GHH408692.png" name="GHH408692">
+5 deg.F (<img alt="" class="ICON" src="../images/GHH408693.png" name="GHH408693">
+3 deg.C) to meet the customer's expectations.</p>
+  <p><span class="clsEmphBOLD">Average Fuel Economy Records, Average Fuel Economy/Instant Fuel Economy, Range, Elapsed Time Display, Average Speed Display </span></p>
+  <p>The gauge control module receives signals such as fuel consumption, driving distance, vehicle speed, and engine speed from the PCM via F-CAN. It calculates average fuel economy records, average/instant fuel economy, elapsed time *, average speed *, and range to display the results.</p>
+  <p>*: With multi-information display</p>
+  <p><span class="clsEmphBOLD">Select Position </span></p>
+  <p>The TCM sends the transmission shift position/mode to the gauge control module, using the F-CAN.</p>
+  <p><span class="clsEmphBOLD">Gauge Control Module Receives Information </span></p>
+  <p>The gauge control module receives information from each control unit via the F-CAN and the B-CAN to light or flash the indicators. The VSA modulator-control unit (indicator signal), TPMS switch *1, ECON switch *3, cruise control combination switch, washer fluid level switch, automatic brake hold switch, ACC combination switch, VSA OFF switch, CMBS OFF switch, adaptive damper mode switch *4, integrated drive-mode switch *5, and brake fluid level switch are connect directly to the gauge control module. The audio remote-HFL switch signal *2 is transmitted to the gauge control module via the LIN.</p>
+  <p>*1: Without multi-information display*2: With multi-information display*3: With ECON switch*4: With adaptive damper system*5: Si and Type-R</p>
+  <p><span class="clsEmphBOLD">Keyless Access System Information (With Keyless Access System) </span></p>
+  <p>The gauge control module receives information from the body control module via the B-CAN to display status of the keyless access system.</p>
+  <p><span class="clsEmphBOLD">Buzzer </span></p>
+  <p>The gauge control module includes a buzzer to provide the driver with audible warnings.</p>
+  <p><span class="clsEmphBOLD">Illumination Control </span></p>
+  <p>The illumination brightness can be adjusted using the SEL/RESET knob. When the exterior lights are off, the system is off.</p>
+  <p><span class="clsEmphBOLD">Unit Display Switching Function (Without Multi-Information Display) </span></p>
+  <p>Pressing the km/h, mph change knob for more than one second during the vehicle in the ON mode can switch the unit display.</p>
+  <p><span class="clsEmphBOLD">Ambient Meter (Si and Type-R) </span></p>
+  <p>When shift up backlight setting is ON, the ambient meter blinks based on engine revolution and shift position *. And the ambient meter dims when +R * or Sport is selected with the ambient meter out of blinking range.</p>
+  <p>*: Type-R</p><a name="S408405926020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="208px">
+      <col span="1" id="COL2" width="491px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal"> </th>
+        <th align="" class="clsCellNormal">Shift Position Indicator</th>
+        <th align="" class="clsCellNormal">Blink Condition</th>
+        <th align="" class="clsCellNormal">OFF Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Si</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">6, 350 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 330 rpm or less</td>
+      </tr>
+      <tr>
+        <td rowspan="6" align="" class="clsCellNormal">Type-R</td>
+        <td align="" class="clsCellNormal">1</td>
+        <td align="" class="clsCellNormal">6, 670 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 650 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">2</td>
+        <td align="" class="clsCellNormal">6, 780 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 760 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">3</td>
+        <td align="" class="clsCellNormal">6, 850 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 830 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">4</td>
+        <td align="" class="clsCellNormal">6, 880 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 860 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">5</td>
+        <td align="" class="clsCellNormal">6, 910 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 890 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">6</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Always off</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">REV Indicator (Si and Type-R) </span></p>
+  <p>When REV indicator setting is ON, the REV indicator turns on based on engine revolution.</p><a name="S408405926020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH408694">
+            <div class="imageHeader"><a name="S41594317872021060700000"></a></div><img alt="GHH408694" src="../images/GHH408694.jpeg" name="GHH408694"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The function of the REV indicator is as shown in the table below.</p><a name="S408405926020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="480px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">REV Indicator (Si)</th>
+        <th align="" class="clsCellNormal">ON Condition</th>
+        <th align="" class="clsCellNormal">OFF Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408695.png" name="GHH408695"></td>
+        <td align="" class="clsCellNormal">4, 000 rpm or more</td>
+        <td align="" class="clsCellNormal">3, 800 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408696.png" name="GHH408696"></td>
+        <td align="" class="clsCellNormal">4, 250 rpm or more</td>
+        <td align="" class="clsCellNormal">4, 050 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408697.png" name="GHH408697"></td>
+        <td align="" class="clsCellNormal">4, 500 rpm or more</td>
+        <td align="" class="clsCellNormal">4, 300 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408698.png" name="GHH408698"></td>
+        <td align="" class="clsCellNormal">4, 750 rpm or more</td>
+        <td align="" class="clsCellNormal">4, 550 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408699.png" name="GHH408699"></td>
+        <td align="" class="clsCellNormal">5, 000 rpm or more</td>
+        <td align="" class="clsCellNormal">4, 800 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408700.png" name="GHH408700"></td>
+        <td align="" class="clsCellNormal">5, 250 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 050 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408701.png" name="GHH408701"></td>
+        <td align="" class="clsCellNormal">5, 500 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 300 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408702.png" name="GHH408702"></td>
+        <td align="" class="clsCellNormal">5, 750 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 550 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408703.png" name="GHH408703"></td>
+        <td align="" class="clsCellNormal">6, 000 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 800 rpm or less</td>
+      </tr>
+    </tbody>
+  </table><a name="S408405926020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="480px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">REV Indicator (Type-R)</th>
+        <th align="" class="clsCellNormal">ON Condition</th>
+        <th align="" class="clsCellNormal">OFF Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408704.png" name="GHH408704"></td>
+        <td align="" class="clsCellNormal">4, 500 rpm or more</td>
+        <td align="" class="clsCellNormal">4, 300 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408705.png" name="GHH408705"></td>
+        <td align="" class="clsCellNormal">4, 750 rpm or more</td>
+        <td align="" class="clsCellNormal">4, 550 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408706.png" name="GHH408706"></td>
+        <td align="" class="clsCellNormal">5, 000 rpm or more</td>
+        <td align="" class="clsCellNormal">4, 800 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408707.png" name="GHH408707"></td>
+        <td align="" class="clsCellNormal">5, 250 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 050 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408708.png" name="GHH408708"></td>
+        <td align="" class="clsCellNormal">5, 500 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 300 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408709.png" name="GHH408709"></td>
+        <td align="" class="clsCellNormal">5, 750 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 550 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408710.png" name="GHH408710"></td>
+        <td align="" class="clsCellNormal">6, 000 rpm or more</td>
+        <td align="" class="clsCellNormal">5, 800 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408711.png" name="GHH408711"></td>
+        <td align="" class="clsCellNormal">6, 250 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 050 rpm or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal"><img alt="" class="ICON" src="../images/GHH408712.png" name="GHH408712"></td>
+        <td align="" class="clsCellNormal">6, 500 rpm or more</td>
+        <td align="" class="clsCellNormal">6, 300 rpm or less</td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

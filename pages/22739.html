@@ -1,0 +1,148 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P2073 (K20C2) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/22739.html">DTC P2073 (K20C2)</a></div><div class="main"><h1>DTC P2073 (K20C2)</h1><div id="S35666426552021060700000">
+  <p><span class="clsEmphBOLD">DTC P2073: </span>
+Manifold Absolute Pressure (MAP) Sensor Signal Higher Than Expected</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S356664265520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403389">
+            <div class="imageHeader"><a name="S14098957292021060700000"></a></div><img alt="GHH403389" src="../images/GHH403389.jpeg" name="GHH403389"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S356664265520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403390">
+            <div class="imageHeader"><a name="S32337832862021060700000"></a></div><img alt="GHH403390" src="../images/GHH403390.jpeg" name="GHH403390"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The manifold absolute pressure (MAP) sensor senses manifold absolute pressure (vacuum) and converts it into electrical signals. The MAP sensor outputs low signal voltage at high vacuum (throttle valve closed) and high signal voltage at low vacuum (throttle valve wide open). The powertrain control module (PCM) compares a predetermined MAP value at a given throttle position and manifold absolute pressure to the output voltage value of the MAP sensor. If the MAP sensor outputs high voltage during fuel cut-off operation for deceleration with the throttle valve fully closed, which should make the manifold absolute pressure lower, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S356664265520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">2.0 seconds or more</td>
+      </tr>
+    </tbody>
+  </table><a name="S356664265520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S356664265520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after VTEC switched</td>
+        <td align="" class="clsCellNormal">3.0 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine coolant temperature [ECT SENSOR 1]</td>
+        <td align="" class="clsCellNormal">156 deg.F (69 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [ENGINE SPEED]</td>
+        <td align="" class="clsCellNormal">1, 200 rpm</td>
+        <td align="" class="clsCellNormal">6, 600 rpm</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle speed [VEHICLE SPEED]</td>
+        <td align="" class="clsCellNormal">15 mph (24 km/h)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Throttle position</td>
+        <td align="" class="clsCellNormal">Fully closed</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td align="" class="clsCellNormal">During deceleration</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The MAP sensor output [MAP SENSOR] is 54 kPa (400 mmHg, 15.8 inHg) or more for at least 2.0 seconds.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>MAP sensor output signal high</li>
+    <li>Evaporative emission (EVAP) canister purge valve failure</li>
+    <li>Valve timing incorrect</li>
+    <li>Intake air system air leak</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p><a name="S356664265520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403391">
+            <div class="imageHeader"><a name="S24422201412021060700000"></a></div><img alt="GHH403391" src="../images/GHH403391.jpeg" name="GHH403391"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="BULLET">
+    <li>Start the engine. Hold the engine speed [ENGINE SPEED] at 3, 000 rpm without load (CVT in P or N, M/T in neutral) until the radiator fan comes on.</li>
+    <li>Drive the vehicle at a steady speed between 55 - 75 mph (88 - 120 km/h) for at least 10 seconds.</li>
+    <li>Decelerate with the throttle valve fully closed for at least 2 seconds.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

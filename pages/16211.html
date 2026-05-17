@@ -1,0 +1,839 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DLC Circuit Troubleshooting (L15B7/L15BA/L15BY: With CAN gateway) (2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Communication%20Devices/">Communication Devices</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12963.html">Network Communication - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12963.html#Troubleshooting/">Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/16211.html">DLC Circuit Troubleshooting (L15B7/L15BA/L15BY: With CAN gateway) (2020 2021)</a></div><div class="main"><h1>DLC Circuit Troubleshooting (L15B7/L15BA/L15BY: With CAN gateway) (2020 2021)</h1><div id="S06473410552021060700000">
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ If you suspect the HDS or the HDS DLC cable may be the source of the communication problem, verify that they are working properly by connecting them to a known-good, similar vehicle and system, then check for communication problems.</p>
+  <ol class="ARABICNUM">
+    <li>HDS communication check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Connect the HDS to the DLC.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ Make sure the HDS is properly connected to the DLC.</p>
+      <p>-3. Turn the vehicle to the ON mode, and turn on the HDS.</p>
+      <p>Does the HDS identify the vehicle?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 2.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 17.</p>
+    </li>
+    <li>Determine possible failure area (PGM-FI system, other systems)<p>-1. Check for Pending or Confirmed DTCs in the PGM-FI system with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+          <col span="1" id="COL3" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">Confirmed DTC</th>
+            <th align="" class="clsCellNormal">Pending DTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are any Pending or Confirmed DTCs indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to the indicated DTC's troubleshooting.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the PCM, go to step 3.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the SRS, go to step 5.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the VSA system, go to step 6.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the EPS system, go to step 7.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the IMMOBI (immobilizer) system, go to step 8.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the ONE PUSH START system, go to step 9.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the TPMS, go to step 10.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the AT system, go to step 11.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the BODY ELECTRICAL system, go to step 12.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the HDS does not communicate with the DRIVING SUPPORT system, go to step 13.</p>
+    </li>
+    <li>Open wire check (F-CAN A_H line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Jump the SCS line with the HDS, and wait more than 1 minute.</p>
+      <p>-3. Disconnect the following connectors.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">PCM connector A (50P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-4. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector A (50P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 3: <img alt="" class="ICON" src="../images/GHH410871.png" name="GHH410871"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector A (50P) No. 37</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410872">
+                <div class="imageHeader"><a name="S07672919232021060700000"></a></div><img alt="GHH410872" src="../images/GHH410872.jpeg" name="GHH410872"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN A_H wire is OK. Go to step 4.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the F-CAN A_H wire between the PCM (A37) and the CAN gateway.</p>
+    </li>
+    <li>Open wire check (F-CAN A_L line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector A (50P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 11: <img alt="" class="ICON" src="../images/GHH410873.png" name="GHH410873"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector A (50P) No. 36</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410874">
+                <div class="imageHeader"><a name="S07955783372021060700000"></a></div><img alt="GHH410874" src="../images/GHH410874.jpeg" name="GHH410874"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN A_L wire is OK. Check for poor connections or loose terminals at the CAN gateway and the PCM. 
+<a href="../pages/13866.html">Go to the PCM power and ground circuit troubleshooting</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the F-CAN A_L wire between the PCM (A36) and the CAN gateway.</p>
+    </li>
+    <li>SRS check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode, and watch the SRS indicator.</p>
+      <p>Does the SRS indicator come on and go off?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The SRS is OK. Go to step 14.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p><a href="../pages/13544.html">Go to the symptom troubleshooting for SRS indicator stays on, but no DTCs are stored, or cannot be read</a>
+.</p>
+    </li>
+    <li>VSA system check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode, and watch the VSA indicator.</p>
+      <p>Does the VSA indicator come on and go off?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The VSA system is OK. Go to step 14.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p><a href="../pages/13545.html">Go to the symptom troubleshooting for ABS indicator, brake system indicator (red), VSA indicator, and brake system indicator (amber) do not go off</a>
+.</p>
+    </li>
+    <li>EPS system check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Start the engine, and watch the EPS indicator.</p>
+      <p>Does the EPS indicator come on and go off?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The EPS system is OK. Go to step 14.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p><a href="../pages/13546.html">Go to the EPS symptom troubleshooting for EPS indicator does not go off</a>
+.</p>
+    </li>
+    <li>Immobilizer system check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode, and watch the security indicator.</p>
+      <p>Does the security indicator stay on or flash?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/12910.html#General%20Information/Immobilizer%20System%20Symptom%20Troubleshooting%20Information%20%282%2F4-door%29/">Go to the immobilizer system symptom troubleshooting information</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The immobilizer system is OK. Go to step 14.</p>
+    </li>
+    <li>Keyless access system check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode, and watch the security indicator.</p>
+      <p>Does the security indicator stay on flash?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/12910.html#General%20Information/Keyless%20Access%20System%20Symptom%20Troubleshooting%20Information%20%282%2F4-door%29/">Go to the keyless access system general troubleshooting information</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The keyless access system is OK. Go to step 14.</p>
+    </li>
+    <li>TPMS check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode, and watch the low tire pressure/TPMS indicator.</p>
+      <p>Does the low tire pressure/TPMS indicator blinkΩ</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/12933.html">Go to the TPMS symptom troubleshooting</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The TPMS system is OK. Go to step 14.</p>
+    </li>
+    <li>A/T system check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode, and watch the shift position indicator.</p>
+      <p>Does the shift position indicator come on and go off?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The A/T system is OK. Go to step 14.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p><a href="../pages/12938.html">Go to the A/T system symptom troubleshooting</a>
+.</p>
+    </li>
+    <li>Body electrical system check<p>-1. 
+<a href="../pages/12964.html#General%20Information/Gauges%20Self-Diagnostic%20Function%20%282%2F4-door%29/">Do the gauge self-diagnostic function</a>
+.</p>
+      <p>-2. Check the gauge display.</p>
+      <p>Is Error 2 (without multi-information display) or B-CANERROR (with multi-information display) indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to the indicated DTC's troubleshooting.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The body electrical system is OK. Go to step 14.</p>
+    </li>
+    <li>Driving support system check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Turn the vehicle to the ON mode, and watch the ACC indicator, the LKAS indicator, the CMBS indicator and the RDM indicator.</p>
+      <p>Does the LKAS indicator, the ACC indicator, the CMBS indicator, and/or the RDM indicator come on and go off?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The driving support system is OK. Go to step 14.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to the driving support system symptom troubleshooting; 
+<a href="../pages/15300.html">ACC</a>
+, 
+<a href="../pages/13724.html">CMBS</a>
+, 
+<a href="../pages/15301.html">LKAS</a>
+, 
+<a href="../pages/15302.html">RDM</a>
+.</p>
+    </li>
+    <li>Open wire check (K LINE line or L-LINE line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the HDS from the DLC.</p>
+      <p>Disconnect the control unit(s) on the K LINE or L-LINE that does not communicate.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ Before disconnecting the SRS unit connector, 
+<a href="../pages/12834.html#Removal%20and%20Installation/12%20Volt%20Battery%20Terminal%20Disconnection%20and%20Reconnection/">do the 12 volt battery terminal disconnection procedure</a>
+ and wait for at least 3 minutes.</p>
+      <p><span class="clsEmphBOLD">K LINE </span></p>
+      <ul class="BULLET">
+        <li>Immobilizer-keyless control unit 7P connector (without keyless access system)</li>
+        <li>Audio unit connector A (24P) (without navigation)</li>
+        <li>Audio-navigation unit connector A (24P) (with navigation)</li>
+        <li>Body control module connector D (40P)</li>
+        <li>Active sound control unit 20P connector (with active sound control unit)</li>
+      </ul>
+      <p><span class="clsEmphBOLD">L-LINE </span></p>
+      <ul class="BULLET">
+        <li>Body control module connector F (36P) (with keyless access system)</li>
+        <li>SRS unit connector A (36P)</li>
+      </ul>
+      <p>-4. Check for continuity between DLC (16P) No. 7 and these connector terminals (K LINE line), or DLC (16P) No. 15 and these connector terminals (L-LINE line):</p>
+      <p><span class="clsEmphBOLD">K LINE </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13547.html">Immobilizer-keyless control unit 7P connector (without keyless access system)</a></td>
+            <td align="" class="clsCellNormal">No. 3</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13349.html">Audio unit connector A (24P) (without navigation)</a></td>
+            <td align="" class="clsCellNormal">No. 12</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13350.html">Audio-navigation unit connector A (24P) (with navigation)</a></td>
+            <td align="" class="clsCellNormal">No. 12</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector D (40P)</a></td>
+            <td align="" class="clsCellNormal">No. 36</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13342.html">Active sound control unit 20P connector (with active sound control unit)</a></td>
+            <td align="" class="clsCellNormal">No. 14</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">L-LINE </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector F (36P) (with keyless access system)</a></td>
+            <td align="" class="clsCellNormal">No. 21</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13548.html">SRS unit connector A (39P)</a></td>
+            <td align="" class="clsCellNormal">No. 33</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity between the DLC and the terminals in the chart?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 15.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the wire between the DLC (K LINE wire or L-LINE wire) and the appropriate connector.</p>
+    </li>
+    <li>Determine possible failure area (short in K LINE line or L-LINE line, others)<p>-1. Reconnect all connectors.</p>
+      <p>-2. If the 12 volt battery negative terminal is disconnected in step 14-3, 
+<a href="../pages/12834.html#Removal%20and%20Installation/12%20Volt%20Battery%20Terminal%20Disconnection%20and%20Reconnection/">do the 12 volt battery terminal reconnection procedure</a>
+.</p>
+      <p>-3. Turn the vehicle to the ON mode.</p>
+      <p>-4. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle ON mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 7 and No. 15: <img alt="" class="ICON" src="../images/GHH410875.png" name="GHH410875"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410876">
+                <div class="imageHeader"><a name="S14397506692021060700000"></a></div><img alt="GHH410876" src="../images/GHH410876.jpeg" name="GHH410876"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there any voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 17.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 16.</p>
+    </li>
+    <li>Shorted wire check (K LINE line, L-LINE line):<p>Continue to measure the voltage between DLC (16P) No. 7 and body ground (K LINE line), or DLC (16P) No. 15 and body ground (L-LINE line) while disconnecting these parts, one at a time:</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ Turn the vehicle to the OFF (LOCK) mode before disconnecting the connector, and turn the vehicle to the ON mode before measuring the voltage.</p>
+      <p><span class="clsEmphBOLD">K LINE </span></p>
+      <ul class="BULLET">
+        <li>Immobilizer-keyless control unit 7P connector (without keyless access system)</li>
+        <li>Audio unit connector A (24P) (without navigation)</li>
+        <li>Audio-navigation unit connector A (24P) (with navigation)</li>
+        <li>Body control module connector D (40P)</li>
+        <li>Active sound control unit 20P connector (with active sound control unit)</li>
+      </ul>
+      <p><span class="clsEmphBOLD">L-LINE </span></p>
+      <ul class="BULLET">
+        <li>Body control module connector F (36P) (with keyless access system)</li>
+        <li>SRS unit connector A (39P)<p><span class="clsEmphBOLD">NOTE: </span>
+ Before disconnecting the SRS unit connector, 
+<a href="../pages/12834.html#Removal%20and%20Installation/12%20Volt%20Battery%20Terminal%20Disconnection%20and%20Reconnection/">do the 12 volt battery terminal disconnection procedure</a>
+ and wait for at least 3 minutes.</p>
+        </li>
+      </ul>
+      <p>Is there battery voltage when the one of the above components is disconnected?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Replace the component that caused the battery voltage to return when it was disconnected.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair a short in the wire between DLC (16P) No. 7 (K LINE) and the immobilizer-keyless control unit, the audio unit, the audio-navigation unit, the body control module, or the active sound control unit, or DLC (16P) No. 15 (L-LINE) and the body control module or the SRS unit.</p>
+    </li>
+    <li>Body electrical system check<p>-1. 
+<a href="../pages/12964.html#General%20Information/Gauges%20Self-Diagnostic%20Function%20%282%2F4-door%29/">Do the gauge control module self-diagnostic function</a>
+.</p>
+      <p>-2. Check for gauge control module DTCs without the HDS.</p>
+      <p>Is DTC U0029 and/or U0100 indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/13866.html">Go to the PCM power and ground circuit troubleshooting</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 18.</p>
+    </li>
+    <li>Open wire check (+B BACK UP line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the HDS from the DLC.</p>
+      <p>-3. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 16: <img alt="" class="ICON" src="../images/GHH410877.png" name="GHH410877"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410878">
+                <div class="imageHeader"><a name="S20728640412021060700000"></a></div><img alt="GHH410878" src="../images/GHH410878.jpeg" name="GHH410878"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The +B BACK UP wire is OK. Go to step 19.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the +B BACK UP wire between DLC (16P) No. 16 and the 
+<a href="../pages/13893.html">No. A18</a>
+ fuse.</p>
+    </li>
+    <li>Open wire check (GND line)<p>-1. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 4: <img alt="" class="ICON" src="../images/GHH410879.png" name="GHH410879"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 16: <img alt="" class="ICON" src="../images/GHH410880.png" name="GHH410880"></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410881">
+                <div class="imageHeader"><a name="S11604952022021060700000"></a></div><img alt="GHH410881" src="../images/GHH410881.jpeg" name="GHH410881"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The GND wire is OK. Go to step 20.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the GND wire between DLC (16P) No. 4 and G501.</p>
+    </li>
+    <li>Open wire check (IG1 METER line)<p>-1. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-2. Turn the vehicle to the ON mode.</p>
+      <p>-3. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle ON mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 9: <img alt="" class="ICON" src="../images/GHH410882.png" name="GHH410882"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410883">
+                <div class="imageHeader"><a name="S14221222582021060700000"></a></div><img alt="GHH410883" src="../images/GHH410883.jpeg" name="GHH410883"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The IG1 METER wire is OK. Go to step 21.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the IG1 METER wire between the CAN gateway and the 
+<a href="../pages/13893.html">No. B7</a>
+ fuse.</p>
+    </li>
+    <li>Open wire check (GND line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 12: <img alt="" class="ICON" src="../images/GHH410884.png" name="GHH410884"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410885">
+                <div class="imageHeader"><a name="S09134963912021060700000"></a></div><img alt="GHH410885" src="../images/GHH410885.jpeg" name="GHH410885"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The GND wire is OK. Go to step 22.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the GND wire between the CAN gateway and G502.</p>
+    </li>
+    <li>Open wire check (DIAG-CAN_H line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 2: <img alt="" class="ICON" src="../images/GHH410886.png" name="GHH410886"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 6: <img alt="" class="ICON" src="../images/GHH410887.png" name="GHH410887"></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410888">
+                <div class="imageHeader"><a name="S13331269422021060700000"></a></div><img alt="GHH410888" src="../images/GHH410888.jpeg" name="GHH410888"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410889">
+                <div class="imageHeader"><a name="S17842223902021060700000"></a></div><img alt="GHH410889" src="../images/GHH410889.jpeg" name="GHH410889"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The DIAG-CAN_H wire is not open. Go to step 23.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the DIAG-CAN_H wire between the CAN gateway and DLC (16P) No. 6.</p>
+    </li>
+    <li>Open wire check (DIAG-CAN_L line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 10: <img alt="" class="ICON" src="../images/GHH410890.png" name="GHH410890"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 14: <img alt="" class="ICON" src="../images/GHH410891.png" name="GHH410891"></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410892">
+                <div class="imageHeader"><a name="S00765672102021060700000"></a></div><img alt="GHH410892" src="../images/GHH410892.jpeg" name="GHH410892"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410893">
+                <div class="imageHeader"><a name="S32067448922021060700000"></a></div><img alt="GHH410893" src="../images/GHH410893.jpeg" name="GHH410893"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1.0 Ω or less?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The DIAG-CAN_L wire is not open. Go to step 24.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the DIAG-CAN_L wire between the CAN gateway and DLC (16P) No. 14.</p>
+    </li>
+    <li>Shorted wire check (DIAG-CAN_H line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 6: <img alt="" class="ICON" src="../images/GHH410894.png" name="GHH410894"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410895">
+                <div class="imageHeader"><a name="S29128899192021060700000"></a></div><img alt="GHH410895" src="../images/GHH410895.jpeg" name="GHH410895"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1 MΩ or more?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The DIAG-CAN_H wire is not shorted to ground. Go to step 25.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair a short in the DIAG-CAN_H wire between the CAN gateway and DLC (16P) No. 6.</p>
+    </li>
+    <li>Shorted wire check (DIAG-CAN_L line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 14: <img alt="" class="ICON" src="../images/GHH410896.png" name="GHH410896"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410897">
+                <div class="imageHeader"><a name="S09547116362021060700000"></a></div><img alt="GHH410897" src="../images/GHH410897.jpeg" name="GHH410897"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1 MΩ or more?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The DIAG-CAN_L wire is not shorted to ground. Go to step 26.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair a short in the DIAG-CAN_L wire between the CAN gateway and DLC (16P) No. 14.</p>
+    </li>
+    <li>Shorted wire check (DIAG-CAN_H line to DIAG-CAN_L line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 6: <img alt="" class="ICON" src="../images/GHH410898.png" name="GHH410898"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">DLC (16P) (female terminals) No. 14: <img alt="" class="ICON" src="../images/GHH410899.png" name="GHH410899"></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH410900">
+                <div class="imageHeader"><a name="S12409246392021060700000"></a></div><img alt="GHH410900" src="../images/GHH410900.jpeg" name="GHH410900"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there 1 MΩ or more?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The DIAG-CAN_H wire and the DIAG-CAN_L wire are OK. Check for any authorized service information related to the DTCs or symptoms you are troubleshooting, or 
+<a href="../pages/13900.html#Removal%20and%20Installation/CAN%20Gateway%20Removal%20and%20Installation%20%28With%20CAN%20gateway%29/">substitute a known-good CAN gateway</a>
+, then recheck. If the HDS identifies the vehicle and the CAN gateway was substituted, 
+<a href="../pages/13900.html#Removal%20and%20Installation/CAN%20Gateway%20Removal%20and%20Installation%20%28With%20CAN%20gateway%29/">replace the original CAN gateway</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair a short in the DIAG-CAN_H wire to the DIAG-CAN_L wire between DLC (16P) No. 6 and No. 14.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

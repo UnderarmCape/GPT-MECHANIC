@@ -1,0 +1,233 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>CVT Symptom Troubleshooting - HDS does not communicate with the TCM (L15B7/L15BA/L15BY (CVT): Without CAN Gateway/With CAN Gateway (12P connector type)) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/">Transmission</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/Automatic%20Trans/">Automatic Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13990.html">Continuously Variable Transaxle (CVT) - Testing &amp; Troubleshooting (Inspection - Rewrite)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13990.html#Symptom%20Troubleshooting/">Symptom Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/14007.html">CVT Symptom Troubleshooting - HDS does not communicate with the TCM (L15B7/L15BA/L15BY (CVT): Without CAN Gateway/With CAN Gateway (12P connector type))</a></div><div class="main"><h1>CVT Symptom Troubleshooting - HDS does not communicate with the TCM (L15B7/L15BA/L15BY (CVT): Without CAN Gateway/With CAN Gateway (12P connector type))</h1><div id="S10229863062021060700000">
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>Information marked with an asterisk (*1) applies to the model not equipped with keyless access system, and an asterisk (*2) applies to the model equipped with keyless access system.</li>
+    <li>Information marked with an asterisk (*3) applies to the model not equipped with CAN gateway, and an asterisk (*4) applies to the model equipped with CAN gateway.</li>
+  </ul>
+  <ol class="ARABICNUM">
+    <li>CVT system communication check<p>-1. <a href="../external-car.html">Connect the HDS to the DLC</a>
+.</p>
+      <p>-2. Turn the vehicle to the ON mode.</p>
+      <p>-3. Check the Mode Menu of the CVT system with the HDS.</p>
+      <p>Does the HDS show the Mode Menu of the CVT system?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The CVT system communication is OK. Intermittent failure, the system is OK at this time.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 2.</p>
+    </li>
+    <li>Fuse check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Check the following fuses.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="71px">
+          <col span="1" id="COL2" width="325px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Fuse</td>
+            <td valign="TOP" align="left" class="clsCellNormal">No. A16 (15 A)</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Location</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Under-hood fuse/relay box</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="71px">
+          <col span="1" id="COL2" width="325px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" rowspan="2" align="left" class="clsCellNormal">Fuse</td>
+            <td valign="TOP" align="left" class="clsCellNormal">No. B4 (10 A)* 1</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">No. B17 (10 A)* 2</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Location</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Under-dash fuse/relay box</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are the fuses OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The fuses are OK. Reinstall the fuses, then go to step 3.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Replace the No. A16 (15 A) fuse and/or the No. B4 (10 A) fuse* 1/No. B17 (10 A) fuse* 2, and recheck. If the fuse(s) blows again, repair a short to ground in the No. A16 (15 A) fuse circuit and/or the No. B4 (10 A) fuse* 1/No. B17 (10 A) fuse* 2 circuit.</p>
+    </li>
+    <li>Open wire check (+B line)<p>-1. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="396px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">TCM 50P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-2. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="71px">
+          <col span="1" id="COL2" width="325px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test condition</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal"> </td>
+            <td valign="TOP" align="left" class="clsCellNormal">TCM 50P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 1</td>
+            <td valign="TOP" align="left" class="clsCellNormal"><a href="../pages/14097.html">TCM 50P connector No. 1</a></td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 2</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The +B wire is OK. Go to step 4.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the +B wire between the under-hood fuse/relay box and the TCM.</p>
+    </li>
+    <li>Open wire check (IG1 line)<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="66px">
+          <col span="1" id="COL2" width="330px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" rowspan="2" align="left" class="clsCellNormal">Test condition</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Vehicle ON mode</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">TCM 50P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 1</td>
+            <td valign="TOP" align="left" class="clsCellNormal"><a href="../pages/14097.html">TCM 50P connector No. 8</a></td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 2</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The IG1 wire is OK. Go to step 5.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the IG1 wire between the under-dash fuse/relay box and the TCM.</p>
+    </li>
+    <li>Open wire check (GND1(TCU) line, GND2(TCU) line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="71px">
+          <col span="1" id="COL2" width="325px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test condition</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal"> </td>
+            <td valign="TOP" align="left" class="clsCellNormal">TCM 50P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td valign="TOP" rowspan="2" align="left" class="clsCellNormal">Test point 1</td>
+            <td valign="TOP" align="left" class="clsCellNormal"><a href="../pages/14097.html">TCM 50P connector No. 9</a></td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal"><a href="../pages/14097.html">TCM 50P connector No. 10</a></td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 2</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The GND1(TCU) wire and the GND2(TCU) wire are OK. Go to step 6.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the GND1(TCU) wire and/or the GND2(TCU) wire between the TCM and ground (G201), or repair poor ground (G201).</p>
+    </li>
+    <li>Open wire check (F-CAN_H line* 3/F-CAN A_H line* 4, F-CAN_L line* 3/F-CAN A_L line* 4):<p>-1. Check for continuity between test points 1 and 2.</p>
+      <p><span class="clsEmphBOLD">F-CAN_H wire* 3/F-CAN A_H wire* 4 </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="71px">
+          <col span="1" id="COL2" width="325px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test condition</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal"> </td>
+            <td valign="TOP" align="left" class="clsCellNormal">TCM 50P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 1</td>
+            <td valign="TOP" align="left" class="clsCellNormal">DLC (16P) (female terminals) No. 6: <img alt="" class="ICON" src="../images/GHH401428.png" name="GHH401428"></td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 2</td>
+            <td valign="TOP" align="left" class="clsCellNormal"><a href="../pages/14097.html">TCM 50P connector No. 3</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">F-CAN_L wire* 3/F-CAN A_L wire* 4 </span></p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="71px">
+          <col span="1" id="COL2" width="325px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test condition</td>
+            <td valign="TOP" align="left" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal"> </td>
+            <td valign="TOP" align="left" class="clsCellNormal">TCM 50P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 1</td>
+            <td valign="TOP" align="left" class="clsCellNormal">DLC (16P) (female terminals) No. 14: <img alt="" class="ICON" src="../images/GHH401429.png" name="GHH401429"></td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Test point 2</td>
+            <td valign="TOP" align="left" class="clsCellNormal"><a href="../pages/14097.html">TCM 50P connector No. 11</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="396px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH401430">
+                <div class="imageHeader"><a name="S17661316402021060700000"></a></div><img alt="GHH401430" src="../images/GHH401430.jpeg" name="GHH401430"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN_H wire* 3/F-CAN A_H wire* 4 and the F-CAN_L wire* 3/F-CAN A_L wire* 4 are OK. Check for any authorized service information related to the DTCs or symptoms you are troubleshooting, or <a href="../pages/13902.html#Removal%20and%20Installation/TCM%20Removal%20and%20Installation%20%28L15B7%2FL15BA%2FL15BY%20%28CVT%29%29/">substitute a known-good TCM</a>
+, then recheck. If the symptom goes away and the TCM was substituted, <a href="../pages/13902.html#Removal%20and%20Installation/TCM%20Removal%20and%20Installation%20%28L15B7%2FL15BA%2FL15BY%20%28CVT%29%29/">replace the original TCM</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the F-CAN_H wire* 3/F-CAN A_H wire* 4 and/or the F-CAN_L wire* 3/F-CAN A_L wire* 4 between the DLC and the TCM.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

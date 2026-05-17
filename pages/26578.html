@@ -1,0 +1,452 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Updating Control Units/Modules With The Ecu Reprogramming Application (A01-023) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Quick%20Lookups/">Quick Lookups</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Quick%20Lookups/Technical%20Bulletins/">Technical Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19094.html">Technical Service Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/26511.html">Other Variant</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/26511.html#Brakes%20Control%20Systems/">Brakes Control Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/26578.html">Updating Control Units/Modules With The Ecu Reprogramming Application (A01-023)</a></div><div class="main"><h1>Updating Control Units/Modules With The Ecu Reprogramming Application (A01-023)</h1><div class="other-warning other-variant"><b>WARNING:</b> This page is about the Civic EX-L, 2D Coupe, which is a different variant/trim than selected.</div>Publication date: 2022-08-18<br>Reference number: A01-023<br><br><div id="bulletin" class="infoObjPrint articlePrintSelection">
+    <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UPDATING CONTROL UNITS/MODULES WITH THE ECU REPROGRAMMING APPLICATION</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  </head>
+  <body style="bgcolor:white; text:black; ">
+    <h2>UPDATING CONTROL UNITS/MODULES WITH THE ECU REPROGRAMMING APPLICATION</h2>
+    <h2>TECHNICAL SERVICE BULLETIN</h2>
+    <div id="idTecHead">Reference Number(s): 22-100, Date of Issue: 
+				August 18, 2022<br><table class="" cellspacing="0">
+        <tr>
+          <td class="clsTDescTitle">HONDA:</td>
+          <td>All Models</td>
+        </tr>
+      </table>Superceded Bulletin(s): 01-023 Version 15, Date of Issue: 
+			January 24, 2020</div><div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Supersedes 01-023 Version 15, dated January 24, 2020, and will replace as of December 2022</span></div>
+    <h3>AFFECTED VEHICLES</h3>
+    
+    <p>All models with reprogrammable control units/modules.</p><h3>REVISION SUMMARY</h3>
+    
+    <p>The new <span class="clsEmphBOLD">ECU Reprogramming </span>
+ application replaces the i-HDS <span class="clsEmphBOLD">J2534 Rewrite </span>
+ application. We strongly recommend that you read this entire bulletin before reprogramming any Honda.</p><h3>INTRODUCTION</h3>
+    
+    <p>Reprogramming a vehicle's control unit/module requires a dedicated i-HDS laptop and an American Honda approved Vehicle Communications Interface (VCI).</p>
+    <p><span class="clsEmphBOLD">The procedures in this service bulletin are used and referenced in other service bulletins. </span></p>
+    <p>For detailed i-HDS information, refer to the i-HDS Honda Diagnostic System Quick Start Guide on the Service Information System (SIS). Go to <span class="clsEmphBOLD">General Publications &gt; Tool Information &gt; Diagnostics and Reprogramming. </span></p>
+    <p>Most 2002 and later Honda vehicles have reprogrammable control units/modules. To reprogram any of them, you need the vehicle, an American Honda-approved VCI, and a laptop with the latest version of the i-HDS software suite. The i-HDS software suite includes the <span class="clsEmphBOLD">ECU Reprogramming </span>
+ application, which is used to reprogram the vehicle's control unit/module(s).</p>
+    <p>This service bulletin describes these subjects:</p>
+    <ul class="BULLET">
+      <li>REQUIRED TOOLS AND EQUIPMENT</li>
+      <li>REPROGRAMMING TIPS AND PRECAUTIONS</li>
+      <li>REPROGRAMMING EQUIPMENT AND iN FAQs</li>
+      <li>LAUNCHING THE APPLICATIONS</li>
+    </ul><h3>WARRANTY CLAIM INFORMATION</h3>
+    
+    <p>The normal warranty applies.</p>
+    <p>Refer to the specific service bulletin for the symptom you are repairing.</p><h3>QUESTIONS ABOUT THE UPDATING EQUIPMENT OR THE INTERACTIVE NETWORK</h3>
+    
+    <p>For questions about the Honda supplied reprogramming equipment, call the Special Tools hotline at <span class="clsEmphBOLD">800-346-6327 </span>
+. For questions about iN, call the iN Support Center at <span class="clsEmphBOLD">800-245-4343 </span>
+.</p><h3>REQUIRED TOOLS AND EQUIPMENT</h3>
+    
+    <p>The DST-i (Figure 1) is American Honda's sole, approved VCI for diagnostics and reprogramming. It is available through the Honda Tool and Equipment Program. To purchase, call <span class="clsEmphBOLD">888-424-6857 </span>
+.</p><a name="S235657952120220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G14763205">
+              <div class="imageHeader"><a name="S21326446712022091200000"></a></div><img alt="G14763205" src="../images/G14763205.jpeg" name="G14763205"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table><h3>INTERFACE TOOLS</h3>
+    
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>For more information or replacement parts for the Denso DST-i, refer to the DST-i instructions/guides on SIS. Go to <span class="clsEmphBOLD">General Publications &gt; Tool Information &gt; Diagnostics and Reprogramming </span>
+ or go to the Honda Tool and Equipment Program on iN.</span></div>
+    <div id="S07334218062022091200000" class="infoObjPrint"><h4>Denso DST-i Part Numbers</h4>
+      <a name="S073342180620220912000001"></a><table cellspacing="0" class="clsArticleTable">
+        <colgroup></colgroup>
+        <tbody>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">Denso DST-I</td>
+            <td valign="TOP" align="left" class="clsCellNormal">DSCWIFI</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">3 Meter USB Cable</td>
+            <td valign="TOP" align="left" class="clsCellNormal">DSCUSBCABL</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">3 Meter DLC Cable</td>
+            <td valign="TOP" align="left" class="clsCellNormal">DSCDLCCABL</td>
+          </tr>
+          <tr>
+            <td valign="TOP" align="left" class="clsCellNormal">4GB SDHC Memory</td>
+            <td valign="TOP" align="left" class="clsCellNormal">DSCSDCARD</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>If communication is disrupted while reprogramming, it may permanently damage the control unit/module. Do not use any VCI in wireless mode while reprogramming a control unit/module.</span></div>
+    </div><h3>NETWORK SETTINGS</h3>
+    
+    <p>The <span class="clsEmphBOLD">ECU Reprogramming </span>
+ application requires Internet access to communicate with authorized Honda servers and for downloading calibrations files for vehicles. The dealer network and the i-HDS laptop must be whitelisted in order to communicate with the following sites:</p><a name="S332409835720220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <thead>
+        <tr class="clsTblHead">
+          <th valign="BOTTOM" align="left" class="clsCellNormal">Sites That Require Whitelisting</th>
+          <th valign="BOTTOM" align="left" class="clsCellNormal">Port #</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.ahmhds.com</td>
+          <td valign="TOP" align="left" class="clsCellNormal">80, 443</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.in.honda.com</td>
+          <td valign="TOP" align="left" class="clsCellNormal">80, 443</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.prod-hota23.com</td>
+          <td valign="TOP" align="left" class="clsCellNormal">80, 443</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.cloudfront.net</td>
+          <td valign="TOP" align="left" class="clsCellNormal">80, 443</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.awsdns-14.org</td>
+          <td valign="TOP" align="left" class="clsCellNormal">53</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.awsdns-41.co.uk</td>
+          <td valign="TOP" align="left" class="clsCellNormal">53</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.awsdns-34.com</td>
+          <td valign="TOP" align="left" class="clsCellNormal">53</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.awsdns-55.net</td>
+          <td valign="TOP" align="left" class="clsCellNormal">53</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.amazonaws.org</td>
+          <td valign="TOP" align="left" class="clsCellNormal">53</td>
+        </tr>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">*.awsdns-14.org</td>
+          <td valign="TOP" align="left" class="clsCellNormal">53</td>
+        </tr>
+      </tbody>
+    </table><h3>REPROGRAMMING TIPS AND PRECAUTIONS</h3>
+    
+    <ul class="BULLET">
+      <li>When reprogramming a control unit/module on a new vehicle, make sure all fuses are installed and functioning.</li>
+      <li>To prevent control unit/module damage, do not operate anything electrical (audio system, brakes, A/C, power windows, moonroof, etc.) while reprogramming.</li>
+      <li>Check the corresponding service bulletin for any pre/post update instructions, such as submitting files, doing an ECU reset or idle learn, etc.</li>
+      <li>Reference the <span class="clsEmphBOLD">Honda Download Manager </span>
+ application on the PC containing the i-HDS Software Suite. Check the <span class="clsEmphBOLD">Installed Version </span>
+ column in the <span class="clsEmphBOLD">ECU Reprogramming </span>
+ row to confirm the version installed on the PC (See Figure 2). It should be the same or a later version than what is stated on the corresponding service bulletin.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763206">
+                  <div class="imageHeader"><a name="S36506407442022091200000"></a></div><img alt="G14763206" src="../images/G14763206.png" name="G14763206"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Do not connect any additional power supply to the vehicle communication interface (VCI) when it is connected to the vehicle; power is supplied through the DLC.</li>
+      <li>Make sure the 12-volt battery is fully charged before starting an update</li>
+      <li>Connect a fully charged jumper battery pack, the Midtronics GR8-110P AST in <span class="clsEmphBOLD">Power Supply Mode </span>
+ or the Midtronics DCA-8000 Dynamic Diagnostic Charging System in <span class="clsEmphBOLD">Reflash Mode </span>
+ directly to the vehicle's 12-volt battery. Leave it connected during the entire procedure to maintain steady voltage.</li>
+    </ul>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>If the vehicle's 12-volt battery drops below <span class="clsEmphBOLD">10-volts </span>
+ during the update, the programming status bar may not present accurately, or the ECU Reprogramming application may display an error message.</span></div>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>If a problem occurs while reprogramming, keep the ignition turned to ON and do the following to minimize the chances of damaging the control unit/module:</span></div>
+    <ul class="DASH">
+      <li>Follow the on-screen instructions from the ECU Reprogramming application.</li>
+      <li>If the reprogramming issue persists, try disconnecting the VCI from the vehicle's DLC. Restart the <span class="clsEmphBOLD">ECU Reprogramming </span>
+ application. Then, reconnect the VCI to the vehicle's DLC and retry the reprogramming procedure.</li>
+      <li>If the message <span class="clsEmphBOLD">Ensure all connections are secured between the PC, VCI, and Vehicle </span>
+ appears, make sure the VCI name correctly matches the VCI device in use. Example name: Denso DST-i.</li>
+    </ul>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Unnecessary or incorrect repairs resulting from a reprogramming session, will not be covered under warranty.</span></div>
+    <p>Select the <span class="clsEmphBOLD">Settings </span>
+ icon at the top right of the initial screen as shown below (Figure 3).</p><a name="S333979843320220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G14763207">
+              <div class="imageHeader"><a name="S37582789112022091200000"></a></div><img alt="G14763207" src="../images/G14763207.png" name="G14763207"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Then, make sure the correct VCI is selected by selecting <span class="clsEmphBOLD">VCI Device selection </span>
+ (Figure 4).</p><a name="S333979843320220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G14763208">
+              <div class="imageHeader"><a name="S39454624972022091200000"></a></div><img alt="G14763208" src="../images/G14763208.png" name="G14763208"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>If the correct device is not selected, click on the <span class="clsEmphBOLD">drop box </span>
+ (Figure 5).</p><a name="S333979843320220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G14763209">
+              <div class="imageHeader"><a name="S33539864552022091200000"></a></div><img alt="G14763209" src="../images/G14763209.png" name="G14763209"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Confirm the correct device by <span class="clsEmphBOLD">selecting it </span>
+ (Figure 6).</p><a name="S333979843320220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G14763210">
+              <div class="imageHeader"><a name="S04194458862022091200000"></a></div><img alt="G14763210" src="../images/G14763210.png" name="G14763210"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>The legacy reprogramming application <span class="clsEmphBOLD">J2534 Rewrite </span>
+ can be found in the <span class="clsEmphBOLD">Related Applications </span>
+ button. However, it will not be supported and subsequently removed from the i-HDS software suite after December 2022. (Figures 7 and 8)</span></div><a name="S333979843320220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G14763211">
+              <div class="imageHeader"><a name="S16960048262022091200000"></a></div><img alt="G14763211" src="../images/G14763211.png" name="G14763211"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table><a name="S333979843320220912000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G14763212">
+              <div class="imageHeader"><a name="S13688533892022091200000"></a></div><img alt="G14763212" src="../images/G14763212.png" name="G14763212"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table><h3>QUESTIONS ABOUT THE UPDATING EQUIPMENT OR THE INTERACTIVE NETWORK</h3>
+    
+    <p>For questions about the Honda supplied reprogramming equipment, call the Special Tools hotline at <span class="clsEmphBOLD">800-346-6327 </span>
+. For questions about iN, call the iN Support Center at <span class="clsEmphBOLD">800-245-4343 </span>
+.</p><h3>STARTING UP THE APPLICATIONS</h3>
+    
+    <ol class="ARABICNUM">
+      <li>Connect the VCI to the vehicle and double-click on the <span class="clsEmphBOLD">i-HDS </span>
+ icon (Figure 9) from the desktop.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763213">
+                  <div class="imageHeader"><a name="S16332332862022091200000"></a></div><img alt="G14763213" src="../images/G14763213.png" name="G14763213"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>When prompted, select the appropriate VCI from the list and select <span class="clsEmphBOLD">Start </span>
+ (Figure 10).<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763214">
+                  <div class="imageHeader"><a name="S04424222162022091200000"></a></div><img alt="G14763214" src="../images/G14763214.png" name="G14763214"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>On the i-HDS <span class="clsEmphBOLD">HOME </span>
+ menu, select the <span class="clsEmphBOLD">ECU Reprogramming </span>
+ icon (Figure 11).<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763215">
+                  <div class="imageHeader"><a name="S34389108502022091200000"></a></div><img alt="G14763215" src="../images/G14763215.png" name="G14763215"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Enter a <span class="clsEmphBOLD">Repair Order Number </span>
+ to begin the reprogramming procedure (Figure 12).<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763216">
+                  <div class="imageHeader"><a name="S16885712022022091200000"></a></div><img alt="G14763216" src="../images/G14763216.png" name="G14763216"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Select <span class="clsEmphBOLD">Read vehicle information </span>
+ (Figure 13).<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763217">
+                  <div class="imageHeader"><a name="S18832571602022091200000"></a></div><img alt="G14763217" src="../images/G14763217.png" name="G14763217"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Once this step is completed (Figure 14), a list of applicable systems will be displayed (Figure 15).<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Depending on the number of systems in the vehicle, this may take a moment.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763218">
+                  <div class="imageHeader"><a name="S38155069482022091200000"></a></div><img alt="G14763218" src="../images/G14763218.png" name="G14763218"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763219">
+                  <div class="imageHeader"><a name="S28614966522022091200000"></a></div><img alt="G14763219" src="../images/G14763219.png" name="G14763219"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Select the system(s) available for reprogramming and that you wish to update by marking the boxes in the <span class="clsEmphBOLD">Select </span>
+ column (Figure 16).<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>Multiple systems can be selected if new program IDs are available.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763220">
+                  <div class="imageHeader"><a name="S36554190552022091200000"></a></div><img alt="G14763220" src="../images/G14763220.png" name="G14763220"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Follow the on-screen instructions. Confirm the update information to start reprogramming (See figures 17 and 18).<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>If multiple systems are selected, they will be reprogrammed sequentially.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763221">
+                  <div class="imageHeader"><a name="S30697115472022091200000"></a></div><img alt="G14763221" src="../images/G14763221.png" name="G14763221"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763222">
+                  <div class="imageHeader"><a name="S31055088922022091200000"></a></div><img alt="G14763222" src="../images/G14763222.png" name="G14763222"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Follow the on-screen prompts for ignition cycling steps (Figures 19 and 20).<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763223">
+                  <div class="imageHeader"><a name="S00861170782022091200000"></a></div><img alt="G14763223" src="../images/G14763223.png" name="G14763223"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763224">
+                  <div class="imageHeader"><a name="S04033597052022091200000"></a></div><img alt="G14763224" src="../images/G14763224.png" name="G14763224"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>Select <span class="clsEmphBOLD">Exit </span>
+ when update(s) have completed (Figure 21).<div class="NOTE"><span class="NOTE_label">
+            NOTE:
+					</span><span>The <span class="clsEmphBOLD">Print </span>
+ button can create a .pdf format file that can be saved or printed.</span></div><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763225">
+                  <div class="imageHeader"><a name="S23722714752022091200000"></a></div><img alt="G14763225" src="../images/G14763225.png" name="G14763225"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>The system will search for software updates again and confirm all software is up to date, then you can close the <span class="clsEmphBOLD">ECU Reprogramming application </span>
+ (Figure 22).<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G14763226">
+                  <div class="imageHeader"><a name="S38810646552022091200000"></a></div><img alt="G14763226" src="../images/G14763226.png" name="G14763226"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ol>
+    <p>END</p>
+  </body>
+</html>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

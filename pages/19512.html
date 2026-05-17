@@ -1,0 +1,211 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P2818 (L15B7/L15BA/L15BY) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/">Transmission</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Transmission/Automatic%20Trans/">Automatic Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19404.html">Automatic Transaxle - Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19404.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19512.html">DTC P2818 (L15B7/L15BA/L15BY)</a></div><div class="main"><h1>DTC P2818 (L15B7/L15BA/L15BY)</h1><div id="S00130240152021060700000">
+  <p><span class="clsEmphBOLD">DTC P2818: </span>
+Shift Solenoid Valve O/P (Pressure Control Solenoid &quot;H&quot;) Stuck On</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S001302401520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH399941">
+            <div class="imageHeader"><a name="S40134713752021060700000"></a></div><img alt="GHH399941" src="../images/GHH399941.jpeg" name="GHH399941"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Transmission fluid pump volume changes by shift solenoid valve O/P ON/OFF control </span></p><a name="S001302401520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Transmission fluid pump volume</th>
+        <th align="" class="clsCellNormal">Shift Solenoid Valve O/P</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">High</td>
+        <td align="" class="clsCellNormal">OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Low</td>
+        <td align="" class="clsCellNormal">ON</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The shift solenoid valve O/P controls the drain circuit close/open commanded by the transmission control module (TCM) ON/OFF commands. The transmission fluid pump volume is changed by switching the shift solenoid valve O/P ON/OFF control. The TCM commands the driver circuit to turn on the shift solenoid valve O/P. The TCM temporarily increases the driven pulley pressure up to target value. As the commanded driven pulley pressure reaches the target value, the TCM monitors the driven pulley pressure when the shift solenoid valve O/P is ON and OFF. If the driven pulley pressure does not change, or the pulley ratio is at a specified value when decelerated to a stop, the TCM detects a shift solenoid valve O/P stuck ON malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S001302401520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">10 seconds or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL off, Shift position indicator blinks</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S001302401520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]*</td>
+        <td align="" class="clsCellNormal">700 rpm</td>
+        <td align="" class="clsCellNormal">740 rpm</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Symptom 1</p>
+  <p>** : Symptom 2</p>
+  <p>[ ]: HDS Parameter</p><a name="S001302401520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Transmission fluid temperature [CVTF Temperature]</td>
+        <td align="" class="clsCellNormal">248 deg.F (120 deg.C)*</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">194 deg.F (90 deg.C)**</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle speed [Vehicle Speed]*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">1 mph (3 km/h)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Acceleration**</td>
+        <td align="" class="clsCellNormal">-11.1 ft/s 2 (-3.4 m/s 2)</td>
+        <td align="" class="clsCellNormal">-7.6 ft/s 2 (-2.3 m/s 2)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Shift lever position/mode</td>
+        <td colspan="2" align="" class="clsCellNormal">D</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Accelerator pedal released*</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Brake pedal pressed</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Symptom 1</p>
+  <p>** : Symptom 2</p>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>One of these symptoms occurs:</p>
+  <p>Symptom 1: Judgments 1 and 2 are executed sequentially, and if the driven pulley pressure does not change when the shift solenoid valve O/P [Shift Sol O/P] is ON and OFF.</p><a name="S001302401520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="274px">
+      <col span="1" id="COL2" width="391px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+      <col span="1" id="COL5" width="402px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Judgment</th>
+        <th align="" class="clsCellNormal">Shift solenoid valve O/P</th>
+        <th align="" class="clsCellNormal">Commanded driven pulley pressure</th>
+        <th align="" class="clsCellNormal">Driven pulley pressure</th>
+        <th align="" class="clsCellNormal">Detection time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">1</td>
+        <td align="" class="clsCellNormal">OFF</td>
+        <td align="" class="clsCellNormal">About 1, 961 kPa(20.0 kgf/cm 2, 284 psi)</td>
+        <td align="" class="clsCellNormal">About 1, 177 kPa(12.0 kgf/cm 2, 171 psi)</td>
+        <td align="" class="clsCellNormal">5.0 seconds</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">2</td>
+        <td align="" class="clsCellNormal">ON</td>
+        <td align="" class="clsCellNormal">About 1, 961 kPa(20.0 kgf/cm 2, 284 psi)</td>
+        <td align="" class="clsCellNormal">About 1, 177 kPa(12.0 kgf/cm 2, 171 psi)</td>
+        <td align="" class="clsCellNormal">5.0 seconds</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Symptom 2: The pulley ratio [Pulley Ratio] is less than 2.0 when the vehicle is stopped.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Shift solenoid valve O/P stuck on</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p><a name="S001302401520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH399942">
+            <div class="imageHeader"><a name="S03570687822021060700000"></a></div><img alt="GHH399942" src="../images/GHH399942.jpeg" name="GHH399942"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="BULLET">
+    <li>Start the engine.</li>
+    <li>With the brake pedal pressed, place the shift lever in from N position/mode to D position/mode.</li>
+    <li>Accelerate the vehicle to 25 mph (40 km/h).</li>
+    <li>Stop and leave the vehicle for at least 10 seconds.</li>
+    <li>Turn the vehicle to the OFF (LOCK) mode.</li>
+    <li>Repeat Driving Pattern steps 1 through 4.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the TCM memory. If the malfunction returns in the next (second) drive cycle, the shift position indicator blinks and a Confirmed DTC and the freeze data are stored. The MIL does not come on.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The shift position indicator comes off by turning the vehicle to the OFF (LOCK) mode. The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

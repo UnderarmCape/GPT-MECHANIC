@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0842, P0843 (K20C2) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Transmission/">Transmission</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Transmission/Automatic%20Trans/">Automatic Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17603.html">Automatic Transaxle - Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17603.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12341.html">DTC P0842, P0843 (K20C2)</a></div><div class="main"><h1>DTC P0842, P0843 (K20C2)</h1><div id="S00975359212021060700000">
+  <p><span class="clsEmphBOLD">DTC P0842: </span>
+Transmission Fluid Pressure Sensor/Switch &quot;A&quot; Circuit Low</p>
+  <p><span class="clsEmphBOLD">DTC P0843: </span>
+Transmission Fluid Pressure Sensor/Switch &quot;A&quot; Circuit High</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S009753592120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH399854">
+            <div class="imageHeader"><a name="S08920727032021060700000"></a></div><img alt="GHH399854" src="../images/GHH399854.jpeg" name="GHH399854"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The CVT driven pulley pressure sensor uses a strain gauge. The output voltage changes depending on the driven pulley pressure. The transmission control module (TCM) sends a 5 V reference voltage to the sensor through a pull-up resistor. When the driven pulley pressure is low, the sensor resistance decreases and the TCM detects a low signal voltage. Conversely, when the driven pulley pressure is high, the sensor resistance increases and the TCM detects a high signal voltage. If the CVT driven pulley pressure sensor signal voltage is a specified voltage for a set time, the TCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S009753592120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">10 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL off, Shift position indicator blinks</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S009753592120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td align="" class="clsCellNormal">Running</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p><span class="clsEmphBOLD">DTC: P0842 </span></p>
+  <p>The CVT driven pulley pressure sensor output voltage [Driven Pulley Pressure Sensor(V)] is less than 0.21 V for at least 10 seconds.</p>
+  <p><span class="clsEmphBOLD">DTC: P0843 </span></p>
+  <p>The CVT driven pulley pressure sensor output voltage [Driven Pulley Pressure Sensor(V)] is more than 4.84 V for at least 10 seconds.</p>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <p><span class="clsEmphBOLD">DTC: P0842 </span></p>
+  <ul class="BULLET">
+    <li>CVT driven pulley pressure sensor PDN line short to ground</li>
+  </ul>
+  <p><span class="clsEmphBOLD">DTC: P0843 </span></p>
+  <ul class="BULLET">
+    <li>CVT driven pulley pressure sensor PDN line open (includes connector loose connection or disconnection)</li>
+    <li>CVT driven pulley pressure sensor SG line open (includes connector loose connection or disconnection)</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Common </span></p>
+  <ul class="BULLET">
+    <li>CVT driven pulley pressure sensor VCC line open (includes connector loose connection or disconnection)</li>
+    <li>CVT driven pulley pressure sensor failure</li>
+    <li>TCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine.</li>
+    <li>Shift to P position/mode, and wait for at least 10 seconds.</li>
+    <li>Turn the vehicle to the OFF (LOCK) mode.</li>
+    <li>Repeat Driving Pattern steps 1 through 2.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the TCM memory. If the malfunction returns in the next (second) drive cycle, the shift position indicator blinks and a Confirmed DTC and the freeze data are stored. The MIL does not come on.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The shift position indicator comes off by turning the vehicle to the OFF (LOCK) mode. The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

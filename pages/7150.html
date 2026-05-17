@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P2623 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18441.html">Engine Control System - Advanced Diagnostics (P2238 - U129E)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18441.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/7150.html">DTC P2623 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P2623 (K20C1) (2019 2020 2021)</h1><div id="S40771028822021060700000">
+  <p><span class="clsEmphBOLD">DTC P2623: </span>
+High Pressure Fuel Pump Spill Valve Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S407710288220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403637">
+            <div class="imageHeader"><a name="S27347505852021060700000"></a></div><img alt="GHH403637" src="../images/GHH403637.jpeg" name="GHH403637"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) monitors the high pressure fuel pump for diagnosis of electric circuit. If the PCM detects abnormal in high pressure fuel pump circuit, a malfunction is detected and a DTC is stored.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S407710288220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S407710288220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">80 min -1 (rpm)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [Battery]</td>
+        <td align="" class="clsCellNormal">8 V</td>
+        <td align="" class="clsCellNormal">16 V</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Either of the conditions occurs:</p>
+  <p><span class="clsEmphBOLD">Open circuit </span></p>
+  <ul class="BULLET">
+    <li>The voltage difference between high side (HPUMP H) and ground is more than 3.0 V.</li>
+    <li>The voltage difference between low side (HPUMP L) and ground is less than 1.5 V.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Short circuit in HPUMP H line (Either malfunction threshold A or B) </span></p>
+  <ul class="BULLET">
+    <li>Malfunction threshold A</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The voltage difference between power and high side (HPUMP H) is more than 1.5 V.</p>
+        </li>
+        <li>-<p>The voltage difference between high side (HPUMP H) and ground is less than 3.0 V.</p>
+        </li>
+        <li>-<p>The voltage difference between low side (HPUMP L) and ground is less than 1.5 V.</p>
+        </li>
+        <li>-<p>There is no short to ground at low side (HPUMP L) in result of pinpointing.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Malfunction threshold B</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The voltage difference between power and high side (HPUMP H) is less than 1.5 V.</p>
+        </li>
+        <li>-<p>The voltage difference between high side (HPUMP H) and ground is more than 3.0 V.</p>
+        </li>
+        <li>-<p>The voltage difference between low side (HPUMP L) and ground is more than 1.5 V.</p>
+        </li>
+        <li>-<p>There is no short to power at low side (HPUMP L) in result of pinpointing.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Short circuit in HPUMP L line (Either malfunction threshold A or B) </span></p>
+  <ul class="BULLET">
+    <li>Malfunction threshold A</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The voltage difference between power and high side (HPUMP H) is more than 1.5 V.</p>
+        </li>
+        <li>-<p>The voltage difference between high side (HPUMP H) and ground is less than 3.0 V.</p>
+        </li>
+        <li>-<p>The voltage difference between low side (HPUMP L) and ground is less than 1.5 V.</p>
+        </li>
+        <li>-<p>The voltage difference between low side (HPUMP L) and ground is less than 3.5 V during pinpointing.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Malfunction threshold B</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The voltage difference between power and high side (HPUMP H) is less than 1.5 V.</p>
+        </li>
+        <li>-<p>The voltage difference between high side (HPUMP H) and ground is more than 3.0 V.</p>
+        </li>
+        <li>-<p>The voltage difference between low side (HPUMP L) and ground is more than 1.5 V.</p>
+        </li>
+        <li>-<p>The low side (HPUMP L) current is more than 2.35 A during pinpointing.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">HPUMP H line short to HPUMP L line (Either malfunction threshold A or B) </span></p>
+  <ul class="BULLET">
+    <li>Malfunction threshold A</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The low side (HPUMP L) current is more than 4.8 - 6.32 A during the beginning of actuation.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Malfunction threshold B</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Abort of previous actuation due to short circuit.</p>
+        </li>
+        <li>-<p>The voltage difference between power and high side (HPUMP H) is more than 1.5 V.</p>
+        </li>
+        <li>-<p>The voltage difference between low side (HPUMP L) and ground is more than 1.5 V.</p>
+        </li>
+        <li>-<p>The low side (HPUMP L) current is more than 2.35 A during pinpointing.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>High pressure fuel pump HPUMP H line open</li>
+    <li>High pressure fuel pump HPUMP H line short to ground</li>
+    <li>High pressure fuel pump HPUMP H line short to power</li>
+    <li>High pressure fuel pump HPUMP L line open</li>
+    <li>High pressure fuel pump HPUMP L line short to ground</li>
+    <li>High pressure fuel pump HPUMP L line short to power</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

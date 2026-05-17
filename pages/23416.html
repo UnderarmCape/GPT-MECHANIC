@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0116 (L15B7/L15BA/L15BY) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19273.html">Engine Control System - Advanced Diagnostics (P0010 - P0128)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19273.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23416.html">DTC P0116 (L15B7/L15BA/L15BY)</a></div><div class="main"><h1>DTC P0116 (L15B7/L15BA/L15BY)</h1><div id="S26167218642021060700000">
+  <p><span class="clsEmphBOLD">DTC P0116: </span>
+Engine Coolant Temperature (ECT) Sensor 1 Circuit Range/Performance Problem</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S261672186420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402712">
+            <div class="imageHeader"><a name="S04262671982021060700000"></a></div><img alt="GHH402712" src="../images/GHH402712.jpeg" name="GHH402712"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) supplies voltage to the engine coolant temperature signal circuit (about 5 V) through a pull-up resistor. As the engine coolant cools, the engine coolant temperature (ECT) sensor 1 resistance increases, and the PCM detects a high signal voltage. As the engine coolant warms, the ECT sensor 1 resistance decreases, and the PCM detects a low signal voltage. If the ECT sensor 1 output voltage does not reach a set temperature after starting the engine and driving a set time, or when the difference between the ECT sensor 1 output voltage while driving and the output voltage of ECT sensor 1 after the engine has been stopped a certain length of time does not change a certain amount, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S261672186420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">42 minutes or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S261672186420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine time after starting the engine</td>
+        <td align="" class="clsCellNormal">10 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">With a completely cooled engine (one that has been off for at least 6 hours): Judgment is made after the engine has run for at least 42 minutes or been driven at least 5 miles (7 km), turn the vehicle to the OFF (LOCK) mode and wait for at least 10 seconds, then start and run again for at least 10 seconds.</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">With a partially cooled engine (one that has been off for less than 6 hours): Judgment is made after the engine has run for at least 42 minutes or been driven at least 5 miles (7 km), turn the vehicle to the OFF (LOCK) mode and wait for at least 6 hours then start and run again for at least 10 seconds.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Malfunction determination 1:</p>
+  <p>With a completely cooled engine (one that has been off for at least 6 hours):</p>
+  <p>When the change in coolant temperature after 42 minutes or more of running time or 5 miles (7 km) or more of driving distance is 18 deg.F (10 deg.C) or less, a malfunction is detected.</p>
+  <p>Malfunction determination 2:</p>
+  <p>With a partially cooled engine (one that has been off for less than 6 hours):</p>
+  <p>When the difference between the coolant temperature after 42 minutes or more of running time or 5 miles (7 km) or more of driving distance the coolant temperature after the engine has been off for 6 hours and then run for 10 seconds is 18 deg.F (10 deg.C) or less, a malfunction is detected.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>ECT sensor 1 failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <p>With a completely cooled engine (one that has been off for at least 6 hours).</p>
+  <ul class="BULLET">
+    <li>Start the engine, and let it idle for at least 42 minutes or drive for at least 5 miles (7 km).</li>
+    <li>Turn the vehicle to the OFF (LOCK) mode for 10 seconds, then restart the engine and let it idle for at least 10 seconds.</li>
+  </ul>
+  <p>With a partially cooled engine (one that has been off for less than 6 hours).</p>
+  <ul class="BULLET">
+    <li>Start the engine, and let it idle for at least 42 minutes or drive for at least 5 miles (7 km).</li>
+    <li>Turn the vehicle to the OFF (LOCK) mode for 6 hours then restart the engine and let it idle for at least 10 seconds.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

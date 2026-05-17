@@ -1,0 +1,171 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P2196 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/7073.html">DTC P2196 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P2196 (K20C1) (2019 2020 2021)</h1><div id="S01756056812021060700000">
+  <p><span class="clsEmphBOLD">DTC P2196: </span>
+O2 Sensor Signal Biased/Stuck Rich</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S017560568120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403533">
+            <div class="imageHeader"><a name="S31109817432021060700000"></a></div><img alt="GHH403533" src="../images/GHH403533.jpeg" name="GHH403533"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The PCM monitors the offset of the air/fuel ratio (A/F) sensor (sensor 1) signal. The test is performed by monitoring the fuel trim control of the secondary heated oxygen sensor (secondary HO2S (sensor 2)). If there is an air/fuel ratio offset measured by the secondary HO2S (sensor 2), the secondary HO2S (sensor 2) fuel trim is used to correct this offset back to the commanded air/fuel ratio. If the offset is present for an extended time, the secondary HO2S (sensor 2) fuel trim is stored as the A/F sensor (sensor 1) offset adaptation. There are two ways that the A/F sensor (sensor 1) offset is adapted. If the secondary HO2S (sensor 2) fuel trim has a small deviation, then the A/F sensor (sensor 1) offset is adapted slowly. If the secondary HO2S (sensor 2) fuel trim has a large deviation, the A/F sensor (sensor 1) offset is adapted faster. If the adapted offset of the A/F sensor (sensor 1) sensor is too large, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S017560568120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Multiple</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Slow offset adaptation </span></p><a name="S017560568120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">1, 400 rpm</td>
+        <td align="" class="clsCellNormal">3, 000 rpm</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Charging efficiency</td>
+        <td align="" class="clsCellNormal">20.3 % - 99.8 %</td>
+        <td align="" class="clsCellNormal">0 % - 69.8 %</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Closed loop*</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Evaporative emission (EVAP) system monitor is not active</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 300 g (10.59 oz) of integrated amount of exhaust mass flow[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Fast offset adaptation </span></p><a name="S017560568120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine coolant temperature [ECT Sensor 1]</td>
+        <td align="" class="clsCellNormal">104 deg.F (40 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]**</td>
+        <td align="" class="clsCellNormal">1, 000 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Exhaust gas mass flow</td>
+        <td align="" class="clsCellNormal">25 kg/h (56 lbs/h)</td>
+        <td align="" class="clsCellNormal">200 kg/h (440 lbs/h)</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>**: For at least 80 g (2.83 oz) - 200 g (7.06 oz) of integrated amount of exhaust gas mass flow</p><a name="S017560568120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Charging efficiency</td>
+        <td align="" class="clsCellNormal">13 % - 22 %</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Closed loop</td>
+      </tr>
+      <tr>
+        <td rowspan="4" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">No significant load changes</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Misfire rate is not exceeding</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">EVAP system monitor is not active</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>**: For at least 80 g (2.83 oz) - 200 g (7.06 oz) of integrated amount of exhaust gas mass flow</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Lambda offset is less than -0.1.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>A/F sensor (sensor 1) failure</li>
+    <li>Exhaust system leak</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine. Hold the engine speed [Engine Speed] at 3, 000 rpm without load (in neutral) until the radiator fan comes on, then let it idle.</li>
+    <li>Drive the vehicle at constant speed with part load for a while.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

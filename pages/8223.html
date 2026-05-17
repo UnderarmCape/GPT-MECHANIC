@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0340 (K20C1) (2017 2018 2019) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18422.html">Engine Control System - Advanced Diagnostics (P0128 - P0340)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18422.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8223.html">DTC P0340 (K20C1) (2017 2018 2019)</a></div><div class="main"><h1>DTC P0340 (K20C1) (2017 2018 2019)</h1><div id="S11317089192021060700000">
+  <p><span class="clsEmphBOLD">DTC P0340: </span>
+Camshaft Position (CMP) Sensor A No Signal</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S113170891920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402954">
+            <div class="imageHeader"><a name="S11116392622021060700000"></a></div><img alt="GHH402954" src="../images/GHH402954.jpeg" name="GHH402954"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The camshaft position sensoring operates based on pulse detection and counting. The fundamental components are a pulse plate mounted on the end of the shaft (rotary part) and camshaft position (CMP) sensor A mounted in line with the pulse plate including electronic circuitry (stationary part). Around the circumference of the pulse plate, there are teeth distributed evenly and additional reference markers. This makes it possible to generate an electric pulse pattern when the shaft rotates and the teeth are passing by CMP sensor A. The camshaft position can be determined by counting the number of pulses and deriving the pulse pattern of the electrical signal from CMP sensor A. If the powertrain control module (PCM) recognizes no signal from CMP sensor A, a malfunction is detected and a DTC is stored.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S113170891920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.8 second or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S113170891920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td align="" class="clsCellNormal">Running</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Crankshaft position (CKP) sensor signal with gap detected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>If no signal from CMP sensor A is detected during a crankshaft revolution, a counter is incremented.</p>
+  <p>The number of consecutive unrecognized signals (counter) exceeds 8 times and the measured input level is less than 0.4 V, or greater than 2.4 V.</p>
+  <p>*: The counter resets to zero as soon as one or more new camshaft edges were acquired.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>CMP sensor A CAM line short to ground</li>
+    <li>CMP sensor A CAM line short to power</li>
+    <li>CMP sensor A CAM line open</li>
+    <li>CMP sensor A failure</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <p>Start the engine, and let it idle.</p>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

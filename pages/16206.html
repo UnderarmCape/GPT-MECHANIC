@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Network Communications System Description — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Communication%20Devices/">Communication Devices</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12963.html">Network Communication - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12963.html#Description/">Description</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/16206.html">Network Communications System Description</a></div><div class="main"><h1>Network Communications System Description</h1><div id="S11394829112021060700000">
+  <p><span class="clsEmphBOLD">CAN (Controller Area Network) and the LIN (Local Interconnect Network) </span></p>
+  <p>The vehicle uses the CAN (Controller Area Network) and the LIN (Local Interconnect Network) as the in-vehicle LAN (Local Area Network). These networks enable the control units to exchange the information over the CAN bus. The CAN consists of the F-CAN network that enables the control units to exchange the signals regarding the power train/chassis and the B-CAN network for the signals regarding the body. These networks are inter connected at the gauge control module (gateway).</p>
+  <p>The LIN is used for connecting the power window master switch, front passenger's power window switch *1, passenger's power window switch *2, and the moonroof motor-control unit as well as for connecting the body control module and windshield wiper control unit/motor ensuring a reliable communication suitable for the control system.</p>
+  <p>*1: 4/5-door*</p>
+  <p>*2: 2-door</p>
+  <p>As a multi-communication system between several control units, the system also provides the K-LINE and L-LINE for transmitting the diagnostic results from the HDS (Honda Diagnostic System) and the S-NET for transmitting the immobilizer signals.</p>
+  <p><span class="clsEmphBOLD">Without Multipurpose Camera Unit </span></p><a name="S113948291120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410765">
+            <div class="imageHeader"><a name="S16640691942021060700000"></a></div><img alt="GHH410765" src="../images/GHH410765.jpeg" name="GHH410765"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">With Multipurpose Camera Unit </span></p><a name="S113948291120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410766">
+            <div class="imageHeader"><a name="S11461058692021060700000"></a></div><img alt="GHH410766" src="../images/GHH410766.jpeg" name="GHH410766"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">CAN </span></p>
+  <p>The CAN (controller area network) is a multi communication system that ISO has developed and standardized for the automobile. The CAN employs a multi-master system in which multiple control units connected to a bus communicate with each other.</p>
+  <p><span class="clsEmphBOLD">Communicating Method </span></p>
+  <p>In the CAN, each node normally sends the digital signals in the data frame format to the bus line. There are two communication methods between each control unit within the CAN. The first method sends the digital signal at a predetermined frequency and the second method sends the digital signal when a change in data occurs. The CAN adopts the CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) method in which nodes attempt to avoid collisions by transmitting only when the bus is sensed to be idle. The digital signals are expressed as &quot;0&quot; (dominant) and &quot;1&quot; (recessive). The data frame consists of the data field (center), arbitration field for showing data ID, control field for showing data length, CRC field for detecting sending error, and the ACK field for confirming end of sending. When multiple nodes start data sending simultaneously, the CAN arbitrates them by the priority indicated in the ID in the arbitration field. For example, when the node 1 (ID=156h) and node 2 (ID=164h) send the data at the same time, only the ID of the node 1 is sent to the bus line because the node 1 takes priority with its smaller ID. On the other hand, the node 2 cancels sending the ID and changes to a receiving state. After the node 1 completes sending, the node 2 starts sending data again. That enables a simultaneous data sending from multiple nodes in a single path (multi task method). When all nodes send the data and is received, each control unit classifies the required data by the ID and starts controlling.</p><a name="S113948291120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410767">
+            <div class="imageHeader"><a name="S39483908792021060700000"></a></div><img alt="GHH410767" src="../images/GHH410767.jpeg" name="GHH410767"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">F-CAN </span></p>
+  <p>The network between a powertrain and control unit for the chassis system is called F-CAN and it employs high speed CAN with a communication rate at 500 kbps. The F-CAN is composed of a single F-CAN Bus. To respond to the increase in the number of ECUs connected to the F-CAN and the increase in the amount of communication, the composition of the F-CAN network is divided into multiple bus lines, and an F-CAN gateway with a data-forwarding function is established, enabling the communication among the CAN Bus lines. Connection of each control unit has control units with a terminating resistor installed for preventing signals from being reflected back by a pair of twisted signal cable at each end which is comprised of F-CAN H and F-CAN L, with other control units in parallel connection between them. By rapidly switching between equal and unequal voltages, digital data can be transmitted in bits.</p><a name="S113948291120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410768">
+            <div class="imageHeader"><a name="S09762774282021060700000"></a></div><img alt="GHH410768" src="../images/GHH410768.jpeg" name="GHH410768"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">B-CAN </span></p>
+  <p>The network between control units for body electrical system is called B-CAN and it employs low speed CAN with communication rate at 125 kbps. Connection of each control unit has control units with a terminating resistor installed for preventing signals from being reflected back at each end of a pair of twisted wire which is comprised of B-CAN H and B-CAN L, with other control units in parallel connection between them.</p>
+  <p><span class="clsEmphBOLD">Power Saving Mode Control </span></p>
+  <p>Since some control units for the body system are functional even if the vehicle is turned to the OFF (LOCK) mode, the power-saving mode is set for these units for the purpose of reducing dark current. Transition to the power-saving mode (sleep mode) and returning from it (wakeup mode) are controlled by the active, sleep, and wakeup signals. The control units that are not in the &quot;wait for sleep&quot; state send periodically the active signals to the bus line and stop sending them when it is in &quot;wait for sleep&quot; state. When all control units do not send the active signal anymore, one or more control units send the sleep signals. The control units that received the sleep signals go into the power-saving mode. In the event of inputs from switches or sensors during the power-saving mode, they send the wakeup signals to the bus line. In this case, they return from the power-saving mode.</p>
+  <p><span class="clsEmphBOLD">LIN </span></p>
+  <p><span class="clsEmphBOLD">Overview </span></p>
+  <p>The LIN is a bus based on UART (Universal Asynchronous Receiver Transmitter). Communication rate of LIN is slower than that of CAN, and it is used for systems for which a high speed communication is not required. The design reduces the wire harness bulk as well as to construct a low cost network due to its connection with each control unit with just a single bus. The LIN employs a single-master system, in which only single master control unit serves as a master control unit to control all the signals on the LIN bus. Other units become slave units to serve in accordance with requests from the master control unit. This vehicle employs the LIN with communication speed of 9.6 kbps for networks between the power window master switch, the front passenger's power window switch *1, passenger's power window switch *2, and the moonroof motor-control unit.</p>
+  <p>*1: 4/5-door</p>
+  <p>*2: 2-door</p>
+  <p><span class="clsEmphBOLD">Communication System </span></p>
+  <p>LIN uses a single-master system, where one ECU controls all bus communication. The other controllers act as slave units, communicating only when requested by the power window master switch. The message frame is comprised of the header frame that sends the master's request and the response frame that sends the slave's response. The header frame consists of the SYNCH BREAK field for showing the frame start, SYNCH field for correcting the baud rate, and the IDENT field for showing the control unit that requests the response. The response frame consists of the data fields and the CHECK SUM field for detecting transmitting errors.</p><a name="S113948291120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410769">
+            <div class="imageHeader"><a name="S12125039262021060700000"></a></div><img alt="GHH410769" src="../images/GHH410769.jpeg" name="GHH410769"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Power Saving Mode </span></p>
+  <p>The body electrical system has control units which does not stop operating even if the vehicle is turned to the OFF (LOCK) mode in order to perform door lock and light control. These control units have a power saving mode to reduce the stand by power requirement.</p>
+  <p><span class="clsEmphBOLD">Network Communication Troubleshooting </span></p>
+  <p>The HDS (Honda Diagnostic System) uses the K-LINE for displaying the control unit and self-diagnostic results both in the F-CAN bus and B-CAN bus. The K-LINE bus is the communication circuit that uses the UART whose baud rate is 10.4 kbps. The vehicles equipped with keyless access system, also have an L-LINE data bus that connects the DLC to the body control module. This line allows the HDS to communicate with the body control module or immobilizer-keyless control unit if the remote or keyless transmitter are lost or malfunctioning, preventing the ignition from being switched on. The S-NET serves as a path to transmit a signal from a transponder integrated into the remote or keyless transmitter to control units related to the immobilizer system, such as the PCM and body control module. The gauge control module provides the display function for body-system DTC (Diagnostic Trouble Code). The DTCs are displayed when the gauge control module receives the SCS terminal short signal via the F-CAN bus or the body control module service check ON signal via the B-CAN bus. The gauge control module then reads the self-diagnostic results sent by each control unit via B-CAN bus, and displays the DTCs</p>
+  <p><span class="clsEmphBOLD">Without Multipurpose Camera Unit </span></p><a name="S113948291120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410770">
+            <div class="imageHeader"><a name="S13479980652021060700000"></a></div><img alt="GHH410770" src="../images/GHH410770.jpeg" name="GHH410770"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">With Multipurpose Camera Unit </span></p><a name="S113948291120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410771">
+            <div class="imageHeader"><a name="S23413571562021060700000"></a></div><img alt="GHH410771" src="../images/GHH410771.jpeg" name="GHH410771"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

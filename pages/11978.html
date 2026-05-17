@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>EPS System Description - EPS Control — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Steering/">Steering</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Steering/Power%20Steering/">Power Steering</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17622.html">Steering System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17622.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/11978.html">EPS System Description - EPS Control</a></div><div class="main"><h1>EPS System Description - EPS Control</h1><div id="S13190011682021060700000">
+  <p><span class="clsEmphBOLD">Base Current </span></p>
+  <p>The base current is a basic current value to drive the motor and is calculated using the steering torque and the vehicle speed.</p>
+  <p><span class="clsEmphBOLD">Inertia Compensation </span></p>
+  <p>The torque of the EPS motor tends to be lower as the vehicle begins to move and higher as it decreases in speed due to the inertia of the rotating body. To reduce the impact of the inertia, the inertia compensation increases the base current in acceleration and decreases in deceleration. The current of the inertia compensation is calculated by using the steering torque, vehicle speed, and motor speed.</p>
+  <p><span class="clsEmphBOLD">Damping Compensation </span></p>
+  <p>The steering wheel receives vibration from the road surface during braking or cornering. The damping compensation reduces the vibration of the steering wheel by applying a damping effect through the motor current control. The damping compensation current is calculated by the steering torque, the vehicle speed, and the motor speed.</p>
+  <p><span class="clsEmphBOLD">Target Current </span></p>
+  <p>The target current is a value necessary to perform feedback control of the motor and is determined by applying inertia and damping compensation to the base current and adding steering torque direction.</p>
+  <p><span class="clsEmphBOLD">Current Feedback Control </span></p>
+  <p>Current feedback control monitors the motor current through sensors and reduces any deviation of motor current compared to the target current, thus accurately running the motor.</p>
+  <p><span class="clsEmphBOLD">Unloader Control </span></p>
+  <p>The unloader control reduces motor current at the lock to lock (full right or left) of the steering wheel to protect the system. This value is determined by using the target current and the motor speed.</p>
+  <p><span class="clsEmphBOLD">Steering Speed Feedback Control </span></p>
+  <p>The steering speed feedback control improves stability in the high speed range by controlling the hysteresis of the steering torque. The steering speed feedback control current is calculated by using the deviation between the target and actual steering angle speed to adjust to the base current.</p>
+  <p><span class="clsEmphBOLD">Straight Driving Steering Assist </span></p>
+  <p>Steering effort is detected and reduced by applying EPS motor assist when driving on a sloped road. This control will return to normal when no longer driving on a sloped road. This function only operates when the cruise control is on and the speed is set.</p>
+  <p><span class="clsEmphBOLD">Assist image </span></p><a name="S131900116820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH412039">
+            <div class="imageHeader"><a name="S25667168252021060700000"></a></div><img alt="GHH412039" src="../images/GHH412039.jpeg" name="GHH412039"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">EPS Motor Control Circuit </span></p>
+  <p>The EPS motor control circuit is composed of a system control CPU, the FET (Field-Effect Transistor) drive circuit, the FET bridge, the power relay, the fail-safe relays, the electric current detection circuit, relay drive circuit, and the EPS motor. With the signal from the input sensor, the CPU calculates the appropriate current for the FET drive circuit. This operation is duty controlled.</p><a name="S131900116820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH412040">
+            <div class="imageHeader"><a name="S23371408552021060700000"></a></div><img alt="GHH412040" src="../images/GHH412040.jpeg" name="GHH412040"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Motor Output Limit Control </span></p>
+  <p>The motor output limit control reduces the motor current in the event of repeated turning of the steering wheel when the vehicle is not in motion. This control gradually reduces power assist force. The power assist force resumes gradually from the steering torque of 0 N.m (0 kgf.m, 0 lbf.ft) or from having the ignition switch in the off position and it may take up to 20 minutes to go back to normal assist force conditions. The activation of the motor limit control is based on the motor and the internal temperature of the control system.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

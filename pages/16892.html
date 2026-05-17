@@ -1,0 +1,430 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC U0122-00 (2/4-door, With Multipurpose Camera Unit (SRS Unit)) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Restraints/">Restraints</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Restraints/Air%20Bag%2C%20SRS/">Air Bag, SRS</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12922.html">Supplemental Restraint System (SRS) - DTC Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/12922.html#DTC%20Troubleshooting/">DTC Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/16892.html">DTC U0122-00 (2/4-door, With Multipurpose Camera Unit (SRS Unit)) (2019 2020 2021)</a></div><div class="main"><h1>DTC U0122-00 (2/4-door, With Multipurpose Camera Unit (SRS Unit)) (2019 2020 2021)</h1><div id="S11937372022021060700000">
+  <p><span class="clsEmphBOLD">DTC U0122-00 </span>
+: Lost Communication With the VSA Modulator-Control Unit (wheel speed sensor signal error)</p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li><a href="../pages/13273.html#Inspection%20Replacement/SRS%20Component%20Replacement%2FInspection%20After%20Deployment/">Before doing this troubleshooting procedure, find out if the vehicle was in a collision. If so, verify that all the required components were replaced with new components of the correct part number and were properly installed</a>
+.</li>
+    <li>Before doing this troubleshooting procedure, review <a href="../pages/13273.html#Service%20Procedure/SRS%20Precautions%20and%20Procedures/">SRS Precautions and Procedures</a>
+, <a href="../pages/12922.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20SRS/">General Troubleshooting Information</a> , and <a href="../pages/12834.html#Removal%20and%20Installation/12%20Volt%20Battery%20Terminal%20Disconnection%20and%20Reconnection/">12 Volt Battery Terminal Disconnection and Reconnection</a>
+.</li>
+    <li>According to the detected DTC(s), check for the power circuit and the ground circuit of the control unit which cannot communicate with the SRS unit.</li>
+    <li>Refer to the DTC shown on the display, then inspect the connectors and terminals based on the instructions.</li>
+  </ul><a name="S119373720220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="200px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">DTC Description</th>
+        <th align="" class="clsCellNormal">DTC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">U0122-00 Lost communication with the VSA modulator-control unit (wheel speed sensor signal error)</td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>DTC (SRS)</p>
+  <ol class="ARABICNUM">
+    <li>CAN gateway system DTC check<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Check for CAN gateway system DTCs with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">DTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0029-00 CAN Gateway F-CAN ch A Bus Off</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0047-00 CAN Gateway F-CAN ch B Bus Off</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0056-00 CAN Gateway F-CAN ch C Bus Off</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U3000-49 CAN Gateway Internal Failure</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is DTC U0029-00, U0047-00, U0056-00, and/or U3000-49 indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/13892.html">Go to the troubleshooting for CAN gateway system DTC(s)</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 2.</p>
+    </li>
+    <li>F-CAN circuit communication check (Receiving control unit)<p>-1. Select the FUNCTION TEST in the CAN gateway with the HDS, then select the F-CAN Bus Connected Unit Check.</p>
+      <p>F-CAN Bus Connected Unit Check</p>
+      <p>Does the CAN gateway detect the SRS unit Bus channels B?</p>
+      <p>Bus B is Not Available</p>
+      <p>Go to step 3.</p>
+      <p>Bus B is Available</p>
+      <p>Go to step 4.</p>
+    </li>
+    <li>Open wire check (F-CAN B_H, F-CAN B_L lines)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the negative cable from the 12 volt battery.</p>
+      <p>-3. Disconnect the following connectors.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">SRS unit connector A (39P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-4. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">SRS unit connector A (39P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 6: <img alt="" class="ICON" src="../images/GHH412399.png" name="GHH412399"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13548.html">SRS unit connector A (39P) No. 34</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector (female terminals) No. 14: <img alt="" class="ICON" src="../images/GHH412400.png" name="GHH412400"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13548.html">SRS unit connector A (39P) No. 35</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH412401">
+                <div class="imageHeader"><a name="S41187962672021060700000"></a></div><img alt="GHH412401" src="../images/GHH412401.jpeg" name="GHH412401"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN B_H and the F-CAN B_L wires are OK. Check for poor connections or loose terminals at the CAN gateway and the SRS unit. If the connection is OK, check for any authorized service information related to the DTCs or symptoms you are troubleshooting, or <a href="../pages/13576.html#Removal%20and%20Installation/SRS%20Unit%20Removal%20and%20Installation/">replace the SRS unit</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Replace an open in the wire between the CAN gateway and the SRS unit.</p>
+    </li>
+    <li>F-CAN circuit communication check (Transmitting control unit)<p>-1. Select the FUNCTION TEST in the CAN gateway with the HDS, then select the F-CAN Bus Connected Unit Check.</p>
+      <p>F-CAN Bus Connected Unit Check</p>
+      <p>According to the detected DTC on the following table, make sure that the transmitting control unit detects the CAN gateway Bus channel(s) normally.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="135px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="300px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Transmitting control unit</th>
+            <th align="" class="clsCellNormal">Detected CAN gateway Bus channel(s) at normal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit</td>
+            <td align="" class="clsCellNormal">A, B</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is it detected normally?</p>
+      <p>Detected normal</p>
+      <p>Intermittent failure, the system is OK at this time. Check for poor connections or loose terminals at the transmitting control unit and the CAN gateway.</p>
+      <p>U0122-00: VSA modulator-control unit is Not Available for Bus A</p>
+      <p>Go to step 5.</p>
+      <p>U0122-00: VSA modulator-control unit is Not Available for Bus B</p>
+      <p>Go to step 6.</p>
+    </li>
+    <li>Open wire check (F-CAN A_H, F-CAN A_L lines)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. According to the detected DTC on the following table, disconnect the transmitting control unit connector(s).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="133px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Connector</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">-</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit 46P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="270px">
+          <col span="1" id="COL2" width="330px">
+          <col span="1" id="COL3" width="599px">
+          <col span="1" id="COL4" width="270px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="270px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Receiving control unit</th>
+            <th colspan="2" align="" class="clsCellNormal">Transmitting control unit</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal">F-CAN A_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector (female terminals): <img alt="" class="ICON" src="../images/GHH412402.png" name="GHH412402"></td>
+            <td align="" class="clsCellNormal">No. 3</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector</a></td>
+            <td align="" class="clsCellNormal">No. 20</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN A_L</td>
+            <td align="" class="clsCellNormal">No. 11</td>
+            <td align="" class="clsCellNormal">No. 21</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH412403">
+                <div class="imageHeader"><a name="S42748711352021060700000"></a></div><img alt="GHH412403" src="../images/GHH412403.jpeg" name="GHH412403"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN A_H and the F-CAN A_L wires are OK. Check for any authorized service information related to the DTCs or symptoms you are troubleshooting.</p>
+      <p>According to the detected DTC on the following table, substitute or replace the correspond control unit.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="77px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Operation for transmitting control unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13637.html#Removal%20and%20Installation/VSA%20Modulator-Control%20Unit%20Removal%20and%20Installation%20%282%2F4-door%29/">Replace the VSA modulator-control unit</a>
+.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the wire between the transmitting control unit and the CAN gateway.</p>
+    </li>
+    <li>Open wire check (F-CAN B_H, F-CAN B_L lines)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. According to the detected DTC on the following table, disconnect the transmitting control unit connector(s).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="133px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Connector</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">-</td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit 46P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">CAN gateway 16P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="270px">
+          <col span="1" id="COL2" width="330px">
+          <col span="1" id="COL3" width="599px">
+          <col span="1" id="COL4" width="270px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="270px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Receiving control unit</th>
+            <th colspan="2" align="" class="clsCellNormal">Transmitting control unit</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal">F-CAN B_H</td>
+            <td rowspan="2" align="" class="clsCellNormal">CAN gateway 16P connector (female terminals): <img alt="" class="ICON" src="../images/GHH412404.png" name="GHH412404"></td>
+            <td align="" class="clsCellNormal">No. 6</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector</a></td>
+            <td align="" class="clsCellNormal">No. 24</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN B_L</td>
+            <td align="" class="clsCellNormal">No. 14</td>
+            <td align="" class="clsCellNormal">No. 25</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH412405">
+                <div class="imageHeader"><a name="S07329497762021060700000"></a></div><img alt="GHH412405" src="../images/GHH412405.jpeg" name="GHH412405"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN B_H and the F-CAN B_L wires are OK. Check for any authorized service information related to the DTCs or symptoms you are troubleshooting.</p>
+      <p>According to the detected DTC on the following table, substitute or replace the correspond control unit.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="77px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Operation for transmitting control unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13637.html#Removal%20and%20Installation/VSA%20Modulator-Control%20Unit%20Removal%20and%20Installation%20%282%2F4-door%29/">Replace the VSA modulator-control unit</a>
+.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the wire between the transmitting control unit and the CAN gateway.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

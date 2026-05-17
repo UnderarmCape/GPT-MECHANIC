@@ -1,0 +1,194 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P02CC, P02CE, P02D0, P02D2 (K20C1) (2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19274.html">Engine Control System - Advanced Diagnostics (P0128 - P0340)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19274.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23262.html">DTC P02CC, P02CE, P02D0, P02D2 (K20C1) (2020 2021)</a></div><div class="main"><h1>DTC P02CC, P02CE, P02D0, P02D2 (K20C1) (2020 2021)</h1><div id="S17034298522021060700000">
+  <p><span class="clsEmphBOLD">DTC P02CC: </span>
+No. 1 Cylinder Injector Offset Learning Exceeds Minimum Limit</p>
+  <p><span class="clsEmphBOLD">DTC P02CE: </span>
+No. 2 Cylinder Injector Offset Learning Exceeds Minimum Limit</p>
+  <p><span class="clsEmphBOLD">DTC P02D0: </span>
+No. 3 Cylinder Injector Offset Learning Exceeds Minimum Limit</p>
+  <p><span class="clsEmphBOLD">DTC P02D2: </span>
+No. 4 Cylinder Injector Offset Learning Exceeds Minimum Limit</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S170342985220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402912">
+            <div class="imageHeader"><a name="S01388652012021060700000"></a></div><img alt="GHH402912" src="../images/GHH402912.jpeg" name="GHH402912"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Controlled valve operation (CVO) is a function of the powertrain control module (PCM) to determine the actual open time of injection valves. The function utilizes different signal processing algorithms to calculate rising delay and closing delay out of executed measurements. The algorithms are divided in two parts. The first part is the base adaptation and requires special injector energizing time for the measurement. The second part based on learning during normal engine operation. The needle opening duration is controlled and energizing time (feed-forward control) is adapted to the injector individually. The control variable is 'topen' and the corresponding correcting variable is the energizing time 'ti' as shown in the figure. The monitoring function verifies the calculated adjustment values of the CVO function. In case of an error, corresponding error reactions will be activated such as triggering a new base adaptation or locking the defective injector for CVO. The diagnostic utilizes different monitors in order to detect the minimum CVO errors.</p>
+  <ul class="BULLET">
+    <li>Monitor 1: Rationality check of opening delay time 'tantot'<p>The 'tantot' value is continuously monitored against a default value. If the difference between current opening time delay (tantot) and its default value is less than a calibrated threshold, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+    <li>Monitor 3: Rationality check of plateau correction height<p>The ballistic slope correction includes a slope correction and a plateau correction parts. The measured height of the plateau correction is continuously monitored against an expected value. If the current plateau value is less than a calibrated threshold, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+    <li>Monitor 4: Rationality check of the total calculated injection time correction value<p>The calculated injection time correction is checked by the diagnostic function depending on the current working point.</p>
+      <p>In case the pulse type of the current injection is &quot;ballistic&quot; and the total calculated injection time correction is less than a calibrated threshold, the PCM detects a malfunction and stores a DTC.</p>
+      <p>In case the pulse type of the current injection is &quot;full-lift&quot; and the total calculated injection time correction is less than a calibrated threshold, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+    <li>Monitor 5: Rationality check of the &quot;full-lift&quot; closing time<p>This diagnostic compares the &quot;full-lift&quot; closing time with an expected value. If the current &quot;full-lift&quot; closing time 'tab' is greater than a calibrated threshold, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+    <li>Monitor 6: Detection of &quot;full-lift&quot; closing time<p>This diagnostic monitors if the &quot;full-lift&quot; closing time can be detected or not. If the &quot;full-lift' closing time 'tab' cannot be detected for number of times, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+    <li>Monitor 7: Rationality check of the ballistic correction at the adjustment-point<p>As soon as the controller is stable at the ballistic adjustment-point, the current value of ballistic correction is transmitted to the diagnostic function. If the integrated value during base adaptation is less than a calibrated threshold, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S170342985220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Common </span></p><a name="S170342985220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td align="" class="clsCellNormal">Running</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Monitor 1 and 3 </span></p><a name="S170342985220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Base adaptation is active</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Monitor 4 </span></p><a name="S170342985220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Base adaptation is finished</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Monitor 7 </span></p><a name="S170342985220210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Base adaptation is active</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">The controller is stable during base adaption</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Pulse type of current injection is &quot;ballistic&quot;</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Monitor 1<p>Either of the conditions is met at least 1 time:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Difference between current opening time delay 'tantot' and its default value is less than -150 μseconds.</p>
+        </li>
+        <li>-<p>The system cannot detect 'tantot' value.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Monitor 3<p>The current plateau value is less than -150 μseconds at least 2 times.</p>
+    </li>
+    <li>Monitor 4<p>A and B, or C and D is met at least 100 times:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>A.<p>The pulse type of current injection is &quot;ballistic&quot;.</p>
+        </li>
+        <li>B.<p>The total calculated injection time correction is less than -50 μseconds.</p>
+        </li>
+        <li>C.<p>The pulse type of current injection is &quot;full-lift&quot;.</p>
+        </li>
+        <li>D.<p>The total calculated injection time correction is less than -200 μseconds.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Monitor 5<p>The measured &quot;full-lift&quot; closing time is more than 580 μseconds at least 100 times.</p>
+    </li>
+    <li>Monitor 6<p>There is a faulty in CVO controller at least 100 times.</p>
+    </li>
+    <li>Monitor 7<p>The total calculated injection time correction is stable during the base adaptation for at least -50 μseconds.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Improper fuel injection amount control operation</li>
+    <li>Poor connection of injector</li>
+    <li>Injector failure</li>
+    <li>Improper cylinder compression</li>
+    <li>Cylinder injection pipe collapsed</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>SRS System Description - SRS Unit (USA/Canada models) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Restraints/">Restraints</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Restraints/Air%20Bag%2C%20SRS/">Air Bag, SRS</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13273.html">Supplemental Restraint System (SRS) - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13273.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/16065.html">SRS System Description - SRS Unit (USA/Canada models)</a></div><div class="main"><h1>SRS System Description - SRS Unit (USA/Canada models)</h1><div id="S10548495592021060700000">
+  <p><span class="clsEmphBOLD">System Diagram </span></p>
+  <ul class="BULLET">
+    <li>Power supply circuit (booster circuit, backup power supply): Provides and maintains power when battery voltage is low or in case of power supply damage due to a collision.</li>
+    <li>Front impact G sensors and side impact G sensor: Detect impact to the SRS unit as acceleration and converts it to an electrical signal.</li>
+    <li>Rollover judgment circuit: Predicts an impending rollover using signals such as the one from the G sensor located inside of the SRS unit. Based on the rollover judgment and the seat belt buckle switch status, the circuit determines whether the seat belt tensioners and the side curtain airbags should deploy or not.</li>
+    <li>Yaw rate sensor: Detects yaw rate generated at the time of vehicle turning as vehicle behavior, and the information is transmitted to the other systems via the F-CAN signal.</li>
+    <li>Microprocessor: An impact decision algorithm decides whether or not the collision signal warrants deployment of the airbags or the tensioners.</li>
+    <li>Diagnostic circuit: Performs self-diagnosis to determine whether system abnormalities are present. If an abnormality is detected, the SRS indicator in the gauge control module turns on.</li>
+    <li>Non-volatile memory: Records fault conditions. The SRS memories are not erased even if the 12 volt battery terminal is disconnected.</li>
+    <li>Communication circuit: Circuit for outputting or deleting memory contents.</li>
+    <li>The SRS unit receives the load information from the weight sensors, performs an occupant judgment of the front passenger's seat, and adjusts the front passenger's airbag deployment and performance.</li>
+  </ul>
+  <p>For locations of each component on vehicle, <a href="../pages/13272.html">refer to Component Location Index</a> .</p><a name="S105484955920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH412201">
+            <div class="imageHeader"><a name="S18388501002021060700000"></a></div><img alt="GHH412201" src="../images/GHH412201.jpeg" name="GHH412201"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>When airbags or tensioners are about to be deployed, a large amount of current passes through the SRS unit. After the airbags and tensioners are deployed, the internal components of the SRS unit are damaged and must be replaced.</p>
+  <p><span class="clsEmphBOLD">Automatic Short-Circuit Mechanism of SRS Unit Connectors </span></p>
+  <p>When the SRS unit connectors are disconnected from the SRS unit, the automatic short-circuit mechanism in the connectors creates short-circuits to prevent accidental deployment of an airbag. This automatic short-circuit mechanism is configured in such a way that the respective deployment circuits (adjacent terminal) are short-circuited when the connector is disconnected.</p><a name="S105484955920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH412202">
+            <div class="imageHeader"><a name="S12258161052021060700000"></a></div><img alt="GHH412202" src="../images/GHH412202.jpeg" name="GHH412202"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S105484955920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH412203">
+            <div class="imageHeader"><a name="S33219153022021060700000"></a></div><img alt="GHH412203" src="../images/GHH412203.jpeg" name="GHH412203"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Electrical Terminal Fit Detection System </span></p>
+  <p>The connectors connected to the SRS unit are equipped with a terminal that short-circuits the fit detection terminals with each other. If the connectors are properly connected, the fit detection terminals are short-circuited to each other and the SRS unit detects the fitting of the various connectors. When the vehicle is turned to the ON mode while a fitting is not detected, poor terminal fitting is judged and a DTC is stored.</p>
+  <p><span class="clsEmphBOLD">Rollover Detection </span></p>
+  <p>A sensor integrated into the SRS unit performs rollover detection. The sensor detects the degree of vehicle roll and converts it to an electrical signal. If the SRS unit determines that a vehicle rollover is occurring, one or both side curtain airbags and seat belt tensioners will be deployed depending on the direction and number of rollover events.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

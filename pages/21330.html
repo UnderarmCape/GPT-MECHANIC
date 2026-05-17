@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0615 (K20C2: With Keyless Access System) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19299.html">Engine Control System - Advanced Diagnostics (P0507 - P1684)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19299.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/21330.html">DTC P0615 (K20C2: With Keyless Access System)</a></div><div class="main"><h1>DTC P0615 (K20C2: With Keyless Access System)</h1><div id="S10464531242021060700000">
+  <p><span class="clsEmphBOLD">DTC P0615: </span>
+Starter Cut Relay Diagnosis Circuit Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S104645312420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403219">
+            <div class="imageHeader"><a name="S35746483852021060700000"></a></div><img alt="GHH403219" src="../images/GHH403219.jpeg" name="GHH403219"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The starter control system prevents the starter from accidentally activating when the shift position is not in P or N position/mode (CVT) or the clutch pedal is released (M/T), or when the engine is running. If the vehicle is turned mistakenly while shift position is not in P or N position/mode (CVT) or the clutch pedal is released (M/T) or while the engine is running, the powertrain control module (PCM) will stop power to the starter cut relay circuits. However, cranking to return from auto idle stop does not correspond to this (if equipped). In this system, two starter cut relay circuits are connected in series (starter cut relay 1 circuit, starter cut relay 2 circuit) to prevent the starter from running continuously due to a starter cut relay circuit malfunction. Also a diagnosis line (ST RLY 1 TO 2) is connected to monitor the voltage between the starter cut relay 1 circuit and starter cut relay 2 circuit. Based on the diagnosis line signals, the PCM detects an OPEN malfunction of diagnosis line, an ON malfunction of starter cut relay 1 circuit, and an ON malfunction of starter cut relay 2 circuit. The PCM also equips with return signal circuits of starter cut relay 1 circuit and starter cut relay 2 circuit to detect an OFF malfunction. If the voltage of the diagnosis line (ST RLY 1 TO 2) input does not exceed the upper and lower limits for a specified duration when the starter is ON (STS ON), the PCM detects an OPEN malfunction of the diagnosis line and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S104645312420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.3 second or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL off</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S104645312420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Starter</td>
+        <td align="" class="clsCellNormal">ON</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The diagnosis line (ST RLY 1 TO 2) input voltage [STARTER CUT RELAY] is between 2.4 V to 2.6 V for at least 0.3 second.</p>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Starter cut relay circuit ST RLY 1 TO 2 line open</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, a Confirmed DTC and the freeze data are stored. The MIL does not come on.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

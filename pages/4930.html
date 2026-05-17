@@ -1,0 +1,962 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Fuel and Emissions Systems Symptom Troubleshooting - Engine stalls (L15B7/L15BA/L15BY) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Mechanical/">Engine Mechanical</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Mechanical/Fuel%20System/">Fuel System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18512.html">Fuel And Emissions - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18512.html#Symptom%20Troubleshooting/">Symptom Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/4930.html">Fuel and Emissions Systems Symptom Troubleshooting - Engine stalls (L15B7/L15BA/L15BY)</a></div><div class="main"><h1>Fuel and Emissions Systems Symptom Troubleshooting - Engine stalls (L15B7/L15BA/L15BY)</h1><div id="S02482915962021060700000">
+  <p><span class="clsEmphBOLD">Special Tools Required </span></p>
+  <p><span class="clsEmphBOLD">Vacuum Pump/Gauge, 0-30 inHg Snap-on YA4000A or equivalent, commercially available </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>Before beginning this troubleshooting, <a href="../pages/15591.html">do a customer diagnostic interview</a> .</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>When the symptom cannot be duplicated, <a href="../pages/13824.html">you can do the troubleshooting using the on-board snapshot information in this procedure</a>
+. Refer to the diagnostic interview (date, place) and the present total mileage, and compare the total mileage which is estimated from the interview when a failure occurred and the parameter (total mileage) in the on-board snapshot information. Make sure the date when the failure occurred corresponds with the date on which the on-board snapshot information was recorded. If it doesn't, the on-board snapshot information cannot be used in this troubleshooting.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Before beginning this troubleshooting:</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Make sure the 12 volt battery is fully charged.</p>
+        </li>
+        <li>-<p>Make sure the fuel tank is at least 1/4 full.</p>
+        </li>
+        <li>-<p>Make sure the engine oil level is correct.</p>
+        </li>
+      </ul>
+    </li>
+    <li>After the troubleshooting, <a href="../external-car.html#Learning%20Reset%20Clear/PCM%20Reset/">reset the PCM with the HDS</a>
+ to erase the on-board snapshot information recorded on the PCM.</li>
+  </ul>
+  <ol class="ARABICNUM">
+    <li>DTC check<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Check for Pending or Confirmed DTCs with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+          <col span="1" id="COL3" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">Confirmed DTC</th>
+            <th align="" class="clsCellNormal">Pending DTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are any Pending or Confirmed DTCs indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to the indicated DTC's troubleshooting.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 2.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ If the HDS does not communicate with the vehicle, <a href="../pages/13866.html">go to the PCM power and ground circuit troubleshooting</a></p>
+    </li>
+    <li>Problem verification:<p>Set the HDS to record a SNAPSHOT of following full data list for 30 seconds.</p>
+      <ul class="BULLET">
+        <li>ENGINE SPEED</li>
+        <li>MAF SENSOR</li>
+        <li>ECT SENSOR 1</li>
+        <li>BATTERY</li>
+        <li>CKP NO PULSE</li>
+        <li>CKP NOISE</li>
+        <li>FUEL PRESSURE CONVERTED FROM PF SENSOR</li>
+        <li>FUEL PRESSURE DIRECT INJECTION SYSTEM</li>
+        <li>AF FB (ST FUEL TRIM)</li>
+        <li>EVAP PC DUTY</li>
+        <li>MISFIRE</li>
+        <li>A/C CLUTCH</li>
+        <li>PNP SWITCH (CVT)</li>
+        <li>SLIP RATIO OF TORQ OR STARTCLUTCH (CVT)</li>
+      </ul>
+      <p>Data List</p>
+      <p>-2. Begin the snapshot, then start the engine and let it idle without load (in neutral).</p>
+      <p>Did the engine stall?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 4 (diagnosis by parameter (MAF SENSOR)).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 3.</p>
+    </li>
+    <li>On-board snapshot check<p>-1. Check for a record of Engine Stall 2 in the on-board snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>Is there an Engine Stall 2 record in the on-board snapshot?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 4 (diagnosis by parameter (MAF SENSOR)).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 16 (fuel system troubleshooting).</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ If an engine stall on-board snapshot was not found, the snapshot may have been lost due to low 12 volt battery voltage or because of 12 volt battery disconnection or replacement.</p>
+    </li>
+    <li>On-board snapshot check (MAF SENSOR):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the MAF SENSOR and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the MAF SENSOR pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">Poor connection of MAF SENSOR<div class="imageHolder" id="container_GHH408189">
+                <div class="imageHeader"><a name="S33662348482021060700000"></a></div><img alt="GHH408189" src="../images/GHH408189.jpeg" name="GHH408189"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the engine stalls 1-2 seconds after MAF SENSOR shows &quot;0&quot; g/s the engine stall may be caused by a faulty MAF sensor, poor connection, or electrical noise in the MAF sensor signal.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">MAF SENSOR normal<div class="imageHolder" id="container_GHH408190">
+                <div class="imageHeader"><a name="S13546499712021060700000"></a></div><img alt="GHH408190" src="../images/GHH408190.jpeg" name="GHH408190"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When the MAF SENSOR pattern matches ENGINE SPEED, the MAF sensor is normal.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Check MAF sensor/IAT sensor 1 for loose terminals or poor connections. If the terminals and connections are OK, <a href="../pages/12833.html#Removal%20and%20Installation/MAF%20Sensor%2FIAT%20Sensor%201%20Removal%20and%20Installation%20%28L15B7%2FL15BA%2FL15BY%29/">substitute a known-good MAF sensor/IAT sensor 1</a>
+.</p>
+      <p>Pattern 2</p>
+      <p>MAF sensor/IAT sensor 1 is OK. Go to step 5 (diagnosis by parameter (ECT SENSOR 1)).</p>
+    </li>
+    <li>On-board snapshot check (ECT SENSOR 1):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the ECT SENSOR 1 and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare ECT SENSOR 1 pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">ECT SENSOR 1 high<div class="imageHolder" id="container_GHH408191">
+                <div class="imageHeader"><a name="S10445562822021060700000"></a></div><img alt="GHH408191" src="../images/GHH408191.jpeg" name="GHH408191"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When ECT SENSOR 1 indicates about 176 deg.F (80 deg.C) or more when the engine is actually cold, ECT sensor 1 signal may be stuck high. If this occurs, the PCM may not properly compensate for cold engine operation, causing the engine to stall.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">ECT SENSOR 1 normal<div class="imageHolder" id="container_GHH408192">
+                <div class="imageHeader"><a name="S17735035752021060700000"></a></div><img alt="GHH408192" src="../images/GHH408192.jpeg" name="GHH408192"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If actual engine temp is similar to ECT SENSOR 1, ECT sensor 1 is normal.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Check for a short in the ECT sensor 1 circuit and a failure in ECT sensor 1.</p>
+      <p>Pattern 2</p>
+      <p>Go to step 6.</p>
+    </li>
+    <li>ECT sensor 1 check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Let the engine cool for 24 hours.</p>
+      <p>-3. Measure the ambient temperature of the engine with the thermometer.</p>
+      <p>-4. Turn the vehicle to the ON mode, but do not start the engine.</p>
+      <p>-5. Check the parameter(s) below with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="261px">
+          <col span="1" id="COL3" width="222px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">Signal</th>
+            <th colspan="2" align="" class="clsCellNormal">Current conditions</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Values</th>
+            <th align="" class="clsCellNormal">Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">ECT SENSOR 1</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">ECT SENSOR 2</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are the values of ECT SENSOR 1, ECT SENSOR 2, and the ambient temperature almost the same?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>ECT sensor 1 is OK. Go to step 7 (diagnosis by parameter (BATTERY)).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>If the value of ECT SENSOR 1 is much higher (or lower) than that of ECT SENSOR 2 and the ambient temperature, check for the ECT sensor 1 circuit and a failure in ECT sensor 1.</p>
+    </li>
+    <li>On-board snapshot check (BATTERY):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>Select the BATTERY and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the BATTERY pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">BATTERY voltage low<div class="imageHolder" id="container_GHH408193">
+                <div class="imageHeader"><a name="S09104734152021060700000"></a></div><img alt="GHH408193" src="../images/GHH408193.jpeg" name="GHH408193"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">
+              <ul class="BULLET">
+                <li>When the BATTERY voltage is excessively low, the PCM or control unit stops functioning, causing engine stall.</li>
+                <li>For PCM or each control unit to start (functioning), more than 7.0 V is needed.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">BATTERY voltage normal<div class="imageHolder" id="container_GHH408194">
+                <div class="imageHeader"><a name="S07467111512021060700000"></a></div><img alt="GHH408194" src="../images/GHH408194.jpeg" name="GHH408194"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the BATTERY voltage is above 12 V when the engine stalls, the 12 volt battery is normal.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/12952.html#Test/12%20Volt%20Battery%20Test/">Test the 12 volt battery</a>
+, and check the 12 volt battery cables and terminals.</p>
+      <p>Pattern 2</p>
+      <p>The 12 volt battery is OK. Go to step 8 (diagnosis by parameter (CKP NO PULSE)).</p>
+    </li>
+    <li>On-board snapshot check (CKP NO PULSE):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the CKP NO PULSE and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the CKP NO PULSE pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">CKP NO PULSE counts go up continuously when cranking<div class="imageHolder" id="container_GHH408195">
+                <div class="imageHeader"><a name="S14370924102021060700000"></a></div><img alt="GHH408195" src="../images/GHH408195.jpeg" name="GHH408195"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When CKP NO PULSE counts go up continuously, the PCM is not receiving the CKP sensor signal.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">The CKP NO PULSE indicates the pulse is normal<div class="imageHolder" id="container_GHH408196">
+                <div class="imageHeader"><a name="S14467577142021060700000"></a></div><img alt="GHH408196" src="../images/GHH408196.jpeg" name="GHH408196"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">The CKP sensor signal is OK when the CKP NO PULSE count does not increase, or goes up and down but does not increase continuously.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/14762.html">Go to the troubleshooting for DTC P0335</a>
+.</p>
+      <p>Pattern 2</p>
+      <p>Go to step 9 (diagnosis by parameter (CKP NOISE)).</p>
+    </li>
+    <li>On-board snapshot check (CKP NOISE):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the CKP NOISE and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the CKP NOISE pattern from these charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">CKP NOISE counts go up continuously<div class="imageHolder" id="container_GHH408197">
+                <div class="imageHeader"><a name="S15521233872021060700000"></a></div><img alt="GHH408197" src="../images/GHH408197.jpeg" name="GHH408197"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When CKP NOISE counts go up continuously, the PCM is receiving electrical noise along with the CKP sensor signal.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Normal when CKP NOISE count does not go up or goes up intermittently<div class="imageHolder" id="container_GHH408198">
+                <div class="imageHeader"><a name="S42071025922021060700000"></a></div><img alt="GHH408198" src="../images/GHH408198.jpeg" name="GHH408198"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">The CKP sensor signal is OK when the CKP NOISE count does not increase, or increases but intermittently.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/14765.html">Go to the troubleshooting for DTC P0339</a>
+.</p>
+      <p>Pattern 2</p>
+      <p>The CKP sensor is OK. Go to step 10 (diagnosis by parameter (FUEL PRESSURE CONVERTED FROM PF SENSOR and FUEL PRESSURE DIRECT INJECTION SYSTEM)).</p>
+    </li>
+    <li>On-board snapshot or snapshot check (FUEL PRESSURE CONVERTED FROM PF SENSOR and FUEL PRESSURE DIRECT INJECTION SYSTEM):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>Select the FUEL PRESSURE CONVERTED FROM PF SENSOR, FUEL PRESSURE DIRECT INJECTION SYSTEM, and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the FUEL PRESSURE CONVERTED FROM PF SENSOR and FUEL PRESSURE DIRECT INJECTION SYSTEM patterns from these charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">FUEL PRESSURE CONVERTED FROM PF SENSOR drops to almost 0 kPa before engine stalls<div class="imageHolder" id="container_GHH408199">
+                <div class="imageHeader"><a name="S42072537832021060700000"></a></div><img alt="GHH408199" src="../images/GHH408199.jpeg" name="GHH408199"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the FUEL PRESSURE CONVERTED FROM PF SENSOR drops to almost 0 kPa before engine stall, the engine stall may be caused by low fuel pressure.<ul class="BULLET">
+                <li>Fuel leak, out of fuel</li>
+                <li>Fuel rail pressure sensor failure</li>
+                <li>Spill valve stuck off</li>
+                <li>Fuel pressure regulator (low pressure side)</li>
+                <li>Fuel pump (low pressure side)</li>
+                <li>High pressure fuel pump</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Normal when the FUEL PRESSURE CONVERTED FROM PF SENSOR is nearly the same as the FUEL PRESSURE DIRECT INJECTION SYSTEM.<div class="imageHolder" id="container_GHH408200">
+                <div class="imageHeader"><a name="S33218507142021060700000"></a></div><img alt="GHH408200" src="../images/GHH408200.jpeg" name="GHH408200"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the FUEL PRESSURE CONVERTED FROM PF SENSOR is nearly the same as the FUEL PRESSURE DIRECT INJECTION SYSTEM when engine stalls, the fuel pressure is normal.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/14652.html">Go to the troubleshooting for DTC P0087</a>
+.</p>
+      <p>Pattern 2</p>
+      <p>The fuel pressure is OK. Go to step 11 (diagnosis by parameter (AF FB (ST FUEL TRIM))).</p>
+    </li>
+    <li>On-board snapshot check (AF FB (ST FUEL TRIM)):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the AF FB (ST FUEL TRIM), EVAP PC DUTY, and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the AF FB (ST FUEL TRIM) pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">Engine stalls while AF FB (ST FUEL TRIM) value increases<div class="imageHolder" id="container_GHH408201">
+                <div class="imageHeader"><a name="S20026221582021060700000"></a></div><img alt="GHH408201" src="../images/GHH408201.jpeg" name="GHH408201"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the AF FB (ST FUEL TRIM) value increases when the engine stalls, there may be a lean condition.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Normal when the engine stalls when AF FB (ST FUEL TRIM) is around 1.0 (center value)<div class="imageHolder" id="container_GHH408202">
+                <div class="imageHeader"><a name="S00954564722021060700000"></a></div><img alt="GHH408202" src="../images/GHH408202.jpeg" name="GHH408202"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">The fuel trim is normal when the engine stalled with AF FB (ST FUEL TRIM) around 1.0 (center value).</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 3</td>
+            <td align="" class="clsCellNormal">Engine stalls when AF FB (ST FUEL TRIM) is around 0.8<div class="imageHolder" id="container_GHH408203">
+                <div class="imageHeader"><a name="S31842840012021060700000"></a></div><img alt="GHH408203" src="../images/GHH408203.jpeg" name="GHH408203"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When the value of AF FB (ST FUEL TRIM) is around 0.8, the PCM commands the purge control solenoid (PCS) to close (closed when EVAP PC DUTY is 0 %). If the AF FB (ST FUEL TRIM) does not move toward 1.0, the PCS may be leaking.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 4</td>
+            <td align="" class="clsCellNormal">Normal when the engine stalls with AF FB (ST FUEL TRIM) is around 1.0 (center value)<div class="imageHolder" id="container_GHH408204">
+                <div class="imageHeader"><a name="S34452689352021060700000"></a></div><img alt="GHH408204" src="../images/GHH408204.jpeg" name="GHH408204"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When the value of AF FB (ST FUEL TRIM) is around 0.8, the PCM commands the purge control solenoid (PCS) to close (closed when EVAP PC DUTY is 0 %). If the AF FB (ST FUEL TRIM) moves toward 1.0, the PCS is normal (no leaks).</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <ol class="ARABICNUM">
+        <li>
+          <p>Pattern 1</p>
+          <p>Diagnostic procedure:</p>
+          <ul class="BULLET">
+            <li>Check the fuel pump operation sound.</li>
+            <li><a href="../pages/12915.html#Test/Fuel%20Pressure%20Test%20%28Except%20K20C1%29/">Go to the fuel pressure test</a> .</li>
+            <li><a href="../pages/15589.html">Go to the fuel pump circuit troubleshooting</a> .</li>
+            <li><a href="../pages/12834.html#Removal%2C%20Installation%20%26%20Test/Relay%20Circuit%20Board%20Removal%2C%20Installation%2C%20and%20Test/">Test the relay circuit board (PGM-FI main relay 1 circuit)</a>
+.</li>
+            <li><a href="../pages/12952.html#Test/Power%20Relay%20Test%20%282%2F4-door%29/">Test PGM-FI main relay 2</a>
+.</li>
+            <li>Check the following fuses:</li>
+            <li>
+              <ul class="DASH">
+                <li><a href="../pages/13893.html">No. A7</a></li>
+                <li><a href="../pages/13893.html">No. B8</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p>Pattern 3</p>
+          <p>Check the PCS for leaks.</p>
+          <p>Pattern 2 and 4</p>
+          <p>Go to step 12 (diagnosis by parameter (MISFIRE)).</p>
+        </li>
+      </ol>
+    </li>
+    <li>On-board snapshot check (MISFIRE):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the MISFIRE and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare those snapshots to the MISFIRE pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">Engine stalls after MISFIRE counts go up<div class="imageHolder" id="container_GHH408205">
+                <div class="imageHeader"><a name="S30901701822021060700000"></a></div><img alt="GHH408205" src="../images/GHH408205.jpeg" name="GHH408205"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When engine stalls after MISFIRE count increases, the engine stall may be caused by misfire.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Normal when engine stalls with MISFIRE count remaining constant<div class="imageHolder" id="container_GHH408206">
+                <div class="imageHeader"><a name="S00938450152021060700000"></a></div><img alt="GHH408206" src="../images/GHH408206.jpeg" name="GHH408206"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the MISFIRE count remains steady when the engine stalls, the stall was not caused by misfire.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Diagnostic procedure:</p>
+      <ul class="BULLET">
+        <li>If misfire counts go up without storing misfire DTC P0300-P0304, <a href="../pages/14750.html">go to the troubleshooting for DTC P0300-P0304</a>
+.</li>
+        <li>If the misfire count reaches the malfunction threshold, DTC P0300-P0304 is stored. <a href="../pages/14750.html">Go to the troubleshooting for DTC P0300-P0304</a>
+.</li>
+      </ul>
+      <p>Pattern 2</p>
+      <p>Go to step 13 (diagnosis by parameter (A/C CLUTCH)).</p>
+    </li>
+    <li>On-board snapshot check (A/C CLUTCH):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the A/C CLUTCH and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the A/C CLUTCH pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">Engine stalls when A/C CLUTCH is ON.<div class="imageHolder" id="container_GHH408207">
+                <div class="imageHeader"><a name="S29189225852021060700000"></a></div><img alt="GHH408207" src="../images/GHH408207.jpeg" name="GHH408207"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the engine stall occurs just after the A/C compressor clutch turns on, the stall may be caused by excessive A/C compressor load.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Engine stalls during A/C CLUTCH is OFF.<div class="imageHolder" id="container_GHH408208">
+                <div class="imageHeader"><a name="S37285873292021060700000"></a></div><img alt="GHH408208" src="../images/GHH408208.jpeg" name="GHH408208"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">If the engine stall occurs just when the A/C compressor clutch is off, the A/C system is not the cause of the engine stall.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Diagnostic procedure:</p>
+      <ul class="BULLET">
+        <li>Check for over-charge A/C refrigerant.</li>
+        <li>Check for charging with the wrong refrigerant.</li>
+        <li>Check for drag of the A/C compressor and A/C compressor clutch.</li>
+      </ul>
+      <p>Pattern 2 (CVT)</p>
+      <p>Go to step 14 (diagnosis by parameter (PNP SWITCH)).</p>
+      <p>Pattern 2 (M/T)</p>
+      <p>Go to step 16 (fuel system troubleshooting).</p>
+    </li>
+    <li>On-board snapshot check (PNP SWITCH):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the PNP SWITCH and ENGINE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the PNP SWITCH pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (Diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">CVT is in-gear condition<div class="imageHolder" id="container_GHH408209">
+                <div class="imageHeader"><a name="S27170166322021060700000"></a></div><img alt="GHH408209" src="../images/GHH408209.jpeg" name="GHH408209"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">In-gear condition when PNP SWITCH is &quot;GEAR&quot;. Engine stall may be caused by transmission. (Engine also is a factor)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">CVT is N or P condition<div class="imageHolder" id="container_GHH408210">
+                <div class="imageHeader"><a name="S07706690942021060700000"></a></div><img alt="GHH408210" src="../images/GHH408210.jpeg" name="GHH408210"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">N or P condition when PNP SWITCH is &quot;P-N&quot;. The engine stall is not caused by transmission.<p>Transmission is not faulty.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p>Go to step 15 (diagnosis by parameter (SLIP RATIO OF TORQ OR STARTCLUTCH)).</p>
+      <p>Pattern 2</p>
+      <p>Go to step 16 (fuel system troubleshooting).</p>
+    </li>
+    <li>On-board snapshot check (SLIP RATIO OF TORQ OR STARTCLUTCH):<p><span class="clsEmphBOLD">NOTE: </span>
+ Use the on-board snapshot in the case of an intermittent failure, or use the snapshot in the case of a reproducible failure.</p>
+      <p>-1. Check for a record of Engine Stall 2 in the on-board snapshot or the recorded snapshot with the HDS.</p>
+      <p>On-board Snapshot</p>
+      <p>-2. Select the SLIP RATIO OF TORQ OR STARTCLUTCH, ENGINE SPEED, and VEHICLE SPEED in the configuration list.</p>
+      <p>Check the recorded snapshot or on-board snapshot parameters at the time of the engine stall, then compare the SLIP RATIO OF TORQ OR STARTCLUTCH pattern from the charts, and determine the problem.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="127px">
+          <col span="1" id="COL2" width="600px">
+          <col span="1" id="COL3" width="261px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Pattern</th>
+            <th align="" class="clsCellNormal">Symptom (diagnosis by parameter)</th>
+            <th align="" class="clsCellNormal">Additional remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 1</td>
+            <td align="" class="clsCellNormal">Engine stall caused by lock-up<div class="imageHolder" id="container_GHH408211">
+                <div class="imageHeader"><a name="S05305448702021060700000"></a></div><img alt="GHH408211" src="../images/GHH408211.jpeg" name="GHH408211"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">When engine stalls, SLIP RATIO OF TORQ OR STARTCLUTCH is near 100 % from deceleration to stopping, the engine stall is caused by lock-up.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Pattern 2</td>
+            <td align="" class="clsCellNormal">Lock-up normal<div class="imageHolder" id="container_GHH408212">
+                <div class="imageHeader"><a name="S39396514712021060700000"></a></div><img alt="GHH408212" src="../images/GHH408212.jpeg" name="GHH408212"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+            <td align="" class="clsCellNormal">Lock-up is normal when engine stalls with SLIP RATIO OF TORQ OR STARTCLUTCH near &quot;0&quot; in the middle of deceleration.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Which pattern is indicated?</p>
+      <p>Pattern 1</p>
+      <p><a href="../pages/12938.html">Go to the CVT systems symptom troubleshooting index for torque converter clutch does not disengage; engine stalls easily</a>
+.</p>
+      <p>Pattern 2</p>
+      <p>Go to step 16 (fuel system troubleshooting).</p>
+    </li>
+    <li>Fuel pressure check (low pressure side)<p>-1. <a href="../pages/12915.html#Test/Fuel%20Pressure%20Test%20%28Except%20K20C1%29/">Do the fuel pressure test</a> .</p>
+      <p>Is the fuel pressure OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 17 (ignition system troubleshooting).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Check for following parts:</p>
+      <ul class="BULLET">
+        <li><a href="../pages/15589.html">Fuel pump circuit</a> </li>
+        <li><a href="../pages/13542.html#Disassembly%20and%20Reassembly/Fuel%20Tank%20Unit%20Disassembly%20and%20Reassembly%20%28Except%20L15BY%29/">Fuel pressure regulator</a></li>
+        <li><a href="../pages/13542.html#Disassembly%20and%20Reassembly/Fuel%20Tank%20Unit%20Disassembly%20and%20Reassembly%20%28Except%20L15BY%29/">Fuel filter</a></li>
+      </ul>
+    </li>
+    <li>Spark plug visual check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. <a href="../pages/14170.html#Removal%20and%20Installation/Ignition%20Coil%20and%20Spark%20Plug%20Removal%20and%20Installation%20%281.5L%20Engine%29/">Remove the spark plugs</a>
+.</p>
+      <p>-3. Check the condition of the spark plug electrodes.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ Make sure the spark plugs are the correct part number for the vehicle. If the plugs are aftermarket or they are not the correct part number, replace all of the plugs and retest.</p>
+      <p>Is the electrode damaged or wet?</p>
+      <ol class="ARABICNUM">
+        <li>
+          <p>YES (wet)</p>
+          <p>Check the following conditions. If those conditions do not apply, go to step 18.</p>
+          <ul class="BULLET">
+            <li>In very cold conditions, multiple very short trips can cause the spark plug to foul. If this is the case, drive the vehicle a longer distance and recheck.</li>
+            <li>Incorrect or poor quality fuel can cause a wet spark plug. Replace the fuel and recheck.</li>
+          </ul>
+          <p>YES (damaged)</p>
+          <p><a href="../pages/14170.html#Removal%20and%20Installation/Ignition%20Coil%20and%20Spark%20Plug%20Removal%20and%20Installation%20%281.5L%20Engine%29/">Replace the damaged spark plugs</a>
+, determine the cause of the spark plug damage.</p>
+          <p><span class="clsEmphBOLD">NO </span></p>
+          <p>Go to step 18.</p>
+        </li>
+      </ol>
+    </li>
+    <li>Determine possible failure area (ignition system, others)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Fit a spark plug to the ignition coil and ground it to the engine.</p>
+      <p>-3. Turn the vehicle to the ON mode.</p>
+      <p>-4. Select ALL INJECTORS STOP in the INSPECTION MENU with the HDS, and stop fuel injection from the injector.</p>
+      <p>ALL INJECTORS STOP</p>
+      <p>Crank the engine and watch for spark at the spark plugs.</p>
+      <p>Do the spark plugs sparkΩ</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The ignition system is OK. Select PCM reset in the PGM-FI INSPECTION MENU to cancel ALL INJECTORS STOP with the HDS, then go to step 20 (engine compression troubleshooting).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 19.</p>
+    </li>
+    <li>Ignition coil power circuit check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Ignition coil(s) 3P connector from the problem cylinder</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Turn the vehicle to the ON mode.</p>
+      <p>-4. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="141px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle ON mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Ignition coil 3P connector: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="141px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Ignition coil 3P connector (female terminals) No. 1: <img alt="" class="ICON" src="../images/GHH408213.png" name="GHH408213"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH408214">
+                <div class="imageHeader"><a name="S20531198722021060700000"></a></div><img alt="GHH408214" src="../images/GHH408214.jpeg" name="GHH408214"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The ignition coil power circuit is OK. <a href="../pages/14170.html#Removal%20and%20Installation/Ignition%20Coil%20and%20Spark%20Plug%20Removal%20and%20Installation%20%281.5L%20Engine%29/">Replace the ignition coil(s)</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the IG COIL RLY OUT/IG1(IGN) wire between the relay circuit board and the ignition coil.</p>
+    </li>
+    <li>Engine compression check<p>-1. <a href="../external-car.html#Inspection/Engine%20Compression%20Inspection%20%281.5L%20Engine%29/">Do an engine compression inspection</a>
+.</p>
+      <p>Is the engine compression OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 21 (EVAP canister purge valve check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Check for wear or damage to these parts:</p>
+      <ul class="BULLET">
+        <li>Incorrect valve clearance</li>
+        <li>Confirmation of cam timing</li>
+        <li>Oil pressure relief valve</li>
+        <li>Damage or worn cam lobes</li>
+        <li>Damage or worn valve and seats</li>
+        <li>Damage cylinder head gasket</li>
+        <li>Damage or worn piston rings</li>
+        <li>Damage or worn piston and cylinder bore</li>
+      </ul>
+    </li>
+    <li>EVAP canister purge valve check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">EVAP canister purge valve 2P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. <a href="../pages/13788.html#Removal%2C%20Installation%20And%20Inspection/EVAP%20Canister%20Purge%20Valve%20Removal%2C%20Installation%2C%20and%20Inspection%20%28L15B7%2FL15BA%2FL15BY%29/">Remove the EVAP canister purge valve</a>
+ with its vacuum hose connected.</p>
+      <p>-4. Disconnect the vacuum hose (purge line) (A) from the EVAP canister purge valve (B) in the engine compartment, and connect a vacuum pump/gauge, 0-30 inHg, to the purge valve.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH408215">
+                <div class="imageHeader"><a name="S38259007242021060700000"></a></div><img alt="GHH408215" src="../images/GHH408215.jpeg" name="GHH408215"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-5. Start the engine.</p>
+      <p>Does the vacuum pump indicate vacuum?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>When the climate is warm, fuel vapor from the canister line to the fuel tank enters intake manifold, enriching mixture (excessively rich), causing the engine to stall in some cases. If needed, <a href="../pages/13788.html#Removal%2C%20Installation%20And%20Inspection/EVAP%20Canister%20Purge%20Valve%20Removal%2C%20Installation%2C%20and%20Inspection%20%28L15B7%2FL15BA%2FL15BY%29/">replace the EVAP canister purge valve</a>
+.</p>
+      <p>NO (Reproducible failure)</p>
+      <p>Go to step 22 (fuse check).</p>
+      <p>NO (Intermittent failure)</p>
+      <p>Go to step 23 (relay check).</p>
+    </li>
+    <li>Fuse check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Check the following fuses.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="141px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td rowspan="5" align="" class="clsCellNormal">Fuse</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13893.html">No. A7</a>
+ to relay circuit board (PGM-FI main relay 1 circuit)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13893.html">No. A15</a>
+ to relay circuit board (ignition coil relay circuit)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13893.html">No. A9</a>
+ to relay circuit board (PGM-FI subrelay circuit) (except L15B7)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13893.html">No. A8</a>
+ to relay circuit board (PGM-FI subrelay circuit) (L15B7)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../pages/13893.html">No. A10</a>
+ to injector relay</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="141px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Fuse</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13893.html">No. B8</a>
+ to PGM-FI main relay 2</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Are the fuses OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 23 (relay check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Replace the blown fuse(s).</p>
+    </li>
+    <li>Relay check<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>Test the following relays:</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ In situations where the failure is difficult to reproduce, the following relays may have an intermittent failure.</p>
+      <ul class="BULLET">
+        <li><a href="../pages/12834.html#Removal%2C%20Installation%20%26%20Test/Relay%20Circuit%20Board%20Removal%2C%20Installation%2C%20and%20Test/">Relay circuit board (includes PGM-FI main relay 1 circuit, ignition coil relay circuit, PGM-FI subrelay circuit)</a></li>
+        <li><a href="../pages/12952.html#Test/Power%20Relay%20Test%20%282%2F4-door%29/">PGM-FI main relay 2</a></li>
+        <li><a href="../pages/12952.html#Test/Power%20Relay%20Test%20%282%2F4-door%29/">Injector relay</a></li>
+      </ul>
+      <p>Are the relay circuit board and the relays OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 24 (power and ground terminal check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Replace any damaged relays.</p>
+    </li>
+    <li>Power and ground terminal check:<p>Check the corrosion and looseness at the following terminals:</p>
+      <ul class="BULLET">
+        <li>12 volt battery terminals</li>
+        <li>Ground cable terminals between the engine and the body ground, and the transmission and the body ground</li>
+        <li>Engine wire harness ground (G101, G102)</li>
+      </ul>
+      <p>Are the terminals OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 25 (connector terminal check).</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair any terminal(s) as needed.</p>
+    </li>
+    <li>Connector terminal check:<p>Check the foreign objects clogged and corrosion at the following connector terminals:</p>
+      <ul class="BULLET">
+        <li><a href="../external-car.html">PCM connectors</a></li>
+        <li>
+          <ul class="DASH">
+            <li>-<p>FI MAIN RLY OUT, FI MAIN RLY CL-</p>
+            </li>
+            <li>-<p>FUEL PUMP RLY CL-</p>
+            </li>
+            <li>-<p>INJ RLY OUT</p>
+            </li>
+            <li>-<p>FI SUB RLY OUT, FI SUB RLY CL-, +B VBACT (except L15B7), VB ACT (L15B7)</p>
+            </li>
+            <li>-<p>GND2, GND3, GND4, FI ECU GND, INJ GND1, INJ GND2</p>
+            </li>
+            <li>-<p>INJH1, INJL1, INJH2, INJL2, INJH3, INJL3, INJH4, INJL4</p>
+            </li>
+            <li>-<p>IGN01, IGN02, IGN03, IGN04</p>
+            </li>
+            <li>-<p>HPUMP H, HPUMP L</p>
+            </li>
+            <li>-<p>TDCAM</p>
+            </li>
+            <li>-<p>CRKP</p>
+            </li>
+            <li>-<p>PB</p>
+            </li>
+            <li>-<p>VGP, VGM (except Si)FGP (Si)</p>
+            </li>
+            <li>-<p>TW</p>
+            </li>
+            <li>-<p>IPV</p>
+            </li>
+            <li>-<p>MTR1, MTR2, THL1, THL2</p>
+            </li>
+          </ul>
+        </li>
+        <li>CMP sensor A</li>
+        <li>CKP sensor</li>
+        <li>Ignition coils</li>
+        <li>Injectors</li>
+        <li>High pressure fuel pump</li>
+        <li>ECT sensor</li>
+        <li>MAF sensor/IAT sensor 1</li>
+        <li>MAP sensor</li>
+        <li>Throttle body</li>
+        <li>EVAP canister purge valve</li>
+        <li>Fuel tank unit</li>
+      </ul>
+      <p>Are the terminals OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/15591.html">Go to the diagnostic interview for engine stalls</a> .</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair any terminal(s) as needed.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

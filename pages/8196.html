@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0300, P0301, P0302, P0303, P0304 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18422.html">Engine Control System - Advanced Diagnostics (P0128 - P0340)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18422.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8196.html">DTC P0300, P0301, P0302, P0303, P0304 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P0300, P0301, P0302, P0303, P0304 (K20C1) (2019 2020 2021)</h1><div id="S36671917312021060700000">
+  <p><span class="clsEmphBOLD">DTC P0300: </span>
+Random Misfire Detected</p>
+  <p><span class="clsEmphBOLD">DTC P0301: </span>
+No. 1 Cylinder Misfire Detected</p>
+  <p><span class="clsEmphBOLD">DTC P0302: </span>
+No. 2 Cylinder Misfire Detected</p>
+  <p><span class="clsEmphBOLD">DTC P0303: </span>
+No. 3 Cylinder Misfire Detected</p>
+  <p><span class="clsEmphBOLD">DTC P0304: </span>
+No. 4 Cylinder Misfire Detected</p>
+  <p><span class="clsEmphBOLD">General Description </span></p>
+  <p>The basic operating principle of the engine misfire detection monitor is based on the calculated angular acceleration of the engine crankshaft during each individual combustion event. In case of a lack of combustion, or insufficient combustion in any cylinder, the CKP pulse plate which is attached to the crankshaft requires a longer time to pass the crankshaft position (CKP) sensor. The associated acceleration value will overshoot a calibrated threshold (indicating a large deceleration) which will then lead to a misfire event being detected by the system. There are two types of misfire detection:</p>
+  <ul class="BULLET">
+    <li>Catalyst damaging misfire<p>Misfire events are counted within intervals of 200 crankshaft revolutions. Dependant on the current engine speed and load, a weighted fault counter will increment with each new misfire event. Catalyst damaging misfire events are evaluated bank specifically. A fault entry will occur anytime the weighted misfire counters exceed a calibrated threshold for a given engine bank. With this condition, the powertrain control module (PCM) stores a DTC. A cylinder specific DTC will be recorded for each cylinder that contributes at least 25 % of the total misfire.</p>
+    </li>
+    <li>Emission relevant misfire<p>Misfire events are counted during 1, 000 crankshaft revolution intervals after engine start. At the end of each 1, 000 crankshaft revolution period, the total number of detected misfire events is compared to a fault threshold. If the number of detected events exceeds a threshold, a fault counter will be incremented. After exceeding the emissions relevant fault threshold for the fourth occurrence, the PCM stores a DTC. A cylinder specific DTC will be recorded for each cylinder that contributes at least 10 % of the total misfire.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S366719173120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="124px">
+      <col span="1" id="COL2" width="124px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S366719173120210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="248px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Engine coolant temperature [ECT Sensor 1]</td>
+        <td align="" class="clsCellNormal">-30 deg.F (-22 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">450 rpm</td>
+        <td align="" class="clsCellNormal">7, 000 rpm</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Engine torque</td>
+        <td align="" class="clsCellNormal">3.13 to 12.89 %</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">ABS/VSA not active</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Test-drive on a flat road to avoid misdetection</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Catalyst damaging misfire<p>Misfire rate is more than 5 - 19.84 %*. (A cylinder specific DTC will be recorded for each cylinder that contributes at least 25 % of the total misfire.)</p>
+      <p>*: Depending on engine speed and load</p>
+    </li>
+    <li>Emission relevant misfire<p>If the misfire occurs 100 times during 1, 000 crankshaft revolutions, a fault counter is incremented. The condition occurs 4 events. (A cylinder specific DTC will be recorded for each cylinder that contributes at least 10 % of the total misfire.)</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Ignition system failure</li>
+    <li>Fuel supply system failure</li>
+    <li>Intake air system failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine. Hold the engine speed [Engine Speed] at 3, 000 rpm without load (in neutral) until the radiator fan comes on.</li>
+    <li>Drive the vehicle at constant vehicle speed for at least 2 minutes.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p><span class="clsEmphBOLD">Catalyst damaging misfire: </span></p>
+  <ul class="BULLET">
+    <li>If a catalyst damaging misfire occurs, the MIL will blink in each interval that catalyst damaging misfire is detected. The MIL will cease from blinking after an interval passes where no catalyst damaging misfire is detected. After this point, the MIL will either be extinguished or will remain illuminated. This behavior depends on whether catalyst damaging misfire has been detected in one drive cycle (one occurrence) or in two drive cycles (two occurrences).</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Emission relevant misfire: </span></p>
+  <ul class="BULLET">
+    <li>If an emission relevant misfire occurs during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive drive cycles in which the engine conditions are similar to the first time the malfunction was detected. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

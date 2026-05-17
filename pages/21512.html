@@ -1,0 +1,208 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0456 (K20C2, KA/KC models) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19298.html">Engine Control System - Advanced Diagnostics (P0340 - P0507)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19298.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/21512.html">DTC P0456 (K20C2, KA/KC models)</a></div><div class="main"><h1>DTC P0456 (K20C2, KA/KC models)</h1><div id="S21141691092021060700000">
+  <p><span class="clsEmphBOLD">DTC P0456: </span>
+Evaporative Emission (EVAP) System Very Small Leak Detected</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S211416910920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403081">
+            <div class="imageHeader"><a name="S15427722252021060700000"></a></div><img alt="GHH403081" src="../images/GHH403081.jpeg" name="GHH403081"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S211416910920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403082">
+            <div class="imageHeader"><a name="S09697848792021060700000"></a></div><img alt="GHH403082" src="../images/GHH403082.jpeg" name="GHH403082"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The evaporative emission (EVAP) leak detection system uses an engine off natural vacuum (EONV) method. The EONV method detects leakage from the change in fuel tank pressure via the fuel tank pressure (FTP) sensor with the engine off.</p>
+  <p>Here is an overview of the malfunction detection for the EONV method:</p>
+  <p>Judgment 1: Judgment of detection of 0.09 inch leak as normal operation</p>
+  <p>Judgment 2: Judgment of detection of 0.02 inch leak as normal operation</p>
+  <p>Judgment 3: Detection of 0.02 inch leak</p>
+  <p>&lt;Judgments 1, 2, and 3 happen at the same time.&gt;</p>
+  <p>Judgment 1:</p>
+  <p>After the engine has stopped, the powertrain control module (PCM) monitors the variation of the FTP sensor output to detect &quot;no 0.09 inch leak&quot; depending on the variation of the pressure inside the fuel tank.</p>
+  <ul class="BULLET">
+    <li>If the variation of the pressure is a specified value or more before first monitoring duration has passed, it is identified as normal and the diagnosis completes.</li>
+    <li>If the variation of the pressure is less than a specified value for a specified duration after first monitoring duration has passed, it is identified as a &quot;0.09 inch leak&quot; and the diagnosis completes. (P0455)</li>
+    <li>If the variation of the pressure is a specified value or more before maximum monitoring duration has passed, it is defined as &quot;no 0.09 inch leak&quot;, the judgment of detection of a 0.09 inch leak is completed, and it goes to 0.02 inch leak monitor.</li>
+  </ul>
+  <p>Judgment 2:</p>
+  <p>After the engine has stopped, the PCM monitors the variation of the FTP sensor output to detect &quot;no 0.02 inch leak&quot; depending on the variation corresponding to the change rate of pressure decrease gradient inside the fuel tank.</p>
+  <ul class="BULLET">
+    <li>If a &quot;0.02 inch leak&quot; is detected, it is identified as a malfunction; the diagnosis is completed. (P0456)</li>
+    <li>If &quot;no 0.02 inch leak&quot; is detected, it is identified as normal; the diagnosis is completed.</li>
+    <li>If the pressure is not atmospheric pressure or less when the detection is completed, Judgment 2 is suspended and determines the judgment by result of Judgment 3.</li>
+  </ul>
+  <p>Judgment 3:</p>
+  <p>After the engine has stopped, the PCM monitors the variation of the FTP sensor output to detect &quot;no 0.02 inch leak&quot; depending on the variation corresponding to the change rate of pressure increase gradient inside the fuel tank.</p>
+  <ul class="BULLET">
+    <li>If &quot;no leakage&quot; is detected and Judgment 2 is suspended, it is identified as normal; the diagnosis is completed.</li>
+    <li>If a &quot;0.02 inch leak&quot; is detected and Judgment 2 is suspended, it is identified as a malfunction; the diagnosis is completed. (P0456)</li>
+    <li>If &quot;no leakage&quot; is detected and the pressure inside the fuel tank reaches to a specified value, it is identified as normal without waiting the result of Judgment 2; the diagnosis is completed.</li>
+    <li>If a &quot;0.02 inch leak&quot; is detected and the pressure inside the fuel tank reaches to a specified value, it is identified as a malfunction without waiting the result of Judgment 2; the diagnosis is completed. (P0456)</li>
+    <li>If the pressure of the fuel tank does not increase to a specified value or more within a specified duration, the judgment is suspended.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S211416910920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">P0455 is judged as OK</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">At least 7 minutes 45 seconds but not more than 36 minutes 40 seconds</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S211416910920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time before starting the engine</td>
+        <td align="" class="clsCellNormal">6 hours</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial condition A*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">36 deg.F (20 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial condition B**</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">18 deg.F (10 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial engine coolant temperature [ECT SENSOR 1]</td>
+        <td align="" class="clsCellNormal">40 deg.F (5 deg.C)</td>
+        <td align="" class="clsCellNormal">95 deg.F (35 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial intake air temperature [IAT Sensor (1)]</td>
+        <td align="" class="clsCellNormal">40 deg.F (5 deg.C)</td>
+        <td align="" class="clsCellNormal">95 deg.F (35 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Barometric pressure [BARO SENSOR]</td>
+        <td align="" class="clsCellNormal">76 kPa (569 mmHg, 22.5 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: The initial intake air temperature [IAT Sensor (1)] minus the current intake air temperature [IAT Sensor (1)]</p>
+  <p>**: The initial engine coolant temperature [ECT SENSOR 1] minus the initial intake air temperature [IAT Sensor (1)]</p>
+  <p>[ ]: HDS Parameter</p><a name="S211416910920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [BATTERY]</td>
+        <td align="" class="clsCellNormal">10.5 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td rowspan="4" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Avoid abrupt acceleration, deceleration, and turns</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Test-drive on a flat road to avoid misdetection</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">No refueling is required</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Vehicle stopped</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: The initial intake air temperature [IAT Sensor (1)] minus the current intake air temperature [IAT Sensor (1)]</p>
+  <p>**: The initial engine coolant temperature [ECT SENSOR 1] minus the initial intake air temperature [IAT Sensor (1)]</p>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>The change rate of the pressure increase gradient inside the fuel tank is 5.0 or more.</li>
+    <li>The change rate of the pressure decrease gradient inside the fuel tank is 0.8 or more.</li>
+    <li>The barometric pressure is stable for at least 34 minutes.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>EVAP system leak (EVAP canister purge valve from fuel tank)</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p><a name="S211416910920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403083">
+            <div class="imageHeader"><a name="S22392493282021060700000"></a></div><img alt="GHH403083" src="../images/GHH403083.jpeg" name="GHH403083"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="BULLET">
+    <li>After the vehicle has been left for an appropriate amount of time as specified, with the engine coolant temperature [ECT SENSOR 1] and intake air temperature [IAT Sensor (1)] within the specified range, start the engine.</li>
+    <li>Drive the vehicle immediately at a speed between 25 - 75 mph (40 - 120 km/h) for at least 28 minutes.</li>
+    <li>After stopping the vehicle, turn the vehicle to the OFF (LOCK) mode and leave the vehicle in this condition for at least 37 minutes (EONV executes).</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>Select the EVAP TEST in the INSPECTION MENU, then select the FUNCTION TEST with the HDS.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle with the engine coolant temperature and intake air temperature at engine start-up within the specified temperature range, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle with the engine coolant temperature and intake air temperature at engine start-up within the specified temperature range, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

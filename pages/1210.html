@@ -1,0 +1,183 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Adaptive Cruise Control (ACC) System Description - System Diagram (5-door) (2017 2018 2019) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/Cruise%20Control%20Systems/">Cruise Control Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18780.html">Cruise Control System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18780.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1210.html">Adaptive Cruise Control (ACC) System Description - System Diagram (5-door) (2017 2018 2019)</a></div><div class="main"><h1>Adaptive Cruise Control (ACC) System Description - System Diagram (5-door) (2017 2018 2019)</h1><div id="S06298104362021060700000">
+  <p>The system diagram of the ACC system is shown below.</p>
+  <p>For locations of each component on vehicle, refer to Component Location Index:</p>
+  <ul class="BULLET">
+    <li><a href="../pages/15646.html">EPS motor/control unit</a></li>
+    <li><a href="../pages/12965.html">Gauge control module</a></li>
+    <li><a href="../pages/15679.html">Millimeter wave radar</a> </li>
+    <li><a href="../pages/15679.html">Multipurpose camera unit</a> </li>
+    <li><a href="../pages/13529.html">PCM</a></li>
+    <li><a href="../pages/13272.html">SRS unit</a></li>
+    <li>CVT: <a href="../pages/14111.html">Transmission control module (TCM)</a></li>
+    <li><a href="../pages/13578.html">VSA modulator-control unit</a></li>
+  </ul><a name="S062981043620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH401759">
+            <div class="imageHeader"><a name="S40588366892021060700000"></a></div><img alt="GHH401759" src="../images/GHH401759.jpeg" name="GHH401759"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">F-CAN Communication Data </span></p>
+  <p><span class="clsEmphBOLD">Millimeter Wave Radar Receiving Signal: </span></p><a name="S062981043620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="273px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Originating Unit</th>
+        <th align="" class="clsCellNormal">Signal Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">EPS motor/control unit</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Steering angle signal</li>
+            <li>Steering angle neutral position learning information</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Gauge control module</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>ACC combination switch signal (switch failure information)</li>
+            <li>Customization signal</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Multipurpose camera unit</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Object recognition information</li>
+            <li>Multipurpose camera unit failure information</li>
+            <li>Traffic lane information</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S062981043620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="273px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Originating Unit</th>
+        <th align="" class="clsCellNormal">Signal Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">PCM</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>PCM failure information for ACC system</li>
+            <li>Accelerator pedal position (APP) sensor control state signal</li>
+            <li>Brake pedal position switch signal</li>
+            <li>Shift position status</li>
+            <li>Transmission failure information for ACC system</li>
+            <li>Vehicle speed signal for transmission</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">SRS unit</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Driver's seat belt buckle switch status, Driver's seat belt buckle switch failure information</li>
+            <li>Longitudinal acceleration sensor signal, Longitudinal acceleration sensor failure information</li>
+            <li>Yaw rate sensor signal, Yaw rate sensor failure information</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">VSA modulator-control unit</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Brake control state signal</li>
+            <li>Brake light relay failure information</li>
+            <li>Electric parking brake status signal, Electric parking brake system failure information</li>
+            <li>Master cylinder pressure signal, Master cylinder pressure sensor failure information</li>
+            <li>VSA system failure information for ACC system</li>
+            <li>Wheel speed sensor signals, Wheel speed sensor failure information</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Millimeter Wave Radar Transmitting Signal: </span></p><a name="S062981043620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="273px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Destination Unit</th>
+        <th align="" class="clsCellNormal">Signal Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">EPS motor/control unit</td>
+        <td align="" class="clsCellNormal">---</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Gauge control module</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>ACC system failure information</li>
+            <li>Buzzer request signal</li>
+            <li>Customization information</li>
+            <li>Multi information display (MID) screen requirement:</li>
+            <li>
+              <ul class="DASH">
+                <li>ACC indicator</li>
+                <li>ACC activation indicator</li>
+                <li>ACC system indicates for self-diagnostic function</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Multipurpose camera unit</td>
+        <td align="" class="clsCellNormal">Vehicle information</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">PCM</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>ACC system failure information</li>
+            <li>Shift position down request signal</li>
+            <li>Engine torque request</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">SRS unit</td>
+        <td align="" class="clsCellNormal">---</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">VSA modulator-control unit</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>Deceleration request</li>
+            <li>ACC system failure information</li>
+            <li>Electric parking brake actuation request signal</li>
+            <li>Stop hold request</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

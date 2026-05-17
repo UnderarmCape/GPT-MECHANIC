@@ -1,0 +1,197 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Wipers/Washers System Description - Failsafe Function — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/Interior%2FExterior%20Trim/">Interior/Exterior Trim</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18734.html">Exterior Panels / Trim - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18734.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2349.html">Wipers/Washers System Description - Failsafe Function</a></div><div class="main"><h1>Wipers/Washers System Description - Failsafe Function</h1><div id="S02589767702021060700000">
+  <p><span class="clsEmphBOLD">Hardware Failsafe </span></p>
+  <p>The control module of the CPU for the windshield wiper control unit/motor in case of an abnormality is as shown in the table.</p><a name="S025897677020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Output Name</th>
+        <th align="" class="clsCellNormal">Fixed Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Motor Drive Circuit</td>
+        <td align="" class="clsCellNormal">All OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">LIN Communication Circuit</td>
+        <td align="" class="clsCellNormal">OFF</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Body Control Module Frame Error </span></p>
+  <p>In case of a bus off error or wiper/washer switch signal error, the failsafe operation is as follows:</p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ If the back up line switches from OFF to ON, failsafe operation starts with Step 1.</p><a name="S025897677020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="64px">
+      <col span="1" id="COL2" width="211px">
+      <col span="1" id="COL3" width="116px">
+      <col span="1" id="COL4" width="600px">
+      <col span="1" id="COL5" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal"> </th>
+        <th align="" class="clsCellNormal">Back Up Line</th>
+        <th colspan="2" align="" class="clsCellNormal">Failsafe Operation When Wiper is Active</th>
+        <th align="" class="clsCellNormal">Failsafe operation When Wiper is Not Active</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">1</td>
+        <td align="" class="clsCellNormal">OFF</td>
+        <td colspan="2" align="" class="clsCellNormal">Parking operation (Except for wiping in AUTO mode)</td>
+        <td align="" class="clsCellNormal">No operation (Remains stopped)</td>
+      </tr>
+      <tr>
+        <td rowspan="4" align="" class="clsCellNormal">2</td>
+        <td rowspan="4" align="" class="clsCellNormal">ON</td>
+        <td align="" class="clsCellNormal">Step 1</td>
+        <td colspan="2" align="" class="clsCellNormal">HIGH operation for 3 minutes -&gt; Step 2</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Step 2</td>
+        <td colspan="2" align="" class="clsCellNormal">LOW operation for 3 minutes -&gt; Step 3</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Step 3</td>
+        <td colspan="2" align="" class="clsCellNormal">Intermittent operation (speed-dependent variable mode) for 12 minutes -&gt; Step 4</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Step 4</td>
+        <td colspan="2" align="" class="clsCellNormal">Parking operation</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Body Control Module Frame Error in Auto Mode Operation </span></p>
+  <p>If a wiper switch signal error occurs while the wipers are operating in auto mode, the failsafe operation is as follows:</p><a name="S025897677020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="46px">
+      <col span="1" id="COL2" width="312px">
+      <col span="1" id="COL3" width="72px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal"> </th>
+        <th align="" class="clsCellNormal">Previous Operation in AUTO Mode</th>
+        <th colspan="2" align="" class="clsCellNormal">Failsafe Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">1</td>
+        <td align="" class="clsCellNormal">HIGH</td>
+        <td align="" class="clsCellNormal">Step 1</td>
+        <td align="" class="clsCellNormal">HIGH operation for 3 minutes -&gt; Step 2</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">2</td>
+        <td align="" class="clsCellNormal">LOW</td>
+        <td align="" class="clsCellNormal">Step 2</td>
+        <td align="" class="clsCellNormal">LOW operation for 3 minutes -&gt; Step 3</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">3</td>
+        <td rowspan="2" align="" class="clsCellNormal">INT, Lower reversal position, or Parking position</td>
+        <td align="" class="clsCellNormal">Step 3</td>
+        <td align="" class="clsCellNormal">Intermittent operation (speed-dependent variable mode) for 12 minutes -&gt; Step 4</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Step 4</td>
+        <td align="" class="clsCellNormal">Parking operation</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">BACK UP LINE and LIN Inconsistency Error </span></p>
+  <p>If an error occurs due to inconsistency between the back up line and LIN (IG1 signal and wiper switch signal), the failsafe operation is as follows:</p><a name="S025897677020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="78px">
+      <col span="1" id="COL2" width="49px">
+      <col span="1" id="COL3" width="232px">
+      <col span="1" id="COL4" width="60px">
+      <col span="1" id="COL5" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Back Up Line</th>
+        <th align="" class="clsCellNormal">IG1</th>
+        <th align="" class="clsCellNormal">Wiper Switch Position</th>
+        <th colspan="2" align="" class="clsCellNormal">Failsafe Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="5" align="" class="clsCellNormal">ON</td>
+        <td align="" class="clsCellNormal">ON</td>
+        <td align="" class="clsCellNormal">LOW and HIGH Switch OFF</td>
+        <td colspan="2" align="" class="clsCellNormal">HIGH</td>
+      </tr>
+      <tr>
+        <td rowspan="4" align="" class="clsCellNormal">OFF</td>
+        <td rowspan="4" align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Step 1</td>
+        <td align="" class="clsCellNormal">HIGH for 3 minutes -&gt; Step 2</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Step 2</td>
+        <td align="" class="clsCellNormal">LOW for 3 minutes -&gt; Step 3</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Step 3</td>
+        <td align="" class="clsCellNormal">Intermittent operation (speed-dependent variable mode) for 12 minutes -&gt; Step 4</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Step 4</td>
+        <td align="" class="clsCellNormal">Parking operation</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Automatic Wiper Frame Error </span></p>
+  <p>If the automatic lighting/rain sensor is faulty or an abnormal automatic wiper signal is detected, the failsafe operation is as follows:</p><a name="S025897677020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="66px">
+      <col span="1" id="COL2" width="428px">
+      <col span="1" id="COL3" width="112px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal"> </th>
+        <th align="" class="clsCellNormal">Previous Operation in AUTO Mode</th>
+        <th colspan="2" align="" class="clsCellNormal">Failsafe Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">1</td>
+        <td align="" class="clsCellNormal">HIGH</td>
+        <td align="" class="clsCellNormal">Step 1</td>
+        <td align="" class="clsCellNormal">HIGH for 3 minutes -&gt; Step 2</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">2</td>
+        <td align="" class="clsCellNormal">LOW</td>
+        <td align="" class="clsCellNormal">Step 2</td>
+        <td align="" class="clsCellNormal">LOW for 3 minutes -&gt; Step 3</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">3</td>
+        <td align="" class="clsCellNormal">INT</td>
+        <td rowspan="2" align="" class="clsCellNormal">Step 3</td>
+        <td rowspan="2" align="" class="clsCellNormal">Intermittent operation (speed-dependent variable mode)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">4</td>
+        <td align="" class="clsCellNormal">Lower reversal position or Parking position</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Thermal Protection Function </span></p>
+  <p>The intelligent controlled wiper system performs thermal protection control to prevent excess heat generation by the windshield wiper control unit/motor due to abnormal load. If the temperature of the windshield wiper control unit/motor exceeds the protective action temperature, the wiping speed is reduced, and is restored once the temperature falls below the reset action temperature.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

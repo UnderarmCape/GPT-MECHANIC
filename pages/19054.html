@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Enhanced I-HDS Makes Troubleshooting Multiple DTCS Easier (A18100F) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Quick%20Lookups/">Quick Lookups</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Quick%20Lookups/Technical%20Bulletins/">Technical Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/512.html">Technical Service Bulletins</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18812.html">Other Variant</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18812.html#System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19054.html">Enhanced I-HDS Makes Troubleshooting Multiple DTCS Easier (A18100F)</a></div><div class="main"><h1>Enhanced I-HDS Makes Troubleshooting Multiple DTCS Easier (A18100F)</h1><div class="other-warning other-variant"><b>WARNING:</b> This page is about the Civic EX-L, 2D Coupe, which is a different variant/trim than selected.</div>Publication date: 2018-10-31<br>Reference number: A18100F<br><br><div id="bulletin" class="infoObjPrint articlePrintSelection">
+    <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ENHANCED I-HDS MAKES TROUBLESHOOTING MULTIPLE DTCS EASIER</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  </head>
+  <body style="bgcolor:white; text:black; ">
+    <h2>ENHANCED I-HDS MAKES TROUBLESHOOTING MULTIPLE DTCS EASIER</h2>
+    <h2>TECHNICAL SERVICE BULLETIN</h2>
+    <div id="idTecHead">Reference Number(s): A18100F Version 1, Date of Issue: 
+				October 31, 2018<br><table class="" cellspacing="0">
+        <tr>
+          <td class="clsTDescTitle">HONDA:</td>
+          <td>All Models</td>
+        </tr>
+      </table>
+    </div><h3>AFFECTED VEHICLES</h3>
+    
+    <p>General Information</p>
+    <p>Honda vehicles are coming with more and more electronic control units and, with that, we're seeing an increase in communication between those units and an increase in DTCs that set with a single failure. As a result, finding the root cause of an issue when troubleshooting can sometimes be a real challenge.</p>
+    <p>To help you with this, we've enhanced the i-HDS to give you a better display of DTC descriptions when you run an <span class="clsEmphBOLD">All DTC Check. </span>
+
+ This enhancement also applies to the HDS.</p>
+    <p><span class="clsEmphBOLD">Background </span></p>
+    <p>To understand what this enhancement does, we must first look at why so many DTCs are setting and what their relationship is to each other. Here's the lowdown.</p>
+    <ul class="BULLET">
+      <li><span class="clsEmphBOLD">Primary (Level 1) DTCs: </span>
+
+ Primary DTCs set when there's a direct and specific failure within a system. A good example of this is DTC P0302 (No. 2 cylinder misfire detected). It sets because the PGM-FI system directly monitors for misfires, then pinpoints a specific failure based on its own parameters and sensor inputs. The PGM-FI system doesn't rely on data from any other system to spot a misfire. Primary DTCs are the first ones you need to troubleshoot.</li>
+      <li><span class="clsEmphBOLD">Collateral (Level 2 and 3) DTCs: </span>
+
+ Collateral DTCs set when there's a failure in another system. They most often have a vague description about a general system failure and set because the data from that system may be compromised. For example, the VSA system sets DTC U0401-68 (ECM failure). This would be in response to DTC P0302 setting, and we consider it a level 2 DTC. You can also see the EPS set DTC U0416-68 (VSA brake actuator malfunction) because the VSA system set a DTC. We consider this one a level 3 DTC. Although the VSA DTC description is vague, it doesn't mean the ECM has failed. Instead, it's telling you there's a failure within the PGM-FI system. When troubleshooting, you can generally ignore collateral DTCs. But to avoid confusion, you should always clear them just in case a different primary DTC should set for a separate failure down the road.<a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+          <colgroup></colgroup>
+          <tbody>
+            <tr>
+              <td valign="TOP" align="left" class="clsCellNormal">
+                <div class="imageHolder" id="container_G12121495">
+                  <div class="imageHeader"><a name="S01802770602018111200000"></a></div><img alt="G12121495" src="../images/G12121495.png" name="G12121495"><span class="imageCourtesyNote"></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li><span class="clsEmphBOLD">Communication DTCs: </span>
+
+ These DTCs can be either primary or collateral, depending on the circumstances. Because of this, they're not covered by this i-HDS enhancement.</li>
+    </ul>
+    <p><span class="clsEmphBOLD">What This Enhancement Does </span></p>
+    <p>This enhancement encloses collateral DTC descriptions in parentheses. This makes it easier to tell collateral DTCs from primary ones.</p>
+    <p><span class="clsEmphBOLDITAL">i-HDS </span></p><a name="S137474255720181112000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G12121496">
+              <div class="imageHeader"><a name="S12849473562018111200000"></a></div><img alt="G12121496" src="../images/G12121496.png" name="G12121496"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span class="clsEmphBOLDITAL">HDS </span></p><a name="S137474255720181112000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G12121497">
+              <div class="imageHeader"><a name="S16907160262018111200000"></a></div><img alt="G12121497" src="../images/G12121497.png" name="G12121497"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>And when you select one of those collateral DTCs, the <span class="clsEmphBOLD">DTC Help </span>
+
+ window gives you a clear description of it and reminds you that it's set from a failure in a different system and you need to troubleshoot the other DTC first.</p>
+    <p><span class="clsEmphBOLDITAL">i-HDS </span></p><a name="S137474255720181112000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G12121498">
+              <div class="imageHeader"><a name="S29095675532018111200000"></a></div><img alt="G12121498" src="../images/G12121498.png" name="G12121498"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span class="clsEmphBOLDITAL">HDS </span></p><a name="S137474255720181112000001"></a><table cellspacing="0" class="clsArticleTable">
+      <colgroup></colgroup>
+      <tbody>
+        <tr>
+          <td valign="TOP" align="left" class="clsCellNormal">
+            <div class="imageHolder" id="container_G12121499">
+              <div class="imageHeader"><a name="S31609550572018111200000"></a></div><img alt="G12121499" src="../images/G12121499.png" name="G12121499"><span class="imageCourtesyNote"></span></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Keep in mind collateral DTCs aren't meant for troubleshooting. If you see a single collateral DTC (or multiple collateral DTCs), it means that either an earlier repair was done and that DTC or DTCs weren't cleared, or there may be a system failure outside of specifications that may not have any published troubleshooting for it.</p>
+  </body>
+</html>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

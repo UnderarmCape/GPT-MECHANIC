@@ -1,0 +1,193 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC U0122-00, U0151-00 (Without LKAS (EPS Control Unit)) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Steering/">Steering</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Steering/Electronic%20Steering/">Electronic Steering</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17632.html">Electronic Power Steering (EPS) System - DTC Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17632.html#DTC%20Troubleshooting/">DTC Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/11872.html">DTC U0122-00, U0151-00 (Without LKAS (EPS Control Unit))</a></div><div class="main"><h1>DTC U0122-00, U0151-00 (Without LKAS (EPS Control Unit))</h1><div id="S05024208002021060700000">
+  <p><span class="clsEmphBOLD">DTC U0122-00 </span>
+: F-CAN Malfunction (EPS Control Unit-VSA Modulator-Control Unit)</p>
+  <p><span class="clsEmphBOLD">DTC U0151-00 </span>
+: F-CAN Malfunction (EPS Control Unit-SRS Unit)</p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li><a href="../pages/12919.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20EPS/">Before you troubleshoot, review the general troubleshooting information</a> .</li>
+    <li>According to the detected DTC(s), check for power circuit and ground circuit of the control unit which cannot communicate with the EPS control unit.</li>
+    <li>Refer to the DTC code shown on the display, and then inspect the connectors and terminals based on the instructions in the table.</li>
+  </ul><a name="S050242080020210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="200px">
+      <col span="1" id="COL3" width="200px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">DTC Description</th>
+        <th align="" class="clsCellNormal">DTC</th>
+        <th align="" class="clsCellNormal">Freeze Frame</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">U0122-00 F-CAN Malfunction (EPS Control Unit-VSA Modulator-Control Unit)</td>
+        <td align="" class="clsCellNormal"> </td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">U0151-00 F-CAN Malfunction (EPS Control Unit-SRS Unit)</td>
+        <td align="" class="clsCellNormal"> </td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>DTC (EPS)</p>
+  <ol class="ARABICNUM">
+    <li>Problem verification<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Clear the DTC with the HDS.</p>
+      <p>Clear DTCs</p>
+      <p>-3. Turn the vehicle to the OFF (LOCK) mode, then ON mode.</p>
+      <p>-4. Check for DTCs with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+          <col span="1" id="COL3" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Freeze Frame</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00 F-CAN Malfunction (EPS Control Unit-VSA Modulator-Control Unit)</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0151-00 F-CAN Malfunction (EPS Control Unit-SRS Unit)</td>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is any of DTC indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 2.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Intermittent failure, the system is OK at this time. If the freeze data/on-board snapshot of this DTC is recorded, try to reproduce the failure under the same conditions with the Freeze data/on-board snapshot.</p>
+    </li>
+    <li>Open wire check (F-CAN_L, F-CAN_H lines)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">EPS control unit connector B (6P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Disconnect the appropriate transmitting control unit connector.</p>
+      <p><span class="clsEmphBOLD">NOTE: </span>
+ Before disconnecting the SRS unit connector, <a href="../pages/12834.html#Removal%20and%20Installation/12%20Volt%20Battery%20Terminal%20Disconnection%20and%20Reconnection/">do the 12 volt battery terminal disconnection procedure</a>
+ and wait for at least 3 minutes.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Transmitting Control Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00 F-CAN Malfunction (EPS Control Unit-VSA Modulator-Control Unit)</td>
+            <td align="" class="clsCellNormal">VSA modulator-control unit 46P connector</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0151-00 F-CAN Malfunction (EPS Control Unit-SRS Unit)</td>
+            <td align="" class="clsCellNormal">SRS unit connector A (39P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-4. Check for continuity between the receiving control unit and the appropriate transmitting control unit on the F-CAN_H circuit and the F-CAN_L circuit (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="130px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="438px">
+          <col span="1" id="COL2" width="172px">
+          <col span="1" id="COL3" width="474px">
+          <col span="1" id="COL4" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Circuit Name</th>
+            <th align="" class="clsCellNormal">Receiving Control Unit</th>
+            <th align="" class="clsCellNormal">Transmitting Control Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0122-00 F-CAN Malfunction (EPS Control Unit-VSA Modulator-Control Unit)</td>
+            <td align="" class="clsCellNormal">F-CAN_H</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13550.html">EPS control unit connector B (6P) No. 3</a></td>
+            <td align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector No. 20</a></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN_L</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13550.html">EPS control unit connector B (6P) No. 1</a></td>
+            <td align="" class="clsCellNormal"><a href="../pages/13579.html">VSA modulator-control unit 46P connector No. 21</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U0151-00 F-CAN Malfunction (EPS Control Unit-SRS Unit)</td>
+            <td align="" class="clsCellNormal">F-CAN_H</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13550.html">EPS control unit connector B (6P) No. 3</a></td>
+            <td align="" class="clsCellNormal"><a href="../pages/13548.html">SRS unit connector A (39P) connector No. 34</a></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">F-CAN_L</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13550.html">EPS control unit connector B (6P) No. 1</a></td>
+            <td align="" class="clsCellNormal"><a href="../pages/13548.html">SRS unit connector A (39P) connector No. 35</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The F-CAN_L and F-CAN_H wires are OK. Check for any authorized service information related to the DTCs or symptoms you are troubleshooting.</p>
+      <p>Refer to the DTC shown on the display, then substitute or replace the control unit based on the instructions (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="77px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Operation for transmitting control unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U0122-00</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13637.html#Removal%20and%20Installation/VSA%20Modulator-Control%20Unit%20Removal%20and%20Installation%20%282%2F4-door%29/">Replace the VSA modulator-control unit</a>
+.</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">U0151-00</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13576.html#Removal%20and%20Installation/SRS%20Unit%20Removal%20and%20Installation/">Replace the SRS unit</a>
+.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the F-CAN_L or F-CAN_H wire between the receiving control unit and the appropriate transmitting control unit.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Unit Check (Quick Check) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Infotainment/">Infotainment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13303.html">Navigation System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13303.html#Diagnosis/">Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13303.html#Diagnosis/Navigation%20System%20Diagnostic%20Mode/">Navigation System Diagnostic Mode</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/13327.html">Unit Check (Quick Check)</a></div><div class="main"><h1>Unit Check (Quick Check)</h1><div id="S21150034652021060700000">
+  <p>These screens allow you to diagnose the audio-navigation unit and related units. Some of the tests and screens that are displayed under the Unit Check are the same as the checks listed under the Detail Information and Setting.</p>
+  <p>To start the test, select the item you want to check.</p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ These items describe in indication order. Swipe the screen to check the next items.</p>
+  <ul class="BULLET">
+    <li>HMI Unit</li>
+    <li>F-CAN</li>
+    <li>B-CAN</li>
+    <li>USB</li>
+    <li>Vehicle status</li>
+    <li>HFT/Mic</li>
+    <li>Hard Key</li>
+    <li>Error history</li>
+    <li>Rear wide camera</li>
+    <li>LaneWatch</li>
+    <li>Remote tuner</li>
+    <li>AMP (with stereo amplifier)</li>
+    <li>XM Ant. (with XM)</li>
+    <li>Center display</li>
+    <li>Meter Display</li>
+    <li>GPS antenna</li>
+    <li>HD Traffic (USA and Canada models)</li>
+    <li>Gyro Sensor</li>
+    <li>A/C</li>
+    <li>Telematics Diag (not supported)</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410674">
+            <div class="imageHeader"><a name="S02437139712021060700000"></a></div><img alt="GHH410674" src="../images/GHH410674.jpeg" name="GHH410674"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">HMI Unit </span></p>
+  <p>This diagnosis checks for problems in the audio-navigation unit processor. When you start this diagnosis, the audio-navigation unit may freeze or delay up to a minute while the diagnosis runs.</p>
+  <ul class="BULLET">
+    <li>D-RAM: Displays the result of the access to the D-RAM (OK/NG). If NG, <a href="../pages/13339.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Navigation%20System/">check for hard error codes</a>
+.</li>
+    <li>Model: Displays the audio-navigation unit manufacture's model number.</li>
+    <li>Serial No. : Displays the audio-navigation unit serial number. That should be the same as the serial number found on the upper side of the audio-navigation unit.</li>
+    <li>Flash: Displays the result of the access to the flash memory (OK/NG). If NG, <a href="../pages/13166.html#Removal%20and%20Installation/Audio-Navigation%20Unit%20Removal%20and%20Installation/">replace the audio-navigation unit</a>
+.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410675">
+            <div class="imageHeader"><a name="S28775019822021060700000"></a></div><img alt="GHH410675" src="../images/GHH410675.jpeg" name="GHH410675"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">F-CAN </span></p>
+  <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+          </span><span><p>
+        <ul class="BULLET">
+          <li>This diagnosis must have the engine running.</li>
+          <li>Swipe the screen to check the next items.</li>
+        </ul>
+      </p></span></div>
+  <p>This diagnosis checks whether the audio-navigation unit has received specific F-CAN data. If F-CAN shows NO ERROR, an error is not detected between the F-CAN bus and the audio-navigation unit.</p>
+  <ul class="BULLET">
+    <li>If F-CAN shows RX ERROR, <a href="../pages/13166.html#Removal%20and%20Installation/Audio-Navigation%20Unit%20Removal%20and%20Installation/">replace the audio-navigation unit</a>
+.</li>
+    <li>If F-CAN shows TIME OUT, There is a possibility that some items are NG (red icon). When all the items from each transmitting unit is NG, check for F-CAN DTCs with the HDS. If the DTCs not detected, check for continuity in the F-CAN lines between the audio-navigation unit and the transmitting unit.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410676">
+            <div class="imageHeader"><a name="S13865919262021060700000"></a></div><img alt="GHH410676" src="../images/GHH410676.jpeg" name="GHH410676"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">B-CAN </span></p>
+  <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+          </span><span><p>
+        <ul class="BULLET">
+          <li>This diagnosis must have the engine running.</li>
+          <li>Swipe the screen to check the next items.</li>
+        </ul>
+      </p></span></div>
+  <p>This diagnosis checks whether the audio-navigation unit has received specific B-CAN data. If B-CAN shows NO ERROR, an error is not detected between the B-CAN bus and the audio-navigation unit.</p>
+  <ul class="BULLET">
+    <li>If B-CAN shows RX ERROR, <a href="../pages/13166.html#Removal%20and%20Installation/Audio-Navigation%20Unit%20Removal%20and%20Installation/">replace the audio-navigation unit</a>
+.</li>
+    <li>If B-CAN shows TIME OUT, There is a possibility that some items are NG (red icon). When all the items from each transmitting unit is NG, check for B-CAN DTCs with the HDS. If the DTCs not detected, check for continuity in the B-CAN lines between the audio-navigation unit and the transmitting unit.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Item</th>
+        <th align="" class="clsCellNormal">Transmitting Unit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">VSPNE, AT, ILLUMI, ST_SW_PAD, VINNO, STRG_ANG, ODO_TRIP, TRICOM1 - 4, METER_RMD</td>
+        <td align="" class="clsCellNormal">Gauge control module</td>
+      </tr>
+    </tbody>
+  </table><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410677">
+            <div class="imageHeader"><a name="S14192309682021060700000"></a></div><img alt="GHH410677" src="../images/GHH410677.jpeg" name="GHH410677"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">USB </span></p>
+  <p>This diagnosis displays the USB device status that is connected to the audio-navigation unit.</p>
+  <p>If the USB memory device is connected to USB port A or B, the screen displays the USB controller status, the Bus power status, and the device status.</p>
+  <p>When you connect a USB mass storage device, you can see the capacity used and the amount of free space available.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410678">
+            <div class="imageHeader"><a name="S17902294222021060700000"></a></div><img alt="GHH410678" src="../images/GHH410678.jpeg" name="GHH410678"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Vehicle Status </span></p>
+  <p>Use this screen to confirm that the audio-navigation unit is properly receiving input signals. The displayed value changes each time according to the state of input signal.</p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ These items describe in indication order. Swipe the screen to check the next items.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="180px">
+      <col span="1" id="COL2" width="300px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Item</th>
+        <th align="" class="clsCellNormal">Input</th>
+        <th align="" class="clsCellNormal">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">VSP</td>
+        <td align="" class="clsCellNormal">VSP line</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>1: When the vehicle speed pulse is received from the TCM *1 or the PCM *2</li>
+            <li>0: When the vehicle speed pulse is not received from the TCM *1 or the PCM *2</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: CVT</p>
+  <p>*2: M/T</p>
+  <p>*3: 5-door</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="180px">
+      <col span="1" id="COL2" width="300px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Item</th>
+        <th align="" class="clsCellNormal">Input</th>
+        <th align="" class="clsCellNormal">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">BACK</td>
+        <td align="" class="clsCellNormal">BACK LT line</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>1: When the transmission is shifted to R position/mode</li>
+            <li>0: When the transmission is shifted to any position/mode other than R position/mode</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">IG</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>1: When the vehicle is in the ON mode</li>
+            <li>0: When vehicle is in the ACCESSORY mode</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">C_METER_ILL_STATUS</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>1: When parking lights, or headlights are on</li>
+            <li>0: When parking lights, or headlights are off</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">C_METER_ILL_CANCEL</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>1: When the dashlights brightness control knob is more than 90 % brightness with the parking lights turned on</li>
+            <li>0: When the dashlights brightness control knob is less than 90 % brightness with the parking lights turned on</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">C_METER_ILL_STEP</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">With the parking lights on, use the dashlights brightness control knob to dim and brighten the gauge control module. The value changes from 1 (max low) to 22 (max high).</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Speed</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">This item indicates the vehicle speed (km/h).</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">TV-PARK</td>
+        <td align="" class="clsCellNormal">PARK BUSY line *3</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>1: When the parking brake is applied</li>
+            <li>0: When the parking brake is not applied</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">NAVI-PARK</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">
+          <ul class="BULLET">
+            <li>1: When the parking brake is applied</li>
+            <li>0: When the parking brake is not applied</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Current received VIN</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">This item indicates the VIN that are received from the PCM.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial registered VIN</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">This item indicates the initial registration VIN (10 is added to the beginning of indicated VIN) that is saved in the audio-navigation unit.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Last registered VIN</td>
+        <td align="" class="clsCellNormal">B-CAN lines</td>
+        <td align="" class="clsCellNormal">This item indicates the additional registration VIN (11 is added to the beginning of indicated VIN) when the audio-navigation unit is substituted into another vehicle, or when a PCM is substituted or replaced into this vehicle.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*1: CVT</p>
+  <p>*2: M/T</p>
+  <p>*3: 5-door</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410679">
+            <div class="imageHeader"><a name="S30235383062021060700000"></a></div><img alt="GHH410679" src="../images/GHH410679.jpeg" name="GHH410679"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">HFT/Mic </span></p>
+  <p>This diagnosis allows you to independently test the Bluetooth module and the microphone. The Bluetooth module is built into the audio-navigation unit. To properly check the microphones, make sure you are sitting in the driver's seat.</p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ Before this diagnosis, check the response of the TALK button on the audio remote-HFL switch by the Hard Key diagnosis.</p>
+  <ul class="BULLET">
+    <li>If the Bluetooth Connection Diagnosis shows NG, <a href="../pages/13166.html#Removal%20and%20Installation/Audio-Navigation%20Unit%20Removal%20and%20Installation/">replace the audio-navigation unit</a>
+.</li>
+    <li>Press the TALK button, and within 5 seconds in a normal voice say &quot;testing&quot; toward the microphone in the roof console. The Mic Level indicator on the screen should momentarily turn green. The test is set to OK by indicating green more than 6 steps. If there is no Mic Level movement when you speak, <a href="../pages/13314.html">go to Voice control does not work/respond troubleshooting</a> .</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410680">
+            <div class="imageHeader"><a name="S32635158262021060700000"></a></div><img alt="GHH410680" src="../images/GHH410680.jpeg" name="GHH410680"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>If you select the Transmitter Volume Change icon, the transmitter volume can be selected from three selection (Large, Middle, Small).</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410681">
+            <div class="imageHeader"><a name="S27519654962021060700000"></a></div><img alt="GHH410681" src="../images/GHH410681.jpeg" name="GHH410681"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Hard Key </span></p>
+  <p>This diagnosis checks the center display unit hard button (DISPLAY MODE), face switches (AUDIO POWER, HOME, MENU, MAP, PHONE, AUDIO, VOL+, VOL-, BACK), and the audio remote-HFL switch. For this model, the audio remote-HFL switch buttons use the data bus via the gauge control module for communications.</p>
+  <p>To complete the test, press each buttons. As each function is tested, the corresponding button on the display should highlight. If the test cannot be completed, the corresponding icon on the Hard Key menu screen shows red.</p>
+  <ul class="BULLET">
+    <li>If any button of the center display unit does not respond, <a href="../pages/13166.html#Removal%20and%20Installation/Center%20Display%20Unit%20Removal%20and%20Installation/">replace the center display unit</a>
+.</li>
+    <li>If any button of the audio remote-HFL switch does not respond, <a href="../pages/13166.html#Removal%20and%20Installation/Audio%20Remote-HFL%20Switch%20Removal%20and%20Installation/">replace the audio remote-HFL switch</a>
+.</li>
+    <li>If all buttons of the audio remote-HFL switch do not respond, go to <a href="../pages/13449.html">Audio remote-HFL switch does not work properly (audio unit buttons work) troubleshooting</a>
+.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With Volume Knob </span></p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410682">
+            <div class="imageHeader"><a name="S12564529992021060700000"></a></div><img alt="GHH410682" src="../images/GHH410682.jpeg" name="GHH410682"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Without Volume Knob </span></p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410683">
+            <div class="imageHeader"><a name="S07011122852021060700000"></a></div><img alt="GHH410683" src="../images/GHH410683.jpeg" name="GHH410683"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Error History </span></p>
+  <p>If you select Hard Error or Soft Error, you can see the error information. <a href="../pages/13339.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Navigation%20System/">Refer to How to Check for Error History to use this diagnosis</a>
+.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410684">
+            <div class="imageHeader"><a name="S05537107502021060700000"></a></div><img alt="GHH410684" src="../images/GHH410684.jpeg" name="GHH410684"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Rear Wide Camera </span></p>
+  <p>This diagnosis checks the rearview camera connection.</p>
+  <ul class="BULLET">
+    <li>If Connection shows NG, <a href="../pages/13339.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Navigation%20System/">check for hard error codes</a>
+.</li>
+    <li>If Connection shows OK, press the HOME button to display the rearview camera image. To return to the previous screen, press the HOME button again.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410685">
+            <div class="imageHeader"><a name="S24324671712021060700000"></a></div><img alt="GHH410685" src="../images/GHH410685.jpeg" name="GHH410685"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">LaneWatch </span></p>
+  <p>This diagnosis checks the LaneWatch camera connection.</p>
+  <ul class="BULLET">
+    <li>If Connection shows NG, <a href="../pages/13339.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Navigation%20System/">check for hard error codes</a>
+.</li>
+    <li>If Connection shows OK, press the HOME button to display the LaneWatch camera image. To return to the previous screen, press the HOME button again.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410686">
+            <div class="imageHeader"><a name="S04992742422021060700000"></a></div><img alt="GHH410686" src="../images/GHH410686.jpeg" name="GHH410686"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Remote Tuner </span></p>
+  <div class="NOTE"><span class="NOTE_label">
+            NOTE:
+          </span><span><p>
+        <ul class="BULLET">
+          <li>For factory use only. Do not alter any settings unless directed.</li>
+          <li>These items describe in indication order. Swipe the screen to check the next items.</li>
+        </ul>
+      </p></span></div>
+  <p>This diagnosis displays the external AM/FM radio tuner (tuner unit) status.</p>
+  <ul class="BULLET">
+    <li>System 'com version display: Displays the tuner unit processor version.</li>
+    <li>Serial number display: Displays the tuner unit serial number. That should be the same as the serial number found on the upper side of the tuner unit.</li>
+    <li>Frequency: Displays frequency of the radio station which is being received. Frequency can be changed by selecting each icon (A).</li>
+    <li>Source can be changed in this order: AM-&gt;FM by selecting the Band Change icon.</li>
+    <li>Radio reception level display: Displays radio reception level (dB). The AM/FM antenna power status can be changed to on or off by selecting the Ant +B OFF icon.</li>
+    <li>Target Area: Displays the destination of the tuner unit at 2 digits.</li>
+    <li>Operating status display: If the vehicle has diversity antenna, you can select the radio antenna function from M (Main), S (Sub), or P (Diversity).</li>
+    <li>RDS BER display: Displays the RDS bit error ratio.</li>
+    <li>SNR display: Displays the Sound/Noise ratio about the AM or FM.</li>
+    <li>Preset: Displays number of radio station preset about the AM or FM.</li>
+    <li>HD function: Displays the HD function is available (YES) or not available (NO).</li>
+    <li>VOL: Displays the current volume level.</li>
+    <li>Split Mode: Displays the split mode on or off. That can be changed by selecting the Split Mode icon.</li>
+    <li>Blend Mode: Displays the blend mode which is being received. The blend mode can be changed to AUTO/ANALOG/DIGITAL by selecting the Blend Mode icon.</li>
+    <li>HD Mode: Displays the HD mode status (ON: HD, OFF: analog) at frequency of the radio station which is being received. That can be changed by selecting the HD Mode icon.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410687">
+            <div class="imageHeader"><a name="S01561328802021060700000"></a></div><img alt="GHH410687" src="../images/GHH410687.jpeg" name="GHH410687"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">AMP (With Stereo Amplifier) </span></p>
+  <p>This diagnosis checks the digital bus (RS485) connection between the audio-navigation unit and the stereo amplifier.</p>
+  <p>If Connection shows NG, <a href="../pages/13463.html">go to No sound is heard from all the speakers (display is normal) troubleshooting</a>
+.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410688">
+            <div class="imageHeader"><a name="S17605670872021060700000"></a></div><img alt="GHH410688" src="../images/GHH410688.jpeg" name="GHH410688"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">XM Ant. (With XM) </span></p>
+  <p>This diagnosis checks the XM antenna connection between the audio-navigation unit and the roof antenna. The XM radio tuner is built into the audio-navigation unit.</p>
+  <p>If Connection shows NG, <a href="../pages/13339.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Navigation%20System/">check for hard error codes</a>
+.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410689">
+            <div class="imageHeader"><a name="S12593460162021060700000"></a></div><img alt="GHH410689" src="../images/GHH410689.jpeg" name="GHH410689"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Center Display </span></p>
+  <p>These items describe in indication order. Swipe the screen to check the next items.</p>
+  <p>This diagnosis checks the digital bus (LVDS1) connection between the audio-navigation unit and the center display unit, and displays the center display unit status.</p>
+  <ul class="BULLET">
+    <li>Connection: Checks the digital bus (LVDS1) between the audio-navigation unit and the center display unit. This item should indicate OK.</li>
+    <li>Unit Status Information: Indicates the center display unit processor status. If any of the status indicates NG, turn the vehicle to the OFF (LOCK) mode then the ON mode, and recheck the status. If the status still indicates NG, <a href="../pages/13166.html#Removal%20and%20Installation/Center%20Display%20Unit%20Removal%20and%20Installation/">replace the center display unit</a>
+.</li>
+    <li>Unit Version Information: Displays the center display unit various version number.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410690">
+            <div class="imageHeader"><a name="S19928126872021060700000"></a></div><img alt="GHH410690" src="../images/GHH410690.jpeg" name="GHH410690"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Meter Display </span></p>
+  <p>This diagnosis checks the digital bus (LVDS2) between the audio-navigation unit and the gauge control module.</p>
+  <p>If Connection shows NG, <a href="../pages/13312.html">go to The MID does not display the audio-navigation unit information troubleshooting</a> .</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410691">
+            <div class="imageHeader"><a name="S41679677032021060700000"></a></div><img alt="GHH410691" src="../images/GHH410691.jpeg" name="GHH410691"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">GPS Antenna </span></p>
+  <p>This diagnosis checks the GPS antenna connection.</p>
+  <p>If Antenna shows NG, the GPS antenna may be faulty. <a href="../pages/13339.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Navigation%20System/">Check for hard error codes</a>
+.</p>
+  <p>Select Information to see the GPS satellite details.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410692">
+            <div class="imageHeader"><a name="S20717069852021060700000"></a></div><img alt="GHH410692" src="../images/GHH410692.jpeg" name="GHH410692"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">HD Traffic (USA and Canada models) </span></p>
+  <p>This diagnosis displays the HD traffic status.</p>
+  <ul class="BULLET">
+    <li>Service Status: Displays the HD traffic service status on (1) or off (except 1).</li>
+    <li>Frequency can be changed by selecting each icon (A).</li>
+    <li>Station Name: Displays the call sign of the receiving HD traffic station.</li>
+    <li>Receive Status: Displays the reception status of HD traffic.</li>
+    <li>Data Buffer Counter: If the unit receives the data from the HD traffic station, displays the number of buffering data.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410693">
+            <div class="imageHeader"><a name="S10379551302021060700000"></a></div><img alt="GHH410693" src="../images/GHH410693.jpeg" name="GHH410693"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Gyro Sensor </span></p>
+  <p>This diagnosis checks the gyro sensor in the audio-navigation unit. This devices detect how the vehicle moves, and repositions the vehicle position icon on the map screen. Select the GYRO Sensor.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410694">
+            <div class="imageHeader"><a name="S28654868502021060700000"></a></div><img alt="GHH410694" src="../images/GHH410694.jpeg" name="GHH410694"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="BULLET">
+    <li>X/Y/Z AXIS ANGLE: Indicates the angular speed of the gyro sensor.</li>
+    <li>ANGLE Check: The audio-navigation unit checks if the angular speed is in range of threshold value.</li>
+    <li>Temperature: Indicates the temperature of the gyro sensor.</li>
+    <li>Sensor Temperature Check: The audio-navigation unit checks if the gyro sensor temperature is in range of threshold value.</li>
+    <li>Reset: All values can be reset to the factory specification.</li>
+  </ul><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410695">
+            <div class="imageHeader"><a name="S04190146842021060700000"></a></div><img alt="GHH410695" src="../images/GHH410695.jpeg" name="GHH410695"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">A/C </span></p>
+  <p>This diagnosis detects if the vehicle is in the ON mode using information provided over the F-CAN bus, then it tests the climate control signal via the B-CAN bus between the audio-navigation unit and the climate control unit. Make sure the engine is running for this test.</p>
+  <p>If Connection shows NG, <a href="../pages/13339.html#How%20to%20Information/How%20to%20Troubleshoot%20the%20Navigation%20System/">check for hard error codes</a>
+.</p><a name="S211500346520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410696">
+            <div class="imageHeader"><a name="S15941993322021060700000"></a></div><img alt="GHH410696" src="../images/GHH410696.jpeg" name="GHH410696"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

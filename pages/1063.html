@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Body Electrical Troubleshooting - B-CAN System Diagnosis Test Mode A - Initial Communication and DTC Checks — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/Communication%20Devices/">Communication Devices</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18783.html">Network Communication - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18783.html#Diagnosis/">Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1063.html">Body Electrical Troubleshooting - B-CAN System Diagnosis Test Mode A - Initial Communication and DTC Checks</a></div><div class="main"><h1>Body Electrical Troubleshooting - B-CAN System Diagnosis Test Mode A - Initial Communication and DTC Checks</h1><div id="S05138601432021060700000">
+  <p>Check the PCM for DTCs and troubleshoot PCM or F-CAN loss of communication errors first, then do this diagnosis if the symptom is related to the B-CAN system.</p>
+  <p>Compare the symptom with this list of B-CAN related systems:</p>
+  <ul class="BULLET">
+    <li>Gauge control module</li>
+    <li>Exterior lights</li>
+    <li>Turn signals</li>
+    <li>Entry light control</li>
+    <li>Interior lights</li>
+    <li>Safety indicators</li>
+    <li>Horns (security and panic)</li>
+    <li>Reminder chimes (seat belt, lights-on, and parking brake)</li>
+    <li>Power window/moonroof timer</li>
+    <li>Wiper/washer</li>
+    <li>Security</li>
+    <li>Keyless entry</li>
+    <li>Key interlock</li>
+    <li>Power door locks</li>
+    <li>Dashlights brightness</li>
+    <li>Immobilizer</li>
+    <li>Daytime running lights</li>
+    <li>Keyless access control</li>
+    <li>Climate control</li>
+    <li>Seat heater</li>
+    <li>Wireless charger</li>
+  </ul>
+  <ul class="BULLET">
+    <li>-<p>If the symptom is related to the B-CAN system, go to step 2.</p>
+    </li>
+    <li>-<p>If the symptom is not related to the B-CAN system, go to the system symptom troubleshooting.</p>
+    </li>
+  </ul>
+  <p>2. Connect the HDS to the data link connector (DLC) (A), then turn the vehicle to the ON mode.</p><a name="S051386014320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410989">
+            <div class="imageHeader"><a name="S13877463002021060700000"></a></div><img alt="GHH410989" src="../images/GHH410989.jpeg" name="GHH410989"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>From the BODY ELECTRICAL SYSTEM SELECT menu, select B-CAN CONTROL UNITS INFORMATION, and then select CHECK CONNECTED CONTROL UNITS listed to see if the following control units are communicating with the HDS.</p>
+  <ul class="BULLET">
+    <li>MICU</li>
+    <li>Gauge control module</li>
+    <li>Climate control unit</li>
+    <li>Automatic lighting/rain sensor</li>
+    <li>Automatic lighting control unit-sensor</li>
+    <li>Immobilizer-keyless control unit</li>
+    <li>Door multiplex control unit</li>
+    <li>Front seat heater control unit</li>
+  </ul>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>If a unit is communicating with the HDS, &quot;DETECT&quot; is displayed.</li>
+    <li>If a unit is not communicating or the vehicle is not equipped, &quot;NOT AVAILABLE&quot; is displayed.</li>
+    <li>The HDS only checks the status one time when BODY ELECTRICAL is selected. To recheck the status after repair, reboot the HDS.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>-<p>If all control units are communicating with the HDS, go to step 4.</p>
+    </li>
+    <li>-<p>If any of the control units are not communicating, go to <a href="../pages/16180.html">B-CAN System Diagnosis Test Mode B</a> .</p>
+    </li>
+    <li>-<p>If all units are not communicating or only the body control module is communicating, go to 
+<a href="../pages/15748.html">body control module DTC U1280 troubleshooting</a>
+.</p>
+    </li>
+  </ul>
+  <p>Select the system that has the problem from the BODY ELECTRICAL SYSTEM SELECT menu, then select DTCs.</p>
+  <ul class="BULLET">
+    <li>-<p>If any DTCs are indicated, go to step 5.</p>
+    </li>
+    <li>-<p>If the problem is related to one of the following items and the system that is malfunctioning does not stop or turn off, go to <a href="../pages/16181.html">B-CAN System Diagnosis Test Mode C</a> .</p>
+    </li>
+    <li>-<p>If the problem is related to one of the following items and the system that is malfunctioning does not run or turn on, go to <a href="../pages/16182.html">B-CAN System Diagnosis Test Mode D</a> .</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>Exterior lights</li>
+        <li>Turn signals</li>
+        <li>Entry light control</li>
+        <li>Interior lights</li>
+        <li>Horns (security and panic)</li>
+        <li>Wiper/washer</li>
+        <li>Power window</li>
+        <li>Power door locks</li>
+      </ul>
+    </li>
+    <li>-<p>If the problem is related to one of the following items, go to the troubleshooting for that individual system.</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>Gauge control module</li>
+        <li>Safety indicators</li>
+        <li>Reminder chimes (seat belt, lights-on, and parking brake)</li>
+        <li>Security</li>
+        <li>Keyless entry</li>
+        <li>Dashlights brightness</li>
+        <li>Immobilizer</li>
+        <li>Rear window defogger (climate control)</li>
+        <li>Climate control</li>
+        <li>Keyless access control</li>
+        <li>Seat heater</li>
+      </ul>
+    </li>
+  </ul>
+  <p>Record all DTCs, and sort them by DTC type, then troubleshoot them in this order:</p>
+  <ul class="BULLET">
+    <li>Internal error DTCs.</li>
+    <li>Loss of communication DTCs.</li>
+    <li>Signal error DTCs.</li>
+  </ul>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

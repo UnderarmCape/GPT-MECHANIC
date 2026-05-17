@@ -1,0 +1,125 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>PGM-FI System Description - On-Board Snapshot — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Fuel%20Delivery/">Fuel Delivery</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18464.html">Engine Control / Engine Mechanical - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18464.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6119.html">PGM-FI System Description - On-Board Snapshot</a></div><div class="main"><h1>PGM-FI System Description - On-Board Snapshot</h1><div id="S21842959262021060700000">
+  <p><span class="clsEmphBOLD">Overview </span></p>
+  <p>For an easy analysis of problems caused by engine stalls and starting problems, the powertrain control module (PCM) uses an on-board snapshot to record the operational conditions at the time of engine stalls and engine starting problems.</p>
+  <p>There are three types of on-board snapshots: the on-board snapshot when DTC is stored, the on-board snapshot when engine stalls, and the on-board snapshot when engine does not start.</p>
+  <p>Basically the latest on-bord snapshot data is memorized into the PCM. Therefore, a data memorized before is overwritten and cleared by a new one. However, because an on-board snapshot data has a priority which must be memorized into the PCM, the on-board snapshot which means the engine is hard to start cannot be memorized when the on-board snapshot which does the engine stalls is stored in advance. The data of the on-board snapshots can be checked with the HDS. Make sure to clear each type of on-board snapshots after checking it.</p>
+  <p><span class="clsEmphBOLD">Control - On-board snapshot when engine stalls </span></p>
+  <p>The preconditions for recording an on-board snapshot when the engine stalls are shown below. When an engine stall occurs under these preconditions, the parameters related to the engine stall are stored in the PCM - for a time span extending for 9 seconds before the engine stall and 1 second after the engine stall - covering a total of 10 seconds.</p>
+  <p><span class="clsEmphBOLD">The precondition is: </span></p>
+  <ul class="BULLET">
+    <li>5 seconds have elapsed after engine start (engine speed 500 rpm or higher) (In case of an engine stall within 5 seconds after the engine started, this is memorized on the side of the on-board snapshot when engine does not start (engine starts but stalls immediately))</li>
+    <li>Engine speed at the time of an engine stall below 3, 000 rpm</li>
+    <li>After 1 drive cycle, after PCM reset, or 12 volt battery terminal disconnection.</li>
+    <li>Not during SCS short</li>
+  </ul>
+  <p>*: In case of an engine stall for a vehicle with manual transmission at a vehicle speed of 3.1 mph (5 km/h) or lower, the on-board snapshot is not memorized.</p><a name="S218429592620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH407009">
+            <div class="imageHeader"><a name="S04170541532021060700000"></a></div><img alt="GHH407009" src="../images/GHH407009.jpeg" name="GHH407009"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Control - On-board snapshot when engine does not start </span></p>
+  <p>The three types of 'engine is hard to start', 'engine will not start', and 'engine start but stalls immediately' are set for an on-board snapshot at the time of engine starting problems.</p>
+  <p>The preconditions for recording an on-board snapshot when engine does not start are as shown below, and when engine starting problems occur under these preconditions, the parameters related to the engine starting problems are memorized in the PCM.</p>
+  <p><span class="clsEmphBOLD">The precondition is: </span></p>
+  <ul class="BULLET">
+    <li>After 1 drive cycle, after PCM reset, or 12 volt battery terminal disconnection.</li>
+    <li>On-board snapshot of Engine stalls is not stored.</li>
+    <li>Not during SCS short</li>
+  </ul>
+  <p>The on-board snapshot when engine does not start has the timer for the evaluation of starting problems as a factor is variable, and it depends on the engine coolant temperature when the engine starts, the relation between the engine coolant temperature and the engine start time; as it is shown below.</p><a name="S218429592620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="135px">
+      <col span="1" id="COL3" width="135px">
+      <col span="1" id="COL4" width="135px">
+      <col span="1" id="COL5" width="135px">
+      <col span="1" id="COL6" width="135px">
+      <col span="1" id="COL7" width="135px">
+      <col span="1" id="COL8" width="135px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Initial engine coolant temperature (deg.F (deg.C))</td>
+        <td align="" class="clsCellNormal">-40 (-40)</td>
+        <td align="" class="clsCellNormal">-22 (-30)</td>
+        <td align="" class="clsCellNormal">-13 (-25)</td>
+        <td align="" class="clsCellNormal">-4 (-20)</td>
+        <td align="" class="clsCellNormal">5 (-15)</td>
+        <td align="" class="clsCellNormal">14 (-10)</td>
+        <td align="" class="clsCellNormal">194 (90)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine start time (sec)</td>
+        <td align="" class="clsCellNormal">6.0</td>
+        <td align="" class="clsCellNormal">6.0</td>
+        <td align="" class="clsCellNormal">3.0</td>
+        <td align="" class="clsCellNormal">2.25</td>
+        <td align="" class="clsCellNormal">1.5</td>
+        <td align="" class="clsCellNormal">1.5</td>
+        <td align="" class="clsCellNormal">1.5</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">On-board Snapshot Recording Zone </span></p><a name="S218429592620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH407010">
+            <div class="imageHeader"><a name="S08534217062021060700000"></a></div><img alt="GHH407010" src="../images/GHH407010.jpeg" name="GHH407010"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The on-board snapshot when engine does not start functions during the first cranking after the vehicle ON mode, though it is nonfunctional when cranking the second and later in the same vehicle ON mode. If the on-board snapshot goes back to a state of possible recording again, it needs to go through once the vehicle OFF mode.</p><a name="S218429592620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH407011">
+            <div class="imageHeader"><a name="S05705208772021060700000"></a></div><img alt="GHH407011" src="../images/GHH407011.jpeg" name="GHH407011"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">On-board snapshot of &quot;engine is hard to start&quot; and &quot;engine will not start&quot;: </span></p>
+  <p>An on-board snapshot is taken when an engine does not start or when an engine is hard to start. The snapshot is taken when cranking (engine speed 500 rpm or lower) takes longer than the specified time (timer for the evaluation of starting problems: variable according to the conditions at the time of start). If it is determined that a starting problem exists, the parameters related to the starting problem (for 9 seconds before the evaluation of the starting problem and 1 second after the evaluation of starting problem) are stored in the PCM, covering a total of 10 seconds.</p><a name="S218429592620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH407012">
+            <div class="imageHeader"><a name="S05587113822021060700000"></a></div><img alt="GHH407012" src="../images/GHH407012.jpeg" name="GHH407012"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">On-board snapshot of &quot;engine starts but stalls immediately&quot;: </span></p>
+  <p>An on-board snapshot is taken when an engine stall occurs within 5 seconds after the engine start, although the engine started (engine speed 500 rpm or higher) with cranking (engine speed 500 rpm or lower) within the specified time (timer for evaluation of starting problems: variable according to the conditions at the time of start). The parameters related to the stall after a complete combustion process for the 9 seconds before the engine stall and 1 second after the engine stall are stored in the PCM, covering a total of 10 seconds.</p><a name="S218429592620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH407013">
+            <div class="imageHeader"><a name="S26678656542021060700000"></a></div><img alt="GHH407013" src="../images/GHH407013.jpeg" name="GHH407013"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

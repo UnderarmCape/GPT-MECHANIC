@@ -1,0 +1,179 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P1458 (L15B7/L15BA) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18420.html">Engine Control System - Advanced Diagnostics (P0507 - P1684)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18420.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8496.html">DTC P1458 (L15B7/L15BA)</a></div><div class="main"><h1>DTC P1458 (L15B7/L15BA)</h1><div id="S17008802052021060700000">
+  <p><span class="clsEmphBOLD">DTC P1458: </span>
+Fuel Tank Pressure (FTP) Sensor Circuit Range/Performance Problem</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S170088020520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403316">
+            <div class="imageHeader"><a name="S31378790842021060700000"></a></div><img alt="GHH403316" src="../images/GHH403316.jpeg" name="GHH403316"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S170088020520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403317">
+            <div class="imageHeader"><a name="S35161465542021060700000"></a></div><img alt="GHH403317" src="../images/GHH403317.jpeg" name="GHH403317"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The evaporative emission (EVAP) leak detection system uses an engine off natural vacuum (EONV) method. The EONV method detects leakage from the change in fuel tank pressure via the fuel tank pressure (FTP) sensor with the engine off.</p>
+  <p>Here is an overview of the malfunction detection for the EONV method:</p>
+  <p>Judgment 1: Detection of atmospheric pressure failure</p>
+  <p>Judgment 2: Flickering of the FTP sensor</p>
+  <p>&lt;Judgments 1 and 2 happen at the same time.&gt;</p>
+  <p>Judgment 1:</p>
+  <p>After the engine has stopped, the powertrain control module (PCM) monitors the variation of the FTP sensor output to detect atmospheric pressure, after keeping the canister vent opened for a specified duration to stabilize the pressure inside the fuel tank.</p>
+  <ul class="BULLET">
+    <li>If the pressure inside the fuel tank after a specified duration has not reached a specified value from the sensor zero point, a canister vent blockage is detected.</li>
+  </ul>
+  <p>Judgment 2:</p>
+  <p>After the engine has stopped, the PCM monitors the variation of the FTP sensor output to detect FTP sensor electrical noise failure, after keeping the canister vent opened for a specified time to stabilize the pressure inside the fuel tank.</p>
+  <ul class="BULLET">
+    <li>If the difference of pressure inside the fuel tank and an average value after a specified duration has exceeded a specified value for a specified duration, an FTP sensor electrical noise failure is detected.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S170088020520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">50 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S170088020520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time before starting the engine</td>
+        <td align="" class="clsCellNormal">6 hours</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial condition A*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">36 deg.F (20 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial condition B**</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">18 deg.F (10 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial engine coolant temperature [ECT SENSOR 2]</td>
+        <td align="" class="clsCellNormal">40 deg.F (5 deg.C)</td>
+        <td align="" class="clsCellNormal">95 deg.F (35 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial intake air temperature [IAT Sensor (1)]</td>
+        <td align="" class="clsCellNormal">40 deg.F (5 deg.C)</td>
+        <td align="" class="clsCellNormal">95 deg.F (35 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Barometric pressure [BARO SENSOR]</td>
+        <td align="" class="clsCellNormal">76 kPa (569 mmHg, 22.5 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [BATTERY]</td>
+        <td align="" class="clsCellNormal">10.5 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td rowspan="4" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Avoid abrupt acceleration, deceleration, and turns</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Test-drive on a flat road to avoid misdetection</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">No refueling is required</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Vehicle stopped</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: The initial intake air temperature [IAT Sensor (1)] minus the current intake air temperature [IAT Sensor (1)]</p>
+  <p>**: The initial engine coolant temperature [ECT SENSOR 1] minus the initial intake air temperature [IAT Sensor (1)]</p>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>The misalignment of zero point pressure inside the fuel tank is 0.6 kPa (5 mmHg, 0.1 inHg) or more.</li>
+    <li>The output from the FTP sensor is flickering 10 seconds or more.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>FTP sensor output stuck</li>
+    <li>FTP sensor line electrical noise overlapped</li>
+    <li>FTP sensor line open</li>
+    <li>FTP sensor line short</li>
+    <li>EVAP canister vent shut valve full closed stuck</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p><a name="S170088020520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403318">
+            <div class="imageHeader"><a name="S11499208122021060700000"></a></div><img alt="GHH403318" src="../images/GHH403318.jpeg" name="GHH403318"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="BULLET">
+    <li>After the vehicle has been left for an appropriate amount of time as specified, with the engine coolant temperature [ECT SENSOR 1] and intake air temperature [IAT Sensor (1)] within the specified range, start the engine.</li>
+    <li>Drive the vehicle immediately at a speed between 25 - 75 mph (40 - 120 km/h) for at least 25 minutes.</li>
+    <li>After stopping the vehicle, turn the vehicle to the OFF (LOCK) mode and leave the vehicle in this condition for at least 37 minutes (EONV executes).</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle with the engine coolant temperature and intake air temperature at engine start-up within the specified temperature range, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle with the engine coolant temperature and intake air temperature at engine start-up within the specified temperature range, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

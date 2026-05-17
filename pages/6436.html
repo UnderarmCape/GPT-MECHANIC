@@ -1,0 +1,212 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0106 (K20C1) (2019) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18446.html">Engine Control System - Advanced Diagnostics (P0010 - P0128)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18446.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6436.html">DTC P0106 (K20C1) (2019)</a></div><div class="main"><h1>DTC P0106 (K20C1) (2019)</h1><div id="S12893634992021060700000">
+  <p><span class="clsEmphBOLD">DTC P0106: </span>
+Manifold Absolute Pressure (MAP) Sensor Range/Performance Problem</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402663">
+            <div class="imageHeader"><a name="S06756845082021060700000"></a></div><img alt="GHH402663" src="../images/GHH402663.jpeg" name="GHH402663"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The monitoring function checks the delivered pressure value of the manifold absolute pressure (MAP) sensor for plausible values. This is done by comparison of the pressure value with calibrated thresholds and rationality checks against reference pressure values as well as modeled pressure values. If the MAP sensor output value deviates from these threshold values, the powertrain control module (PCM) detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">1 second or more*, 1.5 seconds or more**, 0.5 second or more***</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Physical range check for maximum and minimum fault</p>
+  <p>**: Plausibility check for maximum and minimum fault</p>
+  <p>***: Physical range check for signal fault</p>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Physical range check for maximum fault </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">MAP sensor output voltage [MAP Sensor]</td>
+        <td align="" class="clsCellNormal">0.12 V</td>
+        <td align="" class="clsCellNormal">4.89 V</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">400 rpm</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Only for fault path 2</p>
+  <p><span class="clsEmphBOLD">Physical range check for minimum fault </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">MAP sensor output voltage [MAP Sensor]</td>
+        <td align="" class="clsCellNormal">0.12 V</td>
+        <td align="" class="clsCellNormal">4.89 V</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Plausibility check for maximum fault </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">0 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Plausibility check for minimum fault (fault path 1) </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">0 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Plausibility check for minimum fault (fault path 2) </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after starting the engine</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">25 seconds</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Physical range check for signal fault </span></p><a name="S128936349920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td align="" class="clsCellNormal">ON mode</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Intake manifold pressure is equal to ambient pressure when engine speed [Engine Speed] is 0 rpm</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Physical range check for maximum fault<p>Fault path 1</p>
+      <p>The MAP sensor output value is greater than 286 kPa (2, 146 mmHg, 84.5 inHg).</p>
+      <p>Fault path 2</p>
+      <p>The MAP sensor output value is greater than 511.992 kPa (3, 840.25 mmHg, 151.1912 inHg).</p>
+    </li>
+    <li>Physical range check for minimum fault<p>The MAP sensor output value is less than 10 kPa (75 mmHg, 2.9 inHg).</p>
+    </li>
+    <li>Plausibility check for maximum fault<p>The difference between MAP sensor output value and modeled manifold pressure is greater than 6 kPa (45 mmHg, 1.8 inHg).</p>
+    </li>
+    <li>Plausibility check for minimum fault<p>Fault path 1</p>
+      <p>The difference between modeled manifold pressure and MAP sensor output value is greater than 6 kPa (45 mmHg, 1.8 inHg).</p>
+      <p>Fault path 2</p>
+      <p>The pressure before engine start in the intake manifold is lower than a specified value.</p>
+    </li>
+    <li>Physical range check for signal fault<p>The absolute difference between the measured MAP sensor pressure at engine speed [Engine Speed] 0 rpm and the reference pressure is more than 3.0 kPa (23 mmHg, 0.89 inHg).</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>MAP sensor circuit failure</li>
+    <li>MAP sensor failure</li>
+    <li>Leakage in intake manifold</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

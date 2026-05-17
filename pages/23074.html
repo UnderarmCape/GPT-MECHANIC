@@ -1,0 +1,289 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0451 (K20C1) (2017 2018 2019) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19275.html">Engine Control System - Advanced Diagnostics (P0340 - P0507)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19275.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23074.html">DTC P0451 (K20C1) (2017 2018 2019)</a></div><div class="main"><h1>DTC P0451 (K20C1) (2017 2018 2019)</h1><div id="S13882244462021060700000">
+  <p><span class="clsEmphBOLD">DTC P0451: </span>
+Fuel Tank Pressure (FTP) Sensor Circuit Range/Performance Problem</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403012">
+            <div class="imageHeader"><a name="S06350506422021060700000"></a></div><img alt="GHH403012" src="../images/GHH403012.jpeg" name="GHH403012"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403013">
+            <div class="imageHeader"><a name="S22687826282021060700000"></a></div><img alt="GHH403013" src="../images/GHH403013.jpeg" name="GHH403013"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403014">
+            <div class="imageHeader"><a name="S27262062092021060700000"></a></div><img alt="GHH403014" src="../images/GHH403014.jpeg" name="GHH403014"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The fuel tank pressure (FTP) sensor provides information about the differential pressure of the fuel tank relative to atmospheric pressure. This sensor is required for the powertrain control module (PCM) to diagnose the evaporative emission (EVAP) system. The diagnosis of the FTP sensor consists of a circuit continuity check and various rationality checks of the measured fuel tank pressure.</p>
+  <p>Offset check</p>
+  <p>The signal offset test is used to detect a faulty FTP sensor that may be responding to changes in pressure, but have an offset in the signal output. Initially, the test occurs under conditions when the EVAP system has been isolated from the engine and is expected to have a reading near ambient pressure. This occurs when the EVAP canister purge valve has been closed and the EVAP canister vent shut valve is open, so that the expected differential pressure in the fuel tank system is near zero. If the fuel tank pressure is out of a calibrated range, then offset fault suspicion is set. To confirm FTP sensor offset, fault the plausibility check should be performed. Once fault suspicion is set, then purging phase should take place followed by a plausibility check. The plausibility check will confirm or deny the fault by comparing diagnostic results before and after canister purging.</p>
+  <p>Signal range check</p>
+  <p>The differential pressure value of the FTP sensor is compared with calibration thresholds to identify open and short circuit failures.</p>
+  <p>Incremental check</p>
+  <p>The incremental check measures the change of the fuel tank pressure caused by the purge mass flow while purge is enabled. Under normal conditions while changing the mass flow through the EVAP canister purge valve, the fuel tank pressure will also change. A sensor that has become stuck in range will cause this test to fail. During evaluation period while the enable conditions are fulfilled, the absolute change in the fuel tank pressure is monitored. To complete the test, the change of the purge mass flow must have also been sufficient. If the purge mass flow has been changed sufficiently without causing the required pressure change, a signal stuck error is detected.</p>
+  <p>Oscillation check</p>
+  <p>The oscillation check is designed to detect a pressure signal that is abnormally noisy. This type of sensor noise could potentially cause an incorrect leak detection diagnosis or even prevent the leak detection monitor from running. The oscillation check measures the amplitude and periodicity of the fuel tank pressure signal within an allotted evaluation period. Under normal conditions, the measured pressure signal should be relatively stable with pressure fluctuations less than a calibrated threshold. With the start of the check, two timers will begin to run. The first timer represents the overall evaluation period. The second timer represents an observation window and measures the amount of time the relative pressure signal is within the allotted pressure amplitude. This timer will reset to zero each time the relative pressure is greater than a calibrated amplitude threshold. The relative pressure is formed from a comparison between the current fuel tank pressure and the pressure that was stored at the last time the second timer was reset. If the pressure signal continues to fluctuate for the entire evaluation period, means no positive results are achieved, then a signal noise error is detected.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle*, Continuous**</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Offset check</p>
+  <p>**: Signal range check, incremental check, and oscillation check</p>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Offset check </span></p><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Outside air temperature</td>
+        <td align="" class="clsCellNormal">18.5 deg.F (-7.5 deg.C)</td>
+        <td align="" class="clsCellNormal">103.6 deg.F (39.8 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Barometric pressure [Baro Sensor]</td>
+        <td align="" class="clsCellNormal">68 kPa (510 mmHg, 20.1 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Barometric pressure change within 2 minutes</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">2 kPa (15 mmHg, 0.6 inHg)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">-9.9976 kPa (-74.981 mmHg, -2.95202 inHg)</td>
+        <td align="" class="clsCellNormal">9.9976 kPa (74.981 mmHg, 2.95202 inHg)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle speed [Vehicle Speed]</td>
+        <td align="" class="clsCellNormal">10 mph (15 km/h)</td>
+        <td align="" class="clsCellNormal">62 mph (100 km/h)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">No refueling</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Signal range check </span></p><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after starting the engine</td>
+        <td align="" class="clsCellNormal">1 second</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Outside air temperature</td>
+        <td align="" class="clsCellNormal">18.5 deg.F (-7.5 deg.C)</td>
+        <td align="" class="clsCellNormal">103.6 deg.F (39.8 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Barometric pressure [Baro Sensor]</td>
+        <td align="" class="clsCellNormal">68 kPa (510 mmHg, 20.1 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle speed [Vehicle Speed]</td>
+        <td align="" class="clsCellNormal">7 mph (10 km/h)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Engine running in idle</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">EVAP canister purge valve is commanded open for at least 3 seconds</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Incremental check </span></p><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Outside air temperature</td>
+        <td align="" class="clsCellNormal">18.5 deg.F (-7.5 deg.C)</td>
+        <td align="" class="clsCellNormal">103.6 deg.F (39.8 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Barometric pressure [Baro Sensor]</td>
+        <td align="" class="clsCellNormal">68 kPa (510 mmHg, 20.1 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">-2.5 kPa (-18 mmHg, -0.73 inHg)</td>
+        <td align="" class="clsCellNormal">2.5 kPa (18 mmHg, 0.73 inHg)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle speed [Vehicle Speed]</td>
+        <td align="" class="clsCellNormal">7 mph (10 km/h)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">EVAP canister purge valve is commanded open</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Oscillation check </span></p><a name="S138822444620210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle speed [Vehicle Speed]</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">18 mph (30 km/h)</td>
+      </tr>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Engine running in idle</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">EVAP canister purge valve is commanded open for at least 3 seconds</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Offset check<p>When the absolute value of fuel tank pressure is greater than 1 kPa (8 mmHg, 03 inHg) while EVAP canister purge valve is commanded closed, an offset error suspicion is set. Once error suspicion is set, the purging phase is triggered. The DTC is confirmed if both of the following conditions occur.</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The absolute difference between the fuel tank pressure stored before and after purging phase is 0.05 kPa (0.3 mmHg, 0.014 inHg) or less.</p>
+        </li>
+        <li>-<p>The difference between the fuel tank pressure stored before purging phase and its minimum stored value measured during EVAP canister purge phase is 0.1 kPa (1 mmHg, 0.03 inHg) or more.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Signal range check<p>The fuel tank pressure is greater than 6 kPa (45 mmHg, 1.8 inHg) or less than -5 kPa (-38 mmHg, -1.5 inHg) for at least 10 seconds.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Incremental check<p>During EVAP canister purge valve actuating, the purge mass flow change was 2.5 kg/h (5.6 lbs/h) or more and fuel tank pressure change was less than 0.03 kPa (0.2 mmHg, 0.008 inHg) at the same time period.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Oscillation check<p>While actuating EVAP canister purge valve, the purge mass flow change is 2.5 kg/h (5.6 lbs/h) or more within 10 seconds.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>FTP sensor drift</li>
+    <li>FTP sensor not mounted</li>
+    <li>FTP sensor failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine and drive the vehicle within the range of 10 - 62 mph (15 - 100 km/h).</li>
+    <li>Stop the vehicle and let it idle for a while.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0171 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18445.html">Engine Control System - Advanced Diagnostics (P0128 - P0340)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18445.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6548.html">DTC P0171 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P0171 (K20C1) (2019 2020 2021)</h1><div id="S36975528452021060700000">
+  <p><span class="clsEmphBOLD">DTC P0171: </span>
+Fuel System Too Lean</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S369755284520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402830">
+            <div class="imageHeader"><a name="S09674216732021060700000"></a></div><img alt="GHH402830" src="../images/GHH402830.jpeg" name="GHH402830"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) monitors the fuel mixture adaptation system. The fuel mixture adaptation system corrects fuel mixture deviations from the fuel control system with the following error compensation terms:</p>
+  <p>The multiplicative correction term FRA: dominates the total fuel correction at higher engine speeds and loads.</p>
+  <p>The additive correction term ORA: dominates the total fuel correction at idle.</p>
+  <p>This is only possible when closed loop fuel control is active and during homogeneous operation with stoichiometric ratio. If the multiplicative part of the long term fuel trim or the additive part of the long term fuel trim is greater than a specified value, the PCM detects a malfunction and stores a DTC. The PCM also monitors the short term fuel trim value. If the short trim fuel trim value is a specified value, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S369755284520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Multiple*, Continuous**</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second or more*, 100 seconds or more**</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Long term fuel trim</p>
+  <p>**: Short term fuel trim</p>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Long term fuel trim </span></p><a name="S369755284520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Multiplicative part of the long term fuel trim or the additive part of the long term fuel trim is enabled</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Excessive fuel must not be contained in engine oil</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Multiplicative part is stable for at least 10 seconds***</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>***: Monitor for additive part</p>
+  <p><span class="clsEmphBOLD">Short term fuel trim </span></p><a name="S369755284520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine coolant temperature [ECT Sensor 1]</td>
+        <td align="" class="clsCellNormal">140 deg.F (60 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p><a name="S369755284520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel injection time</td>
+        <td align="" class="clsCellNormal">1, 560 times</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Closed loop</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Evaporative emission (EVAP) canister not purging for at least 10 seconds</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Excessive fuel must not be contained in engine oil</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Any of the conditions is met:</p>
+  <ul class="BULLET">
+    <li>Monitor for multiplicative part of long term fuel trim<p>The multiplicative part of long term fuel trim is more than 1.30 for at least 10 seconds.</p>
+    </li>
+    <li>Monitor for additive part of long term fuel trim<p>The additive part of long term fuel trim is more than 5.48 % for at least 10 seconds.</p>
+    </li>
+    <li>Monitor for short term fuel trim<p>The deviation of the short trim fuel trim mean value from 1.0 is higher than 0.24.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Exhaust gas leak</li>
+    <li>Mass airflow (MAF) sensor failure</li>
+    <li>Fuel injector failure</li>
+    <li>Fuel control system failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine. Hold the engine speed [Engine Speed] at 3, 000 rpm without load (in neutral) until the radiator fan comes on.</li>
+    <li>Drive the vehicle at high engine speed and high load for a while.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive drive cycles in which the engine conditions are similar to the first time the malfunction was detected. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

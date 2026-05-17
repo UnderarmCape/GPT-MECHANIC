@@ -1,0 +1,175 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0014 (L15B7/L15BA) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19273.html">Engine Control System - Advanced Diagnostics (P0010 - P0128)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19273.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23312.html">DTC P0014 (L15B7/L15BA)</a></div><div class="main"><h1>DTC P0014 (L15B7/L15BA)</h1><div id="S40936333072021060700000">
+  <p><span class="clsEmphBOLD">DTC P0014: </span>
+Variable Valve Timing Control (VTC) B System Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S409363330720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402567">
+            <div class="imageHeader"><a name="S07442669532021060700000"></a></div><img alt="GHH402567" src="../images/GHH402567.jpeg" name="GHH402567"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The variable valve timing control (VTC) system controls the phase of the intake camshaft and exhaust camshaft. It uses oil pressure to operate the VTC actuator A/B so the valve timing is optimized depending on driving conditions. The powertrain control module (PCM) monitors the phase control command and the actual phase of the exhaust camshaft by using camshaft position (CMP) sensor B. If the phase difference between them is excessive for a certain time period, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S409363330720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">10 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p>Either one of the conditions is met:</p>
+  <p><span class="clsEmphBOLD">Case 1: </span></p><a name="S409363330720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="248px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Elapsed time after starting the engine</td>
+        <td align="" class="clsCellNormal">10 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Engine coolant temperature [ECT SENSOR 1]</td>
+        <td align="" class="clsCellNormal">23 deg.F(-5 deg.C)*</td>
+        <td align="" class="clsCellNormal">158 deg.F (70 deg.C)</td>
+        <td rowspan="2" align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">-13 deg.F(-25 deg.C)*</td>
+        <td align="" class="clsCellNormal">185 deg.F (85 deg.C)</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Engine speed [ENGINE SPEED]</td>
+        <td align="" class="clsCellNormal">203 deg.F(95 deg.C)**</td>
+        <td align="" class="clsCellNormal">800 rpm</td>
+        <td rowspan="2" align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">225 deg.F(107 deg.C)**</td>
+        <td align="" class="clsCellNormal">1, 600 rpm</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">12 volt battery voltage [BATTERY]</td>
+        <td align="" class="clsCellNormal">10.5 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case 2: </span></p><a name="S409363330720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="248px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Engine coolant temperature [ECT SENSOR 1]</td>
+        <td align="" class="clsCellNormal">23 deg.F(-5 deg.C)*</td>
+        <td align="" class="clsCellNormal">23 deg.F (-5 deg.C)</td>
+        <td rowspan="2" align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">-13 deg.F(-25 deg.C)*</td>
+        <td align="" class="clsCellNormal">113 deg.F (45 deg.C)</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Engine speed [ENGINE SPEED]</td>
+        <td align="" class="clsCellNormal">203 deg.F(95 deg.C)**</td>
+        <td align="" class="clsCellNormal">800 rpm</td>
+        <td rowspan="2" align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">225 deg.F(107 deg.C)**</td>
+        <td align="" class="clsCellNormal">1, 600 rpm</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Elapsed CMP sensor B count after starting the engine</td>
+        <td align="" class="clsCellNormal">25 deg.F(-4 deg.C)*</td>
+        <td align="" class="clsCellNormal">0 time</td>
+        <td rowspan="2" align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">-13 deg.F(-25 deg.C)*</td>
+        <td align="" class="clsCellNormal">23, 500 times</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">12 volt battery voltage [BATTERY]</td>
+        <td align="" class="clsCellNormal">10.5 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Depending on initial engine coolant temperature [ECT SENSOR 1].</p>
+  <p>**: Depending on engine coolant temperature [ECT SENSOR 1].[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The phase difference between the phase control command and the actual phase of the exhaust camshaft is 15.0 deg. or more for at least 10 seconds.</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>VTC actuator B stuck</li>
+    <li>VTC actuator B response delay</li>
+    <li>VTC oil control solenoid valve B stuck</li>
+    <li>VTC oil control solenoid valve B response delay</li>
+    <li>VTC oil control solenoid valve B downstream short</li>
+    <li>VTC actuator B failure (return spring cut)</li>
+    <li>VTC system abnormal low oil pressure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine. Hold the engine speed [ENGINE SPEED] at 3, 000 rpm without load (CVT in P or N, M/T in neutral) until the radiator fan comes on.</li>
+    <li>Drive the vehicle at a steady speed between 40 - 120 km/h (25 - 75 mph) for at least 10 seconds.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>Select the VTC TEST in the INSPECTION MENU with the HDS, then select the EX-VTC.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

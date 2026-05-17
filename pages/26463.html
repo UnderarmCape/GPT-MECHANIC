@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>HandsFreeLink System Description - Overview (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Anti-Theft%20Systems/">Anti-Theft Systems</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19099.html">HANDSFREELINK System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19099.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/26463.html">HandsFreeLink System Description - Overview (2019 2020 2021)</a></div><div class="main"><h1>HandsFreeLink System Description - Overview (2019 2020 2021)</h1><div id="S33758966972021060700000">
+  <p>The HandsFreeLink® (HFL) automatically connects to a linked phone when the vehicle is in the ACCESSORY or the ON mode. Depending on the type of cell phone, the HFL also synchronizes with the paired cell phone's phone book to automatically update any changes.</p>
+  <p><span class="clsEmphBOLD">HandsFreeLink Control Unit </span></p>
+  <p>The audio-navigation unit or the audio unit has a built-in HFL circuit and a Bluetooth® module. The HFL microphone in the roof console is connected directly to the audio-navigation unit or the audio unit. The HFL switch controls the HFL function.</p>
+  <p><span class="clsEmphBOLD">Diagnostic Function </span></p>
+  <p>The audio-navigation unit or the audio unit can check the HFL system components by the System Diagnostic Mode:</p>
+  <ul class="BULLET">
+    <li>Checks the connection between the audio/navigation system and the internal Bluetooth module.</li>
+    <li>Checks the status of the HFL switch detection.</li>
+    <li>Display audio type: Checks the voice input level of the HFL microphone.</li>
+    <li>Color audio type: Checks the connection between the audio unit and the HFL microphone.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Pairing a Cell Phone </span></p>
+  <p>The audio-navigation unit or the audio unit can be paired with a Honda approved cell phone by Bluetooth communication. Pairing procedures vary by the connection history and Bluetooth version of the cell phone. Refer to the Owner's Manual.</p>
+  <p>When the Bluetooth cell phone that supports PBAP and AT Command is connected, the phone book data in the cell phone is transferred to the audio-navigation unit or the audio unit automatically. A function to delete an item in the phone book is not supported.</p>
+  <p><span class="clsEmphBOLD">General Operation </span></p>
+  <p>The HFL switch on the steering wheel is used to answer incoming calls, to make outgoing calls, or to end a call.</p>
+  <ul class="BULLET">
+    <li>With multi-information display (MID): The HFL switch signal is sent to the gauge control module using the serial bus (LIN), then the signal is sent to the audio-navigation unit or the audio unit using the B-CAN. For display audio type, the HFL information is sent to the gauge control module to display on the MID using the dedicated digital signal line (LVDS2).</li>
+    <li>Without multi-information display (MID): The HFL switch signal from the resistor divider circuit is sent to the audio unit directly.</li>
+  </ul>
+  <p>The HFL microphone picks up the driver's voice, and sends the signal to the audio-navigation unit or the audio unit. The signal is then sent from the Bluetooth module to the cell phone.</p>
+  <p>The caller's voice signal is sent from the cell phone to the Bluetooth transceiver. The audio-navigation unit or the audio unit outputs the voice signal through the front door speakers.</p>
+  <p><span class="clsEmphBOLD">Muting Logic </span></p>
+  <p>When you are talking on the cell phone using the HFL system, front speakers provide the HFL sound and rear speakers are muted. Refer to the audio system Overview for muting signal logic with the audio-navigation unit or the audio unit.</p>
+  <p><span class="clsEmphBOLD">Voice Tag Function (Without Navigation) </span></p>
+  <p>The audio unit can store voice tag on the memory for making a HFL call by voice recognition possible. The voice tag stored on the audio unit is related with Speed Dial.</p>
+  <p><span class="clsEmphBOLD">Voice Control Function </span></p>
+  <p>The audio-navigation unit or the audio unit has voice recognition function about the HFL. Using the TALK button on the steering wheel to activate the voice control. the customer can make a call by talking a number or a contact name *. As for vehicles with navigation, the audio-navigation unit controls the HFL by the navigation voice control.</p>
+  <p>*: Display audio type</p>
+  <p><span class="clsEmphBOLD">Fan Mute Operation </span></p>
+  <p>When the voice recognition is in use, the audio-navigation unit or the audio unit sends the fan mute signal to the climate control unit using the B-CAN. The blower fan operating voltage may be reduced depending on the current fan speed.</p>
+  <p><span class="clsEmphBOLD">Text/e-Mail (Display Audio Type) </span></p>
+  <p>The audio-navigation unit or the audio unit processes the short message service (SMS) data sent from the cell phone. When the Bluetooth cell phone that supports Message Access Profile (MAP) is connected, the audio-navigation unit or the audio unit processes the Multimedia message service (MMS) and the e-Mail data sent from the cell phone.</p>
+  <p>The text message information is displayed on the center display unit. Also, the MID in the gauge control module displays the Text/e-Mail status by pop-up screen.</p>
+  <p>The audio-navigation unit or the audio unit can read out the text message using the Text-to-Speech (TTS) engine. The voice outputs to driver's and front passenger's speakers.</p>
+  <p><span class="clsEmphBOLD">Operation Restriction </span></p>
+  <p>The audio-navigation unit or the audio unit has a function that restricts certain operation of HFL system that may affect safe driving.</p>
+  <p><span class="clsEmphBOLD">HFL Switch </span></p>
+  <p>The HFL switch and the audio remote switch are integrated to the audio remote-HFL switch. Refer to the audio system Overview.</p>
+  <p><span class="clsEmphBOLD">HFL Microphone </span></p>
+  <p>The HFL microphone receives voice command or HFL speech, and transmits them to the audio-navigation unit or the audio unit.</p>
+  <p><span class="clsEmphBOLD">Array Microphone (Display Audio Type) </span></p>
+  <p>The microphone unit consist of two microphones. These microphones detect the driver's voice and the passenger's voice separately.</p><a name="S337589669720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH409385">
+            <div class="imageHeader"><a name="S33351802202021060700000"></a></div><img alt="GHH409385" src="../images/GHH409385.jpeg" name="GHH409385"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The microphone is switching the directivity by the voltage change on HFT MUTE line.</p><a name="S337589669720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="514px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="343px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal"> </th>
+        <th align="" class="clsCellNormal">Description</th>
+        <th align="" class="clsCellNormal">HFT MUTE Signal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">HFL/NAVI voice recognition mode</td>
+        <td align="" class="clsCellNormal">When using the HFL voice tag function, HFL voice control function, or the navigation voice recognition function that is embedded into the audio-navigation unit or the audio unit, this mode achieves the voice recognition enhancement even if it is use the bidirectional microphones.</td>
+        <td align="" class="clsCellNormal">0 - 1.5 V</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">HFL telephone mode</td>
+        <td align="" class="clsCellNormal">When using the HFL via the audio-navigation unit or the audio unit, this mode achieves low-latency using digital processing to voice signal from bidirectional microphones.</td>
+        <td align="" class="clsCellNormal">3 - 5 V</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Server voice recognition mode</td>
+        <td align="" class="clsCellNormal">When using the voice recognition system via an external device (like smartphone), this mode suppresses background noise to achieve the voice recognition enhancement.</td>
+        <td align="" class="clsCellNormal">7 - 9.5 V</td>
+      </tr>
+    </tbody>
+  </table><a name="S337589669720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH409386">
+            <div class="imageHeader"><a name="S39746707472021060700000"></a></div><img alt="GHH409386" src="../images/GHH409386.jpeg" name="GHH409386"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

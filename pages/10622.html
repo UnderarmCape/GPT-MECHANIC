@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Weaknesses of Dwell/Duty Meter — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#General%20Information/">General Information</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#General%20Information/Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17782.html">Waveforms - Injector Pattern Tutorial - General Information</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17782.html#Is%20A%20Lab%20Scope%20Necessary%3F/">Is A Lab Scope Necessary?</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17782.html#Is%20A%20Lab%20Scope%20Necessary%3F/Overview%20Of%20DVOM/">Overview Of DVOM</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/10622.html">Weaknesses of Dwell/Duty Meter</a></div><div class="main"><h1>Weaknesses of Dwell/Duty Meter</h1><div id="S37617068082001112800000">
+  <p>The weaknesses are significant. First, there is no one-to-one correspondence to actual mS on-time. No manufacturer releases dwell/duty data, and it is time-consuming to convert the mS on-time readings. Besides, there can be a large degree of error because the conversion forces you to assume that the injector(s) are always firing at the same rate for the same period of time. This can be a dangerous assumption.</p>
+  <p>Second, all level of detail is lost in the averaging process. This is the primary weakness. You cannot see the details you need to make a confident diagnosis.</p>
+  <p>Here is one example. Imagine a vehicle that has a faulty injector driver that occasionally skips an injector pulse. Every skipped pulse means that that cylinder does not fire, thus unburned O2 gets pushed into the exhaust and passes the O2 sensor. The O2 sensor indicates lean, so the computer fattens up the mixture to compensate for the supposed &quot;lean&quot; condition.</p>
+  <p>A connected dwell/duty meter would see the fattened pulse width but would also see the skipped pulses. It would tally both and likely come back with a reading that indicated the &quot;pulse width&quot; was within specification because the rich mixture and missing pulses offset each other.</p>
+  <p>This situation is not a far-fetched scenario. Some early GM 3800 engines were suffering from exactly this. The point is that a lack of detail could cause misdiagnosis.</p>
+  <p>As you might have guessed, a lab scope would not miss this.</p><a name="S35322362122001112800000"></a><div class="clsTableTitle">RELATIONSHIP BETWEEN DWELL &amp; DUTY CYCLE READINGS</div><br><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1">
+      <col span="1" id="COL2">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="left" class="clsCellNormal">Dwell Meter <a class="clsFootnoteLink" href="#S05186029962001112800000"><sup>(2)</sup></a></th>
+        <th align="right" class="clsCellNormal">Duty Cycle Meter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left" class="clsCellNormal">1°</td>
+        <td align="right" class="clsCellNormal">1%</td>
+      </tr>
+      <tr>
+        <td align="left" class="clsCellNormal">15°</td>
+        <td align="right" class="clsCellNormal">25%</td>
+      </tr>
+      <tr>
+        <td align="left" class="clsCellNormal">30°</td>
+        <td align="right" class="clsCellNormal">50%</td>
+      </tr>
+      <tr>
+        <td align="left" class="clsCellNormal">45°</td>
+        <td align="right" class="clsCellNormal">75%</td>
+      </tr>
+      <tr>
+        <td align="left" class="clsCellNormal">60°</td>
+        <td align="right" class="clsCellNormal">100%</td>
+      </tr>
+      <tr class="clsFootnoteRow">
+        <td colspan="2" valign="TOP" align="left" class="clsCellNormal">
+          <table class="clsFootnoteTable" width="100%">
+            <tr valign="top">
+              <td width="10px"><a name="S38254572702001112800000"><sup>(1)</sup></a></td>
+              <td>These are just some examples for your understanding. It is okay to fill in the gaps.</td>
+            </tr>
+          </table>
+          <table class="clsFootnoteTable" width="100%">
+            <tr valign="top">
+              <td width="10px"><a name="S05186029962001112800000"><sup>(2)</sup></a></td>
+              <td>Dwell meter on the six-cylinder scale.</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

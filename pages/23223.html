@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0201, P0202, P0203, P0204 (K20C2) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19274.html">Engine Control System - Advanced Diagnostics (P0128 - P0340)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19274.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23223.html">DTC P0201, P0202, P0203, P0204 (K20C2)</a></div><div class="main"><h1>DTC P0201, P0202, P0203, P0204 (K20C2)</h1><div id="S07275386182021060700000">
+  <p><span class="clsEmphBOLD">DTC P0201: </span>
+No. 1 Cylinder Injector Circuit Malfunction</p>
+  <p><span class="clsEmphBOLD">DTC P0202: </span>
+No. 2 Cylinder Injector Circuit Malfunction</p>
+  <p><span class="clsEmphBOLD">DTC P0203: </span>
+No. 3 Cylinder Injector Circuit Malfunction</p>
+  <p><span class="clsEmphBOLD">DTC P0204: </span>
+No. 4 Cylinder Injector Circuit Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S072753861820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402849">
+            <div class="imageHeader"><a name="S06947792842021060700000"></a></div><img alt="GHH402849" src="../images/GHH402849.jpeg" name="GHH402849"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The injector supplies fuel to the engine and is controlled by the powertrain control module (PCM) ON/OFF command. In the PCM, the injector driver receives a drive commands from the CPU and drives the injector. The CPU monitors a terminal voltage of PCM by the return signal circuit. If the return signal from the injector does not change for a specified time, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S072753861820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">5 seconds or more (at idle)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">One drive cycle, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S072753861820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [BATTERY]</td>
+        <td align="" class="clsCellNormal">10.0 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td colspan="2" align="" class="clsCellNormal">Running</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The return signal from the injector does not change at least 30 times (counts once per engine cycle).</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <p><span class="clsEmphBOLD">DTC: P0201 </span></p>
+  <ul class="BULLET">
+    <li>No. 1 injector failure</li>
+    <li>No. 1 injector INJ1 line open</li>
+    <li>No. 1 injector line INJ1 short to ground</li>
+    <li>No. 1 injector line INJ1 short to power</li>
+    <li>No. 1 injector power supply line open</li>
+  </ul>
+  <p><span class="clsEmphBOLD">DTC: P0202 </span></p>
+  <ul class="BULLET">
+    <li>No. 2 injector failure</li>
+    <li>No. 2 injector INJ2 line open</li>
+    <li>No. 2 injector INJ2 line short to ground</li>
+    <li>No. 2 injector INJ2 line short to power</li>
+    <li>No. 2 injector power supply line open</li>
+  </ul>
+  <p><span class="clsEmphBOLD">DTC: P0203 </span></p>
+  <ul class="BULLET">
+    <li>No. 3 injector failure</li>
+    <li>No. 3 injector INJ3 line open</li>
+    <li>No. 3 injector INJ3 line short to ground</li>
+    <li>No. 3 injector INJ3 line short to power</li>
+    <li>No. 3 injector power supply line open</li>
+  </ul>
+  <p><span class="clsEmphBOLD">DTC: P0204 </span></p>
+  <ul class="BULLET">
+    <li>No. 4 injector failure</li>
+    <li>No. 4 injector INJ4 line open</li>
+    <li>No. 4 injector INJ4 line short to ground</li>
+    <li>No. 4 injector INJ4 line short to power</li>
+    <li>No. 4 injector power supply line open</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Common </span></p>
+  <ul class="BULLET">
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

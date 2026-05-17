@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P219C, P219D, P219E, P219F (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19277.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/22842.html">DTC P219C, P219D, P219E, P219F (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P219C, P219D, P219E, P219F (K20C1) (2019 2020 2021)</h1><div id="S12725271242021060700000">
+  <p><span class="clsEmphBOLD">DTC P219C: </span>
+No. 1 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">DTC P219D: </span>
+No. 2 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">DTC P219E: </span>
+No. 3 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">DTC P219F: </span>
+No. 4 Cylinder Air-Fuel Ratio Variation</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S127252712420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403540">
+            <div class="imageHeader"><a name="S09187445672021060700000"></a></div><img alt="GHH403540" src="../images/GHH403540.jpeg" name="GHH403540"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) monitors an air/fuel ratio imbalance of any cylinder compared with the other cylinders of the engine. A cylinder individual air-fuel ratio imbalance can be caused by a drifting injection valve, an intake air delivery variation, or by uneven internal or external exhaust gas recirculation (EGR) distribution. The air/fuel imbalance monitor utilizes the principle of engine roughness (ER) change during cylinder individual mixture step to lean. Depending on initial cylinder specific air/fuel ratio, the ER change will be unique for each cylinder. If the air/fuel ratio for a single cylinder increases (becomes leaner), the ER will increase. The ER is averaged over a calibrated number of combustion cycles. The difference between the reference ER and the average ER after the lean step is the Delta ER.In order to decrease monitoring time, all cylinders are evaluated in pairs in a defined order by the enleanment and pre-/post-enrichment of the individual cylinders. To provide this, the fuel quantities for each pair of cylinders are modified by trimming the injection times to specific values. The resulting ER change for each cylinder is evaluated. The change of ER depends on the initial air/fuel ratio of the tested cylinder. Depending on whether the cylinder contains excessive fuel or lacks fuel, the change of ER will be either low or high.As shown in the figure, after the release of the air/fuel imbalance monitor, the first pair of test cylinders enters the fuel modulation phase. At this step, the fueling of the cylinder A is shifted towards &quot;lean&quot; and the fueling of the cylinder B is shifted towards &quot;rich&quot; simultaneously and the cylinder individual ER signals are stored. The stored value of ER of cylinder A is a cylinder A test value and the stored value of ER of cylinder B is a cylinder B reference value. In the next step, cylinder A enters the &quot;reference&quot; phase and cylinder B enters the &quot;enleanment&quot; phase and ER values are stored again. The second stored ER value of cylinder A is a cylinder A reference value and the second stored ER value of cylinder B is a cylinder B test value. The cylinder specific change of engine roughness is calculated based on its captured reference and test values and then stored. To keep an exhaust bank specific air/fuel ratio of 1.0, the cylinders that are not being tested are additionally enriched/leaned off contrary to the enrichment/enleanment of each pair of cylinders.If no misfires are detected, the test will be repeated for each pair of cylinders. If the enable conditions are at any time no longer satisfied, the test will be halted. It starts again as soon as the enable conditions are met again for any pair of cylinders for which the test has not yet been completed. When all cylinders have been checked, the cylinder specific changes of ER are converted into cylinder specific air/fuel deviation values by means of defined correlation maps and the bank average air/fuel ratio is calculated. Then the difference between the bank average air/fuel ratio and the cylinder specific air/fuel deviation value of each cylinder is calculated. If the resulting value of cylinder individual air/fuel ratio is outside of a calibrated range, the corresponding cylinder air/fuel ratio imbalance fault will be set.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S127252712420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">All conditions must be met for at least 15 seconds </span></p><a name="S127252712420210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine coolant temperature [ECT Sensor 1]</td>
+        <td align="" class="clsCellNormal">140.11 deg.F (60.6 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Outside air temperature</td>
+        <td align="" class="clsCellNormal">-54.47 deg.F (-48.04 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Catalyst temperature</td>
+        <td align="" class="clsCellNormal">842.11 deg.F (450.06 deg.C)</td>
+        <td align="" class="clsCellNormal">1, 616.1 deg.F (880.06 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">1, 520 rpm</td>
+        <td align="" class="clsCellNormal">3, 000 rpm</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Secondary HO2S sensor (sensor 2) voltage [HO2 S2]</td>
+        <td align="" class="clsCellNormal">0.08 V</td>
+        <td align="" class="clsCellNormal">1 V</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Integrated intake air amount</td>
+        <td align="" class="clsCellNormal">3.5 - 14 kg (7.8 - 30 lbs)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Charging efficiency</td>
+        <td align="" class="clsCellNormal">27 %</td>
+        <td align="" class="clsCellNormal">65.3 %</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Gear position</td>
+        <td colspan="2" align="" class="clsCellNormal">5 th</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Closed loop</td>
+      </tr>
+      <tr>
+        <td rowspan="4" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Catalyst heating not active</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">No gear shifting</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Commanded lambda value equals to 1</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Avoid rough road</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Too rich</p>
+  <ul class="BULLET">
+    <li>The cylinder individual air/fuel ratio is less than 0.85 and the adaptation has been repeated for 2 counts.</li>
+  </ul>
+  <p>Too lean</p>
+  <ul class="BULLET">
+    <li>The cylinder individual air/fuel ratio is greater than 1.15 and the adaptation has been repeated for 2 counts.</li>
+    <li>The test is aborted at least 2 counts due to misfires being detected.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Fuel injector failure</li>
+    <li>Intake manifold leak</li>
+    <li>Cam lift failure (wrong cam lift profile for a cylinder)</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine.</li>
+    <li>Drive the vehicle in 5th gear at a steady engine speed [Engine Speed] 1, 520 - 3, 000 rpm with low load.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive drive cycles in which the engine conditions are similar to the first time the malfunction was detected. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

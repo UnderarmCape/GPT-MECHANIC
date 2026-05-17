@@ -1,0 +1,804 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>PCM Power and Ground Circuit Troubleshooting (K20C1) (2017 2018 2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Mechanical/">Engine Mechanical</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Engine%20Mechanical/Mechanical/">Mechanical</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19232.html">Engine Control / Engine Mechanical - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/19232.html#Troubleshooting/">Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/23987.html">PCM Power and Ground Circuit Troubleshooting (K20C1) (2017 2018 2019 2020 2021)</a></div><div class="main"><h1>PCM Power and Ground Circuit Troubleshooting (K20C1) (2017 2018 2019 2020 2021)</h1><div id="S09940965842021060700000">
+  <ol class="ARABICNUM">
+    <li>Engine starting check<p>-1. Try to start the engine.</p>
+      <p>Does the engine start and idle smoothly?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p><a href="../pages/15584.html">Go to the F-CAN circuit troubleshooting</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 2.</p>
+    </li>
+    <li>Fuse check 1<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Check the following fuse.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Fuse</td>
+            <td align="" class="clsCellNormal">No. A12 (10 A)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Location</td>
+            <td align="" class="clsCellNormal">Under-hood fuse/relay box</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is the fuse OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 3.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 4.</p>
+    </li>
+    <li>Determine possible failure area (+B BACKUP FI-ECU line, others)<p>-1. Jump the SCS line with the HDS, and wait more than 1 minute.</p>
+      <p>-2. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P) No. 50</a></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 5.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the +B BACKUP FI-ECU wire between PCM connector No. 2 terminal No. 50 and the No. A12 (10 A) fuse in the under-hood fuse/relay box.</p>
+    </li>
+    <li>Shorted wire check (+B BACKUP FI-ECU line)<p>-1. Remove the blown No. A12 (10 A) fuse from the under-hood fuse/relay box.</p>
+      <p>-2. Jump the SCS line with the HDS, and wait more than 1 minute.</p>
+      <p>-3. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-4. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P) No. 50</a></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair a short in the +B BACKUP FI-ECU wire between PCM connector No. 2 terminal No. 50 and the No. A12 (10 A) fuse in the under-hood fuse/relay box. Also replace the No. A12 (10 A) fuse.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 5.</p>
+    </li>
+    <li>Fuse check 2<p>-1. Check the following fuse.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Fuse</td>
+            <td align="" class="clsCellNormal">No. A7 (20 A)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Location</td>
+            <td align="" class="clsCellNormal">Under-hood fuse/relay box</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is the fuse OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 9.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 6.</p>
+    </li>
+    <li>Shorted wire check (+B IGP line)<p>-1. Remove the blown No. A7 (20 A) fuse from the under-hood fuse/relay box.</p>
+      <p>-2. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P) (female terminals) No. 18: <img alt="" class="ICON" src="../images/GHH407055.png" name="GHH407055"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407056">
+                <div class="imageHeader"><a name="S02866856722021060700000"></a></div><img alt="GHH407056" src="../images/GHH407056.jpeg" name="GHH407056"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair a short in the +B IGP wire between the No. A7 (20 A) fuse and the relay circuit board. If the wire is OK, <a href="../pages/12834.html#Removal%20and%20Installation/Under-Hood%20Fuse%2FRelay%20Box%20Removal%20and%20Installation/">replace the under-hood fuse/relay box</a>
+. Also replace the No. A7 (20 A) fuse.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 7.</p>
+    </li>
+    <li>Part (s) internal circuit check (short in FI MAIN RLY OUT line):<p>Disconnect each of the parts or connectors below, one at a time, then check for continuity between test points 1 and 2.</p>
+      <ul class="BULLET">
+        <li>PGM-FI main relay 2</li>
+        <li>PCM connector No. 2 (58P)</li>
+      </ul><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P) (female terminals) No. 17: <img alt="" class="ICON" src="../images/GHH407057.png" name="GHH407057"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407058">
+                <div class="imageHeader"><a name="S05538251302021060700000"></a></div><img alt="GHH407058" src="../images/GHH407058.jpeg" name="GHH407058"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Does continuity go away when one of the above components is disconnected?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Replace the part that made the short to body ground go away when it was disconnected. If the part is the PCM, check for any authorized service information related to the DTCs or symptoms you are troubleshooting, or <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">substitute a known-good PCM</a>
+, then recheck. If the symptom/indication goes away and the PCM was substituted, <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">replace the original PCM</a>
+. Also replace the No. A7 (20 A) fuse in the under-hood fuse/relay box.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Parts are OK. Go to step 8.</p>
+    </li>
+    <li>Shorted wire check (FI MAIN RLY OUT line):<p>Disconnect the following parts or connectors:</p>
+      <ul class="BULLET">
+        <li>PGM-FI main relay 2</li>
+        <li>PCM connector No. 2 (58P)</li>
+      </ul>
+      <p>-2. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td rowspan="4" align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P) (female terminals) No. 17: <img alt="" class="ICON" src="../images/GHH407059.png" name="GHH407059"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407060">
+                <div class="imageHeader"><a name="S05194588862021060700000"></a></div><img alt="GHH407060" src="../images/GHH407060.jpeg" name="GHH407060"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair a short in the FI MAIN RLY OUT wire between the relay circuit board and each part. Also replace the No. A7 (20 A) fuse in the under-hood fuse/relay box.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The FI MAIN RLY OUT wire is OK. <a href="../pages/12834.html#Removal%2C%20Installation%20%26%20Test/Relay%20Circuit%20Board%20Removal%2C%20Installation%2C%20and%20Test/">Replace the relay circuit board</a>
+. Also replace the No. A7 (20 A) fuse in the under-hood fuse/relay box.</p>
+    </li>
+    <li>Fuse check 3<p>-1. Check the following fuse.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Fuse</td>
+            <td align="" class="clsCellNormal">No. B8 (20 A)</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Location</td>
+            <td align="" class="clsCellNormal">Under-dash fuse/relay box</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is the fuse OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 14.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 10.</p>
+    </li>
+    <li>Relay check<p>-1. <a href="../pages/13894.html">Remove PGM-FI main relay 2</a>
+.</p>
+      <p>-2. <a href="../pages/12952.html#Test/Power%20Relay%20Test%20%282%2F4-door%29/">Test PGM-FI main relay 2</a>
+.</p>
+      <p>Is the relay OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>PGM-FI main relay 2 is OK. Go to step 11.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Replace PGM-FI main relay 2. Also replace the No. B8 (20 A) fuse in the under-dash fuse/relay box.</p>
+    </li>
+    <li>Determine possible failure area (IG1 FUEL PUMP line, others)<p>-1. Remove the blown No. B8 (20 A) fuse from the under-dash fuse/relay box.</p>
+      <p>-2. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2 4P socket (female terminals) No. 1: <img alt="" class="ICON" src="../images/GHH407061.png" name="GHH407061"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407062">
+                <div class="imageHeader"><a name="S33215312412021060700000"></a></div><img alt="GHH407062" src="../images/GHH407062.jpeg" name="GHH407062"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 12.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 13.</p>
+    </li>
+    <li>Shorted wire check (IG1 FUEL PUMP line)<p>-1. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Under-dash fuse/relay box connector C (27P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-2. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Under-dash fuse/relay box connector C (27P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2 4P socket (female terminals) No. 1: <img alt="" class="ICON" src="../images/GHH407063.png" name="GHH407063"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407064">
+                <div class="imageHeader"><a name="S15032235912021060700000"></a></div><img alt="GHH407064" src="../images/GHH407064.jpeg" name="GHH407064"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair a short in the IG1 FUEL PUMP wire between PCM connector No. 2 terminal No. 51, PGM-FI main relay 2, and the No. B8 (20 A) fuse in the under-dash fuse/relay box. Also replace the No. B8 (20 A) fuse.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The IG1 FUEL PUMP wire is OK. Replace the No. B8 (20 A) fuse in the under-dash fuse/relay box. If the fuse blown again, <a href="../pages/12834.html#Removal%20and%20Installation/Under-Dash%20Fuse%2FRelay%20Box%20Removal%20and%20Installation/">replace the under-dash fuse/relay box</a>
+.</p>
+    </li>
+    <li>Shorted wire check (FUEL PUMP RLY OUT line)<p>-1. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Fuel tank unit 4P connector</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-2. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Fuel tank unit 4P connector: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Fuel tank unit 4P connector (female terminals) No. 1: <img alt="" class="ICON" src="../images/GHH407065.png" name="GHH407065"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407066">
+                <div class="imageHeader"><a name="S06204300792021060700000"></a></div><img alt="GHH407066" src="../images/GHH407066.jpeg" name="GHH407066"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Repair a short in the FUEL PUMP RLY OUT wire between PGM-FI main relay 2 and the fuel tank unit. Also replace the No. B8 (20 A) fuse in the under-dash fuse/relay box.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>The FUEL PUMP RLY OUT wire is OK. Check the fuel pump, and <a href="../pages/13542.html#Disassembly%20and%20Reassembly/Fuel%20Tank%20Unit%20Disassembly%20and%20Reassembly%20%28Except%20L15BY%29/">replace it</a>
+ if needed. Also replace the No. B8 (20 A) fuse in the under-dash fuse/relay box.</p>
+    </li>
+    <li>Open wire check (IG1 FUEL PUMP line)<p>-1. <a href="../pages/13894.html">Remove PGM-FI main relay 2</a>
+.</p>
+      <p>-2. Turn the vehicle to the ON mode.</p>
+      <p>-3. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle ON mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2 4P socket (female terminals) No. 1: <img alt="" class="ICON" src="../images/GHH407067.png" name="GHH407067"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407068">
+                <div class="imageHeader"><a name="S14074226992021060700000"></a></div><img alt="GHH407068" src="../images/GHH407068.jpeg" name="GHH407068"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The IG1 FUEL PUMP wire is OK. Go to step 15.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the IG1 FUEL PUMP wire between the No. B8 (20 A) fuse in the under-dash fuse/relay box and PGM-FI main relay 2.</p>
+    </li>
+    <li>Determine possible failure area (PGM-FI main relay 1 control circuit, others)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P) No. 26</a></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 18.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Go to step 16.</p>
+    </li>
+    <li>Open wire check (+B IGP line)<p>-1. Disconnect the following connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-2. Measure the voltage between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P) (female terminals) No. 18: <img alt="" class="ICON" src="../images/GHH407069.png" name="GHH407069"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal">Body ground</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407070">
+                <div class="imageHeader"><a name="S34142546212021060700000"></a></div><img alt="GHH407070" src="../images/GHH407070.jpeg" name="GHH407070"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there battery voltage?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 17.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the +B IGP wire between the relay circuit board and the No. A7 (20 A) fuse in the under-hood fuse/relay box.</p>
+    </li>
+    <li>Open wire check (FI MAIN RLY CL- line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P) (female terminals) No. 5: <img alt="" class="ICON" src="../images/GHH407071.png" name="GHH407071"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P) No. 26</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407072">
+                <div class="imageHeader"><a name="S42084972862021060700000"></a></div><img alt="GHH407072" src="../images/GHH407072.jpeg" name="GHH407072"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The FI MAIN RLY CL- wire is OK. <a href="../pages/12834.html#Removal%2C%20Installation%20%26%20Test/Relay%20Circuit%20Board%20Removal%2C%20Installation%2C%20and%20Test/">Remove and test the relay circuit board</a>
+. If the relay circuit board is OK, check for any authorized service information related to the DTCs or symptoms you are troubleshooting, or <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">substitute a known-good PCM</a>
+, then recheck. If the symptom/indication goes away and the PCM was substituted, <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">replace the original PCM</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the FI MAIN RLY CL- wire between PCM connector No. 2 terminal No. 26 and the relay circuit board.</p>
+    </li>
+    <li>Open wire check (FI MAIN RLY OUT line)<p>-1. Check for continuity between test points 1 and 2.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 1</td>
+            <td align="" class="clsCellNormal">Relay circuit board connector C (18P) (female terminals) No. 17: <img alt="" class="ICON" src="../images/GHH407073.png" name="GHH407073"></td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">Test point 2</td>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P) No. 2, No. 4, and No. 6</a></td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">
+              <div class="imageHolder" id="container_GHH407074">
+                <div class="imageHeader"><a name="S15380549102021060700000"></a></div><img alt="GHH407074" src="../images/GHH407074.jpeg" name="GHH407074"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The FI MAIN RLY OUT wire is OK. Go to step 19.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the FI MAIN RLY OUT wire between PCM connector No. 2 terminals (No. 2, No. 4, No. 6) and the relay circuit board.</p>
+    </li>
+    <li>Relay circuit board check<p>-1. <a href="../pages/12834.html#Removal%2C%20Installation%20%26%20Test/Relay%20Circuit%20Board%20Removal%2C%20Installation%2C%20and%20Test/">Remove and test the relay circuit board</a>
+.</p>
+      <p>Is the relay circuit board OK?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The relay circuit board is OK. Go to step 20.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p><a href="../pages/12834.html#Removal%2C%20Installation%20%26%20Test/Relay%20Circuit%20Board%20Removal%2C%20Installation%2C%20and%20Test/">Replace the relay circuit board</a>
+.</p>
+    </li>
+    <li>Open wire check (GND lines)<p>-1. Check for continuity between the following test points and body ground individually.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="164px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PCM connector No. 2 (58P): disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">PGM-FI main relay 2: disconnected</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal"> </td>
+            <td align="" class="clsCellNormal">Relay circuit board: removed</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="360px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal"><a href="../external-car.html">PCM connector No. 2 (58P)</a></td>
+            <td align="" class="clsCellNormal">No. 1, No. 3, No. 5</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The GND wires are OK. Check for any authorized service information related to the DTCs or symptoms you are troubleshooting, or <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">substitute a known-good PCM</a>
+, then recheck. If the symptom/indication goes away and the PCM was substituted, <a href="../pages/12833.html#Removal%20and%20Installation/PCM%20Removal%20and%20Installation%20%28K20C1%29%20%282017%202018%202019%202020%202021%29/">replace the original PCM</a>
+.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the GND wire (s) between PCM connector No. 2 terminals (No. 1, No. 3, No. 5) and G301.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

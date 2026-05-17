@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0125 (L15B7) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18423.html">Engine Control System - Advanced Diagnostics (P0010 - P0128)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18423.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8080.html">DTC P0125 (L15B7)</a></div><div class="main"><h1>DTC P0125 (L15B7)</h1><div id="S36447282992021060700000">
+  <p><span class="clsEmphBOLD">DTC P0125: </span>
+Engine Coolant Temperature (ECT) Sensor 1 Malfunction/Slow Response</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S364472829920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402752">
+            <div class="imageHeader"><a name="S15552950582021060700000"></a></div><img alt="GHH402752" src="../images/GHH402752.jpeg" name="GHH402752"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) supplies voltage to the engine coolant temperature signal circuit (about 5 V) through a pull-up resistor. As the engine coolant cools, the engine coolant temperature (ECT) sensor 1 resistance increases, and the PCM detects a high signal voltage. As the engine coolant warms, the ECT sensor 1 resistance decreases, and the PCM detects a low signal voltage. If the ECT sensor 1 output voltage does not reach a specified temperature at which closed loop control for stoichiometric air/fuel ratio starts within a set time, depending on the initial engine coolant temperature after starting the engine, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S364472829920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">20 minutes or less</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S364472829920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Initial engine coolant temperature [ECT SENSOR 1]</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">0 deg.F (-18 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel feedback</td>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The engine running time before the engine coolant temperature [ECT SENSOR 1] reaches 0 deg.F (-18 deg.C), based on the initial engine coolant temperatures [ECT SENSOR 1], is as follows:</p><a name="S364472829920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Initial engine coolant temperature [ECT SENSOR 1]</th>
+        <th align="" class="clsCellNormal">Engine running time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">-55 deg.F (-48 deg.C)</td>
+        <td align="" class="clsCellNormal">5 minutes or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">-35 deg.F (-37 deg.C)</td>
+        <td align="" class="clsCellNormal">5 minutes or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">0 deg.F (-18 deg.C)</td>
+        <td align="" class="clsCellNormal">1 minute or more</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>ECT sensor 1 failure</li>
+    <li>Thermostat stuck open</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine under Enable Conditions (see &quot;Initial engine coolant temperature [ECT SENSOR 1]&quot;).</li>
+    <li>Let the engine idle for at least 20 minutes.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle with the engine coolant temperature and intake air temperature at engine start-up within the specified temperature range, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle with the engine coolant temperature and intake air temperature at engine start-up within the specified temperature range, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command or by disconnecting the 12 volt battery.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

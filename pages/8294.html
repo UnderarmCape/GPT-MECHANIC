@@ -1,0 +1,665 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0456 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18421.html">Engine Control System - Advanced Diagnostics (P0340 - P0507)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18421.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8294.html">DTC P0456 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P0456 (K20C1) (2019 2020 2021)</h1><div id="S38030044672021060700000">
+  <p><span class="clsEmphBOLD">DTC P0456: </span>
+Evaporative Emission (EVAP) System Very Small Leak Detected</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403080">
+            <div class="imageHeader"><a name="S28002497772021060700000"></a></div><img alt="GHH403080" src="../images/GHH403080.jpeg" name="GHH403080"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>EONV test</p>
+  <p>The EONV test detects a small leak in the evaporative emission (EVAP) system by evaluating the changes in pressure that occur in the fuel system. The monitor is divided into two phases.</p>
+  <p>Phase 1</p>
+  <p>Phase 1 is executed while the temperature is still rising. A rise in temperature will lead to an increase in pressure in a tight fuel system. Between phase 1 and phase 2, the EVAP canister vent shut valve opens for a calibrated amount of time bleeding off any residual pressure.</p>
+  <p>Phase 2</p>
+  <p>Phase 2 is executed only when the pressure built in phase 1 does not reach levels that are typical of a tight fuel system. Phase 2 monitors the vacuum built when the fuel temperature is decreasing. Little or no vacuum is built if there is leakage in the system. For a leak free system, the vacuum build will reach a threshold that is determined by the ambient temperature and the fuel tank level.</p>
+  <p>The cases below are all possible fuel tank pressure characteristics.</p>
+  <ul class="BULLET">
+    <li>Case A: The pressure of a leak free system reaches the calibrated target differential pressure. The diagnostic is immediately terminated (no phase 2) when this calibrated threshold for a leak free system is achieved.</li>
+    <li>Case B: The tank pressure does not reach the target pressure but a maximum differential pressure has been observed. The diagnosis will continue by opening the EVAP canister vent shut valve.</li>
+    <li>Case C: A vacuum build is recognized when the pressure falls below a calibrated threshold for a calibrated time. In this case, the diagnosis will continue with phase 2 without the re-opening and closing of the EVAP canister vent shut valve.</li>
+    <li>Case D: If the tank pressure remains within a calibrated window around barometric pressure for a certain time, the EVAP canister vent shut valve will be opened.</li>
+    <li>Case E: The tank pressure gradually increases and does not reach the target pressure when phase 1 exceeds the maximum allowable run-time. The diagnosis will then proceed with the opening of the EVAP canister vent shut valve.</li>
+    <li>Case F: After Phase 1 is complete, if the pressure reaches an upper limit, then further pressure is relieved by opening the EVAP canister vent shut valve for a calibrated amount of time. Opening and closing can be repeated up to a calibrated number of times within the maximum allowable calibrated run-time.</li>
+    <li>Case G: The tank pressure remains close to ambient pressure within a calibrated window for a calibrated time in phase 2.</li>
+    <li>Case H: The integrity of the system cannot be determined when the diagnostic exceeds the maximum allowable run-time.</li>
+    <li>Case I: The tank pressure reaches a lower threshold and rises more than a calibrated value within the maximum allowable run-time. This confirms a minimum differential pressure had been achieved.</li>
+    <li>Case J: The tank pressure (vacuum) reaches the possible minimal differential pressure in phase 2 within the maximum allowable run-time.</li>
+  </ul>
+  <p>If the difference between the maximum differential pressure obtained in phase 1 and the minimum differential pressure obtained in phase 2 is less than the calibrated threshold, an EVAP system very small leak (P0456) will be detected.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Start of diagnosis </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Outside air temperature</td>
+        <td align="" class="clsCellNormal">32 deg.F (0 deg.C)</td>
+        <td align="" class="clsCellNormal">103.6 deg.F (39.8 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial engine coolant temperature [ECT Sensor 1]</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">113 deg.F (45 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Difference between initial engine coolant temperature and outside air temperature</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">27 deg.F (15 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Barometric pressure [Baro Sensor]</td>
+        <td align="" class="clsCellNormal">74 kPa (555 mmHg, 21.9 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">EVAP canister vent shut valve is closed</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Operation conditions </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after starting the engine</td>
+        <td align="" class="clsCellNormal">10 minutes</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after the vehicle is turned to the OFF (LOCK) mode</td>
+        <td align="" class="clsCellNormal">20 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Distance travelled</td>
+        <td align="" class="clsCellNormal">4 miles (5 km)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [Battery]</td>
+        <td align="" class="clsCellNormal">10.7 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel level</td>
+        <td align="" class="clsCellNormal">0.5 L (0.14 US gal)</td>
+        <td align="" class="clsCellNormal">41.5 L (10.96 US gal)</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Smallest leak not detected</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">No refueling</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Diagnosis pressure phase (phase 1) </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">EVAP canister vent shut valve is closed for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Cases A, B, or C occurs</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case A: Pressure threshold is reached </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">0.5 kPa (4 mmHg, 0.15 inHg) - 1.67 kPa (12.6 mmHg, 0.494 inHg)*</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Depends on fuel level</p>
+  <p><span class="clsEmphBOLD">Case B: Maximum pressure is detected </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">0 kPa (0 mmHg, 0 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure peak*</td>
+        <td align="" class="clsCellNormal">0.01 kPa (0.1 mmHg, 0.003 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 50 seconds</p>
+  <p><span class="clsEmphBOLD">Case C: Vacuum builds </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure*</td>
+        <td align="" class="clsCellNormal">-0.125 kPa (-0.93 mmHg, -0.0369 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 25 seconds</p>
+  <p><span class="clsEmphBOLD">Diagnosis vacuum phase (phase 2) </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Vacuum phase is activated for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">EVAP canister vent shut valve is not closed for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Cases F, G, H, I, J, or D occurs</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case F: Pressure build </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">0.075 kPa (0.57 mmHg, 0.0222 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case G: Stabilization at zero </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Absolute fuel tank pressure*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">0.063 kPa (0.47 mmHg, 0.0186 inHg)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 10 minutes</p>
+  <p><span class="clsEmphBOLD">Case H: Diagnosis timeout </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after the vehicle is turned to the OFF (LOCK) mode</td>
+        <td align="" class="clsCellNormal">45 minutes</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case I: Vacuum peaks </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">-0.125 kPa (-0.93 mmHg, -0.0369 inHg)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure (vacuum) peak*</td>
+        <td align="" class="clsCellNormal">0.01 kPa (0.1 mmHg, 0.003 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 50 seconds</p>
+  <p><span class="clsEmphBOLD">Case J: Vacuum threshold is reached </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">0.5 kPa (4 mmHg, 0.15 inHg) - 1.67 kPa (12.6 mmHg, 0.494 inHg)*</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Depends on fuel level.</p>
+  <p><span class="clsEmphBOLD">Case D: Vacuum builds </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Absolute fuel tank pressure*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">0.063 kPa (0.47 mmHg, 0.0186 inHg)</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 10 minutes</p>
+  <p><span class="clsEmphBOLD">Diagnosis canister close valve is open (between phase 1 and phase 2) </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Pressure phase is not activated for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vacuum phase is not activated for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">EVAP canister vent shut valve is not opened for EONV</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Diagnosis vacuum phase (phase 2) </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="256px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4" align="" class="clsCellNormal">Other</td>
+        <td align="" class="clsCellNormal">Vacuum phase is activated for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Pressure phase is not activated for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">EVAP canister vent shut valve is closed for EONV</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Cases F, G, H, I, J, or E occurs</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case F: Pressure build </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">0.075 kPa (0.57 mmHg, 0.0222 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case G: Stabilization at zero </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Absolute fuel tank pressure*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">0.063 kPa (0.47 mmHg, 0.0186 inHg)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 10 minutes</p>
+  <p><span class="clsEmphBOLD">Case H: Diagnosis timeout </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after the vehicle is turned to the OFF (LOCK) mode</td>
+        <td align="" class="clsCellNormal">45 minutes</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Case I: Vacuum peaks </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">-0.125 kPa (-0.93 mmHg, -0.0369 inHg)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure (vacuum) peak*</td>
+        <td align="" class="clsCellNormal">0.01 kPa (0.1 mmHg, 0.003 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: For at least 50 seconds</p>
+  <p><span class="clsEmphBOLD">Case J: Vacuum threshold is reached </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Fuel tank pressure</td>
+        <td align="" class="clsCellNormal">0.5 kPa (4 mmHg, 0.15 inHg) - 1.67 kPa (12.6 mmHg, 0.494 inHg)*</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Diagnosis is not rejected</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Depends on fuel level</p>
+  <p><span class="clsEmphBOLD">Case E: Pressure build timeout </span></p><a name="S380300446720210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="536px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time after the vehicle is turned to the OFF (LOCK) mode</td>
+        <td align="" class="clsCellNormal">45 minutes</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>The pressure difference for leak decision between overpressure and vacuum phase is less than 0.2 kPa (1 mmHg, 0.05 inHg) - 0.35 kPa (2.6 mmHg, 0.103 inHg)*.</p>
+  <p>*: Depends on fuel level</p>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>EVAP system very small leak</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine and drive the vehicle for at least 4 miles (5 km).</li>
+    <li>Turn the vehicle to the OFF (LOCK) mode and wait for a while.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Avoid driving conditions that could lead to fuel slosh in the fuel tank.</li>
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected, the MIL comes on and a Pending DTC, a Confirmed DTC, and the freeze data are stored in the PCM memory.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

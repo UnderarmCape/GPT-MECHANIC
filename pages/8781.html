@@ -1,0 +1,142 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC U0122 (K20C1 (PGM-FI System)) (2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18418.html">Engine Control System - Advanced Diagnostics (P2238 - U129E)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18418.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8781.html">DTC U0122 (K20C1 (PGM-FI System)) (2020 2021)</a></div><div class="main"><h1>DTC U0122 (K20C1 (PGM-FI System)) (2020 2021)</h1><div id="S11800898232021060700000">
+  <p><span class="clsEmphBOLD">DTC U0122: </span>
+F-CAN Malfunction (Powertrain Control Module (PCM)-VSA Modulator-Control Unit)</p>
+  <p><span class="clsEmphBOLD">General Description </span></p>
+  <p><span class="clsEmphBOLD">Without CAN gateway </span></p><a name="S118008982320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403689">
+            <div class="imageHeader"><a name="S40643480392021060700000"></a></div><img alt="GHH403689" src="../images/GHH403689.jpeg" name="GHH403689"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">With CAN gateway </span></p><a name="S118008982320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403690">
+            <div class="imageHeader"><a name="S17517764422021060700000"></a></div><img alt="GHH403690" src="../images/GHH403690.jpeg" name="GHH403690"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The controller area network (CAN) transmits/receives pulsing signals to/from the control modules simultaneously by using two signal lines (F-CAN_H and F-CAN_L). When the powertrain control module (PCM) does not receive the signals from the VSA modulator-control unit via the CAN lines for a certain period of time or receives incorrect message frames, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S118008982320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p><a name="S118008982320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Elapsed time since the 12 volt battery voltage reaches to a specified value</td>
+        <td align="" class="clsCellNormal">5.0 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p><a name="S118008982320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [Battery]</td>
+        <td align="" class="clsCellNormal">10.04 V</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td colspan="2" align="" class="clsCellNormal">ON mode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Any of the conditions is met for at least 0.5 second:</p>
+  <ul class="BULLET">
+    <li>Checksum error<p>The value of checksum for the received message is different from the calculated checksum.</p>
+    </li>
+    <li>Message counter error</li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The two consecutive values of the message counter are equal at least once.</p>
+        </li>
+        <li>-<p>The difference between two consecutive values of the message counter is greater than 255.</p>
+        </li>
+      </ul>
+    </li>
+    <li>Timeout error<p>The CAN message frame is not received.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>F-CAN circuit F-CAN_H* 1, F-CAN A_H* 2 line open</li>
+    <li>F-CAN circuit F-CAN_L* 1, F-CAN A_L* 2 line open</li>
+    <li>F-CAN circuit F-CAN_H* 1, F-CAN A_H* 2 line short to ground</li>
+    <li>F-CAN circuit F-CAN_L* 1, F-CAN A_L* 2 line short to ground</li>
+    <li>F-CAN circuit F-CAN B_H* 2 line open</li>
+    <li>F-CAN circuit F-CAN B_L* 2 line open</li>
+    <li>F-CAN circuit F-CAN B_H* 2 line short to ground</li>
+    <li>F-CAN circuit F-CAN B_L* 2 line short to ground</li>
+    <li>VSA modulator-control unit failure (include fuse fall-outs)</li>
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p>*1: Without CAN gateway</p>
+  <p>*2: With CAN gateway</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

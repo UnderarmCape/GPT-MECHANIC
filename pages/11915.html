@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>EPS System Description - Steering Angle Detection — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Steering/">Steering</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Steering/Manual%20Steering/">Manual Steering</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17627.html">Steering System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/17627.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/11915.html">EPS System Description - Steering Angle Detection</a></div><div class="main"><h1>EPS System Description - Steering Angle Detection</h1><div id="S21367427592021060700000">
+  <p><span class="clsEmphBOLD">Overview </span></p>
+  <p>The EPS control unit calculates a steering angle from the motor angle sensor value. The EPS control unit detects the motor rotational angle (A) with the motor angle sensor, and calculates the assist pinion shaft angle (B) by multiplying the motor rotational angle by the reduction ratio of the worm gear. Based on the assist pinion shaft angle, initial steering angle, and VGR (Variable Gear Ratio) conversion map, it calculates the manual pinion shaft angle (C), corrects the torsional angle of the torsion bar based on the torque sensor value, and finally calculates the steering wheel angle (D).</p><a name="S213674275920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH412044">
+            <div class="imageHeader"><a name="S39997636502021060700000"></a></div><img alt="GHH412044" src="../images/GHH412044.jpeg" name="GHH412044"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Detection Block Diagram </span></p><a name="S213674275920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH412045">
+            <div class="imageHeader"><a name="S27393079392021060700000"></a></div><img alt="GHH412045" src="../images/GHH412045.jpeg" name="GHH412045"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Steering Angle Neutral Position Learning </span></p>
+  <p>The EPS control unit learns the steering angle neutral position to detect an initial steering angle when ignition switch is turned to ON mode. The steering angle neutral position learning is classified into initial learning and the regular learning.</p>
+  <p><span class="clsEmphBOLD">Initial Learning </span></p>
+  <p>The initial learning is performed automatically at the time of the first driving after steering angle neutral position is cleared. When the EPS control unit judges that the vehicle is going straight based on each sensor signals, the steering angle neutral position is learned. For more details of the learning procedure, refer to <a href="../pages/13549.html#Learning%20Reset%20Clear/Steering%20Angle%20Neutral%20Position%20Learning/">Steering Angle Neutral Position Learning</a> .</p>
+  <p>The steering angle neutral position is cleared whenever you do any of these actions:</p>
+  <ul class="BULLET">
+    <li>Replacing the EPS motor/control unit.</li>
+    <li>Disconnecting the 12 volt battery cable from the 12 volt battery.</li>
+    <li>Disconnecting the power from the EPS control unit.</li>
+    <li>Decreasing the power supply voltage for the EPS control unit.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Regular Learning </span></p>
+  <p>The regular learning revises a gap of the neutral position that occurs due to normal wear and tear of the vehicle and a change of the wheel alignment during driving.</p>
+  <p><span class="clsEmphBOLD">Learning using the HDS </span></p>
+  <p>The VSA sensor neutral position memorization for VSA system is performed using the HDS, the steering angle neutral position is cleared and overwritten.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

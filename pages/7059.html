@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P2183 (K20C1) (2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html">Engine Control System - Advanced Diagnostics (P1684 - P2238)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18442.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/7059.html">DTC P2183 (K20C1) (2020 2021)</a></div><div class="main"><h1>DTC P2183 (K20C1) (2020 2021)</h1><div id="S41102468082021060700000">
+  <p><span class="clsEmphBOLD">DTC P2183: </span>
+Engine Coolant Temperature (ECT) Sensor 2 Circuit Range/Performance Problem</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S411024680820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403508">
+            <div class="imageHeader"><a name="S38848149002021060700000"></a></div><img alt="GHH403508" src="../images/GHH403508.jpeg" name="GHH403508"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table><a name="S411024680820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH403509">
+            <div class="imageHeader"><a name="S23259799372021060700000"></a></div><img alt="GHH403509" src="../images/GHH403509.jpeg" name="GHH403509"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) monitors engine coolant temperature (ECT) sensor 2 for electrical malfunctions. ECT sensor 2 is a thermistor that detects engine coolant temperature at radiator outlet, which used in thermal management as engine coolant temperature upstream the engine. The ECT sensor 2 resistance varies depending on temperature. The sensor resistance and the output voltage increase as the engine coolant temperature decreases. The output voltage is continuously monitored against minimum and maximum thresholds. If the difference between ECT sensor 2 maximum and minimum temperature is a specified value for a specified time, or the difference between the ECT sensor 2 output temperature and mean value of all temperature sensors at cold start is more than a specified value for a specified time, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S411024680820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous*, Once per driving cycle**</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">0.5 second or more*, 90 seconds or more**</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Stuck check</p>
+  <p>**: Cold start check</p>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Stuck check </span></p><a name="S411024680820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine coolant temperature [ECT Sensor 1]</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">176.5 deg.F (80.3 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Initial engine coolant temperature [ECT Sensor 1]</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">289.9 deg.F (143.3 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Outside air temperature</td>
+        <td align="" class="clsCellNormal">-54 deg.F (-48 deg.C)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>***: Conditions must be met for at least 5 minutes</p><a name="S411024680820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Temperature difference between engine coolant temperature [ECT Sensor 2] and ambient temperature</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">344.3 deg.F (191.3 deg.C)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]***</td>
+        <td align="" class="clsCellNormal">1, 520 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle speed [Vehicle Speed]***</td>
+        <td align="" class="clsCellNormal">4 mph (5 km/h)</td>
+        <td align="" class="clsCellNormal">198 mph (318.8 km/h)</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Engine coolant temperature [ECT Sensor 2] is near outside air temperature</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Other than during fuel cut-off operation***</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>***: Conditions must be met for at least 5 minutes</p>
+  <p><span class="clsEmphBOLD">Cold start check </span></p><a name="S411024680820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine off time</td>
+        <td align="" class="clsCellNormal">6 hours</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td colspan="2" align="" class="clsCellNormal">Running</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Either of the conditions occurs:</p>
+  <ul class="BULLET">
+    <li>Stuck check<p>The temperature difference between maximum and minimum of ECT sensor 2 is 2.7 deg.F (1.5 deg.C) or less.</p>
+    </li>
+    <li>Cold start check<p>The difference between the ECT sensor 2 output temperature and mean value of all temperature sensors at cold start is more than 44 deg.F (24 deg.C).</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>Engine coolant level low</li>
+    <li>Thermostat failure</li>
+    <li>ECT sensor 2 failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

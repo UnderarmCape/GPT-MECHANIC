@@ -1,0 +1,186 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0606 (K20C1) (2019 2020 2021) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/System/">System</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18443.html">Engine Control System - Advanced Diagnostics (P0507 - P1684)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18443.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/6812.html">DTC P0606 (K20C1) (2019 2020 2021)</a></div><div class="main"><h1>DTC P0606 (K20C1) (2019 2020 2021)</h1><div id="S13736285152021060700000">
+  <p><span class="clsEmphBOLD">DTC P0606: </span>
+Powertrain Control Module (PCM) Processor Malfunction</p>
+  <p><span class="clsEmphBOLD">General Description </span></p>
+  <p>DTC P0606 is stored if the internal failures of the powertrain control module (PCM) are detected:</p>
+  <ul class="BULLET">
+    <li>Knock sensor signal check<p>The PCM tests to diagnose the evaluation of the knock detection signal from the knock sensor. A knock sensor (piezo-ceramic acceleration sensor) acquires the combustion noise and converts it into electrical signals. The signal is processed in the microcontroller CPU (knock sensor processor) of the PCM. The number of sampled signals, the position and the length of the measuring window are constantly (combustion synchronized) monitored for rationality faults. If these values are abnormal, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Electrically erasable programmable read-only memory (EEPROM) read/write error<p>The read and write access to EEPROM is permanently monitored by the EEPROM hardware abstraction layer. If a data block could not be read from or write to the EEPROM, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Air/fuel ratio (A/F) sensor (sensor 1) driver IC error<p>The driver IC for A/F sensor (sensor 1) is built into the PCM. The diagnosis data acquired by the driver IC are called up directly by application specific integrated circuit (ASIC) chip and are considered along with the measured values in order to detect faults in the system and the sensor. At the same time, a distinction is made between SPI faults (transmission faults), chip faults (ex. incorrect placement of components or faulty driver IC), short circuits, as well as overloads at the individual pins. If an error occurs at the driver IC, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <ul class="BULLET">
+    <li>Controlled valve operation (CVO) signal not plausible<p>The monitoring function verifies the calculated adjustment values of the CVO function. In case of an error, error reactions will be activated such as triggering a new base adaptation or locking the defective injector for the CVO. If the CVO signal is not plausible, the PCM detects a malfunction and stores a DTC.</p>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S137362851520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Continuous or multiple*</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">Depending on error</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Depending on error</p>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Knock sensor signal check </span></p><a name="S137362851520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">1, 000 rpm</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Condition in steady engine load and engine speed</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">EEPROM read/write error </span></p><a name="S137362851520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Vehicle</td>
+        <td align="" class="clsCellNormal">ON mode</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">A/F sensor (sensor 1) driver IC error </span></p><a name="S137362851520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="496px">
+      <col span="1" id="COL2" width="600px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">12 volt battery voltage [Battery]</td>
+        <td align="" class="clsCellNormal">10.7 V</td>
+        <td align="" class="clsCellNormal">16.1 V</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">CVO signal not plausible </span></p><a name="S137362851520210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">State of the engine</td>
+        <td align="" class="clsCellNormal">Running</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <ul class="BULLET">
+    <li>Knock sensor signal check<p>Either of the symptoms occurs:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>The absolute difference of estimated and measured sampled signals in the measuring window is more than 30 at least 100 counts within 400 of observation period.</p>
+        </li>
+        <li>-<p>Number of signal evaluation errors (position and length of measuring window) within observation period is greater than 2 counts.</p>
+        </li>
+      </ul>
+    </li>
+    <li>EEPROM read/write error<p>A data block cannot be read/written or a read order of data blocks is not successfully accomplished at least 3 events.</p>
+    </li>
+    <li>A/F sensor (sensor 1) driver IC error<p>Either of the symptoms occurs:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>A/F sensor (sensor 1) driver IC error in the PCM is detected during transmission of diagnostic register, data register, or RAM data.</p>
+        </li>
+        <li>-<p>The driver IC initialization was not successful, slow response, or no values found in diagnosis register.</p>
+        </li>
+      </ul>
+    </li>
+    <li>CVO signal not plausible<p>Either of the symptoms occurs for at least 100 counts:</p>
+    </li>
+    <li>
+      <ul class="DASH">
+        <li>-<p>Measured buffer CVO signal at beginning is more than 15, 000.</p>
+        </li>
+        <li>-<p>Measured buffer CVO signal at end is less than 5, 000.</p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>PCM internal circuit failure</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine.</li>
+    <li>Drive the vehicle at engine speed [Engine Speed] 1, 000 rpm or more for at least 1 second.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

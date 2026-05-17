@@ -1,0 +1,181 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC P0133 (K20C1) (2017 2018 2019) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/">Engine Performance</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Engine%20Performance/Testing%20%26%20Diagnosis/">Testing &amp; Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18422.html">Engine Control System - Advanced Diagnostics (P0128 - P0340)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18422.html#DTC%20Advanced%20Diagnostics/">DTC Advanced Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/8095.html">DTC P0133 (K20C1) (2017 2018 2019)</a></div><div class="main"><h1>DTC P0133 (K20C1) (2017 2018 2019)</h1><div id="S31271908832021060700000">
+  <p><span class="clsEmphBOLD">DTC P0133: </span>
+Air/Fuel Ratio (A/F) Sensor (Sensor 1) Malfunction/Slow Response</p>
+  <p><span class="clsEmphBOLD">General Description </span></p><a name="S312719088320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH402765">
+            <div class="imageHeader"><a name="S06053079362021060700000"></a></div><img alt="GHH402765" src="../images/GHH402765.jpeg" name="GHH402765"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>The powertrain control module (PCM) monitors the air/fuel ratio (A/F) sensor (sensor 1) for slow response malfunctions. Aging and contamination of the A/F sensor (sensor 1) can slow down the sensor response rate. A dynamically slow signal can lead to increased exhaust emissions.When enable conditions are met and catalyst is purged with the rich mixture (rich conditioning phase), the monitor switches to the lean mixture where the measurement of catalyst oxygen storage capacity is carried out (oxygen storage capacity (OSC) measurement). At the beginning of this state the delay time values as well as the gradients of A/F sensor (sensor 1) signal are evaluated (rich-to-lean transition). After OSC measurement is finished a rich operation state is commanded. At the beginning of this state the delay time values as well as the gradients of A/F sensor (sensor 1) signal are evaluated (lean-to-rich transition). If the delay time or transition time is a specified value, the PCM detects a malfunction and stores a DTC.</p>
+  <p><span class="clsEmphBOLD">Monitor Execution, Sequence, Duration, DTC Type </span></p><a name="S312719088320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">Execution</td>
+        <td align="" class="clsCellNormal">Once per driving cycle</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Sequence</td>
+        <td align="" class="clsCellNormal">None</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Duration</td>
+        <td align="" class="clsCellNormal">30 seconds or more</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">DTC Type</td>
+        <td align="" class="clsCellNormal">Two drive cycles, MIL on</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Enable Conditions </span></p>
+  <p><span class="clsEmphBOLD">Primary enable conditions </span></p><a name="S312719088320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="248px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Time not in fuel cut-off operation</td>
+        <td align="" class="clsCellNormal">10 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Deviation of A/F sensor (sensor 1) heater temperature (commanded and actual)</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">116.985 deg.F (64.992 deg.C)</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Engine speed [Engine Speed]</td>
+        <td align="" class="clsCellNormal">1, 200 rpm</td>
+        <td align="" class="clsCellNormal">4, 520 rpm</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Barometric pressure [Baro Sensor]</td>
+        <td align="" class="clsCellNormal">739 hPa (554 mmHg, 21.8 inHg)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Vehicle speed [Vehicle Speed]</td>
+        <td align="" class="clsCellNormal">4 mph (5 km/h)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Charging efficiency</td>
+        <td align="" class="clsCellNormal">13.008 % to 16.008 %</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2" align="" class="clsCellNormal">Other</td>
+        <td colspan="2" align="" class="clsCellNormal">Exhaust gas mass flow is stable for at least 1 second</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Canister not purging</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Secondary enable conditions </span></p><a name="S312719088320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="248px">
+      <col span="1" id="COL2" width="248px">
+      <col span="1" id="COL3" width="600px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Minimum</th>
+        <th align="" class="clsCellNormal">Maximum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Elapsed time after starting the engine</td>
+        <td align="" class="clsCellNormal">7 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Time the gear is not shifted</td>
+        <td align="" class="clsCellNormal">0.15 second</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Elapsed time of closed loop control</td>
+        <td align="" class="clsCellNormal">2 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Elapsed time after A/F sensor (sensor 1) is active</td>
+        <td align="" class="clsCellNormal">10 seconds</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Rate of change of charging efficiency*</td>
+        <td align="" class="clsCellNormal">-</td>
+        <td align="" class="clsCellNormal">10.008 %</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="" class="clsCellNormal">Canister purge mass flow</td>
+        <td align="" class="clsCellNormal">25.59961 kg/h (56.4 lbs/h)</td>
+        <td align="" class="clsCellNormal">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>*: Condition is met for at least 1 second[ ]: HDS Parameter</p>
+  <p><span class="clsEmphBOLD">Malfunction Threshold </span></p>
+  <p>Any of the conditions occurs:</p>
+  <ul class="BULLET">
+    <li>The delay time in lean-to-rich direction is greater than 1.0 second.</li>
+    <li>The transition time in lean-to-rich direction is greater than 1.0 second.</li>
+    <li>The delay time in rich-to-lean direction is greater than 1.0 second.</li>
+    <li>The transition time in rich-to-lean direction is greater than 1.0 second.</li>
+    <li>The sum (delay and transition) time in lean-to-rich direction is greater than 1.0 second.</li>
+    <li>The sum (delay and transition) time in rich-to-lean direction is greater than 1.0 second.</li>
+    <li>The average of delay time in lean-to-rich direction is greater than 0.5 second for at least 3 fault confirmations.</li>
+    <li>The average of transition time in lean-to-rich direction is greater than 0.5 second for at least 3 fault confirmations.</li>
+    <li>The average of delay time in rich-to-lean direction is greater than 0.5 second for at least 3 fault confirmations.</li>
+    <li>The average of transition time in rich-to-lean direction is greater than 0.5 second for at least 3 fault confirmations.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Possible Cause </span></p>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The causes shown may not be a complete list of all potential problems, and it is possible that there may be other causes.</p>
+  <ul class="BULLET">
+    <li>A/F sensor (sensor 1) deterioration</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Confirmation Procedure </span></p>
+  <p><span class="clsEmphBOLD">Operating Condition </span></p>
+  <ul class="BULLET">
+    <li>Start the engine. Hold the engine speed [Engine Speed] at 3, 000 rpm without load (in neutral) until the radiator fan comes on.</li>
+    <li>Drive the vehicle at constant vehicle speed with part load.</li>
+  </ul>
+  <ul class="BULLET">
+    <li>Drive the vehicle in this manner only if the traffic regulations and ambient conditions allow.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">With the HDS </span></p>
+  <p>None.</p>
+  <p><span class="clsEmphBOLD">Diagnosis Details </span></p>
+  <p><span class="clsEmphBOLD">Conditions for setting the DTC </span></p>
+  <p>When a malfunction is detected during the first drive cycle, a Pending DTC is stored in the PCM memory. If the malfunction returns in the next (second) drive cycle, the MIL comes on and a Confirmed DTC and the freeze data are stored.</p>
+  <p><span class="clsEmphBOLD">Conditions for clearing the DTC </span></p>
+  <p>The MIL is cleared if the malfunction does not return in three consecutive trips in which the diagnostic runs. The MIL, the Pending DTC, the Confirmed DTC, and the freeze data can be cleared with the scan tool Clear command.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

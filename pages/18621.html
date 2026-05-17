@@ -1,0 +1,432 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Interior Lights System Description - Control/Function — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html">Repair and Diagnosis</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2.html#Accessories%20%26%20Equipment/Interior%2FIllumination%20Lights/">Interior/Illumination Lights</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18609.html">Interior Lighting - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18609.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18621.html">Interior Lights System Description - Control/Function</a></div><div class="main"><h1>Interior Lights System Description - Control/Function</h1><div id="S32534069832021060700000">
+  <p><span class="clsEmphBOLD">System Function </span></p>
+  <p><span class="clsEmphBOLD">Initial state of connection of electric power supply </span></p>
+  <p>In the initial state of connection of electric power supply, close/open of each door is detected and controlled without being affected by states of the vehicle mode and the driver's door lock knob switch.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="367px">
+      <col span="1" id="COL2" width="377px">
+      <col span="1" id="COL3" width="405px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Input</th>
+        <th colspan="2" align="" class="clsCellNormal">Output Control</th>
+      </tr>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Each Door Switch</th>
+        <th align="" class="clsCellNormal">Vehicle Mode</th>
+        <th align="" class="clsCellNormal">Before Input Change</th>
+        <th align="" class="clsCellNormal">After Input Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Any ON(Door open)</td>
+        <td align="" class="clsCellNormal">ACCESSORY or ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">OFF (LOCK)</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">All OFF(Door close)</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights OFF</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The &quot;--&quot; means that it is not used on this system.</p>
+  <p><span class="clsEmphBOLD">Driver's door lock knob switch link </span></p>
+  <p>When the driver's door lock knob switch moves from the lock/unlock position, the body control module detects a driver's door open/close position, and controls the interior lights.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="309px">
+      <col span="1" id="COL2" width="326px">
+      <col span="1" id="COL3" width="494px">
+      <col span="1" id="COL4" width="519px">
+      <col span="1" id="COL5" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="3" align="" class="clsCellNormal">Input</th>
+        <th colspan="2" align="" class="clsCellNormal">Output Control</th>
+      </tr>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Driver's Door Lock Knob Switch (ON: LOCK)</th>
+        <th align="" class="clsCellNormal">Each Door Switch</th>
+        <th align="" class="clsCellNormal">Vehicle Mode</th>
+        <th align="" class="clsCellNormal">Before Input Change</th>
+        <th align="" class="clsCellNormal">After Input Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="6" align="" class="clsCellNormal">ON -&gt; OFF</td>
+        <td rowspan="5" align="" class="clsCellNormal">All OFF(Door close)</td>
+        <td rowspan="2" align="" class="clsCellNormal">Remote Engine Start</td>
+        <td align="" class="clsCellNormal">Lighting ON</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 1</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Lighting OFF</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 5</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">OFF (LOCK)</td>
+        <td align="" class="clsCellNormal">Lighting ON</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 1</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Lighting OFF</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 5</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">ACCESSORY</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td rowspan="2" align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any ON(Door open)</td>
+        <td align="" class="clsCellNormal">OFF (LOCK) or ACCESSORY</td>
+        <td align="" class="clsCellNormal">--</td>
+      </tr>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">OFF-&gt; ON</td>
+        <td rowspan="2" align="" class="clsCellNormal">All OFF(Door close)</td>
+        <td align="" class="clsCellNormal">Remote Engine Start</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td rowspan="2" align="" class="clsCellNormal">Lights OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">OFF (LOCK) or ACCESSORY</td>
+        <td align="" class="clsCellNormal">--</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any ON(Door open)</td>
+        <td align="" class="clsCellNormal">OFF (LOCK) or ACCESSORY</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Continue the statusbefore input change</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The &quot;--&quot; means that it is not used on this system.</p>
+  <p><span class="clsEmphBOLD">Each door switch link </span></p>
+  <p>Anytime a door switch closes (ON signal), the body control module provides a ground to the interior lights.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="305px">
+      <col span="1" id="COL2" width="321px">
+      <col span="1" id="COL3" width="474px">
+      <col span="1" id="COL4" width="528px">
+      <col span="1" id="COL5" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="3" align="" class="clsCellNormal">Input</th>
+        <th colspan="2" align="" class="clsCellNormal">Output Control</th>
+      </tr>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Each Door Switch</th>
+        <th align="" class="clsCellNormal">Driver's Door Lock Knob Switch (ON: LOCK)</th>
+        <th align="" class="clsCellNormal">Vehicle Mode</th>
+        <th align="" class="clsCellNormal">Before Input Change</th>
+        <th align="" class="clsCellNormal">After Input Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="6" align="" class="clsCellNormal">Any ON(Door open)-&gt;All OFF(Door close)</td>
+        <td rowspan="5" align="" class="clsCellNormal">OFF</td>
+        <td rowspan="2" align="" class="clsCellNormal">Remote Engine Start</td>
+        <td align="" class="clsCellNormal">Lighting ON</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 2</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Lighting OFF</td>
+        <td align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">OFF (LOCK)</td>
+        <td align="" class="clsCellNormal">Lighting ON</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 2</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Lighting OFF</td>
+        <td align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">ACCESSORY or ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td rowspan="2" align="" class="clsCellNormal">Lights OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">--</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The &quot;--&quot; means that it is not used on this system.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="305px">
+      <col span="1" id="COL2" width="321px">
+      <col span="1" id="COL3" width="474px">
+      <col span="1" id="COL4" width="528px">
+      <col span="1" id="COL5" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="3" align="" class="clsCellNormal">Input</th>
+        <th colspan="2" align="" class="clsCellNormal">Output Control</th>
+      </tr>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Each Door Switch</th>
+        <th align="" class="clsCellNormal">Driver's Door Lock Knob Switch (ON: LOCK)</th>
+        <th align="" class="clsCellNormal">Vehicle Mode</th>
+        <th align="" class="clsCellNormal">Before Input Change</th>
+        <th align="" class="clsCellNormal">After Input Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="5" align="" class="clsCellNormal">Any OFF(Door close)-&gt;ON (Door open)</td>
+        <td rowspan="5" align="" class="clsCellNormal">--</td>
+        <td rowspan="2" align="" class="clsCellNormal">Remote Engine Start</td>
+        <td align="" class="clsCellNormal">Lighting ON</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3 (Timer restart)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Lighting OFF</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">OFF (LOCK)</td>
+        <td align="" class="clsCellNormal">Lighting ON</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3 (Timer restart)</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Lighting OFF</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">ACCESSORY or ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The &quot;--&quot; means that it is not used on this system.</p>
+  <p><span class="clsEmphBOLD">Ignition key switch/Remote link </span></p>
+  <p>When the system detects that the key is inserted into the ignition key switch or the remote is inside the vehicle, it provides a ground to the interior lights.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="470px">
+      <col span="1" id="COL2" width="552px">
+      <col span="1" id="COL3" width="438px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Input</th>
+        <th colspan="2" align="" class="clsCellNormal">Output Control</th>
+      </tr>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Vehicle Mode</th>
+        <th align="" class="clsCellNormal">Each Door Switch</th>
+        <th align="" class="clsCellNormal">Before Input Change</th>
+        <th align="" class="clsCellNormal">After Input Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">ACCESSORY -&gt; OFF (LOCK)</td>
+        <td rowspan="2" align="" class="clsCellNormal">All Door Switch OFF (Close)</td>
+        <td align="" class="clsCellNormal">Lighting ON</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 1</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Lighting OFF</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 5</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any Door Switch ON (Open)</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">OFF (LOCK) -&gt; ACCESSORY</td>
+        <td align="" class="clsCellNormal">All Door Switch OFF (Close)</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any Door Switch ON (Open)</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The &quot;--&quot; means that it is not used on this system.</p>
+  <p><span class="clsEmphBOLD">Engine start/stop switch link </span></p>
+  <p>If the vehicle mode turns to the ACCESSORY mode or the ON mode with the doors closed and the entry light control system illuminating the start/stop switch lights, the body control module fades the lights off.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="459px">
+      <col span="1" id="COL2" width="556px">
+      <col span="1" id="COL3" width="448px">
+      <col span="1" id="COL4" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="2" align="" class="clsCellNormal">Input</th>
+        <th colspan="2" align="" class="clsCellNormal">Output Control</th>
+      </tr>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Vehicle Mode</th>
+        <th align="" class="clsCellNormal">Each Door Switch</th>
+        <th align="" class="clsCellNormal">Before Input Change</th>
+        <th align="" class="clsCellNormal">After Input Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">Remote Engine Start</td>
+        <td align="" class="clsCellNormal">All OFF</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">ON -&gt; ACCESSORY</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">ACCESSORY -&gt; ON</td>
+        <td align="" class="clsCellNormal">All OFF</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON</td>
+      </tr>
+      <tr>
+        <td rowspan="2" align="" class="clsCellNormal">ON</td>
+        <td align="" class="clsCellNormal">All OFF</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The &quot;--&quot; means that it is not used on this system.</p>
+  <p><span class="clsEmphBOLD">Keyless link </span></p>
+  <p>When the body control module receives an unlock signal from the keyless transmitter or remote, it provides a ground to the interior lights.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="456px">
+      <col span="1" id="COL2" width="399px">
+      <col span="1" id="COL3" width="449px">
+      <col span="1" id="COL4" width="520px">
+      <col span="1" id="COL5" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th colspan="3" align="" class="clsCellNormal">Input</th>
+        <th colspan="2" align="" class="clsCellNormal">Output Control</th>
+      </tr>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Keyless Door LOCK/UNLOCK Signal</th>
+        <th align="" class="clsCellNormal">Each Door Switch</th>
+        <th align="" class="clsCellNormal">Driver's Door Lock Knob Switch (ON: LOCK)</th>
+        <th align="" class="clsCellNormal">Before Input Change</th>
+        <th align="" class="clsCellNormal">After Input Change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">UNLOCK signal</td>
+        <td rowspan="2" align="" class="clsCellNormal">All OFF(Door close)</td>
+        <td align="" class="clsCellNormal">ON -&gt; OFFor OFF</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 4</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any ON(Door open)</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights ON by timer condition 3</td>
+      </tr>
+      <tr>
+        <td rowspan="3" align="" class="clsCellNormal">LOCK signal</td>
+        <td rowspan="2" align="" class="clsCellNormal">All OFF(Door close)</td>
+        <td align="" class="clsCellNormal">OFF -&gt; ONor ON</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Lights OFF</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">OFF</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">Any ON(Door open)</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">--</td>
+        <td align="" class="clsCellNormal">Continue the status before input change</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">NOTE: </span>
+ The &quot;--&quot; means that it is not used on this system.</p>
+  <p><span class="clsEmphBOLD">Timer Control </span></p>
+  <p>The chart shows lighting duration, along with the dimming function that occurs at the end of the timer period.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH409442">
+            <div class="imageHeader"><a name="S32344109172021060700000"></a></div><img alt="GHH409442" src="../images/GHH409442.jpeg" name="GHH409442"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Tailgate Link Control (5-door) </span></p>
+  <p>The body control module controls the cargo area light ON/OFF based on the tailgate latch signal.</p><a name="S325340698320210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH409443">
+            <div class="imageHeader"><a name="S09868507052021060700000"></a></div><img alt="GHH409443" src="../images/GHH409443.jpeg" name="GHH409443"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

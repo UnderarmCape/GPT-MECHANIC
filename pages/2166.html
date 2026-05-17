@@ -1,0 +1,178 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Navigation System Description - Overview — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/">Accessories &amp; Equipment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Accessories%20%26%20Equipment/Infotainment/">Infotainment</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18744.html">Navigation System - Testing &amp; Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18744.html#Description%20%26%20Operation/">Description &amp; Operation</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2166.html">Navigation System Description - Overview</a></div><div class="main"><h1>Navigation System Description - Overview</h1><div id="S14087554482021060700000">
+  <p><span class="clsEmphBOLD">Basic Configuration </span></p>
+  <p>The navigation system is a highly-sophisticated, hybrid locating system that uses satellites and a map database to show you where you are and to help guide you to a desired destination.</p>
+  <p>The navigation system receives signals from the global positioning system (GPS), a network of 24 or more satellites in orbit around the earth. By receiving signals from several of these satellites, the navigation system can determine the latitude, longitude, and elevation of the vehicle. In addition, signals from the navigation unit's own gyro sensor and vehicle information (vehicle speed pulse) enable the system to keep track of the vehicle's direction and speed of travel.</p>
+  <p>This hybrid system has advantages over a system that is either entirely self-contained or one that relies totally on the GPS. For example, the self-contained portion of the system can keep track of vehicle position even when satellite signals cannot be received. When the navigation system is on, the GPS can keep track of the vehicle position even when the vehicle is transported by ferry.</p>
+  <p>The navigation system applies all location, direction, and speed information to maps and calculates a route to the destination entered. As you drive to that destination, the system provides both visual and audio guidance.</p>
+  <p><span class="clsEmphBOLD">Audio-Navigation Unit </span></p>
+  <p>Refer to the audio system Overview for the audio-navigation unit (display audio) and audio functions.</p>
+  <p><span class="clsEmphBOLD">Navigation Function </span></p>
+  <p>The navigation function is installed in the audio-navigation unit as an application. The basic navigation system is composed of the audio-navigation unit, center display unit, vehicle information signals (vehicle speed pulse, reverse signal), and the GPS antenna.</p>
+  <p><span class="clsEmphBOLD">Function Diagram </span></p><a name="S140875544820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410648">
+            <div class="imageHeader"><a name="S35568933812021060700000"></a></div><img alt="GHH410648" src="../images/GHH410648.jpeg" name="GHH410648"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Calculation of Vehicle Position </span></p>
+  <p>The audio-navigation unit calculates the vehicle position (the driving direction and the current position) by receiving the directional change signals from the gyro sensor, and the travel distance signals from vehicle information (vehicle speed pulse, BACK LT (reverse) signal).</p>
+  <p><span class="clsEmphBOLD">Map Matching Tuning </span></p>
+  <p>Map match tuning means that the vehicle's position is properly indicated on mapped roads. The map data transmitted from the SD card is checked against the current vehicle position data and the vehicle's position is indicated on the nearest road. Map matching tuning cannot be done when the vehicle is on an unmapped road, or if the vehicle is far away from a mapped road.</p>
+  <p><span class="clsEmphBOLD">GPS Tuning </span></p>
+  <p>GPS tuning improves the accuracy of the vehicle's actual position in relation to the GPS vehicle position. The audio-navigation unit compares its calculated vehicle position with the GPS position. If there is a large difference between the two positions, the GPS tuning adjusts the calculated vehicle position to the GPS position.</p>
+  <p><span class="clsEmphBOLD">Distance Tuning </span></p>
+  <p>The audio-navigation unit compares the vehicles calculated distance using the VSP and the vehicle's actual position based on GPS data. If the values are different, the audio-navigation unit decreases or increases the tuning value depending if the vehicle's calculated position is always ahead or behind the GPS position.</p>
+  <p><span class="clsEmphBOLD">Vehicle Speed Pulse </span></p>
+  <p>The vehicle speed pulse is sent by the TCM. The TCM receives a signal from the output shaft speed sensor, then processes the signal and transmits it to the speedometer and other systems.</p><a name="S140875544820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410649">
+            <div class="imageHeader"><a name="S22781623252021060700000"></a></div><img alt="GHH410649" src="../images/GHH410649.jpeg" name="GHH410649"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Gyro Sensor </span></p>
+  <p>The gyro sensor (located in the audio-navigation unit) detects the direction change (angular speed) and the attitude of the vehicle.</p>
+  <p>When the vehicle turns left or right, the gyro sensor outputs the voltage. But the sensor outputs the offset voltage at the static status. The audio-navigation unit calculates the relative bearing of the vehicle from the offset voltage. Since the vehicle may generate the yaw rate even in state of stopping (when the vehicle is spun on a turn table), the audio-navigation unit inhibits incorrect calculation using the gyro sensor temperature information.</p><a name="S140875544820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410650">
+            <div class="imageHeader"><a name="S42672048092021060700000"></a></div><img alt="GHH410650" src="../images/GHH410650.jpeg" name="GHH410650"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>When the vehicle repeats acceleration/slowdown, the gyro sensor outputs the voltage. In addition, the gyro sensor is affected by the vehicle slanting. The audio-navigation unit calculates the slant angle of the vehicle from the offset voltage.</p>
+  <p>Because of calculating the slanting of vehicle correctly, the audio-navigation unit sets up the offset in these cases:</p>
+  <ul class="BULLET">
+    <li>GPS altitude is constant.</li>
+    <li>Vehicle speed is constant.</li>
+  </ul><a name="S140875544820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410651">
+            <div class="imageHeader"><a name="S24786064302021060700000"></a></div><img alt="GHH410651" src="../images/GHH410651.jpeg" name="GHH410651"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Auto Tuning </span></p>
+  <p>The sensitivity behavior of the gyro sensor has individual specificity, it is necessary to calculate a sensitivity correction coefficient for every unit. A sensitivity correction coefficient is automatically learned during when the vehicle is moving.</p>
+  <p><span class="clsEmphBOLD">Oscillation Gyro Principles </span></p>
+  <p>The piezoelectric parts have electric/mechanical transfer characteristics. They bend vertically when voltage is applied to both sides of the parts, and voltage is generated between both sides of the piezoelectric parts when they are bent by an external force. The oscillation gyro functions by utilizing this characteristic of the piezoelectric parts and Coriolis force. (Coriolis force deflects moving objects as a result of the earth's rotation.) In the oscillation gyro, this force moves the sensor element when angular velocity is applied.</p><a name="S140875544820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410652">
+            <div class="imageHeader"><a name="S36239677132021060700000"></a></div><img alt="GHH410652" src="../images/GHH410652.jpeg" name="GHH410652"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Global Positioning System (GPS) </span></p>
+  <p>The global positioning system (GPS) enables the navigation system to determine the current position of the vehicle by using the signals transmitted from the satellites in orbit around the earth. The satellites transmit the satellite identification signal, orbit information, transmission time signal, and other information. When the GPS receiver receives a signal from four or more satellites simultaneously, it calculates the current position of the vehicle based on the distance to each satellite and the satellite's position in its respective orbit.</p>
+  <p><span class="clsEmphBOLD">Position Detection Image with GPS Satellite </span></p><a name="S140875544820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">
+          <div class="imageHolder" id="container_GHH410653">
+            <div class="imageHeader"><a name="S18629375972021060700000"></a></div><img alt="GHH410653" src="../images/GHH410653.jpeg" name="GHH410653"><span class="imageCourtesyNote">Courtesy of HONDA, U.S.A., INC.</span></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">Precision of GPS </span></p>
+  <p>The precision of the GPS varies according to the number of satellites from which signals are received and the view of the sky.</p><a name="S140875544820210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="343px">
+      <col span="1" id="COL2" width="429px">
+      <col span="1" id="COL3" width="600px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">Number of Satellites</th>
+        <th align="" class="clsCellNormal">Condition</th>
+        <th align="" class="clsCellNormal">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">None</td>
+        <td align="" class="clsCellNormal">Faulty reception</td>
+        <td align="" class="clsCellNormal">The GPS cannot be utilized due to a faulty GPS receiver or antenna, or other fault or interference.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">2 or less</td>
+        <td align="" class="clsCellNormal">Impossible to detect vehicle position</td>
+        <td align="" class="clsCellNormal">GPS function is normal. The satellite signals received by the GPS are too few to detect the vehicle position.</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">3</td>
+        <td align="" class="clsCellNormal">Vehicle position detectable in 2 dimensions</td>
+        <td align="" class="clsCellNormal">The longitude and latitude of the vehicle position can be detected (less precise than detection in three dimensions).</td>
+      </tr>
+      <tr>
+        <td align="" class="clsCellNormal">4 or more</td>
+        <td align="" class="clsCellNormal">Vehicle position detectable in 3 dimensions (elevation displayed)</td>
+        <td align="" class="clsCellNormal">The longitude, latitude and the altitude of the vehicle position can be detected (more precise than detection in two dimensions).</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span class="clsEmphBOLD">GPS Antenna </span></p>
+  <p>The GPS antenna amplifies and transmits the signals received from the satellites to the GPS receiver.</p>
+  <p><span class="clsEmphBOLD">GPS Receiver and Clock </span></p>
+  <p>The GPS receiver is built into the audio-navigation unit. It calculates the vehicle position by receiving the signal from the GPS antenna. The current time, vehicle position, and signal reception condition are transmitted from the GPS receiver to the navigation system to adjust vehicle position and the clock display in the audio-navigation unit. Also, the audio-navigation unit can set world time zone automatically by calculating the vehicle position.</p>
+  <p><span class="clsEmphBOLD">Audio Guidance </span></p>
+  <p>The audio-navigation unit outputs navigation voice guidance before entering an intersection or passing a junction.</p>
+  <ul class="BULLET">
+    <li>With stereo amplifier: The voice guidances are sent to the stereo amplifier using the analog audio line (AUX NAVI), then outputs them to the front center speaker.</li>
+    <li>Without stereo amplifier: The voice guidances outputs to the front left speaker.</li>
+  </ul>
+  <p><span class="clsEmphBOLD">Muting Signal Logic </span></p>
+  <p>When the speaker outputs the voice guidance, audio muting logic is orchestrated by the audio-navigation unit. The audio-navigation unit determines what audio source has priority to use the speakers. Refer to the audio system Overview for muting signal logic with the audio-navigation unit.</p>
+  <p><span class="clsEmphBOLD">Voice Control Function </span></p>
+  <p>This navigation system also has voice recognition that allows voice control of most of the audio, navigation, and the HFL functions. The TALK button on the steering wheel activate the voice control. The voice control also allows control of the audio and climate functions.</p>
+  <p><span class="clsEmphBOLD">Muting Signal Logic </span></p>
+  <p>When the voice recognition is in use, audio muting logic is orchestrated by the audio-navigation unit. The audio-navigation unit determines what audio source has priority to use speakers Refer to the audio system Overview for muting signal logic with the audio-navigation unit.</p>
+  <p><span class="clsEmphBOLD">Fan Mute Operation </span></p>
+  <p>When the voice recognition is in use, the audio-navigation unit sends the fan mute signal to the climate control unit via the B-CAN. The blower fan operating voltage may be reduced depending on the current fan speed.</p>
+  <p><span class="clsEmphBOLD">Turn by Turn Directions </span></p>
+  <p>The audio-navigation unit outputs the route guidance (direction) information to the multi-information display (MID) in the gauge control module via the digital signal line (LVDS2). In the case of route guidance mode, the MID shows the simple routing guidance using an arrow. When other than route guidance mode, the MID shows the azimuth (direction) information in 16-directions.</p>
+  <p><span class="clsEmphBOLD">HD Traffic (TM) </span></p>
+  <p>The HD Traffic (TM) is a broadcast for delivering traffic information to the driver. The traffic data is coded using the FM broadcast.</p>
+  <p>The HD Traffic (TM) uses a decoder in the audio-navigation unit to decode the traffic information data. It is integrated directly into a navigation system. The traffic information is displayed with the navigation route guidance. It is used to avoid traffic jams and accidents (see the Navigation System Manual for more information).</p>
+  <p><span class="clsEmphBOLD">HondaLink Assist </span></p>
+  <p>HondaLink delivers remote services to the vehicle using the customer's compatible Bluetooth phone. Refer to the audio system Overview.</p>
+  <p><span class="clsEmphBOLD">Microphone </span></p>
+  <p>The Microphone receives navigation voice command, and transmits them to the audio-navigation unit. Refer to the HandsFreeLink system Overview.</p>
+  <p><span class="clsEmphBOLD">HFL (Navigation Voice Control) Switch </span></p>
+  <p>The HFL (navigation voice control) switch and the audio remote switch are integrated to the audio remote-HFL switch. Refer to the audio system Overview.</p>
+  <p><span class="clsEmphBOLD">Multi-View Rear Camera </span></p>
+  <p>The multi-view rear camera allows the driver to see what is behind the vehicle by displaying the image on the audio-navigation unit. There are three different selectable views. Refer to the audio system Overview.</p>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>

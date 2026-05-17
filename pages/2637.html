@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>DTC U128D (Keyless Access Backup Control Unit) — 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans Service Manual ~ LEMON Manuals</title><link rel="stylesheet" href="../style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Repair manual for the 2016 Honda Civic LX, 4D Sedan, Automatic CVT Trans, including electrical diagrams, bolt torques, and labor times."></head><body><div class="theme-colors header"><div class="branding"><b>LEMON Manuals</b>: Even more car manuals for everyone: 1960-2025</div><a class="breadcrumb-part" href="../404.html">Home</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">Honda</a> &gt;&gt; <a class="breadcrumb-part" href="../404.html">2016</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/1.html">Civic LX, 4D Sedan, Automatic CVT Trans</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html">Repair and Diagnosis (Single Page)</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Body%20%26%20Frame/">Body &amp; Frame</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/3.html#Body%20%26%20Frame/Door%20Locks/">Door Locks</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18716.html">Keyless Access System (Backup Control Unit) - Diagnostics</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/18716.html#DTC%20Troubleshooting/">DTC Troubleshooting</a> &gt;&gt; <a class="breadcrumb-part" href="../pages/2637.html">DTC U128D (Keyless Access Backup Control Unit)</a></div><div class="main"><h1>DTC U128D (Keyless Access Backup Control Unit)</h1><div id="S14415440792021060700000">
+  <p><span class="clsEmphBOLD">DTC U128D </span>
+: Backup Control Unit (Body Control Module) Lost Communication with Gauge Control Module</p>
+  <p><span class="clsEmphBOLD">NOTE: </span></p>
+  <ul class="BULLET">
+    <li>According to the detected DTC(s), check for the power circuit and the ground circuit of the control unit which cannot communicate with the body control module.</li>
+    <li>Refer to the DTC shown on the display, then inspect the connectors and terminals based on the instructions.</li>
+    <li>If you are troubleshooting multiple DTCs, be sure to follow the instructions in <a href="../pages/13093.html">B-CAN System Diagnosis Test Mode A</a>
+.</li>
+  </ul><a name="S144154407920210607000001"></a><table cellspacing="0" class="clsArticleTable">
+    <colgroup>
+      <col span="1" id="COL1" width="600px">
+      <col span="1" id="COL2" width="200px">
+    </colgroup>
+    <thead>
+      <tr class="clsTblHead">
+        <th align="" class="clsCellNormal">DTC Description</th>
+        <th align="" class="clsCellNormal">DTC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="" class="clsCellNormal">U128D Backup Control Unit (Body Control Module) Lost Communication with Gauge Control Module</td>
+        <td align="" class="clsCellNormal"> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>DTC (Backup Control Unit)</p>
+  <ol class="ARABICNUM">
+    <li>Problem verification<p>-1. Turn the vehicle to the ON mode.</p>
+      <p>-2. Clear the DTCs with the HDS.</p>
+      <p>-3. Turn the vehicle to the OFF (LOCK) mode and then the ON mode.</p>
+      <p>-4. Wait for at least 6 seconds.</p>
+      <p>-5. Check for DTCs with the HDS.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+          <col span="1" id="COL2" width="200px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC Description</th>
+            <th align="" class="clsCellNormal">DTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U128D Backup Control Unit (Body Control Module) Lost Communication with Gauge Control Module</td>
+            <td align="" class="clsCellNormal"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is DTC U128D indicated?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>Go to step 2.</p>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Intermittent failure, the system is OK at this time. Check for loose or poor connections.</p>
+    </li>
+    <li>Open wire check (B-CAN_H line, B-CAN_L line)<p>-1. Turn the vehicle to the OFF (LOCK) mode.</p>
+      <p>-2. Disconnect the receiving control unit connector.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Body control module connector B (36P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-3. Disconnect the transmitting control unit connector.</p>
+      <p>Refer to the DTC shown on the display, then disconnect the connector based on the instructions (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="133px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Connector</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U128D</td>
+            <td align="" class="clsCellNormal">Gauge control module connector A (32P)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>-4. Check for continuity between the receiving control unit and the transmitting control unit on the B-CAN_H circuit and the B-CAN_L circuit.</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="130px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">Test condition</td>
+            <td align="" class="clsCellNormal">Vehicle OFF (LOCK) mode<br>Body control module connector B (36P): disconnected<br>Transmitting control unit connector(s) for indicated DTCs: disconnected</td>
+          </tr>
+        </tbody>
+      </table><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="257px">
+          <col span="1" id="COL2" width="343px">
+          <col span="1" id="COL3" width="600px">
+          <col span="1" id="COL4" width="257px">
+          <col span="1" id="COL5" width="600px">
+          <col span="1" id="COL6" width="257px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th rowspan="2" align="" class="clsCellNormal">DTC</th>
+            <th rowspan="2" align="" class="clsCellNormal">Circuit name</th>
+            <th colspan="2" align="" class="clsCellNormal">Receiving control unit</th>
+            <th colspan="2" align="" class="clsCellNormal">Transmitting control unit</th>
+          </tr>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+            <th align="" class="clsCellNormal">Connector</th>
+            <th align="" class="clsCellNormal">Terminal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="" class="clsCellNormal">U128D</td>
+            <td align="" class="clsCellNormal">B-CAN_H</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/12953.html">Body control module connector B (36P)</a></td>
+            <td align="" class="clsCellNormal">No. 20</td>
+            <td rowspan="2" align="" class="clsCellNormal"><a href="../pages/12971.html">Gauge control module connector A (32P)</a></td>
+            <td align="" class="clsCellNormal">No. 30</td>
+          </tr>
+          <tr>
+            <td align="" class="clsCellNormal">B-CAN_L</td>
+            <td align="" class="clsCellNormal">No. 21</td>
+            <td align="" class="clsCellNormal">No. 31</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Is there continuity?</p>
+      <p><span class="clsEmphBOLD">YES </span></p>
+      <p>The B-CAN_H wire and the B-CAN_L wire are OK.</p>
+      <p>Refer to the DTC shown on the display, then substitute or replace the control unit based on the instructions (see table).</p><a name="1"></a><table cellspacing="0" class="clsListArticleTable">
+        <colgroup>
+          <col span="1" id="COL1" width="77px">
+          <col span="1" id="COL2" width="600px">
+        </colgroup>
+        <thead>
+          <tr class="clsTblHead">
+            <th align="" class="clsCellNormal">DTC</th>
+            <th align="" class="clsCellNormal">Operation for transmitting control unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="" class="clsCellNormal">U128D</td>
+            <td align="" class="clsCellNormal"><a href="../pages/13045.html#Removal%20and%20Installation/Gauge%20Control%20Module%20Removal%20and%20Installation/">Substitute a known-good gauge control module</a>
+, then recheck. If DTC U128D goes away after substitution, <a href="../pages/13045.html#Removal%20and%20Installation/Gauge%20Control%20Module%20Removal%20and%20Installation/">replace the original gauge control module</a>
+.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><span class="clsEmphBOLD">NO </span></p>
+      <p>Repair an open in the B-CAN_H wire and/or the B-CAN_L wire between the body control module and the transmitting control unit.</p>
+    </li>
+  </ol>
+</div></div><div class="theme-colors footer"><i>scientia non olet</i> · <a href="../about.html">About LEMON Manuals</a></div><script src="../script.js"></script></body></html>
