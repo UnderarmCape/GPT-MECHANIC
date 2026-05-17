@@ -11,6 +11,16 @@ from bs4 import BeautifulSoup
 
 HTML_EXTS = {".html", ".htm"}
 IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"}
+IMPORTANT_KEYWORDS = (
+    "WARNING",
+    "CAUTION",
+    "NOTE",
+    "DTC",
+    "torque",
+    "specification",
+    "fluid",
+)
+DEFAULT_PART_MAX_BYTES = 45 * 1024 * 1024
 
 
 def is_external_url(value: str) -> bool:
@@ -108,6 +118,23 @@ def normalize_text(text: str) -> str:
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+
+def normalized_text_hash(text: str) -> str:
+    normalized = normalize_text(text)
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+
+def contains_important_keyword(text: str) -> bool:
+    text_folded = text.casefold()
+    return any(keyword.casefold() in text_folded for keyword in IMPORTANT_KEYWORDS)
+
+
+def resolve_output_dir(root: Path, output_dir: str) -> Path:
+    path = Path(output_dir)
+    if path.is_absolute():
+        return path
+    return root / path
 
 
 def html_to_markdownish_text(soup: BeautifulSoup) -> str:
@@ -251,6 +278,10 @@ def write_markdown_chunk(md_dir: Path, chunk_number: int, record: dict):
         "chunk_index": record["chunk_index"],
     }
 
+    for optional_field in ["duplicate_sources", "duplicate_count"]:
+        if optional_field in record:
+            frontmatter[optional_field] = record[optional_field]
+
     content = [
         "---",
         json.dumps(frontmatter, ensure_ascii=False, indent=2),
@@ -264,6 +295,45 @@ def write_markdown_chunk(md_dir: Path, chunk_number: int, record: dict):
     return path
 
 
+def write_jsonl_and_parts(records: list[dict], jsonl_path: Path, parts_dir: Path, part_max_bytes: int):
+    jsonl_path.parent.mkdir(parents=True, exist_ok=True)
+    parts_dir.mkdir(parents=True, exist_ok=True)
+
+    part_files = []
+    part_handle = None
+    part_number = 0
+    part_bytes = 0
+
+    def open_next_part():
+        nonlocal part_handle, part_number, part_bytes
+        if part_handle:
+            part_handle.close()
+        part_number += 1
+        part_bytes = 0
+        part_path = parts_dir / f"chunks_part_{part_number:04d}.jsonl"
+        part_files.append(part_path)
+        part_handle = part_path.open("wb")
+
+    try:
+        with jsonl_path.open("wb") as jsonl_file:
+            for record in records:
+                encoded = (json.dumps(record, ensure_ascii=False) + "\n").encode("utf-8")
+                jsonl_file.write(encoded)
+
+                if part_handle is None:
+                    open_next_part()
+                elif part_bytes and part_bytes + len(encoded) > part_max_bytes:
+                    open_next_part()
+
+                part_handle.write(encoded)
+                part_bytes += len(encoded)
+    finally:
+        if part_handle:
+            part_handle.close()
+
+    return part_files
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", default=".", help="Repo/manual root folder")
@@ -271,15 +341,32 @@ def main():
     parser.add_argument("--vehicle", default="2016 Honda Civic LX 4D Sedan CVT")
     parser.add_argument("--max-chars", type=int, default=4500)
     parser.add_argument("--overlap-chars", type=int, default=800)
+    parser.add_argument("--output-dir", default="build", help="Output directory relative to the repo root")
+    parser.add_argument("--dedupe-exact", action="store_true", help="Merge chunks with identical normalized text")
+    parser.add_argument(
+        "--min-chars",
+        type=int,
+        default=0,
+        help="Skip chunks shorter than this unless they contain important service keywords",
+    )
+    parser.add_argument(
+        "--part-max-bytes",
+        type=int,
+        default=DEFAULT_PART_MAX_BYTES,
+        help="Maximum UTF-8 bytes per split JSONL part file",
+    )
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
     start_file = (root / args.start).resolve()
+    min_chars = max(0, args.min_chars)
+    part_max_bytes = max(1, args.part_max_bytes)
 
-    build_dir = root / "build"
+    build_dir = resolve_output_dir(root, args.output_dir)
     md_dir = build_dir / "gpt_chunks"
-    build_dir.mkdir(exist_ok=True)
-    md_dir.mkdir(exist_ok=True)
+    parts_dir = build_dir / "chunks_jsonl_parts"
+    build_dir.mkdir(parents=True, exist_ok=True)
+    md_dir.mkdir(parents=True, exist_ok=True)
 
     if not start_file.exists():
         raise FileNotFoundError(f"Start file not found: {start_file}")
@@ -291,57 +378,99 @@ def main():
 
     records = []
     markdown_files = []
-    chunk_number = 1
+    dedupe_index = {}
+    duplicate_hashes = set()
+    original_chunk_count = 0
+    short_chunks_skipped = 0
+    short_chunks_kept_for_keywords = 0
+    duplicate_chunks_merged = 0
 
-    with jsonl_path.open("w", encoding="utf-8") as f:
-        for page in pages:
-            soup = load_soup(page)
+    for page in pages:
+        soup = load_soup(page)
 
-            title = extract_title(soup, page)
-            source_path = str(page.relative_to(root))
-            text = html_to_markdownish_text(soup)
+        title = extract_title(soup, page)
+        source_path = str(page.relative_to(root))
+        text = html_to_markdownish_text(soup)
 
-            if not text:
-                continue
+        if not text:
+            continue
 
-            headings = extract_headings(text)
-            images = extract_images(root, page, soup)
-            links = extract_links(root, page, soup)
+        headings = extract_headings(text)
+        images = extract_images(root, page, soup)
+        links = extract_links(root, page, soup)
 
-            text_chunks = chunk_text(
-                text=text,
-                max_chars=args.max_chars,
-                overlap_chars=args.overlap_chars,
-            )
+        text_chunks = chunk_text(
+            text=text,
+            max_chars=args.max_chars,
+            overlap_chars=args.overlap_chars,
+        )
 
-            for idx, chunk in enumerate(text_chunks, start=1):
-                record = {
-                    "chunk_id": make_chunk_id(source_path, idx),
-                    "source_path": source_path,
-                    "title": title,
-                    "headings": headings,
-                    "text": chunk,
-                    "images": images,
-                    "links": links,
-                    "vehicle": args.vehicle,
-                    "chunk_index": idx,
-                    "total_chunks_for_page": len(text_chunks),
-                }
+        original_chunk_count += len(text_chunks)
 
-                f.write(json.dumps(record, ensure_ascii=False) + "\n")
-                records.append(record)
+        for idx, chunk in enumerate(text_chunks, start=1):
+            if min_chars and len(chunk) < min_chars:
+                if contains_important_keyword(chunk):
+                    short_chunks_kept_for_keywords += 1
+                else:
+                    short_chunks_skipped += 1
+                    continue
 
-                md_path = write_markdown_chunk(md_dir, chunk_number, record)
-                markdown_files.append(str(md_path.relative_to(root)))
+            record = {
+                "chunk_id": make_chunk_id(source_path, idx),
+                "source_path": source_path,
+                "title": title,
+                "headings": headings,
+                "text": chunk,
+                "images": images,
+                "links": links,
+                "vehicle": args.vehicle,
+                "chunk_index": idx,
+                "total_chunks_for_page": len(text_chunks),
+            }
 
-                chunk_number += 1
+            if args.dedupe_exact:
+                digest = normalized_text_hash(chunk)
+                if digest in dedupe_index:
+                    kept_record = records[dedupe_index[digest]]
+                    duplicate_sources = kept_record.setdefault("duplicate_sources", [])
+                    if source_path not in duplicate_sources:
+                        duplicate_sources.append(source_path)
+                    kept_record["duplicate_count"] = kept_record.get("duplicate_count", 0) + 1
+                    duplicate_chunks_merged += 1
+                    duplicate_hashes.add(digest)
+                    continue
+
+                record["duplicate_sources"] = []
+                record["duplicate_count"] = 0
+                dedupe_index[digest] = len(records)
+
+            records.append(record)
+
+    part_files = write_jsonl_and_parts(records, jsonl_path, parts_dir, part_max_bytes)
+
+    for chunk_number, record in enumerate(records, start=1):
+        md_path = write_markdown_chunk(md_dir, chunk_number, record)
+        markdown_files.append(str(md_path.relative_to(root)))
 
     manifest = {
         "vehicle": args.vehicle,
         "start_file": str(start_file.relative_to(root)),
         "html_pages_found": len(pages),
+        "original_chunks_created": original_chunk_count,
         "chunks_created": len(records),
+        "clean_chunks_created": len(records),
+        "dedupe_exact": args.dedupe_exact,
+        "duplicate_text_hashes_merged": len(duplicate_hashes),
+        "duplicate_chunks_merged": duplicate_chunks_merged,
+        "min_chars": min_chars,
+        "important_keywords": list(IMPORTANT_KEYWORDS),
+        "short_chunks_skipped": short_chunks_skipped,
+        "short_chunks_kept_for_keywords": short_chunks_kept_for_keywords,
         "jsonl_output": str(jsonl_path.relative_to(root)),
+        "jsonl_parts_dir": str(parts_dir.relative_to(root)),
+        "jsonl_part_files_created": len(part_files),
+        "jsonl_part_files": [str(path.relative_to(root)) for path in part_files],
+        "jsonl_part_max_bytes": part_max_bytes,
         "markdown_output_dir": str(md_dir.relative_to(root)),
         "markdown_files_created": len(markdown_files),
         "broken_links": broken_links,
@@ -351,8 +480,13 @@ def main():
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
 
     print(f"HTML pages found: {len(pages)}")
-    print(f"Chunks created: {len(records)}")
+    print(f"Original chunks generated: {original_chunk_count}")
+    print(f"Clean chunks created: {len(records)}")
+    print(f"Duplicate chunks removed/merged: {duplicate_chunks_merged}")
+    print(f"Short chunks skipped: {short_chunks_skipped}")
+    print(f"JSONL part files created: {len(part_files)}")
     print(f"Wrote JSONL: {jsonl_path}")
+    print(f"Wrote JSONL parts to: {parts_dir}")
     print(f"Wrote Markdown chunks to: {md_dir}")
     print(f"Wrote manifest: {manifest_path}")
 
