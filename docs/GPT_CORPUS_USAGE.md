@@ -53,4 +53,10 @@ Limit result count:
 python tools/search_gpt_corpus.py "brake fluid" --limit 5
 ```
 
+Index/navigation pages and video pages are downranked by default. To include index pages and avoid the video-page penalty:
+
+```powershell
+python tools/search_gpt_corpus.py "CVT fluid" --include-index --include-video
+```
+
 Each result includes rank, score, title, source path, chunk ID, image paths when present, and a text preview near the matched terms.

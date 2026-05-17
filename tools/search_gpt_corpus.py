@@ -8,6 +8,19 @@ ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = ROOT / "build_clean" / "chunks_jsonl_parts"
 DEFAULT_LIMIT = 10
 PREVIEW_CHARS = 320
+INDEX_SOURCE_PATHS = {"pages\\3.html", "pages/3.html"}
+INDEX_SOURCE_PATHS_NORMALIZED = {path.replace("/", "\\").casefold() for path in INDEX_SOURCE_PATHS}
+SINGLE_PAGE_TITLE = "repair and diagnosis (single page)"
+PROCEDURE_TITLE_WORDS = (
+    "replacement",
+    "inspection",
+    "removal",
+    "installation",
+    "adjustment",
+    "test",
+    "troubleshooting",
+    "specifications",
+)
 
 
 def tokenize(value: str) -> list[str]:
@@ -19,6 +32,22 @@ def field_text(record: dict, field: str) -> str:
     if isinstance(value, list):
         return " ".join(str(item) for item in value)
     return str(value)
+
+
+def is_index_page(record: dict) -> bool:
+    source_path = str(record.get("source_path", "")).replace("/", "\\").casefold()
+    title = str(record.get("title", "")).casefold()
+    return (
+        source_path in INDEX_SOURCE_PATHS_NORMALIZED
+        or "single page" in title
+        or " index" in title
+        or title.endswith("index")
+        or title == SINGLE_PAGE_TITLE
+    )
+
+
+def is_video_page(record: dict) -> bool:
+    return "- video" in str(record.get("title", "")).casefold()
 
 
 def load_records(corpus_dir: Path):
@@ -44,7 +73,16 @@ def load_records(corpus_dir: Path):
                     yield record
 
 
-def score_record(record: dict, query: str, terms: list[str]) -> int:
+def score_record(
+    record: dict,
+    query: str,
+    terms: list[str],
+    include_index: bool = False,
+    include_video: bool = False,
+) -> int | None:
+    if is_index_page(record) and not include_index:
+        return None
+
     weighted_fields = (
         ("title", 12),
         ("headings", 10),
@@ -53,8 +91,31 @@ def score_record(record: dict, query: str, terms: list[str]) -> int:
         ("text", 1),
     )
     query_folded = query.casefold()
+    query_has_video = "video" in terms
     score = 0
     matched_terms = set()
+    title = field_text(record, "title").casefold()
+    text = field_text(record, "text").casefold()
+
+    if query_folded and query_folded in title:
+        score += 900
+    if query_folded and query_folded in text:
+        score += 500
+
+    title_tokens = tokenize(title)
+    unique_terms = set(terms)
+    title_term_matches = {term for term in unique_terms if term in title_tokens or term in title}
+    if unique_terms and title_term_matches == unique_terms:
+        score += 850
+
+    for term in terms:
+        if term in title_tokens:
+            score += 90
+        elif term in title:
+            score += 45
+
+    if any(word in title_tokens for word in PROCEDURE_TITLE_WORDS):
+        score += 180
 
     for field, weight in weighted_fields:
         value = field_text(record, field).casefold()
@@ -62,7 +123,7 @@ def score_record(record: dict, query: str, terms: list[str]) -> int:
             continue
 
         if query_folded and query_folded in value:
-            score += weight * 20
+            score += weight * 12
 
         field_tokens = tokenize(value)
         token_counts = {}
@@ -80,6 +141,20 @@ def score_record(record: dict, query: str, terms: list[str]) -> int:
 
     if terms and len(matched_terms) == len(set(terms)):
         score += 30
+
+    if is_index_page(record):
+        score -= 800
+        if str(record.get("source_path", "")).replace("/", "\\").casefold() == "pages\\3.html":
+            score -= 700
+        if "single page" in title:
+            score -= 500
+        if " index" in title or title.endswith("index"):
+            score -= 700
+        if title == SINGLE_PAGE_TITLE:
+            score -= 700
+
+    if is_video_page(record) and not include_video and not query_has_video:
+        score -= 2000
 
     return score
 
@@ -128,15 +203,15 @@ def print_result(rank: int, result: dict, terms: list[str]) -> None:
     print()
 
 
-def search(query: str, limit: int) -> list[dict]:
+def search(query: str, limit: int, include_index: bool = False, include_video: bool = False) -> list[dict]:
     terms = tokenize(query)
     if not terms:
         raise ValueError("Search query must include at least one alphanumeric term.")
 
     results = []
     for record in load_records(CORPUS_DIR):
-        score = score_record(record, query, terms)
-        if score:
+        score = score_record(record, query, terms, include_index, include_video)
+        if score is not None and score > 0:
             results.append({"score": score, "record": record})
 
     results.sort(
@@ -156,11 +231,21 @@ def main() -> int:
     )
     parser.add_argument("query", help="Search query, for example: \"CVT fluid replacement\"")
     parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT, help="Number of results to show")
+    parser.add_argument(
+        "--include-index",
+        action="store_true",
+        help="Include index/navigation pages such as pages/3.html in results",
+    )
+    parser.add_argument(
+        "--include-video",
+        action="store_true",
+        help="Avoid penalizing video pages when the query does not include video",
+    )
     args = parser.parse_args()
 
     limit = max(1, args.limit)
     terms = tokenize(args.query)
-    results = search(args.query, limit)
+    results = search(args.query, limit, args.include_index, args.include_video)
 
     print(f"Query: {args.query}")
     print(f"Corpus: {CORPUS_DIR}")
