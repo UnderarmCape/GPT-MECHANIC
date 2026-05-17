@@ -3,3 +3,5 @@ build/gpt_chunks/
 
 build_clean/chunks.jsonl
 build_clean/gpt_chunks/
+build_clean/gpt_corpus.sqlite
+build_clean/gpt_corpus.sqlite-*

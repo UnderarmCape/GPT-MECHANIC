@@ -66,3 +66,27 @@ python tools/search_gpt_corpus.py "CVT fluid" --no-dedupe-results
 ```
 
 Each result includes rank, score, title, source path, chunk ID, image paths when present, and a text preview near the matched terms.
+
+## Build A SQLite Search Index
+
+Build a local SQLite database from the clean corpus:
+
+```powershell
+python tools/build_search_index.py
+```
+
+This writes:
+
+- `build_clean/gpt_corpus.sqlite`
+
+The script uses SQLite FTS5 when the local Python SQLite build supports it. Search the SQLite index:
+
+```powershell
+python tools/build_search_index.py --search "CVT fluid"
+```
+
+Rebuild before searching:
+
+```powershell
+python tools/build_search_index.py --rebuild --search "HCF-2"
+```
